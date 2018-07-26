@@ -1,0 +1,51 @@
+/****************************************
+*
+* Typographic styles
+*
+*****************************************/
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:200,300,400,600,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,600,700');
+
+$Montserrat-font: 'Montserrat', sans-serif;
+$Roboto-font: 'Roboto', sans-serif;
+.montserrat-font {font-family: $Montserrat-font};
+.roboto-font {font-family: $Roboto-font};
+
+
+
+$sourceSansPro: 'sans-serif';
+
+//font weights
+$extraLight:200;
+$light:     300;
+$regular:   400;
+$medium:    500;
+$semiBold:  600;
+$bold:      700;
+
+
+.extra-light      {font-weight: $extraLight;}
+
+.light            {font-weight: $light}
+//.light-italic     {font-weight: $light;font-style: italic;}
+.regular          {font-weight: $regular;}
+//.regular-italic   {font-weight: $regular;font-style: italic;}
+.semi-bold        {font-weight: $semiBold;}
+//.semi-bold-italic {font-weight: $semiBold;font-style: italic;}
+.medium           {font-weight: $medium;}
+.bold             {font-weight: $bold;}
+
+.centre {text-align: center}
+
+h1{
+  font-family: $Roboto-font;
+  font-weight: $regular;
+  @include font-size(55);
+}
+
+h2 {
+  font-family: $Roboto-font;
+  font-weight: $regular;
+  @include font-size(40);
+}

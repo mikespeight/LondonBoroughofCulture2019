@@ -1,0 +1,180 @@
+/* functions */
+
+/// Computes a top-shadow for a card effect.
+/// @param {Number} $depth - depth level
+/// @return {List}
+@function top-shadow($depth) {
+  $primary-offset: nth(1.5 3 10 14 19, $depth) * 1px;
+  $blur: nth(1.5 3 10 14 19, $depth) * 4px;
+  $color: rgba(black, nth(.12 .16 .19 .25 .30, $depth));
+
+  @return 0 $primary-offset $blur $color;
+}
+
+/// Computes a bottom-shadow for a card effect.
+/// @param {Number} $depth - depth level
+/// @return {List}
+@function bottom-shadow($depth) {
+  $primary-offset: nth(1.5 3 6 10 15, $depth) * 1px;
+  $blur: nth(1 3 3 5 6, $depth) * 4px;
+  $color: rgba(black, nth(.24 .23 .23 .22 .22, $depth));
+
+  @return 0 $primary-offset $blur $color;
+}
+
+
+/*Mixins*/
+
+// Horizontal gradient mixin
+@mixin horizontal-gradient($direction: left, $startColor: rgba(227,227,227,1), $startPos: 85%, $gradStartColor: rgba(227,227,227,1), $endColor: rgba(0,0,0,0) ) {
+
+  @if $direction == "left" {
+    background: -moz-linear-gradient(left,  $startColor 0%, $gradStartColor $startPos, $endColor 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left,  $startColor 0%, $gradStartColor $startPos, $endColor 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right,  $startColor 0%, $gradStartColor $startPos, $endColor 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e3e3e3', endColorstr='#00000000',GradientType=1 ); /* IE6-9 */
+  }
+  @else if $direction == "right"{
+    $altDirection: "left";
+    background: -moz-linear-gradient(right,  $startColor 0%, $gradStartColor $startPos, $endColor 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(right,  $startColor 0%, $gradStartColor $startPos, $endColor 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to left,  $startColor 0%, $gradStartColor $startPos, $endColor 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e3e3e3', endColorstr='#00000000',GradientType=1 ); /* IE6-9 */
+  }
+
+
+}
+
+.l-to-r-grad {
+  @include horizontal-gradient();
+}
+
+.r-to-l-grad {
+  @include horizontal-gradient($direction: right);
+}
+
+
+// Flex container base mixin and classes
+@mixin flex-container($direction: row, $spacing: space-between, $alignment: null) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $spacing;
+  align-items: $alignment;
+}
+
+.input-wrapper {
+  @include flex-container($direction: column, $spacing: space-around);
+}
+
+.side-by-side {
+  @include flex-container();
+}
+
+/// Gives a card depth effect.
+/// @param {Number} $depth - depth level (between 1 and 5)
+/// @link http://www.google.com/design/spec/layout/layout-principles.html#layout-principles-dimensionality Google Design
+/// @requires {function} top-shadow
+/// @requires {function} bottom-shadow
+@mixin card($depth) {
+  @if $depth < 1 {
+    box-shadow: none;
+  } @else if $depth > 5 {
+    @warn "Invalid $depth `#{$depth}` for mixin `card`.";
+  } @else {
+    box-shadow: bottom-shadow($depth), top-shadow($depth);
+  }
+}
+
+@mixin fill-parent {
+  position: absolute;
+  top: 0;
+  left:0;
+  width: 100%;
+  height: 100%;
+}
+
+@mixin font-size($size){
+  font-size: $size * 1px;
+  font-size: $size * 0.1rem;
+}
+
+@mixin square($size) {
+  display: block;
+  width: $size;
+  height: $size;
+}
+
+@mixin centerer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin centerH {
+  position: absolute;
+  left:50%;
+  transform: translateX(-50%);
+}
+
+@mixin centerV {
+  position: absolute;
+  top:50%;
+  transform: translateY(-50%);
+}
+
+@mixin globalButton(){
+  background: $linkColor;
+  color: #fff;
+  border: 0;
+  padding: 10px 15px;
+  line-height: 100%;
+  border-radius: 0;
+}
+
+@mixin globalButtonHover(){
+  background: $linkColorHover;
+  color: #fff;
+}
+
+//Cross browser CSS3 mixins
+
+@mixin box-shadow($left, $top, $radius, $color) {
+  box-shadow: $left $top $radius $color;
+  -webkit-box-shadow: $left $top $radius $color;
+  -moz-box-shadow: $left $top $radius $color;
+}
+
+@mixin transition($property, $duration, $easing: linear) {
+  transition: $property $duration $easing;
+  -webkit-transition: $property $duration $easing;
+  -moz-transition: $property $duration $easing;
+}
+
+@mixin border-radius($radius) {
+  border-radius: $radius;
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+}
+
+@mixin border-radii($topleft, $topright, $bottomright, $bottomleft) {
+  border-top-left-radius: $topleft;
+  border-top-right-radius: $topright;
+  border-bottom-right-radius: $bottomright;
+  border-bottom-left-radius: $bottomleft;
+  -webkit-border-top-left-radius: $topleft;
+  -webkit-border-top-right-radius: $topright;
+  -webkit-border-bottom-right-radius: $bottomright;
+  -webkit-border-bottom-left-radius: $bottomleft;
+  -moz-border-radius-topleft: $topleft;
+  -moz-border-radius-topright: $topright;
+  -moz-border-radius-bottomright: $bottomright;
+  -moz-border-radius-bottomleft: $bottomleft;
+}
+
+@mixin gradient($color1, $color2) {
+  background-color: $color1;
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#{$color1}, endColorstr=#{$color2});
+  background-image: -moz-linear-gradient(center top, $color1, $color2);
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from($color1), to($color2));
+}

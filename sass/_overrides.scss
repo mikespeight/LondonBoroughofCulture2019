@@ -1,0 +1,112 @@
+/****************************************
+*
+* styles to qveride bootstrap styles
+*
+*****************************************/
+
+// Small screen / tablet
+//** Deprecated `$screen-sm` as of v3.0.1
+$screen-sm:                  768px !default;
+$screen-sm-min:              $screen-sm !default;
+//** Point at which the navbar becomes uncollapsed.
+//$grid-float-breakpoint:     $screen-md-min !default;
+$grid-float-breakpoint:     ($screen-sm-min + 1) !default;
+//** Point at which the navbar begins collapsing.
+//$grid-float-breakpoint-max: ($grid-float-breakpoint - 1) !default;
+$grid-float-breakpoint-max: ($grid-float-breakpoint) !default;
+
+
+
+/* unset bs3 setting */
+.modal-open {
+  overflow: hidden;
+  padding-right: 0 !important;
+
+  #search {
+    background-color: transparent;
+  }
+}
+
+
+
+.page-node-type-homepage,
+.subpage {
+
+  .modal {
+    position: absolute;
+    top:0;
+    left:0;
+
+  &.in {
+    margin-right: -17px;
+  }
+
+    .modal-dialog {
+      width:100%;
+      max-width: 100%;
+      margin: 0 auto;
+      background-color: #2d7987;
+      height:60px;
+      margin-top: 61px;
+
+      .modal-content {
+        width:100%;
+        max-width: 1200px;
+        padding: 0 15px;
+        margin: 0 auto;
+        -webkit-box-shadow:none;
+        box-shadow: none;
+        border-radius: 0;
+        background-color: transparent;
+        border: none;
+        outline: none;
+
+        form {
+          position: absolute;
+
+          .form-actions {
+            display: block;
+            background-color: #2d7987;
+            width: 60px;
+            height: 60px;
+            position: absolute;
+            right: 0;
+            top: -60px;
+
+            input {
+              border: none;
+              text-indent: -10000px;
+              display: block;
+              width: 22px;
+              height: 22px;
+              margin: 19px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.modal {
+  position: absolute;
+  top:0;
+  left:0;
+
+  &.in {
+    margin-right: -17px;
+  }
+
+  .modal-dialog {
+    width:100%;
+    max-width: 1200px;
+    margin:0 auto;
+    background-color: transparent;
+  }
+}
+
+
+.modal-backdrop {
+  opacity:0.2 !important;
+}
+
