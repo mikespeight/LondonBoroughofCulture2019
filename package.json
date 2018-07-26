@@ -1,0 +1,31 @@
+{
+  "name": "servicestore",
+  "version": "1.0.0",
+  "description": "London Borough of Waltham Forest Weddings",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://xp-dev.com/git/Legal"
+  },
+  "author": "Mike Speight",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0",
+    "gulp-usemin": "^0.3.28"
+  },
+  "dependencies": {
+    "bower": "^1.8.2",
+    "gulp-bower": "0.0.13",
+    "gulp-concat": "^2.6.1",
+    "gulp-header": "^1.8.9",
+    "gulp-notify": "^3.0.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-sourcemaps": "^2.6.1",
+    "gulp-watch": "^4.3.11"
+  },
+  "false": {}
+}
