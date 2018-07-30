@@ -19,6 +19,7 @@
     "jquery": "^3.2.1",
     "font-awesome": "fontAwesome#^4.7.0",
     "flexslider-scss": "^1.0.0",
-    "bootstrap4": "^4.1.0"
+    "bootstrap4": "^4.1.0",
+    "modernizr": "^3.6.0"
   }
 }
