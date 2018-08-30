@@ -60,7 +60,7 @@ button {
     }
 
     &.brand-btn {
-      background-color: $brandOrange;
+      background-color: $brandPrimary;
       border:1px solid $white;;
       color: $white;
       font-family: $Montserrat-font;
@@ -70,14 +70,14 @@ button {
       transition: all 0.5s ease-in-out;
 
       &.brand-red {
-        background-color: $brandYellow;
-        border-color: $brandYellow;
+        background-color: $brandSecondary;
+        border-color: $brandSecondary;
       }
 
       &.brand-reverse {
         background-color: transparent;
-        border-color: $brandOrange;
-        color: $brandOrange;
+        border-color: $brandPrimary;
+        color: $brandPrimary;
       }
     }
 
@@ -93,18 +93,18 @@ button {
 
       &.brand-btn {
         background-color: $white;
-        border:1px solid $brandOrange;
-        color: $brandOrange;
+        border:1px solid $brandPrimary;
+        color: $brandPrimary;
 
         &.brand-red {
-          border-color: $brandYellow;
-          background-color: $brandYellow;
+          border-color: $brandSecondary;
+          background-color: $brandSecondary;
           color: $white;
         }
 
         &.brand-reverse {
           border-color: $white;
-          background-color: $brandOrange;
+          background-color: $brandPrimary;
           color: $white;
         }
       }

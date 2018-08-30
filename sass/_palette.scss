@@ -7,14 +7,20 @@
 $white: #fff;                   .white {color: $white}
 $black: #000;                   .black {color: $black}
 
-$offWhite: #f5f5f5;
-
 //Brand colours
-$brandOrange: #eb602a;
-$brandDkYellow: #f8ad00;
-$brandYellow: #fad000;
-$brandDkBlueGrey: #253746;
-$brandGrey: #c0c0c0;
+$brandPrimary: #00a3a6;
+$brandSecondary: #026d6f;
+$brandTertiary: #312783;
+$brandQuaternary: #ca5098;
+$brandGrey: #e5e5e5;
+$brandMidGrey: #707070;
+
+$brandPersianGreen:  $brandPrimary;
+$brandMosqueGreen: $brandSecondary;
+$brandDarkPurple: $brandTertiary;
+$brandDarkPink: $brandQuaternary;
+
+// primary, secondary, tertiary, quaternary, quinary, senary, septenary, octonary, nonary, and denary
 
 // Overlays
 $imageOverlay: #79bdcb;
@@ -27,7 +33,6 @@ $transBrandVDkBlue: rgba(7,96,114,0.75);
 // text colours
 $txtColour: #0a4551;
 $text-color: $txtColour;
-//$headingColour: $brandBlue;
 
 //other colours
 $notification-bg: #ff0000;

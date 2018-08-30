@@ -5,8 +5,23 @@
 *****************************************/
 
 body {
-  opacity: .5;
-  box-sizing: border-box;
-  transform: scale(.5);
-  display: flex;
+
+  .bg-wrapper {
+    position: fixed;
+    z-index: -10;
+    top: 0;
+
+    img {
+      width:100%;
+      min-height: 1080px;
+    }
+
+    .cover {
+      object-fit: cover;
+    }
+  }
+
+  .page-wrapper {
+    height:2000px;//TODO: remove test only
+  }
 }
