@@ -9403,18 +9403,20 @@ section div.wysiwyg {
 * Global stylesheet
 *
 *****************************************/
-body .bg-wrapper {
-  position: fixed;
-  z-index: -10;
-  top: 0; }
-  body .bg-wrapper img {
-    width: 100%;
-    min-height: 1080px; }
-  body .bg-wrapper .cover {
-    object-fit: cover; }
-
-body .page-wrapper {
-  height: 2000px; }
+body {
+  padding: 0;
+  margin: 0; }
+  body .bg-wrapper {
+    position: fixed;
+    z-index: -10;
+    top: 0; }
+    body .bg-wrapper img {
+      width: 100%;
+      min-height: 1080px; }
+    body .bg-wrapper .cover {
+      object-fit: cover; }
+  body .page-wrapper {
+    height: 2000px; }
 
 /* Media queries */
 /* Init media queries */
