@@ -4,20 +4,55 @@
 *
 *****************************************/
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
-@import url('https://fonts.googleapis.com/css?family=Montserrat:200,300,400,600,700');
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,600,700');
 
-$Montserrat-font: 'Montserrat', sans-serif;
-$Roboto-font: 'Roboto', sans-serif;
-.montserrat-font {font-family: $Montserrat-font};
-.roboto-font {font-family: $Roboto-font};
+@font-face {
+  font-family: 'Archia';
+  src: url('#{$pathToFonts}/archia-thin-webfont.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+}
 
+@font-face {
+  font-family: 'Archia';
+  src: url('#{$pathToFonts}/archia-light-webfont.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+}
 
+@font-face {
+  font-family: 'Archia';
+  src: url('#{$pathToFonts}/archia-regular-webfont.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
 
-$sourceSansPro: 'sans-serif';
+@font-face {
+  font-family: 'Archia';
+  src: url('#{$pathToFonts}/archia-medium-webfont.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Archia';
+  src: url('#{$pathToFonts}/archia-semibold-webfont.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Archia';
+  src: url('#{$pathToFonts}/archia-bold-webfont.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+
+$Archia-font: 'Archia', sans-serif;
+.archia-font {font-family: $Archia-font};
+
 
 //font weights
-$extraLight:200;
+$thin:      200;
 $light:     300;
 $regular:   400;
 $medium:    500;
@@ -25,7 +60,7 @@ $semiBold:  600;
 $bold:      700;
 
 
-.extra-light      {font-weight: $extraLight;}
+.thin             {font-weight: $thin}
 
 .light            {font-weight: $light}
 //.light-italic     {font-weight: $light;font-style: italic;}
@@ -39,13 +74,13 @@ $bold:      700;
 .centre {text-align: center}
 
 h1{
-  font-family: $Roboto-font;
-  font-weight: $regular;
-  @include font-size(55);
+  font-family: $Archia-font;
+  font-weight: $thin;
+  @include font-size(80);
 }
 
 h2 {
-  font-family: $Roboto-font;
+  font-family: $Archia-font;
   font-weight: $regular;
   @include font-size(40);
 }

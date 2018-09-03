@@ -19,7 +19,7 @@ body {
 }
 
 body {
-  font-family: $Montserrat-font;
+  font-family: $Archia-font;
   font-weight: $regular;
   @extend .regular;
   color: $txtColour;
@@ -44,26 +44,33 @@ button {
     height: 44px;
     line-height: 44px;
     padding: 0 20px;
-    border-radius: 8px!important;
 
 
     &.link-btn {
-      width:373px;
-      height: 44px;
+      height: 56px;
       border: 2px solid $white;
       margin:20px 0;
-      font-family: $Montserrat-font;
-      font-weight: $bold;
-      @include font-size(20);
-      line-height: 44px;
+      font-family: $Archia-font;
+      font-weight: $semiBold;
+      @include font-size(16);
+      line-height: 56px;
       text-align: center;
+      color: $white;
+
+      &.primary {
+
+        color: $brandPrimary;
+        border-color: $brandPrimary;
+      }
     }
+
+
 
     &.brand-btn {
       background-color: $brandPrimary;
       border:1px solid $white;;
       color: $white;
-      font-family: $Montserrat-font;
+      font-family: $Archia-font;
       font-weight: $regular;
       letter-spacing: 0.0055rem;
       @include font-size(18);

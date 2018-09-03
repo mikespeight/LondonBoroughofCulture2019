@@ -4,26 +4,210 @@
 *
 *****************************************/
 
+html {
+
+}
+
+.flex-item {
+
+  &:not(:last-child) {
+    margin-right: 12px;
+  }
+}
+
 body {
+  background: url("#{$pathToImages}/fixed-bg-img-1-x1.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   padding: 0;
   margin: 0;
 
-  .bg-wrapper {
-    position: fixed;
-    z-index: -10;
-    top: 0;
+  & > section {
+    margin-bottom: 12px;
+  }
 
-    img {
+  .fixed-width-content {
+    margin:0 auto;
+    width: 1200px;
+  }
+
+  header {
+
+    &.page-header {
+      position: fixed;
+      z-index: 1000;
+      top: 0;
+      height:127px;
       width:100%;
-      min-height: 1080px;
-    }
+      background-color: rgba(49, 39, 131, 0.75);
+      /*background: url("#{$pathToImages}/header-bg-img-1-x1.jpg") no-repeat center center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;*/
 
-    .cover {
-      object-fit: cover;
+
+      .header-content {
+        @include flex-container();
+
+        .logo {
+          display: inline-block;
+          width: 248px;
+          height: 47px;
+          margin: 40px 60px;
+          background: transparent url("#{$pathToImages}/boc-logo-x2.png") 0 0 no-repeat;
+          background-size: 248px 47px;
+        }
+
+        .social {
+          margin: 40px 60px;
+
+          a {
+            display: inline-block;
+            color: $white;
+            @include font-size(29);
+
+
+            &:not(:last-child) {
+              margin-right: 19px;
+            }
+          }
+        }
+      }
     }
   }
 
   .page-wrapper {
-    height:2000px;//TODO: remove test only
+    margin-top: 127px;
+    height:100%;
+
+    .content {
+      padding: 0 18px;
+    }
+
+    .hero {
+      height: 635px;
+      margin-bottom: 12px;
+
+      .hero-content {
+        color: $white;
+        overflow: hidden;
+
+        .inner {
+          margin:126px 60px 0 60px;
+
+          h1 {
+            width:50%;
+          }
+
+          p {
+            @include font-size(24);
+            font-weight: $regular;
+            line-height: 20px;margin-left: 5px;
+          }
+
+          .find-out-more {
+            margin-left: 5px;
+          }
+        }
+      }
+    }
+
+    .makers-radicals {
+      height: 423px;
+
+      div {
+        height: inherit;
+      }
+
+      .makers-radicals-content {
+        @include flex-container();
+
+        .m-r-block {
+          @include flex-container();
+          width:772px;
+          color: $brandPrimary;
+
+          .text-block {
+            width: 392px;
+            background-color: $white;
+
+            .inner {
+              position: relative;
+              padding: 40px;
+              margin: 0;
+
+
+              h2 {
+                @include font-size(43);
+                font-weight: $medium;
+              }
+
+              a {
+
+                &.people {
+                  display: block;
+                  width: 216px;
+                  padding: 0 78px;
+                  margin-top: 180px;
+                  text-transform: uppercase;
+                }
+              }
+            }
+          }
+
+          .image-block {
+            position: relative;
+            width:380px;
+
+            img {
+              position: absolute;
+              top:0;
+              left:0;
+              height: 100%;
+              width: 100%;
+            }
+          }
+        }
+
+        .counter-block {
+          width:380px;
+          background: transparent url("#{$pathToImages}/counter-bg.png") 0 0 no-repeat;
+          text-align: center;
+
+          .count {
+            margin: 117px 0 0;
+            @include font-size(197);
+            line-height: 160px;
+            font-weight: $bold;
+          }
+
+          .to-go {
+            margin-top: -18px;
+            @include font-size(26);
+            font-weight: $medium;
+            text-transform: uppercase;
+          }
+
+          .hashtag {
+            margin-top: 32px;
+            @include font-size(26);
+            font-weight: $semiBold;
+          }
+        }
+      }
+    }
+
+
+    .content {
+
+      p {
+
+        @include font-size(18);
+        color: $white;
+      }
+    }
   }
 }

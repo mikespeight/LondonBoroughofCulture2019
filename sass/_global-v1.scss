@@ -1,0 +1,59 @@
+/****************************************
+*
+* Global stylesheet
+*
+*****************************************/
+
+body {
+  padding: 0;
+  margin: 0;
+
+  .fixed-width-content {
+    margin:0 auto;
+    width: 1200px;
+  }
+
+  .cover {
+    object-fit: cover;
+  }
+
+  .bg-wrapper {
+    position: fixed;
+    z-index: -10;
+    top: 0;
+
+    img {
+      width:100%;
+      min-height: 1080px;
+    }
+  }
+
+  .header-wrapper {
+    position: fixed;
+    z-index: 10000;
+    top: 0;
+    height: 186px;
+
+    img {
+      position: relative;
+      z-index: -1;
+      width:100%;
+      height: 127px;
+    }
+  }
+
+  .page-wrapper {
+    margin-top: 200px;
+    height:2000px;//TODO: remove test only
+
+    .content {
+
+      p {
+        padding:15px;
+
+        @include font-size(18);
+        color: $white;
+      }
+    }
+  }
+}
