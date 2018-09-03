@@ -56,35 +56,20 @@ button {
       line-height: 56px;
       text-align: center;
       color: $white;
+      transition: all 0.5s ease-in-out;
+
 
       &.primary {
 
         color: $brandPrimary;
         border-color: $brandPrimary;
       }
-    }
 
-
-
-    &.brand-btn {
-      background-color: $brandPrimary;
-      border:1px solid $white;;
-      color: $white;
-      font-family: $Archia-font;
-      font-weight: $regular;
-      letter-spacing: 0.0055rem;
-      @include font-size(18);
-      transition: all 0.5s ease-in-out;
-
-      &.brand-red {
-        background-color: $brandSecondary;
-        border-color: $brandSecondary;
-      }
-
-      &.brand-reverse {
-        background-color: transparent;
+      &.secondary,
+      &.cta-btn {
         border-color: $brandPrimary;
-        color: $brandPrimary;
+        background-color: $brandPrimary;
+        color: $white;
       }
     }
 
@@ -98,21 +83,25 @@ button {
 
     &.btn {
 
-      &.brand-btn {
-        background-color: $white;
-        border:1px solid $brandPrimary;
-        color: $brandPrimary;
+      &.link-btn {
 
-        &.brand-red {
-          border-color: $brandSecondary;
-          background-color: $brandSecondary;
-          color: $white;
+        &.external {
+
         }
 
-        &.brand-reverse {
-          border-color: $white;
-          background-color: $brandPrimary;
+        &.download {
+
+        }
+
+        &.primary {
           color: $white;
+          background-color: $brandPrimary;
+        }
+
+        &.secondary,
+        &.cta-btn {
+          border-color: $brandSecondary;
+          background-color: $brandSecondary;
         }
       }
     }

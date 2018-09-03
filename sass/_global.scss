@@ -83,8 +83,28 @@ body {
     margin-top: 127px;
     height:100%;
 
+    section {
+
+      &:not(:last-child) {
+        margin-bottom: 12px;
+      }
+    }
+
     .content {
       padding: 0 18px;
+    }
+
+    .image-block {
+      position: relative;
+      width:380px;
+
+      img {
+        position: absolute;
+        top:0;
+        left:0;
+        height: 100%;
+        width: 100%;
+      }
     }
 
     .hero {
@@ -112,6 +132,104 @@ body {
             margin-left: 5px;
           }
         }
+      }
+    }
+
+    .content-row {
+
+      .content-row-content {
+        @include flex-container();
+
+        .stay-connected-block {
+          height:200px;
+          width:100%;
+          background-color: $white;
+
+        }
+
+        .inastagram-block {
+          height: 423px;
+
+          .inatagram-block-bg {
+            @include border-radius(31px);
+          }
+        }
+
+        .volunteers-block,
+        .partners-block,
+        .sponsors-block {
+          @include flex-container();
+          height: 423px;
+          width: 772px;
+
+          div {
+            height: inherit;
+          }
+
+          .text-block {
+            width: 392px;
+            background-color: $white;
+
+            .inner {
+              position: relative;
+              padding: 40px;
+              margin: 0;
+
+
+              h2 {
+                @include font-size(43);
+                font-weight: $medium;
+              }
+
+              a {
+
+                &.people,
+                &.sponsors,
+                &.partners {
+                  display: block;
+                  width: 216px;
+                  padding: 0 78px;
+                  margin-top: 180px;
+                  text-transform: uppercase;
+                }
+              }
+            }
+          }
+
+          .image-block {
+
+          }
+        }
+
+        .circular-block {
+          display: block;
+          width: 380px;
+          height: 423px;
+          padding: 32px 19px;
+          color: $white;
+
+          &.artists {
+
+            .inner {
+              background-color: $brandTertiary;
+            }
+          }
+
+          &.news {
+
+            .inner {
+              background-color: $brandQuaternary;
+            }
+          }
+
+          .inner {
+            @include border-radius(180px);
+            width: 360px;
+            height:360px;
+            background-color: white;
+          }
+        }
+
       }
     }
 
@@ -157,19 +275,6 @@ body {
               }
             }
           }
-
-          .image-block {
-            position: relative;
-            width:380px;
-
-            img {
-              position: absolute;
-              top:0;
-              left:0;
-              height: 100%;
-              width: 100%;
-            }
-          }
         }
 
         .counter-block {
@@ -208,6 +313,20 @@ body {
         @include font-size(18);
         color: $white;
       }
+    }
+  }
+
+  footer {
+    margin-top: 120px;
+
+    .footer-top {
+      height:120px;
+      background-color: $brandPrimary;
+    }
+
+    .footer-bottom {
+      height:320px;
+      background-color: $black;
     }
   }
 }
