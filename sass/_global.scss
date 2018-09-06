@@ -287,7 +287,7 @@ body {
 
               h2 {
                 margin-top: -10px;
-                @include font-size(36);
+                @include font-size(43);
                 font-weight: $medium;
                 width: 80%;
               }
@@ -296,7 +296,7 @@ body {
 
                 &.sponsors {
                   position: absolute;
-                  top:316px;
+                  top:327px;
                   left:40px;
                   margin: 0;
                   width: auto;
@@ -323,6 +323,7 @@ body {
 
                 &.partners {
                   position: absolute;
+                  top: 327px;
                   margin: 0;
                   width: auto;
                 }
@@ -355,7 +356,7 @@ body {
 
               h2 {
                 position: absolute;
-                top:124px;
+                top:100px;
                 left: 86px;
               }
             }
