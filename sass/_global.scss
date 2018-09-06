@@ -16,7 +16,7 @@ html {
 }
 
 body {
-  background: url("#{$pathToImages}/fixed-bg-img-1-x1.jpg") no-repeat center center fixed;
+  background: url("#{$pathToImages}/fixed-bg-img-3-x2.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -42,7 +42,7 @@ body {
       height:127px;
       width:100%;
       background-color: rgba(49, 39, 131, 0.75);
-      /*background: url("#{$pathToImages}/header-bg-img-1-x1.jpg") no-repeat center center;
+      /*background: url("#{$pathToImages}/fixed-bg-img-3-x2.jpg") no-repeat center top;
       -webkit-background-size: cover;
       -moz-background-size: cover;
       -o-background-size: cover;
@@ -94,6 +94,14 @@ body {
       padding: 0 18px;
     }
 
+    .text-block {
+
+      .inner {
+
+        position: relative;
+      }
+    }
+
     .image-block {
       position: relative;
       width:380px;
@@ -102,8 +110,15 @@ body {
         position: absolute;
         top:0;
         left:0;
+        z-index: -1;
         height: 100%;
         width: 100%;
+      }
+
+      .inner {
+        padding: 40px;
+        margin: 0;
+        position: inherit;
       }
     }
 
@@ -144,7 +159,32 @@ body {
           height:200px;
           width:100%;
           background-color: $white;
+          color: $brandTertiary;
 
+          .inner {
+            padding: 40px;
+            position: relative;
+
+            h2 {
+              @include font-size(51);
+              font-weight: $semiBold;
+            }
+
+            p {
+              color: $brandTertiary;
+              @include font-size(16);
+              font-weight: $medium;
+            }
+
+            a {
+
+              &.stay-connected {
+                position: absolute;
+                top: 54px;
+                left: 680px;
+              }
+            }
+          }
         }
 
         .inastagram-block {
@@ -152,6 +192,24 @@ body {
 
           .inatagram-block-bg {
             @include border-radius(31px);
+            z-index: -1;
+          }
+
+          a {
+
+            &.instagram {
+              position: absolute;
+              top:26px;
+              left:40px;
+              color: $white;
+              @include font-size(41);
+            }
+
+            &.link-btn {
+              position: absolute;
+              top:316px;
+              left:40px;
+            }
           }
         }
 
@@ -195,9 +253,81 @@ body {
               }
             }
           }
+        }
 
-          .image-block {
+        .volunteers-block {
 
+          .inner {
+            color: $white;
+
+            h2 {
+              margin-top: -10px;
+              @include font-size(43);
+              width: 80%;
+            }
+
+            a {
+
+              &.volunteers {
+                position: absolute;
+                top:316px;
+                left:40px;
+              }
+            }
+          }
+        }
+
+        .sponsors-block {
+
+          .text-block {
+
+            .inner {
+              color: $brandPrimary;
+              padding:40px 0 0 40px;
+
+              h2 {
+                margin-top: -10px;
+                @include font-size(36);
+                font-weight: $medium;
+                width: 80%;
+              }
+
+              a {
+
+                &.sponsors {
+                  position: absolute;
+                  top:316px;
+                  left:40px;
+                  margin: 0;
+                  width: auto;
+                }
+              }
+            }
+          }
+        }
+
+        .partners-block {
+
+          .text-block {
+
+            .inner {
+              color: $brandQuaternary;
+              padding:40px 0 0 40px;
+
+              h2 {
+                @include font-size(43);
+                font-weight: $medium;
+              }
+
+              a {
+
+                &.partners {
+                  position: absolute;
+                  margin: 0;
+                  width: auto;
+                }
+              }
+            }
           }
         }
 
@@ -208,10 +338,26 @@ body {
           padding: 32px 19px;
           color: $white;
 
+          .inner {
+            position: relative;
+
+            h2 {
+              @include font-size(48);
+              font-weight: $semiBold;
+            }
+          }
+
           &.artists {
 
             .inner {
               background-color: $brandTertiary;
+              color: $white;
+
+              h2 {
+                position: absolute;
+                top:124px;
+                left: 86px;
+              }
             }
           }
 
@@ -219,6 +365,12 @@ body {
 
             .inner {
               background-color: $brandQuaternary;
+
+              h2 {
+                position: absolute;
+                top: 100px;
+                left: 86px;
+              }
             }
           }
 
@@ -269,7 +421,7 @@ body {
                   display: block;
                   width: 216px;
                   padding: 0 78px;
-                  margin-top: 180px;
+                  margin-top: 10px;
                   text-transform: uppercase;
                 }
               }
@@ -281,6 +433,7 @@ body {
           width:380px;
           background: transparent url("#{$pathToImages}/counter-bg.png") 0 0 no-repeat;
           text-align: center;
+          color: $white;
 
           .count {
             margin: 117px 0 0;
@@ -304,16 +457,6 @@ body {
         }
       }
     }
-
-
-    .content {
-
-      p {
-
-        @include font-size(18);
-        color: $white;
-      }
-    }
   }
 
   footer {
@@ -322,11 +465,163 @@ body {
     .footer-top {
       height:120px;
       background-color: $brandPrimary;
+
+      .flex-wrapper {
+        @include flex-container();
+        padding: 25px 294px 25px 392px;
+        justify-content: space-around;
+
+        a {
+          display: inline-block;
+
+          &.mol {
+            width:388px;
+            height:65px;
+            background: transparent url("#{$pathToImages}/mayor-of-london-x2.png") 0 0 no-repeat;
+            background-size: 388px 65px;;
+          }
+
+          &.airbnb {
+            position: relative;
+            top:6px;
+            width:48px;
+            height:55px;
+            background: transparent url("#{$pathToImages}/airbnb-logo-x2-.png") 0 0 no-repeat;
+            background-size: 48px 55px;;
+          }
+        }
+      }
     }
 
     .footer-bottom {
       height:320px;
       background-color: $black;
+      overflow: hidden;
+
+      .grid-wrapper {
+        margin-top: 55px;
+        padding: 0 40px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4, 57px);
+        grid-template-areas: "boc-logo . . wf-logo"
+        ". . . wf-site "
+        ". . . find-out-more"
+        "social . . copy";
+        color: $white;
+
+        a {
+          @include font-size(16);
+          font-weight: $regular;
+          color: $white;
+        }
+
+        p {
+          @include font-size(16);
+          font-weight: $regular;
+          margin-bottom: 0;
+        }
+
+        .boc-logo {
+          grid-area: boc-logo;
+
+          .logo {
+            display: inline-block;
+            width: 248px;
+            height: 47px;
+            background: transparent url("#{$pathToImages}/boc-logo-x2.png") 0 0 no-repeat;
+            background-size: 248px 47px;
+          }
+        }
+
+        .wf-logo {
+          grid-area: wf-logo;
+
+          .wf-logo {
+            display: inline-block;
+            width: 92px;
+            height: 51px;
+            background: transparent url("#{$pathToImages}/Waltham-Forest-logo-x2.png") 0 0 no-repeat;
+            background-size: 92px 51px;
+          }
+        }
+
+        .wf-site {
+          grid-area: wf-site;
+        }
+
+        .find-out-more {
+          grid-area: find-out-more;
+        }
+
+        .social {
+          grid-area: social;
+
+          a {
+            display: inline-block;
+            color: $white;
+            @include font-size(29);
+
+
+            &:not(:last-child) {
+              margin-right: 19px;
+            }
+          }
+        }
+
+        .copy {
+          grid-area: copy;
+          @include font-size(16);
+          font-weight: $regular;
+
+          ul {
+            @include flex-container();
+            justify-content: flex-start;
+            list-style: none;
+            padding: 0;
+
+            li {
+              height: 16px;
+              position: relative;
+
+              &:not(:last-child) {
+                //border-right: 1px solid $white;
+
+                &:after {
+                  content: '';
+                  position: absolute;
+                  right:0;
+                  top:10px;
+                  display: block;
+                  background-color: $white;
+                  width: 1px;
+                  height: 16px;
+                }
+              }
+
+              a {
+                padding: 10px;
+                line-height: 16px;
+                color: $white;
+              }
+
+              &:nth-child(1) {
+
+                a {
+                  padding-left: 0;
+                }
+              }
+
+              &:last-child {
+
+                a {
+                  padding-right: 0;
+                }
+              }
+            }
+          }
+        }
+      }
     }
   }
 }

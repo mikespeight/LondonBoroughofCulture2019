@@ -55,14 +55,59 @@ button {
       @include font-size(16);
       line-height: 56px;
       text-align: center;
+      text-transform: uppercase;
       color: $white;
       transition: all 0.5s ease-in-out;
+      padding:0 44px;
 
 
       &.primary {
-
         color: $brandPrimary;
         border-color: $brandPrimary;
+      }
+
+      &.external {
+        position: relative;
+        padding-right: 80px;
+
+        &:after {
+          content: '';
+          position: absolute;
+          top: 17px;
+          right:37px;
+          display: inline-block;
+          width:25px;
+          height: 22px;
+          background-color: transparent;
+          background-image: url("#{$pathToImages}/link-icons-sprite.png");
+          background-position: -3px -3px;
+          background-size: 155px 62px;
+          background-repeat: no-repeat;
+        }
+      }
+
+      &.download {
+        position: relative;
+        padding-right: 90px;
+
+        &:after {
+          content: '';
+          position: absolute;
+          display: inline-block;
+          width:18px;
+          height: 30px;
+          background-color: transparent;
+          background-image: url("#{$pathToImages}/link-icons-sprite.png");
+          background-position: 4.5px 39.5px;
+          background-size: 155px 62px;
+          background-repeat: no-repeat;
+        }
+      }
+
+      &.quaternary {
+        border-color: $brandQuaternary;
+        background-color: $white;
+        color: $brandQuaternary;
       }
 
       &.secondary,
@@ -84,13 +129,14 @@ button {
     &.btn {
 
       &.link-btn {
+        color: $brandPrimary;
+        background-color: $white;
 
         &.external {
 
-        }
-
-        &.download {
-
+          &:after {
+            background-position: -65px -3px;
+          }
         }
 
         &.primary {
@@ -98,10 +144,28 @@ button {
           background-color: $brandPrimary;
         }
 
-        &.secondary,
         &.cta-btn {
           border-color: $brandSecondary;
           background-color: $brandSecondary;
+          //color: $white;
+        }
+
+        &.secondary {
+          border-color: $brandSecondary;
+          background-color: $brandSecondary;
+          color: $white;
+
+          &.external {
+
+            &:after {
+              background-position: -3px -3px;
+            }
+          }
+        }
+
+        &.quaternary {
+          background-color: $brandQuaternary;
+          color: $white;
         }
       }
     }
