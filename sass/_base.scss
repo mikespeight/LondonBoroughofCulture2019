@@ -57,14 +57,9 @@ button {
       text-align: center;
       text-transform: uppercase;
       color: $white;
-      transition: all 0.5s ease-in-out;
+      transition: all 0.25s ease-in-out;
       padding:0 44px;
 
-
-      &.primary {
-        color: $brandPrimary;
-        border-color: $brandPrimary;
-      }
 
       &.external {
         position: relative;
@@ -83,6 +78,13 @@ button {
           background-position: -3px -3px;
           background-size: 155px 62px;
           background-repeat: no-repeat;
+        }
+
+        &.primary {
+
+          &:after {
+            background-position: -65px -3px;
+          }
         }
       }
 
@@ -104,10 +106,19 @@ button {
         }
       }
 
+      &.primary {
+        color: $brandPrimary;
+        border-color: $brandPrimary;
+      }
+
       &.quaternary {
         border-color: $brandQuaternary;
         background-color: $white;
         color: $brandQuaternary;
+
+        &:after {
+          background-position: -96px -3px;
+        }
       }
 
       &.secondary,
@@ -142,6 +153,13 @@ button {
         &.primary {
           color: $white;
           background-color: $brandPrimary;
+
+          &.external {
+
+            &:after {
+              background-position: -3px -3px;
+            }
+          }
         }
 
         &.cta-btn {
@@ -166,6 +184,13 @@ button {
         &.quaternary {
           background-color: $brandQuaternary;
           color: $white;
+
+          &.external {
+
+            &:after {
+              background-position: -3px -3px;
+            }
+          }
         }
       }
     }

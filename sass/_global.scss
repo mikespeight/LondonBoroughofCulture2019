@@ -220,7 +220,7 @@ body {
           }
         }
 
-        .stay-connected-block {
+        .full-width-cta-block {
           height:200px;
           width:100%;
           background-color: $white;
@@ -252,7 +252,7 @@ body {
           }
         }
 
-        .inastagram-block {
+        .feature-image-block {
           height: 423px;
 
           .inatagram-block-bg {
@@ -278,7 +278,7 @@ body {
           }
         }
 
-        .volunteers-block {
+        .custom-feature-image-block {
           @include flex-container();
           height: 423px;
           width: 772px;
@@ -318,7 +318,7 @@ body {
           }
         }
 
-        .volunteers-block {
+        .custom-feature-image-block {
 
           .inner {
             color: $white;

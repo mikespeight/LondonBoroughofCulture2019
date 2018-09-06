@@ -8954,12 +8954,8 @@ button {
       text-align: center;
       text-transform: uppercase;
       color: #fff;
-      transition: all 0.5s ease-in-out;
+      transition: all 0.25s ease-in-out;
       padding: 0 44px; }
-      a.btn.link-btn.primary,
-      button.btn.link-btn.primary {
-        color: #00a3a6;
-        border-color: #00a3a6; }
       a.btn.link-btn.external,
       button.btn.link-btn.external {
         position: relative;
@@ -8978,6 +8974,9 @@ button {
           background-position: -3px -3px;
           background-size: 155px 62px;
           background-repeat: no-repeat; }
+        a.btn.link-btn.external.primary:after,
+        button.btn.link-btn.external.primary:after {
+          background-position: -65px -3px; }
       a.btn.link-btn.download,
       button.btn.link-btn.download {
         position: relative;
@@ -8994,11 +8993,18 @@ button {
           background-position: 4.5px 39.5px;
           background-size: 155px 62px;
           background-repeat: no-repeat; }
+      a.btn.link-btn.primary,
+      button.btn.link-btn.primary {
+        color: #00a3a6;
+        border-color: #00a3a6; }
       a.btn.link-btn.quaternary,
       button.btn.link-btn.quaternary {
         border-color: #ca5098;
         background-color: #fff;
         color: #ca5098; }
+        a.btn.link-btn.quaternary:after,
+        button.btn.link-btn.quaternary:after {
+          background-position: -96px -3px; }
       a.btn.link-btn.secondary, a.btn.link-btn.cta-btn,
       button.btn.link-btn.secondary,
       button.btn.link-btn.cta-btn {
@@ -9019,6 +9025,9 @@ button {
     button:hover.btn.link-btn.primary {
       color: #fff;
       background-color: #00a3a6; }
+      a:hover.btn.link-btn.primary.external:after,
+      button:hover.btn.link-btn.primary.external:after {
+        background-position: -3px -3px; }
     a:hover.btn.link-btn.cta-btn,
     button:hover.btn.link-btn.cta-btn {
       border-color: #026d6f;
@@ -9035,6 +9044,9 @@ button {
     button:hover.btn.link-btn.quaternary {
       background-color: #ca5098;
       color: #fff; }
+      a:hover.btn.link-btn.quaternary.external:after,
+      button:hover.btn.link-btn.quaternary.external:after {
+        background-position: -3px -3px; }
 
 /*
  * jQuery FlexSlider v2.2.0
@@ -9638,78 +9650,78 @@ body {
         flex-direction: row;
         justify-content: space-between;
         width: 772px; }
-      body .page-wrapper .content-row .content-row-content .stay-connected-block {
+      body .page-wrapper .content-row .content-row-content .full-width-cta-block {
         height: 200px;
         width: 100%;
         background-color: #fff;
         color: #312783; }
-        body .page-wrapper .content-row .content-row-content .stay-connected-block .inner {
+        body .page-wrapper .content-row .content-row-content .full-width-cta-block .inner {
           padding: 40px;
           position: relative; }
-          body .page-wrapper .content-row .content-row-content .stay-connected-block .inner h2 {
+          body .page-wrapper .content-row .content-row-content .full-width-cta-block .inner h2 {
             font-size: 51px;
             font-size: 5.1rem;
             font-weight: 600; }
-          body .page-wrapper .content-row .content-row-content .stay-connected-block .inner p {
+          body .page-wrapper .content-row .content-row-content .full-width-cta-block .inner p {
             color: #312783;
             font-size: 16px;
             font-size: 1.6rem;
             font-weight: 500; }
-          body .page-wrapper .content-row .content-row-content .stay-connected-block .inner a.stay-connected {
+          body .page-wrapper .content-row .content-row-content .full-width-cta-block .inner a.stay-connected {
             position: absolute;
             top: 54px;
             left: 680px; }
-      body .page-wrapper .content-row .content-row-content .inastagram-block {
+      body .page-wrapper .content-row .content-row-content .feature-image-block {
         height: 423px; }
-        body .page-wrapper .content-row .content-row-content .inastagram-block .inatagram-block-bg {
+        body .page-wrapper .content-row .content-row-content .feature-image-block .inatagram-block-bg {
           border-radius: 31px;
           -webkit-border-radius: 31px;
           -moz-border-radius: 31px;
           z-index: -1; }
-        body .page-wrapper .content-row .content-row-content .inastagram-block a.instagram {
+        body .page-wrapper .content-row .content-row-content .feature-image-block a.instagram {
           position: absolute;
           top: 26px;
           left: 40px;
           color: #fff;
           font-size: 41px;
           font-size: 4.1rem; }
-        body .page-wrapper .content-row .content-row-content .inastagram-block a.link-btn {
+        body .page-wrapper .content-row .content-row-content .feature-image-block a.link-btn {
           position: absolute;
           top: 316px;
           left: 40px; }
-      body .page-wrapper .content-row .content-row-content .volunteers-block {
+      body .page-wrapper .content-row .content-row-content .custom-feature-image-block {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         height: 423px;
         width: 772px; }
-        body .page-wrapper .content-row .content-row-content .volunteers-block div {
+        body .page-wrapper .content-row .content-row-content .custom-feature-image-block div {
           height: inherit; }
-        body .page-wrapper .content-row .content-row-content .volunteers-block .text-block {
+        body .page-wrapper .content-row .content-row-content .custom-feature-image-block .text-block {
           width: 392px;
           background-color: #fff; }
-          body .page-wrapper .content-row .content-row-content .volunteers-block .text-block .inner {
+          body .page-wrapper .content-row .content-row-content .custom-feature-image-block .text-block .inner {
             position: relative;
             padding: 40px;
             margin: 0; }
-            body .page-wrapper .content-row .content-row-content .volunteers-block .text-block .inner h2 {
+            body .page-wrapper .content-row .content-row-content .custom-feature-image-block .text-block .inner h2 {
               font-size: 43px;
               font-size: 4.3rem;
               font-weight: 500; }
-            body .page-wrapper .content-row .content-row-content .volunteers-block .text-block .inner a.people, body .page-wrapper .content-row .content-row-content .volunteers-block .text-block .inner a.sponsors, body .page-wrapper .content-row .content-row-content .volunteers-block .text-block .inner a.partners {
+            body .page-wrapper .content-row .content-row-content .custom-feature-image-block .text-block .inner a.people, body .page-wrapper .content-row .content-row-content .custom-feature-image-block .text-block .inner a.sponsors, body .page-wrapper .content-row .content-row-content .custom-feature-image-block .text-block .inner a.partners {
               display: block;
               width: 216px;
               padding: 0 78px;
               margin-top: 180px;
               text-transform: uppercase; }
-      body .page-wrapper .content-row .content-row-content .volunteers-block .inner {
+      body .page-wrapper .content-row .content-row-content .custom-feature-image-block .inner {
         color: #fff; }
-        body .page-wrapper .content-row .content-row-content .volunteers-block .inner h2 {
+        body .page-wrapper .content-row .content-row-content .custom-feature-image-block .inner h2 {
           margin-top: -10px;
           font-size: 43px;
           font-size: 4.3rem;
           width: 80%; }
-        body .page-wrapper .content-row .content-row-content .volunteers-block .inner a.volunteers {
+        body .page-wrapper .content-row .content-row-content .custom-feature-image-block .inner a.volunteers {
           position: absolute;
           top: 316px;
           left: 40px; }
