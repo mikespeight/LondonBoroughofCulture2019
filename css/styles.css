@@ -8954,7 +8954,7 @@ button {
       text-align: center;
       text-transform: uppercase;
       color: #fff;
-      transition: all 0.25s ease-in-out;
+      transition: all 0.125s ease-in-out;
       padding: 0 44px; }
       a.btn.link-btn.external,
       button.btn.link-btn.external {
