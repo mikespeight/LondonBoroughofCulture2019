@@ -95,10 +95,28 @@ body {
     }
 
     .text-block {
+      width: 392px;
+      background-color: $white;
 
       .inner {
-
         position: relative;
+        padding: 40px;
+
+        h2 {
+          @include font-size(43);
+          font-weight: $medium;
+        }
+
+        p {
+          @include font-size(20);
+          font-weight: $light;
+          line-height: 28px;
+        }
+
+        a {
+          position: absolute;
+          top: 307px;
+        }
       }
     }
 
@@ -152,8 +170,55 @@ body {
 
     .content-row {
 
+      &.full-height {
+        height: 423px;
+      }
+
+      div {
+        height: inherit;
+      }
+
       .content-row-content {
         @include flex-container();
+
+        .counter-block {
+          width:380px;
+          background: transparent url("#{$pathToImages}/counter-bg.png") 0 0 no-repeat;
+          text-align: center;
+          color: $white;
+
+          .count {
+            margin: 117px 0 0;
+            @include font-size(197);
+            line-height: 160px;
+            font-weight: $bold;
+          }
+
+          .to-go {
+            margin-top: -18px;
+            @include font-size(26);
+            font-weight: $medium;
+            text-transform: uppercase;
+          }
+
+          .hashtag {
+            margin-top: 32px;
+            @include font-size(26);
+            font-weight: $semiBold;
+          }
+        }
+
+        .text-image-feature-block {
+          @include flex-container();
+          width: 772px;
+
+          .text-block {
+
+            a {
+
+            }
+          }
+        }
 
         .stay-connected-block {
           height:200px;
@@ -213,9 +278,7 @@ body {
           }
         }
 
-        .volunteers-block,
-        .partners-block,
-        .sponsors-block {
+        .volunteers-block {
           @include flex-container();
           height: 423px;
           width: 772px;
@@ -277,62 +340,8 @@ body {
           }
         }
 
-        .sponsors-block {
 
-          .text-block {
-
-            .inner {
-              color: $brandPrimary;
-              padding:40px 0 0 40px;
-
-              h2 {
-                margin-top: -10px;
-                @include font-size(43);
-                font-weight: $medium;
-                width: 80%;
-              }
-
-              a {
-
-                &.sponsors {
-                  position: absolute;
-                  top:327px;
-                  left:40px;
-                  margin: 0;
-                  width: auto;
-                }
-              }
-            }
-          }
-        }
-
-        .partners-block {
-
-          .text-block {
-
-            .inner {
-              color: $brandQuaternary;
-              padding:40px 0 0 40px;
-
-              h2 {
-                @include font-size(43);
-                font-weight: $medium;
-              }
-
-              a {
-
-                &.partners {
-                  position: absolute;
-                  top: 327px;
-                  margin: 0;
-                  width: auto;
-                }
-              }
-            }
-          }
-        }
-
-        .circular-block {
+        .circular-link-block {
           display: block;
           width: 380px;
           height: 423px;
@@ -340,120 +349,29 @@ body {
           color: $white;
 
           .inner {
+            @include border-radius(180px);
             position: relative;
+            width: 360px;
+            height:360px;
+            overflow: hidden;
+
+            a {
+              @include border-radius(180px);
+              color: inherit!important;
+              position: absolute;
+              display: block;
+              width:100%;
+              height: 100%;
+            }
 
             h2 {
+              position: absolute;
+              top:100px;
+              left: 86px;
+              display: block;
               @include font-size(48);
               font-weight: $semiBold;
             }
-          }
-
-          &.artists {
-
-            .inner {
-              background-color: $brandTertiary;
-              color: $white;
-
-              h2 {
-                position: absolute;
-                top:100px;
-                left: 86px;
-              }
-            }
-          }
-
-          &.news {
-
-            .inner {
-              background-color: $brandQuaternary;
-
-              h2 {
-                position: absolute;
-                top: 100px;
-                left: 86px;
-              }
-            }
-          }
-
-          .inner {
-            @include border-radius(180px);
-            width: 360px;
-            height:360px;
-            background-color: white;
-          }
-        }
-
-      }
-    }
-
-    .makers-radicals {
-      height: 423px;
-
-      div {
-        height: inherit;
-      }
-
-      .makers-radicals-content {
-        @include flex-container();
-
-        .m-r-block {
-          @include flex-container();
-          width:772px;
-          color: $brandPrimary;
-
-          .text-block {
-            width: 392px;
-            background-color: $white;
-
-            .inner {
-              position: relative;
-              padding: 40px;
-              margin: 0;
-
-
-              h2 {
-                @include font-size(43);
-                font-weight: $medium;
-              }
-
-              a {
-
-                &.people {
-                  display: block;
-                  width: 216px;
-                  padding: 0 78px;
-                  margin-top: 10px;
-                  text-transform: uppercase;
-                }
-              }
-            }
-          }
-        }
-
-        .counter-block {
-          width:380px;
-          background: transparent url("#{$pathToImages}/counter-bg.png") 0 0 no-repeat;
-          text-align: center;
-          color: $white;
-
-          .count {
-            margin: 117px 0 0;
-            @include font-size(197);
-            line-height: 160px;
-            font-weight: $bold;
-          }
-
-          .to-go {
-            margin-top: -18px;
-            @include font-size(26);
-            font-weight: $medium;
-            text-transform: uppercase;
-          }
-
-          .hashtag {
-            margin-top: 32px;
-            @include font-size(26);
-            font-weight: $semiBold;
           }
         }
       }

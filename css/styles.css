@@ -6415,6 +6415,27 @@ a.text-dark:hover, a.text-dark:focus {
 .black {
   color: #000; }
 
+.persian-green {
+  color: #00a3a6; }
+
+.mosque-green {
+  color: #026d6f; }
+
+.dark-purple {
+  color: #312783; }
+
+.dark-pink {
+  color: #ca5098; }
+
+.white {
+  color: #fff; }
+
+.dark-purple-bg {
+  background-color: #312783; }
+
+.dark-pink-bg {
+  background-color: #ca5098; }
+
 /* functions */
 /*Mixins*/
 .l-to-r-grad {
@@ -9532,8 +9553,24 @@ body {
       margin-bottom: 12px; }
     body .page-wrapper .content {
       padding: 0 18px; }
-    body .page-wrapper .text-block .inner {
-      position: relative; }
+    body .page-wrapper .text-block {
+      width: 392px;
+      background-color: #fff; }
+      body .page-wrapper .text-block .inner {
+        position: relative;
+        padding: 40px; }
+        body .page-wrapper .text-block .inner h2 {
+          font-size: 43px;
+          font-size: 4.3rem;
+          font-weight: 500; }
+        body .page-wrapper .text-block .inner p {
+          font-size: 20px;
+          font-size: 2rem;
+          font-weight: 300;
+          line-height: 28px; }
+        body .page-wrapper .text-block .inner a {
+          position: absolute;
+          top: 307px; }
     body .page-wrapper .image-block {
       position: relative;
       width: 380px; }
@@ -9566,10 +9603,41 @@ body {
             margin-left: 5px; }
           body .page-wrapper .hero .hero-content .inner .find-out-more {
             margin-left: 5px; }
+    body .page-wrapper .content-row.full-height {
+      height: 423px; }
+    body .page-wrapper .content-row div {
+      height: inherit; }
     body .page-wrapper .content-row .content-row-content {
       display: flex;
       flex-direction: row;
       justify-content: space-between; }
+      body .page-wrapper .content-row .content-row-content .counter-block {
+        width: 380px;
+        background: transparent url("../assets/images/counter-bg.png") 0 0 no-repeat;
+        text-align: center;
+        color: #fff; }
+        body .page-wrapper .content-row .content-row-content .counter-block .count {
+          margin: 117px 0 0;
+          font-size: 197px;
+          font-size: 19.7rem;
+          line-height: 160px;
+          font-weight: 700; }
+        body .page-wrapper .content-row .content-row-content .counter-block .to-go {
+          margin-top: -18px;
+          font-size: 26px;
+          font-size: 2.6rem;
+          font-weight: 500;
+          text-transform: uppercase; }
+        body .page-wrapper .content-row .content-row-content .counter-block .hashtag {
+          margin-top: 32px;
+          font-size: 26px;
+          font-size: 2.6rem;
+          font-weight: 600; }
+      body .page-wrapper .content-row .content-row-content .text-image-feature-block {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 772px; }
       body .page-wrapper .content-row .content-row-content .stay-connected-block {
         height: 200px;
         width: 100%;
@@ -9609,42 +9677,26 @@ body {
           position: absolute;
           top: 316px;
           left: 40px; }
-      body .page-wrapper .content-row .content-row-content .volunteers-block,
-      body .page-wrapper .content-row .content-row-content .partners-block,
-      body .page-wrapper .content-row .content-row-content .sponsors-block {
+      body .page-wrapper .content-row .content-row-content .volunteers-block {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         height: 423px;
         width: 772px; }
-        body .page-wrapper .content-row .content-row-content .volunteers-block div,
-        body .page-wrapper .content-row .content-row-content .partners-block div,
-        body .page-wrapper .content-row .content-row-content .sponsors-block div {
+        body .page-wrapper .content-row .content-row-content .volunteers-block div {
           height: inherit; }
-        body .page-wrapper .content-row .content-row-content .volunteers-block .text-block,
-        body .page-wrapper .content-row .content-row-content .partners-block .text-block,
-        body .page-wrapper .content-row .content-row-content .sponsors-block .text-block {
+        body .page-wrapper .content-row .content-row-content .volunteers-block .text-block {
           width: 392px;
           background-color: #fff; }
-          body .page-wrapper .content-row .content-row-content .volunteers-block .text-block .inner,
-          body .page-wrapper .content-row .content-row-content .partners-block .text-block .inner,
-          body .page-wrapper .content-row .content-row-content .sponsors-block .text-block .inner {
+          body .page-wrapper .content-row .content-row-content .volunteers-block .text-block .inner {
             position: relative;
             padding: 40px;
             margin: 0; }
-            body .page-wrapper .content-row .content-row-content .volunteers-block .text-block .inner h2,
-            body .page-wrapper .content-row .content-row-content .partners-block .text-block .inner h2,
-            body .page-wrapper .content-row .content-row-content .sponsors-block .text-block .inner h2 {
+            body .page-wrapper .content-row .content-row-content .volunteers-block .text-block .inner h2 {
               font-size: 43px;
               font-size: 4.3rem;
               font-weight: 500; }
-            body .page-wrapper .content-row .content-row-content .volunteers-block .text-block .inner a.people, body .page-wrapper .content-row .content-row-content .volunteers-block .text-block .inner a.sponsors, body .page-wrapper .content-row .content-row-content .volunteers-block .text-block .inner a.partners,
-            body .page-wrapper .content-row .content-row-content .partners-block .text-block .inner a.people,
-            body .page-wrapper .content-row .content-row-content .partners-block .text-block .inner a.sponsors,
-            body .page-wrapper .content-row .content-row-content .partners-block .text-block .inner a.partners,
-            body .page-wrapper .content-row .content-row-content .sponsors-block .text-block .inner a.people,
-            body .page-wrapper .content-row .content-row-content .sponsors-block .text-block .inner a.sponsors,
-            body .page-wrapper .content-row .content-row-content .sponsors-block .text-block .inner a.partners {
+            body .page-wrapper .content-row .content-row-content .volunteers-block .text-block .inner a.people, body .page-wrapper .content-row .content-row-content .volunteers-block .text-block .inner a.sponsors, body .page-wrapper .content-row .content-row-content .volunteers-block .text-block .inner a.partners {
               display: block;
               width: 216px;
               padding: 0 78px;
@@ -9661,117 +9713,36 @@ body {
           position: absolute;
           top: 316px;
           left: 40px; }
-      body .page-wrapper .content-row .content-row-content .sponsors-block .text-block .inner {
-        color: #00a3a6;
-        padding: 40px 0 0 40px; }
-        body .page-wrapper .content-row .content-row-content .sponsors-block .text-block .inner h2 {
-          margin-top: -10px;
-          font-size: 43px;
-          font-size: 4.3rem;
-          font-weight: 500;
-          width: 80%; }
-        body .page-wrapper .content-row .content-row-content .sponsors-block .text-block .inner a.sponsors {
-          position: absolute;
-          top: 327px;
-          left: 40px;
-          margin: 0;
-          width: auto; }
-      body .page-wrapper .content-row .content-row-content .partners-block .text-block .inner {
-        color: #ca5098;
-        padding: 40px 0 0 40px; }
-        body .page-wrapper .content-row .content-row-content .partners-block .text-block .inner h2 {
-          font-size: 43px;
-          font-size: 4.3rem;
-          font-weight: 500; }
-        body .page-wrapper .content-row .content-row-content .partners-block .text-block .inner a.partners {
-          position: absolute;
-          top: 327px;
-          margin: 0;
-          width: auto; }
-      body .page-wrapper .content-row .content-row-content .circular-block {
+      body .page-wrapper .content-row .content-row-content .circular-link-block {
         display: block;
         width: 380px;
         height: 423px;
         padding: 32px 19px;
         color: #fff; }
-        body .page-wrapper .content-row .content-row-content .circular-block .inner {
-          position: relative; }
-          body .page-wrapper .content-row .content-row-content .circular-block .inner h2 {
-            font-size: 48px;
-            font-size: 4.8rem;
-            font-weight: 600; }
-        body .page-wrapper .content-row .content-row-content .circular-block.artists .inner {
-          background-color: #312783;
-          color: #fff; }
-          body .page-wrapper .content-row .content-row-content .circular-block.artists .inner h2 {
-            position: absolute;
-            top: 100px;
-            left: 86px; }
-        body .page-wrapper .content-row .content-row-content .circular-block.news .inner {
-          background-color: #ca5098; }
-          body .page-wrapper .content-row .content-row-content .circular-block.news .inner h2 {
-            position: absolute;
-            top: 100px;
-            left: 86px; }
-        body .page-wrapper .content-row .content-row-content .circular-block .inner {
+        body .page-wrapper .content-row .content-row-content .circular-link-block .inner {
           border-radius: 180px;
           -webkit-border-radius: 180px;
           -moz-border-radius: 180px;
+          position: relative;
           width: 360px;
           height: 360px;
-          background-color: white; }
-    body .page-wrapper .makers-radicals {
-      height: 423px; }
-      body .page-wrapper .makers-radicals div {
-        height: inherit; }
-      body .page-wrapper .makers-radicals .makers-radicals-content {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between; }
-        body .page-wrapper .makers-radicals .makers-radicals-content .m-r-block {
-          display: flex;
-          flex-direction: row;
-          justify-content: space-between;
-          width: 772px;
-          color: #00a3a6; }
-          body .page-wrapper .makers-radicals .makers-radicals-content .m-r-block .text-block {
-            width: 392px;
-            background-color: #fff; }
-            body .page-wrapper .makers-radicals .makers-radicals-content .m-r-block .text-block .inner {
-              position: relative;
-              padding: 40px;
-              margin: 0; }
-              body .page-wrapper .makers-radicals .makers-radicals-content .m-r-block .text-block .inner h2 {
-                font-size: 43px;
-                font-size: 4.3rem;
-                font-weight: 500; }
-              body .page-wrapper .makers-radicals .makers-radicals-content .m-r-block .text-block .inner a.people {
-                display: block;
-                width: 216px;
-                padding: 0 78px;
-                margin-top: 10px;
-                text-transform: uppercase; }
-        body .page-wrapper .makers-radicals .makers-radicals-content .counter-block {
-          width: 380px;
-          background: transparent url("../assets/images/counter-bg.png") 0 0 no-repeat;
-          text-align: center;
-          color: #fff; }
-          body .page-wrapper .makers-radicals .makers-radicals-content .counter-block .count {
-            margin: 117px 0 0;
-            font-size: 197px;
-            font-size: 19.7rem;
-            line-height: 160px;
-            font-weight: 700; }
-          body .page-wrapper .makers-radicals .makers-radicals-content .counter-block .to-go {
-            margin-top: -18px;
-            font-size: 26px;
-            font-size: 2.6rem;
-            font-weight: 500;
-            text-transform: uppercase; }
-          body .page-wrapper .makers-radicals .makers-radicals-content .counter-block .hashtag {
-            margin-top: 32px;
-            font-size: 26px;
-            font-size: 2.6rem;
+          overflow: hidden; }
+          body .page-wrapper .content-row .content-row-content .circular-link-block .inner a {
+            border-radius: 180px;
+            -webkit-border-radius: 180px;
+            -moz-border-radius: 180px;
+            color: inherit !important;
+            position: absolute;
+            display: block;
+            width: 100%;
+            height: 100%; }
+          body .page-wrapper .content-row .content-row-content .circular-link-block .inner h2 {
+            position: absolute;
+            top: 100px;
+            left: 86px;
+            display: block;
+            font-size: 48px;
+            font-size: 4.8rem;
             font-weight: 600; }
   body footer {
     margin-top: 120px; }
