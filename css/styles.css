@@ -8976,7 +8976,7 @@ button {
           background-repeat: no-repeat; }
         a.btn.link-btn.external.primary:after,
         button.btn.link-btn.external.primary:after {
-          background-position: -65px -3px; }
+          background-position: -34px -3px; }
       a.btn.link-btn.download,
       button.btn.link-btn.download {
         position: relative;
@@ -9020,7 +9020,7 @@ button {
     background-color: #fff; }
     a:hover.btn.link-btn.external:after,
     button:hover.btn.link-btn.external:after {
-      background-position: -65px -3px; }
+      background-position: -34px -3px; }
     a:hover.btn.link-btn.primary,
     button:hover.btn.link-btn.primary {
       color: #fff;
@@ -9887,7 +9887,12 @@ body {
 *
 *
 *
-*******************************************************************************************/ }
+*******************************************************************************************/
+  body {
+    width: 100%;
+    overflow-x: hidden; }
+    body .hidden-xs {
+      display: none; } }
 
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1024px) and (min-device-height: 1366px) and (max-device-height: 1366px) and (min-width: 1024px) and (max-width: 1024px) {
   /******************************************************************************************
