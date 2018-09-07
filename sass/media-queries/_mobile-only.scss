@@ -31,7 +31,7 @@ body {
     width: 100%;
     height: 100%;
     z-index: -1;
-    background: url("#{$pathToImages}/fixed-bg-img-3-x1-mob.jpg") no-repeat center center;
+    background: url("#{$pathToImages}/fixed-bg-img-3-x2-mob.jpg") no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -67,6 +67,22 @@ body {
     width: 100%;
     margin:0 18px;
     padding:0 18px;
+  }
+
+  header {
+
+    &.page-header {
+      height:87px;
+
+      .header-content {
+        margin: 0;
+        padding:0;
+
+        .logo {
+          margin: 20px 60px;
+        }
+      }
+    }
   }
 
   .page-wrapper {
@@ -286,6 +302,45 @@ body {
               @include border-radius(152px);
             }
           }
+        }
+      }
+    }
+  }
+
+  footer {
+
+    .footer-top {
+
+    }
+
+    .footer-bottom {
+      height:400px;
+
+      .fixed-width-content {
+        width: 338px;
+        padding: 0;
+        margin-bottom: 0;
+      }
+
+      .grid-wrapper {
+        padding: 0 18px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 57px);
+        grid-template-areas: "boc-logo"
+        "social"
+        "wf-logo"
+        "wf-site"
+        "find-out-more"
+        "copy";
+
+        .boc-logo {
+          @include flex-container();
+          justify-content: center;
+        }
+
+        .social {
+          @include flex-container();
         }
       }
     }

@@ -9907,7 +9907,7 @@ body {
       width: 100%;
       height: 100%;
       z-index: -1;
-      background: url("../assets/images/fixed-bg-img-3-x1-mob.jpg") no-repeat center center;
+      background: url("../assets/images/fixed-bg-img-3-x2-mob.jpg") no-repeat center center;
       -webkit-background-size: cover;
       -moz-background-size: cover;
       -o-background-size: cover;
@@ -9927,6 +9927,13 @@ body {
       width: 100%;
       margin: 0 18px;
       padding: 0 18px; }
+    body header.page-header {
+      height: 87px; }
+      body header.page-header .header-content {
+        margin: 0;
+        padding: 0; }
+        body header.page-header .header-content .logo {
+          margin: 20px 60px; }
     body .page-wrapper .image-block img {
       z-index: 0; }
     body .page-wrapper .hero .hero-content .inner {
@@ -10054,7 +10061,28 @@ body {
             body .page-wrapper .content-row .content-row-content .circular-link-block .inner a {
               border-radius: 152px;
               -webkit-border-radius: 152px;
-              -moz-border-radius: 152px; } }
+              -moz-border-radius: 152px; }
+    body footer .footer-bottom {
+      height: 400px; }
+      body footer .footer-bottom .fixed-width-content {
+        width: 338px;
+        padding: 0;
+        margin-bottom: 0; }
+      body footer .footer-bottom .grid-wrapper {
+        padding: 0 18px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 57px);
+        grid-template-areas: "boc-logo" "social" "wf-logo" "wf-site" "find-out-more" "copy"; }
+        body footer .footer-bottom .grid-wrapper .boc-logo {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          justify-content: center; }
+        body footer .footer-bottom .grid-wrapper .social {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between; } }
 
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1024px) and (min-device-height: 1366px) and (max-device-height: 1366px) and (min-width: 1024px) and (max-width: 1024px) {
   /******************************************************************************************
