@@ -10082,7 +10082,8 @@ body {
         body footer .footer-bottom .grid-wrapper .social {
           display: flex;
           flex-direction: row;
-          justify-content: space-between; } }
+          justify-content: space-between;
+          justify-content: space-around; } }
 
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1024px) and (min-device-height: 1366px) and (max-device-height: 1366px) and (min-width: 1024px) and (max-width: 1024px) {
   /******************************************************************************************
