@@ -9898,6 +9898,20 @@ body {
   body {
     width: 100%;
     overflow-x: hidden; }
+    body:before {
+      content: "";
+      display: block;
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      background: url("../assets/images/fixed-bg-img-3-x1-mob.jpg") no-repeat center center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover; }
     body .hidden-xs {
       display: none; }
     body a.btn.link-btn {
@@ -9913,6 +9927,8 @@ body {
       width: 100%;
       margin: 0 18px;
       padding: 0 18px; }
+    body .page-wrapper .image-block img {
+      z-index: 0; }
     body .page-wrapper .hero .hero-content .inner {
       margin: 90px 0 0; }
       body .page-wrapper .hero .hero-content .inner h1 {
@@ -10013,6 +10029,8 @@ body {
           width: 305px; }
           body .page-wrapper .content-row .content-row-content .feature-image-block img {
             object-fit: cover; }
+            body .page-wrapper .content-row .content-row-content .feature-image-block img.inatagram-block-bg {
+              z-index: 0; }
           body .page-wrapper .content-row .content-row-content .feature-image-block a.link-btn {
             width: 269px;
             top: auto;

@@ -19,6 +19,24 @@
 body {
   width: 100%;
   overflow-x: hidden;
+  //background-image: url("#{$pathToImages}/fixed-bg-img-3-x1-mob.jpg");
+  //background-size: 100%;
+
+  &:before {
+    content: "";
+    display: block;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: url("#{$pathToImages}/fixed-bg-img-3-x1-mob.jpg") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
 
   .hidden-xs {
     display: none;
@@ -52,6 +70,13 @@ body {
   }
 
   .page-wrapper {
+
+    .image-block {
+
+      img {
+        z-index: 0;
+      }
+    }
 
     .hero {
 
@@ -224,6 +249,10 @@ body {
 
           img {
             object-fit: cover;
+
+            &.inatagram-block-bg {
+              z-index: 0;
+            }
           }
 
           a {
