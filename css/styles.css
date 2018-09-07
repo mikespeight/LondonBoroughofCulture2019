@@ -6430,6 +6430,9 @@ a.text-dark:hover, a.text-dark:focus {
 .white {
   color: #fff; }
 
+.persian-green-bg {
+  background-color: #00a3a6; }
+
 .dark-purple-bg {
   background-color: #312783; }
 
@@ -9926,6 +9929,10 @@ body {
       height: auto !important; }
       body .page-wrapper .content-row.full-height {
         min-height: 423px; }
+      body .page-wrapper .content-row.row-4 .content-row-content {
+        flex-direction: column-reverse; }
+        body .page-wrapper .content-row.row-4 .content-row-content .flex-item {
+          margin-bottom: 12px !important; }
       body .page-wrapper .content-row .content-row-content {
         flex-direction: column; }
         body .page-wrapper .content-row .content-row-content .text-image-feature-block {
@@ -9936,7 +9943,12 @@ body {
             width: 305px;
             min-height: 435px; }
             body .page-wrapper .content-row .content-row-content .text-image-feature-block .text-block .inner {
+              display: block;
+              height: 100%;
               padding-bottom: 120px; }
+              body .page-wrapper .content-row .content-row-content .text-image-feature-block .text-block .inner h2 {
+                font-size: 36px;
+                font-size: 3.6rem; }
               body .page-wrapper .content-row .content-row-content .text-image-feature-block .text-block .inner a.link-btn {
                 width: 269px;
                 left: 18px;
@@ -9948,6 +9960,29 @@ body {
             height: 305px; }
             body .page-wrapper .content-row .content-row-content .text-image-feature-block .image-block img {
               object-fit: cover; }
+        body .page-wrapper .content-row .content-row-content .custom-feature-image-block {
+          width: 305px;
+          height: 450px; }
+          body .page-wrapper .content-row .content-row-content .custom-feature-image-block img {
+            width: 100%;
+            height: auto;
+            /*object-position: right;
+            object-fit: cover;*/ }
+          body .page-wrapper .content-row .content-row-content .custom-feature-image-block .inner {
+            height: auto;
+            margin-top: 167px;
+            padding-bottom: 120px;
+            background-color: #00a3a6; }
+            body .page-wrapper .content-row .content-row-content .custom-feature-image-block .inner h2 {
+              margin: 0;
+              width: auto;
+              font-size: 36px;
+              font-size: 3.6rem; }
+            body .page-wrapper .content-row .content-row-content .custom-feature-image-block .inner a.volunteers {
+              left: 18px;
+              top: auto;
+              bottom: 0;
+              width: 269px; }
         body .page-wrapper .content-row .content-row-content .counter-block {
           width: 305px;
           height: 340px;
@@ -9973,7 +10008,35 @@ body {
               width: 269px;
               bottom: 0;
               top: auto;
-              left: 18px; } }
+              left: 18px; }
+        body .page-wrapper .content-row .content-row-content .feature-image-block {
+          width: 305px; }
+          body .page-wrapper .content-row .content-row-content .feature-image-block img {
+            object-fit: cover; }
+          body .page-wrapper .content-row .content-row-content .feature-image-block a.link-btn {
+            width: 269px;
+            top: auto;
+            bottom: 0;
+            left: 18px; }
+        body .page-wrapper .content-row .content-row-content .circular-link-block {
+          padding: 0;
+          width: 304px;
+          height: 304px; }
+          body .page-wrapper .content-row .content-row-content .circular-link-block .inner {
+            width: 100%;
+            height: 100%;
+            border-radius: 152px;
+            -webkit-border-radius: 152px;
+            -moz-border-radius: 152px; }
+            body .page-wrapper .content-row .content-row-content .circular-link-block .inner h2 {
+              top: 84px;
+              left: 56px;
+              font-size: 40px;
+              font-size: 4rem; }
+            body .page-wrapper .content-row .content-row-content .circular-link-block .inner a {
+              border-radius: 152px;
+              -webkit-border-radius: 152px;
+              -moz-border-radius: 152px; } }
 
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1024px) and (min-device-height: 1366px) and (max-device-height: 1366px) and (min-width: 1024px) and (max-width: 1024px) {
   /******************************************************************************************

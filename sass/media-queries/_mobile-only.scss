@@ -89,6 +89,17 @@ body {
         min-height: 423px;
       }
 
+      &.row-4 {
+
+        .content-row-content {
+          flex-direction: column-reverse;
+
+          .flex-item {
+            margin-bottom: 12px!important;
+          }
+        }
+      }
+
       .content-row-content {
         flex-direction: column;
 
@@ -102,7 +113,13 @@ body {
             min-height: 435px;
 
             .inner {
+              display: block;
+              height: 100%;
               padding-bottom: 120px;
+
+              h2 {
+                @include font-size(36);
+              }
 
               a {
 
@@ -123,6 +140,41 @@ body {
 
             img {
               object-fit: cover;
+            }
+          }
+        }
+
+        .custom-feature-image-block {
+          width:305px;
+          height: 450px;
+
+          img {
+            width: 100%;
+            height: auto;
+            /*object-position: right;
+            object-fit: cover;*/
+          }
+
+          .inner {
+            height: auto;
+            margin-top: 167px;
+            padding-bottom: 120px;
+            background-color: $brandPersianGreen;
+
+            h2 {
+              margin:0;
+              width: auto;
+              @include font-size(36);
+            }
+
+            a {
+
+              &.volunteers {
+                left:18px;
+                top: auto;
+                bottom: 0;
+                width:269px;
+              }
             }
           }
         }
@@ -163,6 +215,46 @@ body {
                 top: auto;
                 left:18px;
               }
+            }
+          }
+        }
+
+        .feature-image-block {
+          width:305px;
+
+          img {
+            object-fit: cover;
+          }
+
+          a {
+
+            &.link-btn{
+              width: 269px;
+              top: auto;
+              bottom:0;
+              left: 18px;
+            }
+          }
+        }
+
+        .circular-link-block {
+          padding: 0;
+          width: 304px;
+          height: 304px;
+
+          .inner {
+            width: 100%;
+            height: 100%;
+            @include border-radius(152px);
+
+            h2 {
+              top:84px;
+              left: 56px;
+              @include font-size(40);
+            }
+
+            a {
+              @include border-radius(152px);
             }
           }
         }
