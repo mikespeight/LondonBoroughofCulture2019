@@ -341,6 +341,7 @@ body {
 
         .social {
           @include flex-container();
+          justify-content: space-around;
         }
       }
     }
