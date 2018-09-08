@@ -9780,16 +9780,21 @@ body {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        padding: 25px 294px 25px 392px;
+        padding: 25px 294px;
         justify-content: space-around; }
-        body footer .footer-top .flex-wrapper a {
+        body footer .footer-top .flex-wrapper i {
           display: inline-block; }
-          body footer .footer-top .flex-wrapper a.mol {
-            width: 388px;
+          body footer .footer-top .flex-wrapper i.mayor {
+            width: 240px;
             height: 65px;
             background: transparent url("../assets/images/mayor-of-london-x2.png") 0 0 no-repeat;
-            background-size: 388px 65px; }
-          body footer .footer-top .flex-wrapper a.airbnb {
+            background-size: 240px 65px; }
+          body footer .footer-top .flex-wrapper i.city {
+            width: 48px;
+            height: 65px;
+            background: transparent url("../assets/images/city-of-london-x2.png") 0 0 no-repeat;
+            background-size: 48px 65px; }
+          body footer .footer-top .flex-wrapper i.airbnb {
             position: relative;
             top: 6px;
             width: 48px;
@@ -10076,6 +10081,14 @@ body {
               border-radius: 152px;
               -webkit-border-radius: 152px;
               -moz-border-radius: 152px; }
+    body footer .footer-top {
+      height: 275px; }
+      body footer .footer-top .fixed-width-content .flex-wrapper {
+        flex-direction: column;
+        padding: 0;
+        align-items: center; }
+        body footer .footer-top .fixed-width-content .flex-wrapper i {
+          margin-bottom: 20px; }
     body footer .footer-bottom {
       height: 400px; }
       body footer .footer-bottom .fixed-width-content {

@@ -387,17 +387,24 @@ body {
 
       .flex-wrapper {
         @include flex-container();
-        padding: 25px 294px 25px 392px;
+        padding: 25px 294px;
         justify-content: space-around;
 
-        a {
+        i {
           display: inline-block;
 
-          &.mol {
-            width:388px;
+          &.mayor{
+            width:240px;
             height:65px;
             background: transparent url("#{$pathToImages}/mayor-of-london-x2.png") 0 0 no-repeat;
-            background-size: 388px 65px;;
+            background-size: 240px 65px;;
+          }
+
+          &.city {
+            width:48px;
+            height:65px;
+            background: transparent url("#{$pathToImages}/city-of-london-x2.png") 0 0 no-repeat;
+            background-size: 48px 65px;;
           }
 
           &.airbnb {

@@ -310,6 +310,21 @@ body {
   footer {
 
     .footer-top {
+      height: 275px;
+
+      .fixed-width-content {
+
+        .flex-wrapper {
+          flex-direction: column;
+          padding:0;
+          align-items: center;
+
+          i {
+            margin-bottom: 20px;
+          }
+
+        }
+      }
 
     }
 
