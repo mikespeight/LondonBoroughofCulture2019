@@ -188,7 +188,7 @@ body {
           color: $white;
 
           .count {
-            margin: 117px 0 0;
+            margin: 117px 0 15px;
             @include font-size(197);
             line-height: 160px;
             font-weight: $bold;
