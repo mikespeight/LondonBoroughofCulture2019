@@ -53,10 +53,14 @@ body {
         line-height: 84px;
 
         &.external {
+          //padding-right: 44px;
 
-          &:after {
-            top:31px;
-            right: 10px;
+          span {
+
+            &:after {
+              /*top:31px;
+              right: 0;*/
+            }
           }
         }
       }

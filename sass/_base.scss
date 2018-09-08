@@ -44,47 +44,55 @@ button {
   &.btn {
     height: 44px;
     line-height: 44px;
-    padding: 0 20px;
+    //padding: 0 20px;
 
 
     &.link-btn {
       height: 56px;
+      min-width: 216px;
       border: 2px solid $white;
       margin:20px 0;
       font-family: $Archia-font;
       font-weight: $semiBold;
       @include font-size(16);
-      line-height: 56px;
+      line-height: 47px;
       text-align: center;
       text-transform: uppercase;
       color: $white;
       transition: all 0.125s ease-in-out;
-      padding:0 44px;
+      //padding:1px 0;
 
 
       &.external {
         position: relative;
-        padding-right: 80px;
 
-        &:after {
-          content: '';
-          position: absolute;
-          top: 17px;
-          right:37px;
-          display: inline-block;
-          width:25px;
-          height: 22px;
-          background-color: transparent;
-          background-image: url("#{$pathToImages}/link-icons-sprite.png");
-          background-position: -3px -3px;
-          background-size: 155px 62px;
-          background-repeat: no-repeat;
+        span {
+          position: relative;
+          padding-right: 35px;
+
+          &:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            right:0;
+            display: inline-block;
+            width:25px;
+            height: 22px;
+            background-color: transparent;
+            background-image: url("#{$pathToImages}/link-icons-sprite.png");
+            background-position: -3px -3px;
+            background-size: 155px 62px;
+            background-repeat: no-repeat;
+          }
         }
 
         &.primary {
 
-          &:after {
-            background-position: -34px -3px;
+          span {
+
+            &:after {
+              background-position: -34px -3px;
+            }
           }
         }
       }
@@ -93,28 +101,40 @@ button {
         position: relative;
         padding-right: 90px;
 
-        &:after {
-          content: '';
-          position: absolute;
-          display: inline-block;
-          width:18px;
-          height: 30px;
-          background-color: transparent;
-          background-image: url("#{$pathToImages}/link-icons-sprite.png");
-          background-position: 4.5px 39.5px;
-          background-size: 155px 62px;
-          background-repeat: no-repeat;
+        span {
+
+          &:after {
+            content: '';
+            position: absolute;
+            display: inline-block;
+            width:18px;
+            height: 30px;
+            background-color: transparent;
+            background-image: url("#{$pathToImages}/link-icons-sprite.png");
+            background-position: 4.5px 39.5px;
+            background-size: 155px 62px;
+            background-repeat: no-repeat;
+          }
         }
       }
 
       &.primary {
         color: $brandPrimary;
         border-color: $brandPrimary;
+
+        span {
+
+        }
       }
 
       &.tertiary {
         color: $white;
         background-color: $brandTertiary;
+        border-color: $brandTertiary;
+
+        span {
+
+        }
       }
 
       &.quaternary {
@@ -122,8 +142,11 @@ button {
         background-color: $white;
         color: $brandQuaternary;
 
-        &:after {
-          background-position: -96px -3px;
+        span {
+
+          &:after {
+            background-position: -96px -3px;
+          }
         }
       }
 
@@ -132,6 +155,10 @@ button {
         border-color: $brandPrimary;
         background-color: $brandPrimary;
         color: $white;
+
+        span {
+
+        }
       }
 
     }
@@ -139,6 +166,9 @@ button {
     &.wide-btn {
       padding: 0 100px;
 
+      span {
+
+      }
     }
   }
 
@@ -152,8 +182,12 @@ button {
 
         &.external {
 
-          &:after {
-            background-position: -34px -3px;
+
+          span {
+
+            &:after {
+              background-position: -34px -3px;
+            }
           }
         }
 
@@ -163,8 +197,11 @@ button {
 
           &.external {
 
-            &:after {
-              background-position: -3px -3px;
+            span {
+
+              &:after {
+                background-position: -3px -3px;
+              }
             }
           }
         }
@@ -173,6 +210,10 @@ button {
           border-color: $brandSecondary;
           background-color: $brandSecondary;
           //color: $white;
+
+          span {
+
+          }
         }
 
         &.secondary {
@@ -182,8 +223,11 @@ button {
 
           &.external {
 
-            &:after {
-              background-position: -3px -3px;
+            span {
+
+              &:after {
+                background-position: -3px -3px;
+              }
             }
           }
         }
@@ -195,8 +239,11 @@ button {
 
           &.external {
 
-            &:after {
-              background-position: -127px -3px;
+            span {
+
+              &:after {
+                background-position: -127px -3px;
+              }
             }
           }
         }
@@ -207,8 +254,11 @@ button {
 
           &.external {
 
-            &:after {
-              background-position: -3px -3px;
+            span {
+
+              &:after {
+                background-position: -3px -3px;
+              }
             }
           }
         }
