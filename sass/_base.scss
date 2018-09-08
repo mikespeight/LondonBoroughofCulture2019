@@ -112,6 +112,11 @@ button {
         border-color: $brandPrimary;
       }
 
+      &.tertiary {
+        color: $white;
+        background-color: $brandTertiary;
+      }
+
       &.quaternary {
         border-color: $brandQuaternary;
         background-color: $white;
@@ -128,6 +133,7 @@ button {
         background-color: $brandPrimary;
         color: $white;
       }
+
     }
 
     &.wide-btn {
@@ -178,6 +184,19 @@ button {
 
             &:after {
               background-position: -3px -3px;
+            }
+          }
+        }
+
+        &.tertiary {
+          color: $brandTertiary;
+          background-color: $white;
+          border-color: $brandTertiary;
+
+          &.external {
+
+            &:after {
+              background-position: -127px -3px;
             }
           }
         }

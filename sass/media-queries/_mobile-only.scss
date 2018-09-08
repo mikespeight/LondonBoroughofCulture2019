@@ -95,11 +95,11 @@ body {
     }
 
     .hero {
-
+      height: 600px;
       .hero-content {
 
         .inner {
-          margin:90px 0 0;
+          margin:45px 0 0;
 
           h1 {
             @include font-size(58);

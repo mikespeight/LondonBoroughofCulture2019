@@ -9000,6 +9000,10 @@ button {
       button.btn.link-btn.primary {
         color: #00a3a6;
         border-color: #00a3a6; }
+      a.btn.link-btn.tertiary,
+      button.btn.link-btn.tertiary {
+        color: #fff;
+        background-color: #312783; }
       a.btn.link-btn.quaternary,
       button.btn.link-btn.quaternary {
         border-color: #ca5098;
@@ -9043,6 +9047,14 @@ button {
       a:hover.btn.link-btn.secondary.external:after,
       button:hover.btn.link-btn.secondary.external:after {
         background-position: -3px -3px; }
+    a:hover.btn.link-btn.tertiary,
+    button:hover.btn.link-btn.tertiary {
+      color: #312783;
+      background-color: #fff;
+      border-color: #312783; }
+      a:hover.btn.link-btn.tertiary.external:after,
+      button:hover.btn.link-btn.tertiary.external:after {
+        background-position: -127px -3px; }
     a:hover.btn.link-btn.quaternary,
     button:hover.btn.link-btn.quaternary {
       background-color: #ca5098;
@@ -9936,18 +9948,20 @@ body {
           margin: 20px 60px; }
     body .page-wrapper .image-block img {
       z-index: 0; }
-    body .page-wrapper .hero .hero-content .inner {
-      margin: 90px 0 0; }
-      body .page-wrapper .hero .hero-content .inner h1 {
-        font-size: 58px;
-        font-size: 5.8rem;
-        width: 90%; }
-      body .page-wrapper .hero .hero-content .inner p {
-        font-size: 28px;
-        font-size: 2.8rem;
-        font-weight: 400;
-        line-height: 1.1;
-        width: 90%; }
+    body .page-wrapper .hero {
+      height: 600px; }
+      body .page-wrapper .hero .hero-content .inner {
+        margin: 45px 0 0; }
+        body .page-wrapper .hero .hero-content .inner h1 {
+          font-size: 58px;
+          font-size: 5.8rem;
+          width: 90%; }
+        body .page-wrapper .hero .hero-content .inner p {
+          font-size: 28px;
+          font-size: 2.8rem;
+          font-weight: 400;
+          line-height: 1.1;
+          width: 90%; }
     body .page-wrapper .content-row {
       height: auto !important; }
       body .page-wrapper .content-row.full-height {
