@@ -10083,12 +10083,14 @@ body {
               -moz-border-radius: 152px; }
     body footer .footer-top {
       height: 275px; }
-      body footer .footer-top .fixed-width-content .flex-wrapper {
-        flex-direction: column;
-        padding: 0;
-        align-items: center; }
-        body footer .footer-top .fixed-width-content .flex-wrapper i {
-          margin-bottom: 20px; }
+      body footer .footer-top .fixed-width-content {
+        width: 340px; }
+        body footer .footer-top .fixed-width-content .flex-wrapper {
+          flex-direction: column;
+          padding: 0;
+          align-items: center; }
+          body footer .footer-top .fixed-width-content .flex-wrapper i {
+            margin-bottom: 20px; }
     body footer .footer-bottom {
       height: 400px; }
       body footer .footer-bottom .fixed-width-content {
