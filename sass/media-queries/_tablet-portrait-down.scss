@@ -52,6 +52,21 @@ body {
             width: 100%;
             height: auto;
             min-height: 0;
+
+            .inner {
+
+              p {
+                margin-bottom: 20px;
+              }
+
+              a {
+
+                &.link-btn {
+                  left: 40px;
+                  margin-bottom: 20px;
+                }
+              }
+            }
           }
 
           .image-block {
@@ -60,8 +75,34 @@ body {
           }
         }
 
+        .full-width-cta-block {
+
+          .inner {
+
+            p {
+              margin-bottom: 40px;
+            }
+
+            a {
+
+              &.link-btn {
+                left: 40px;
+                margin-bottom: 40px;
+              }
+            }
+          }
+        }
+
         .feature-image-block {
           width:78%;
+
+          a {
+
+            &.link-btn {
+              left: 40px;
+              margin-bottom: 40px;
+            }
+          }
         }
 
         .custom-feature-image-block {
@@ -71,6 +112,13 @@ body {
           .inner {
             margin-top: 312px;
 
+            a {
+
+              &.link-btn {
+                left: 40px;
+                margin-bottom: 40px;
+              }
+            }
           }
         }
       }
