@@ -10174,25 +10174,32 @@ body {
   body .page-wrapper .content-row .content-row-content {
     align-items: center; }
     body .page-wrapper .content-row .content-row-content .flex-item {
+      margin: 0;
       margin-bottom: 12px !important; }
     body .page-wrapper .content-row .content-row-content .text-image-feature-block,
-    body .page-wrapper .content-row .content-row-content .custom-feature-image-block,
     body .page-wrapper .content-row .content-row-content .full-width-cta-block {
-      width: 80%;
+      width: 78%;
       margin: 0 auto; }
       body .page-wrapper .content-row .content-row-content .text-image-feature-block .text-block,
-      body .page-wrapper .content-row .content-row-content .custom-feature-image-block .text-block,
       body .page-wrapper .content-row .content-row-content .full-width-cta-block .text-block {
         width: 100%;
         height: auto;
         min-height: 0; }
       body .page-wrapper .content-row .content-row-content .text-image-feature-block .image-block,
-      body .page-wrapper .content-row .content-row-content .custom-feature-image-block .image-block,
       body .page-wrapper .content-row .content-row-content .full-width-cta-block .image-block {
         width: 100%;
         height: 600px; }
+    body .page-wrapper .content-row .content-row-content .feature-image-block {
+      width: 78%; }
+    body .page-wrapper .content-row .content-row-content .custom-feature-image-block {
+      height: 600px;
+      width: 78%; }
+      body .page-wrapper .content-row .content-row-content .custom-feature-image-block .inner {
+        margin-top: 312px; }
   body footer .footer-top .flex-wrapper {
     padding: 25px 30px; }
+  body footer .footer-bottom .fixed-width-content {
+    width: 78%; }
   body footer .footer-bottom .grid-wrapper {
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas: "boc-logo  wf-logo" ". wf-site " ". find-out-more" "social copy"; } }
