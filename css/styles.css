@@ -10018,9 +10018,9 @@ body {
       height: auto !important; }
       body .page-wrapper .content-row.full-height {
         min-height: 423px; }
-      body .page-wrapper .content-row.row-4 .content-row-content {
+      body .page-wrapper .content-row.row-5 .content-row-content {
         flex-direction: column-reverse; }
-        body .page-wrapper .content-row.row-4 .content-row-content .flex-item {
+        body .page-wrapper .content-row.row-5 .content-row-content .flex-item {
           margin-bottom: 12px !important; }
       body .page-wrapper .content-row .content-row-content {
         flex-direction: column; }
@@ -10159,7 +10159,43 @@ body {
           display: flex;
           flex-direction: row;
           justify-content: space-between;
-          justify-content: space-around; } }
+          justify-content: space-around; }
+  .flex-item {
+    margin-right: 0; }
+    .flex-item:not(:last-child) {
+      margin-bottom: 12px; }
+  body .fixed-width-content {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 18px; }
+  body .page-wrapper .hero {
+    width: 80%;
+    margin: 0 auto; }
+  body .page-wrapper .content-row .content-row-content {
+    align-items: center; }
+    body .page-wrapper .content-row .content-row-content .flex-item {
+      margin-bottom: 12px !important; }
+    body .page-wrapper .content-row .content-row-content .text-image-feature-block,
+    body .page-wrapper .content-row .content-row-content .custom-feature-image-block,
+    body .page-wrapper .content-row .content-row-content .full-width-cta-block {
+      width: 80%;
+      margin: 0 auto; }
+      body .page-wrapper .content-row .content-row-content .text-image-feature-block .text-block,
+      body .page-wrapper .content-row .content-row-content .custom-feature-image-block .text-block,
+      body .page-wrapper .content-row .content-row-content .full-width-cta-block .text-block {
+        width: 100%;
+        height: auto;
+        min-height: 0; }
+      body .page-wrapper .content-row .content-row-content .text-image-feature-block .image-block,
+      body .page-wrapper .content-row .content-row-content .custom-feature-image-block .image-block,
+      body .page-wrapper .content-row .content-row-content .full-width-cta-block .image-block {
+        width: 100%;
+        height: 600px; }
+  body footer .footer-top .flex-wrapper {
+    padding: 25px 30px; }
+  body footer .footer-bottom .grid-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "boc-logo  wf-logo" ". wf-site " ". find-out-more" "social copy"; } }
 
 @media (max-width: 480px) {
   /******************************************************************************************
@@ -10234,9 +10270,9 @@ body {
       height: auto !important; }
       body .page-wrapper .content-row.full-height {
         min-height: 423px; }
-      body .page-wrapper .content-row.row-4 .content-row-content {
+      body .page-wrapper .content-row.row-5 .content-row-content {
         flex-direction: column-reverse; }
-        body .page-wrapper .content-row.row-4 .content-row-content .flex-item {
+        body .page-wrapper .content-row.row-5 .content-row-content .flex-item {
           margin-bottom: 12px !important; }
       body .page-wrapper .content-row .content-row-content {
         flex-direction: column; }

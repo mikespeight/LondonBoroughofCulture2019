@@ -7,4 +7,83 @@
 *
 *
 *******************************************************************************************/
+
 @import "mobile-only";
+
+.flex-item {
+  margin-right: 0;
+
+  &:not(:last-child) {
+    margin-bottom: 12px;
+  }
+}
+
+body {
+
+  .fixed-width-content {
+    width: 100%;
+    margin: 0 auto;
+    padding:0 18px;
+  }
+
+  .page-wrapper {
+
+    .hero {
+      width: 80%;
+      margin: 0 auto;
+    }
+
+    .content-row {
+
+      .content-row-content {
+        align-items: center;
+
+        .flex-item {
+          margin-bottom: 12px!important;
+        }
+
+        .text-image-feature-block,
+        .custom-feature-image-block,
+        .full-width-cta-block {
+          width: 80%;
+          margin: 0 auto;
+
+          .text-block {
+            width: 100%;
+            height: auto;
+            min-height: 0;
+          }
+
+          .image-block {
+            width: 100%;
+            height:600px;
+          }
+        }
+      }
+    }
+  }
+
+  footer {
+
+    .footer-top {
+
+      .flex-wrapper {
+        padding: 25px 30px;
+      }
+    }
+
+    .footer-bottom {
+
+      .grid-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: "boc-logo  wf-logo"
+        ". wf-site "
+        ". find-out-more"
+        "social copy";
+      }
+    }
+  }
+}
+
+
+
