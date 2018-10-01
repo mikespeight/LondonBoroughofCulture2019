@@ -1,0 +1,57 @@
+/****************************************
+*
+* Admin styles and overrides
+*
+*****************************************/
+
+body {
+
+  &.user-logged-in {
+
+    &.toolbar-tray-open {
+
+      #toolbar-administration {
+
+        #toolbar-bar {
+          margin:0;
+
+          .toolbar-tab {
+
+            .toolbar-tray {
+
+              nav {
+
+                &.toolbar-lining {
+                  margin:0;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      header {
+        margin-top: 79px;
+      }
+    }
+
+  }
+
+  /*&.adminimal-admin-toolbar {
+
+
+    div {
+
+      &#toolbar-administration {
+
+        nav {
+
+          &#toolbar-bar {
+            margin-top: 0!important;
+          }
+        }
+      }
+    }
+  }*/
+}
+

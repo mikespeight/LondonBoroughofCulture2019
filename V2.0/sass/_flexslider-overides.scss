@@ -1,0 +1,77 @@
+.case-studies-content {
+
+  .flexslider {
+    border: none;
+    margin: 0 0 55px;
+    box-shadow: none;
+    background-color: transparent;
+
+    .flex-prev {
+      left:-10px;
+      opacity:1;
+      text-indent: -10000px;
+    }
+
+    .flex-next {
+      right:-10px;
+      opacity:1;
+      text-indent: -10000px;
+    }
+
+    .flex-direction-nav {
+
+      a {
+        top:48%;
+        width:28px;
+        height:49px;
+        color: transparent;
+        text-shadow: none;
+        background: url('#{$pathToImages}/nav-arrow-left-rc.png') 0 0 no-repeat;
+        background-size: 28px 49px;
+        opacity:0.7;
+
+        &:hover {
+          opacity:1;
+        }
+
+        &:before {
+          content: '';
+        }
+
+        &.flex-next {
+          color: transparent!important;
+          background-image: url('#{$pathToImages}/nav-arrow-right-rc.png');
+          opacity: 0.7;
+
+          &:hover {
+            opacity:1;
+          }
+
+          &:before {
+            content: '';
+          }
+        }
+      }
+    }
+
+    .flex-control-paging {
+
+      li {
+
+        a {
+          //background-color: $brandOrange;
+          opacity: 0.7;
+
+          &:active,
+          &:hover {
+            opacity:1;
+          }
+
+          &.flex-active {
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+}

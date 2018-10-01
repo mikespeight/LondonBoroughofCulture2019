@@ -1,0 +1,53 @@
+/****************************************
+*
+*  colour palette styles
+*
+*****************************************/
+
+$white: #fff;                   .white {color: $white}
+$black: #000;                   .black {color: $black}
+
+//Brand colours
+$brandPrimary: #00a3a6;
+$brandSecondary: #026d6f;
+$brandTertiary: #312783;
+$brandQuaternary: #ca5098;
+$brandGrey: #e5e5e5;
+$brandMidGrey: #707070;
+
+$brandPersianGreen:  $brandPrimary;
+$brandMosqueGreen: $brandSecondary;
+$brandDarkPurple: $brandTertiary;
+$brandDarkPink: $brandQuaternary;
+
+.persian-green { color: $brandPersianGreen;}
+.mosque-green {color: $brandMosqueGreen}
+.dark-purple {color: $brandDarkPurple}
+.dark-pink {color: $brandDarkPink}
+.white {color: $white}
+
+.persian-green-bg { background-color: $brandPersianGreen}
+.dark-purple-bg {background-color: $brandDarkPurple}
+.dark-pink-bg {background-color: $brandDarkPink}
+
+// primary, secondary, tertiary, quaternary, quinary, senary, septenary, octonary, nonary, and denary
+
+// Overlays
+$imageOverlay: #79bdcb;
+
+//transparents
+$transBrandBlue: rgba(20,139,163,0.75);
+$transBrandDkBlue: rgba(9,116,138,0.75);
+$transBrandVDkBlue: rgba(7,96,114,0.75);
+
+// text colours
+$txtColour: #0a4551;
+$text-color: $txtColour;
+
+//other colours
+$notification-bg: #ff0000;
+
+// Backgrounds
+$filterImageBg: #1bbbdb;
+$caseStudiesBg: #f1f1f1;
+$footerBg:  #a6a6a6;

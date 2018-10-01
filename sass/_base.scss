@@ -16,6 +16,10 @@ html,
 body {
   width:100%;
   overflow-x: hidden;
+
+  .page-wrapper {
+    position: relative; // Sets up positioning context for page, and to seperate page content from Drupal
+  }
 }
 
 body {
