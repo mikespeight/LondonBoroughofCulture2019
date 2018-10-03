@@ -2487,6 +2487,61 @@ h2 {
   font-size: 40px;
   font-size: 4rem; }
 
+/*************************************************
+
+    =Reset Styles Begin
+
+**************************************************/
+html {
+  margin: 0;
+  padding: 0;
+  border: 0; }
+
+body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, code, del, dfn, em, img, q, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, dialog, figure, footer, header, hgroup, nav, section {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+article, aside, details, figcaption, figure, dialog, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1.5;
+  background: white; }
+
+table {
+  border-collapse: separate;
+  border-spacing: 0; }
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  float: none !important; }
+
+table, th, td {
+  vertical-align: middle; }
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: ''; }
+
+blockquote, q {
+  quotes: "" ""; }
+
+a img {
+  border: none; }
+
+:focus {
+  outline: 0; }
+
+img.full {
+  max-width: 100%; }
+
+ol, ul {
+  list-style: none; }
+
 /****************************************
 *
 * Admin styles and overrides
@@ -2979,6 +3034,148 @@ html[xmlns] .slides {
     .case-studies-content .flexslider .flex-control-paging li a.flex-active {
       opacity: 1; }
 
+/***********************************************
+
+
+  inner-grid.scss
+  light weight grid system based on oocss grid
+  system. For use in places where a grid system
+  is required but but the extra styling is not!
+
+
+************************************************/
+.flex-row {
+  display: flex; }
+
+.inner-row {
+  overflow: visible;
+  clear: both;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap; }
+  .inner-row:after {
+    content: ".";
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both; }
+
+.dynamic-col {
+  overflow: visible;
+  *zoom: 1;
+  clear: both;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-wrap: wrap; }
+  .dynamic-col:after {
+    content: ".";
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both; }
+
+.flex-col {
+  flex: 1; }
+
+.inner-col {
+  overflow: visible; }
+
+.size1of1 {
+  width: 100%; }
+
+.size1of2 {
+  width: 50%; }
+
+.size1of3 {
+  width: 33.33333%; }
+
+.size2of3 {
+  width: 66.66666%; }
+
+.size1of4 {
+  width: 25%; }
+
+.size3of4 {
+  width: 75%; }
+
+.size1of5 {
+  width: 20%; }
+
+.size2of5 {
+  width: 40%; }
+
+.size3of5 {
+  width: 60%; }
+
+.size4of5 {
+  width: 80%; }
+
+.size1of8 {
+  width: 12.5%; }
+
+.size3of8 {
+  width: 37.5%; }
+
+.size5of8 {
+  width: 62.5%; }
+
+.size7of8 {
+  width: 87.5%; }
+
+.size12of12 {
+  width: 100%; }
+
+.size11of12 {
+  width: 91.66666667%; }
+
+.size10of12 {
+  width: 83.33333333%; }
+
+.size9of12 {
+  width: 75%; }
+
+.size8of12 {
+  width: 66.66666667%; }
+
+.size7of12 {
+  width: 58.33333333%; }
+
+.size6of12 {
+  width: 50%; }
+
+.size5of12 {
+  width: 41.66666667%; }
+
+.size4of12 {
+  width: 33.33333333%; }
+
+.size3of12 {
+  width: 25%; }
+
+.size2of12 {
+  width: 16.66666667%; }
+
+.size1of12 {
+  width: 8.33333333%; }
+
+.offset-L-1-col {
+  margin-left: 8.33333333%; }
+
+.offset-R-1-col {
+  margin-right: 8.33333333%; }
+
+.offset-L-2-col {
+  margin-left: 16.66666667%; }
+
+.offset-R-2-col {
+  margin-right: 16.66666667%; }
+
+/*
+.inner-panel {
+  padding: 0 1.071rem;
+}*/
 .subpage.path-user .login-form {
   width: 1200px;
   margin: 0 auto; }
@@ -3187,6 +3384,273 @@ div#sliding-popup {
 * Global stylesheet
 *
 *****************************************/
+body {
+  margin: 0;
+  padding: 0; }
+  body .page-wrapper header.page-header {
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    height: 170px;
+    width: 100%; }
+    body .page-wrapper header.page-header .header-content {
+      height: 120px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      background-color: #000; }
+      body .page-wrapper header.page-header .header-content .logo {
+        display: inline-block;
+        width: 248px;
+        height: 47px;
+        margin: 35px 36px;
+        background: transparent url("../assets/images/boc-logo-x2.png") 0 0 no-repeat;
+        background-size: 248px 47px; }
+      body .page-wrapper header.page-header .header-content .social {
+        margin: 40px 36px; }
+        body .page-wrapper header.page-header .header-content .social a {
+          display: inline-block;
+          color: #fff;
+          font-size: 29px;
+          font-size: 2.9rem; }
+          body .page-wrapper header.page-header .header-content .social a:not(:last-child) {
+            margin-right: 19px; }
+  body .page-wrapper header nav {
+    position: relative;
+    margin-left: -36px;
+    background-color: #fff; }
+    body .page-wrapper header nav.main-navigation {
+      height: 50px; }
+      body .page-wrapper header nav.main-navigation ul {
+        margin: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        justify-content: flex-start;
+        list-style: none;
+        height: inherit; }
+        body .page-wrapper header nav.main-navigation ul li {
+          height: inherit;
+          position: static; }
+          body .page-wrapper header nav.main-navigation ul li a {
+            display: block;
+            height: inherit;
+            font-size: 18px;
+            font-size: 1.8rem;
+            font-weight: 500;
+            line-height: 50px;
+            color: #000;
+            text-decoration: none;
+            padding: 0 32px; }
+            body .page-wrapper header nav.main-navigation ul li a:hover {
+              color: #fff;
+              background-color: #00a3a6; }
+          body .page-wrapper header nav.main-navigation ul li:hover ul.dropdown-menu {
+            display: flex !important; }
+          body .page-wrapper header nav.main-navigation ul li ul {
+            padding: 0; }
+            body .page-wrapper header nav.main-navigation ul li ul.dropdown-menu {
+              display: none !important;
+              position: absolute;
+              top: 49px;
+              left: 0;
+              padding: 0 0 50px 72px;
+              width: 100%;
+              height: auto;
+              display: flex;
+              flex-direction: row;
+              justify-content: flex-start;
+              background-color: #00a3a6;
+              overflow: visible; }
+              body .page-wrapper header nav.main-navigation ul li ul.dropdown-menu:after {
+                content: '.';
+                height: 0;
+                color: transparent; }
+              body .page-wrapper header nav.main-navigation ul li ul.dropdown-menu li {
+                overflow: visible; }
+                body .page-wrapper header nav.main-navigation ul li ul.dropdown-menu li a {
+                  padding: 0;
+                  min-width: 210px; }
+                body .page-wrapper header nav.main-navigation ul li ul.dropdown-menu li ul {
+                  display: block; }
+                  body .page-wrapper header nav.main-navigation ul li ul.dropdown-menu li ul li a {
+                    padding: 0;
+                    color: #fff; }
+                    body .page-wrapper header nav.main-navigation ul li ul.dropdown-menu li ul li a:hover {
+                      color: #000; }
+  body .page-wrapper .content-wrapper {
+    margin-top: 170px;
+    overflow: visible;
+    height: auto; }
+    body .page-wrapper .content-wrapper .dynimic-row {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start; }
+      body .page-wrapper .content-wrapper .dynimic-row .block {
+        height: auto;
+        overflow: hidden;
+        position: relative; }
+        body .page-wrapper .content-wrapper .dynimic-row .block .image-link-block {
+          display: block;
+          width: 100%;
+          height: 100%; }
+          body .page-wrapper .content-wrapper .dynimic-row .block .image-link-block img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            transition: all, 0.5s ease-in-out; }
+          body .page-wrapper .content-wrapper .dynimic-row .block .image-link-block .block-inner-content {
+            position: absolute;
+            top: 0;
+            left: 0;
+            color: #fff;
+            padding-left: 36px;
+            padding-top: 50px; }
+            body .page-wrapper .content-wrapper .dynimic-row .block .image-link-block .block-inner-content h2 {
+              font-size: 30px;
+              font-size: 3rem;
+              font-weight: 600; }
+            body .page-wrapper .content-wrapper .dynimic-row .block .image-link-block .block-inner-content p {
+              font-size: 18px;
+              font-size: 1.8rem;
+              font-weight: 500;
+              margin-bottom: 0; }
+          body .page-wrapper .content-wrapper .dynimic-row .block .image-link-block:hover img {
+            transform: scale(1.1); }
+        body .page-wrapper .content-wrapper .dynimic-row .block.block1 .block-inner-content {
+          padding: 27px 25% 27px 36px; }
+          body .page-wrapper .content-wrapper .dynimic-row .block.block1 .block-inner-content h2 {
+            font-size: 70px;
+            font-size: 7rem;
+            font-weight: 600; }
+          body .page-wrapper .content-wrapper .dynimic-row .block.block1 .block-inner-content p {
+            font-size: 24px;
+            font-size: 2.4rem;
+            font-weight: 500; }
+      body .page-wrapper .content-wrapper .dynimic-row .two-col > .block {
+        height: 50%; }
+  body .page-wrapper footer {
+    /*      .footer-top {
+        height:120px;
+        background-color: $brandTertiary;
+
+        .flex-wrapper {
+          @include flex-container();
+          padding: 25px 294px;
+          justify-content: space-around;
+
+          i {
+            display: inline-block;
+
+            &.mayor{
+              width:240px;
+              height:65px;
+              background: transparent url("../assets/images/mayor-of-london-x2.png") 0 0 no-repeat;
+              background-size: 240px 65px;;
+            }
+
+            &.city {
+              width:48px;
+              height:65px;
+              background: transparent url("../assets/images/city-of-london-x2.png") 0 0 no-repeat;
+              background-size: 48px 65px;;
+            }
+
+            &.airbnb {
+              position: relative;
+              top:6px;
+              width:48px;
+              height:55px;
+              background: transparent url("../assets/images/airbnb-logo-x2-.png") 0 0 no-repeat;
+              background-size: 48px 55px;;
+            }
+          }
+        }
+      }*/ }
+    body .page-wrapper footer .footer-bottom {
+      height: 320px;
+      background-color: #000;
+      overflow: hidden; }
+      body .page-wrapper footer .footer-bottom .grid-wrapper {
+        margin-top: 55px;
+        padding: 0 36px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4, 57px);
+        grid-template-areas: "boc-logo . . wf-logo" ". . . wf-site " ". . . find-out-more" "social . . copy";
+        color: #fff; }
+        body .page-wrapper footer .footer-bottom .grid-wrapper a {
+          font-size: 16px;
+          font-size: 1.6rem;
+          font-weight: 400;
+          color: #fff; }
+        body .page-wrapper footer .footer-bottom .grid-wrapper p {
+          font-size: 16px;
+          font-size: 1.6rem;
+          font-weight: 400;
+          margin-bottom: 0; }
+        body .page-wrapper footer .footer-bottom .grid-wrapper .boc-logo {
+          grid-area: boc-logo; }
+          body .page-wrapper footer .footer-bottom .grid-wrapper .boc-logo .logo {
+            display: inline-block;
+            width: 248px;
+            height: 47px;
+            background: transparent url("../assets/images/boc-logo-x2.png") 0 0 no-repeat;
+            background-size: 248px 47px; }
+        body .page-wrapper footer .footer-bottom .grid-wrapper .wf-logo {
+          grid-area: wf-logo; }
+          body .page-wrapper footer .footer-bottom .grid-wrapper .wf-logo .wf-logo {
+            display: inline-block;
+            width: 92px;
+            height: 51px;
+            background: transparent url("../assets/images/Waltham-Forest-logo-x2.png") 0 0 no-repeat;
+            background-size: 92px 51px; }
+        body .page-wrapper footer .footer-bottom .grid-wrapper .wf-site {
+          grid-area: wf-site; }
+        body .page-wrapper footer .footer-bottom .grid-wrapper .find-out-more {
+          grid-area: find-out-more; }
+        body .page-wrapper footer .footer-bottom .grid-wrapper .social {
+          grid-area: social; }
+          body .page-wrapper footer .footer-bottom .grid-wrapper .social a {
+            display: inline-block;
+            color: #fff;
+            font-size: 29px;
+            font-size: 2.9rem; }
+            body .page-wrapper footer .footer-bottom .grid-wrapper .social a:not(:last-child) {
+              margin-right: 19px; }
+        body .page-wrapper footer .footer-bottom .grid-wrapper .copy {
+          grid-area: copy;
+          font-size: 16px;
+          font-size: 1.6rem;
+          font-weight: 400; }
+          body .page-wrapper footer .footer-bottom .grid-wrapper .copy ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            justify-content: flex-start;
+            list-style: none;
+            padding: 0; }
+            body .page-wrapper footer .footer-bottom .grid-wrapper .copy ul li {
+              height: 16px;
+              position: relative; }
+              body .page-wrapper footer .footer-bottom .grid-wrapper .copy ul li:not(:last-child):after {
+                content: '';
+                position: absolute;
+                right: 0;
+                top: 10px;
+                display: block;
+                background-color: #fff;
+                width: 1px;
+                height: 16px; }
+              body .page-wrapper footer .footer-bottom .grid-wrapper .copy ul li a {
+                padding: 10px;
+                line-height: 16px;
+                color: #fff; }
+              body .page-wrapper footer .footer-bottom .grid-wrapper .copy ul li:nth-child(1) a {
+                padding-left: 0; }
+              body .page-wrapper footer .footer-bottom .grid-wrapper .copy ul li:last-child a {
+                padding-right: 0; }
+
 /* Media queries */
 /* Init media queries */
 @media only screen and (max-width: 768px) {
