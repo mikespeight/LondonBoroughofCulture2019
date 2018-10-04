@@ -1,0 +1,86 @@
+/****************************************
+*
+* Typographic styles
+*
+*****************************************/
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+@font-face {
+  font-family: 'Archia';
+  src: url('#{$pathToFonts}/archia-thin-webfont.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Archia';
+  src: url('#{$pathToFonts}/archia-light-webfont.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Archia';
+  src: url('#{$pathToFonts}/archia-regular-webfont.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Archia';
+  src: url('#{$pathToFonts}/archia-medium-webfont.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Archia';
+  src: url('#{$pathToFonts}/archia-semibold-webfont.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Archia';
+  src: url('#{$pathToFonts}/archia-bold-webfont.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+
+$Archia-font: 'Archia', sans-serif;
+.archia-font {font-family: $Archia-font};
+
+
+//font weights
+$thin:      200;
+$light:     300;
+$regular:   400;
+$medium:    500;
+$semiBold:  600;
+$bold:      700;
+
+
+.thin             {font-weight: $thin}
+
+.light            {font-weight: $light}
+//.light-italic     {font-weight: $light;font-style: italic;}
+.regular          {font-weight: $regular;}
+//.regular-italic   {font-weight: $regular;font-style: italic;}
+.semi-bold        {font-weight: $semiBold;}
+//.semi-bold-italic {font-weight: $semiBold;font-style: italic;}
+.medium           {font-weight: $medium;}
+.bold             {font-weight: $bold;}
+
+.centre {text-align: center}
+
+h1{
+  font-family: $Archia-font;
+  font-weight: $thin;
+  @include font-size(80);
+}
+
+h2 {
+  font-family: $Archia-font;
+  font-weight: $regular;
+  @include font-size(40);
+}
