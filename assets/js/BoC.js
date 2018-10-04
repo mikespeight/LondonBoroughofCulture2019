@@ -40,7 +40,9 @@ $(document).ready(function(){
 				location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
 				&&
 				location.hostname == this.hostname
-			) {
+			)
+
+			{
 				// Figure out element to scroll to
 				var target = $(this.hash);
 				target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');

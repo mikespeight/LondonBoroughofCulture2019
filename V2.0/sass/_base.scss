@@ -122,8 +122,9 @@ button {
       }
 
       &.primary {
-        color: $brandPrimary;
+        color: $white;
         border-color: $brandPrimary;
+        background-color: $brandPrimary;
 
         span {
 
