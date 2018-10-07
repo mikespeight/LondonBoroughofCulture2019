@@ -2613,7 +2613,10 @@ button {
     line-height: 44px; }
     a.btn.link-btn,
     button.btn.link-btn {
-      height: 56px;
+      height: 48px;
+      border-radius: 24px;
+      -webkit-border-radius: 24px;
+      -moz-border-radius: 24px;
       min-width: 216px;
       border: 2px solid #fff;
       margin: 20px 0;
@@ -2649,7 +2652,7 @@ button {
             background-repeat: no-repeat; }
         a.btn.link-btn.external.primary span:after,
         button.btn.link-btn.external.primary span:after {
-          background-position: -34px -3px; }
+          background-position: -3px -3px; }
       a.btn.link-btn.download,
       button.btn.link-btn.download {
         position: relative;
@@ -2668,8 +2671,9 @@ button {
           background-repeat: no-repeat; }
       a.btn.link-btn.primary,
       button.btn.link-btn.primary {
-        color: #00a3a6;
-        border-color: #00a3a6; }
+        color: #fff;
+        border-color: #00a3a6;
+        background-color: #00a3a6; }
       a.btn.link-btn.tertiary,
       button.btn.link-btn.tertiary {
         color: #fff;
@@ -2701,11 +2705,11 @@ button {
       background-position: -34px -3px; }
     a:hover.btn.link-btn.primary,
     button:hover.btn.link-btn.primary {
-      color: #fff;
-      background-color: #00a3a6; }
+      color: #00a3a6;
+      background-color: #fff; }
       a:hover.btn.link-btn.primary.external span:after,
       button:hover.btn.link-btn.primary.external span:after {
-        background-position: -3px -3px; }
+        background-position: -34px -3px; }
     a:hover.btn.link-btn.cta-btn,
     button:hover.btn.link-btn.cta-btn {
       border-color: #026d6f;
@@ -3088,6 +3092,7 @@ body {
   margin: 0;
   padding: 0; }
   body .fixed-width-content {
+    margin: 0 auto;
     max-width: 1200px; }
   body.homepage .page-wrapper header.page-header {
     position: fixed;
