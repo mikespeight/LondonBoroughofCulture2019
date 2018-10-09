@@ -208,6 +208,7 @@ body {
           overflow: hidden;
           position: relative;
 
+          .non-link-block,
           .bg-link-block,
           .image-link-block {
             display: block;

@@ -3202,17 +3202,20 @@ body {
         height: auto;
         overflow: hidden;
         position: relative; }
+        body .page-wrapper .content-wrapper .dynamic-row .block .non-link-block,
         body .page-wrapper .content-wrapper .dynamic-row .block .bg-link-block,
         body .page-wrapper .content-wrapper .dynamic-row .block .image-link-block {
           display: block;
           width: 100%;
           height: 100%; }
+          body .page-wrapper .content-wrapper .dynamic-row .block .non-link-block img,
           body .page-wrapper .content-wrapper .dynamic-row .block .bg-link-block img,
           body .page-wrapper .content-wrapper .dynamic-row .block .image-link-block img {
             display: block;
             width: 100%;
             object-fit: cover;
             transition: all, 0.5s ease-in-out; }
+          body .page-wrapper .content-wrapper .dynamic-row .block .non-link-block .block-inner-content,
           body .page-wrapper .content-wrapper .dynamic-row .block .bg-link-block .block-inner-content,
           body .page-wrapper .content-wrapper .dynamic-row .block .image-link-block .block-inner-content {
             position: absolute;
@@ -3221,17 +3224,20 @@ body {
             color: #fff;
             padding-left: 36px;
             padding-top: 50px; }
+            body .page-wrapper .content-wrapper .dynamic-row .block .non-link-block .block-inner-content h2,
             body .page-wrapper .content-wrapper .dynamic-row .block .bg-link-block .block-inner-content h2,
             body .page-wrapper .content-wrapper .dynamic-row .block .image-link-block .block-inner-content h2 {
               font-size: 30px;
               font-size: 3rem;
               font-weight: 600; }
+            body .page-wrapper .content-wrapper .dynamic-row .block .non-link-block .block-inner-content p,
             body .page-wrapper .content-wrapper .dynamic-row .block .bg-link-block .block-inner-content p,
             body .page-wrapper .content-wrapper .dynamic-row .block .image-link-block .block-inner-content p {
               font-size: 18px;
               font-size: 1.8rem;
               font-weight: 500;
               margin-bottom: 0; }
+          body .page-wrapper .content-wrapper .dynamic-row .block .non-link-block:hover img,
           body .page-wrapper .content-wrapper .dynamic-row .block .bg-link-block:hover img,
           body .page-wrapper .content-wrapper .dynamic-row .block .image-link-block:hover img {
             transform: scale(1.1); }
