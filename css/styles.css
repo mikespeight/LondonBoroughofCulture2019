@@ -3165,12 +3165,16 @@ body {
           justify-content: flex-start; }
           body .page-wrapper .main-navigation nav.navbar ul li.dropdown.open div.dropdown-menu > ul li a {
             color: #000; }
+            body .page-wrapper .main-navigation nav.navbar ul li.dropdown.open div.dropdown-menu > ul li a:hover {
+              color: #fff; }
           body .page-wrapper .main-navigation nav.navbar ul li.dropdown.open div.dropdown-menu > ul li > ul {
             display: flex;
             flex-direction: column;
             justify-content: flex-start; }
             body .page-wrapper .main-navigation nav.navbar ul li.dropdown.open div.dropdown-menu > ul li > ul li a {
               color: #fff; }
+              body .page-wrapper .main-navigation nav.navbar ul li.dropdown.open div.dropdown-menu > ul li > ul li a:hover {
+                color: #000; }
       body .page-wrapper .main-navigation nav.navbar ul li.dropdown.open a {
         color: #fff;
         background-color: #00a3a6; }

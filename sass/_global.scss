@@ -126,6 +126,10 @@ body {
 
                           a {
                             color: $black;
+
+                            &:hover {
+                              color: $white;
+                            }
                           }
 
                           & > ul {
@@ -136,6 +140,10 @@ body {
 
                               a  {
                                 color: $white;
+
+                                &:hover {
+                                  color: $black;
+                                }
                               }
                             }
                           }

@@ -21,27 +21,64 @@ function getTimeRemaining(endtime){
 	};
 }
 
-var timeOutOpen, timeOutOut;
 
-function openMenu(delay, $object){
-	if(timeOutOut !== null){
-		clearTimeout(timeOutOut);
+function hoverMenus(){
+	var timeOutOpen,
+		timeOutOut,
+		$menus = $('.navbar > ul li'),
+		$openMenus = $('.navbar > ul li.dropdown');
+
+	console.log('menus ', $menus.length);
+
+	function clearMenus(){
+
+		console.log('there are ',$openMenus.length, ' open menus');
+		if($openMenus.length > 0) {
+			$openMenus.each(function(){
+				$(this).removeClass('open');
+			});
+		}
 	}
-	timeOutOpen = setTimeout(function(){
-		$object.addClass('open');
-	}, delay);
-	//$object.delay(delay).removeClass('open');
+
+	function openMenu(delay, $object){
+		clearMenus();
+		if(timeOutOut !== null){
+			clearTimeout(timeOutOut);
+		}
+		timeOutOpen = setTimeout(function(){
+			$object.addClass('open');
+		}, delay);
+		//$object.delay(delay).removeClass('open');
+	};
+
+	function closeMenu(delay, $object){
+		if(timeOutOpen !== null){
+			clearTimeout(timeOutOpen);
+		}
+		timeOutOut = setTimeout(function(){
+			$object.removeClass('open');
+		}, delay);
+		//$object.delay(delay).removeClass('open');
+	}
+
+	var $thisDropdown = $('.navbar > ul li.dropdown');
+
+	//$thisDropdown.hover(openMenu(250, e),closeMenu(250, e));
+	$thisDropdown.hover(
+		function(){
+			//console.log('over');
+			openMenu(300, $(this)); //Jquery ver delay not working
+			//$(this).stop(true).delay(500).addClass('open');
+		},
+		function(){
+			//console.log('out');
+			closeMenu(300, $(this))
+			//$(this).stop(true).delay(500).removeClass('open'); //Jquery ver delay not working
+		}
+	);
 }
 
-function closeMenu(delay, $object){
-	if(timeOutOpen !== null){
-		clearTimeout(timeOutOpen);
-	}
-	timeOutOut = setTimeout(function(){
-		$object.removeClass('open');
-	}, delay);
-	//$object.delay(delay).removeClass('open');
-}
+
 
 $(document).ready(function(){
 
@@ -90,25 +127,9 @@ $(document).ready(function(){
 		});
 
 	// main menu hover delay
-
-	var $thisDropdown = $('.navbar > ul li.dropdown');
-
-	//$thisDropdown.hover(openMenu(250, e),closeMenu(250, e));
-	$thisDropdown.hover(
-		function(){
-			//console.log('over');
-			openMenu(400, $(this)); //Jquery ver delay not working
-			//$(this).stop(true).delay(500).addClass('open');
-		},
-		function(){
-			//console.log('out');
-			closeMenu(400, $(this))
-			//$(this).stop(true).delay(500).removeClass('open'); //Jquery ver delay not working
-		}
-	);
+	hoverMenus();
 
 	// nav fixed on scroll
-
 	$(document).scroll(function(){
 		if($(this).scrollTop() > 120) {
 			$(".page-wrapper").addClass('fixed-nav');
