@@ -47,6 +47,7 @@ body {
             margin: 35px 36px;
             background: transparent url("#{$pathToImages}/boc-logo-x2.png") 0 0 no-repeat;
             background-size: 248px 47px;
+            text-indent: -10000px;
           }
 
           .social {
@@ -75,9 +76,11 @@ body {
       nav {
 
         &.navbar {
+          margin: 0 auto;
 
           ul {
             list-style: none;
+            text-align: center;
 
             li {
               display: inline-block;
@@ -609,6 +612,7 @@ body {
 
           a {
             display: inline-block;
+            margin-top: 20px;
             color: $white;
             @include font-size(29);
 
@@ -629,6 +633,7 @@ body {
             justify-content: flex-start;
             list-style: none;
             padding: 0;
+            margin-bottom: 20px;
 
             li {
               height: 16px;

@@ -23,16 +23,13 @@ function getTimeRemaining(endtime){
 
 
 function hoverMenus(){
+
 	var timeOutOpen,
 		timeOutOut,
 		$menus = $('.navbar > ul li'),
 		$openMenus = $('.navbar > ul li.dropdown');
 
-	console.log('menus ', $menus.length);
-
 	function clearMenus(){
-
-		console.log('there are ',$openMenus.length, ' open menus');
 		if($openMenus.length > 0) {
 			$openMenus.each(function(){
 				$(this).removeClass('open');
@@ -48,7 +45,6 @@ function hoverMenus(){
 		timeOutOpen = setTimeout(function(){
 			$object.addClass('open');
 		}, delay);
-		//$object.delay(delay).removeClass('open');
 	};
 
 	function closeMenu(delay, $object){
@@ -58,20 +54,16 @@ function hoverMenus(){
 		timeOutOut = setTimeout(function(){
 			$object.removeClass('open');
 		}, delay);
-		//$object.delay(delay).removeClass('open');
 	}
 
 	var $thisDropdown = $('.navbar > ul li.dropdown');
 
-	//$thisDropdown.hover(openMenu(250, e),closeMenu(250, e));
 	$thisDropdown.hover(
 		function(){
-			//console.log('over');
 			openMenu(300, $(this)); //Jquery ver delay not working
 			//$(this).stop(true).delay(500).addClass('open');
 		},
 		function(){
-			//console.log('out');
 			closeMenu(300, $(this))
 			//$(this).stop(true).delay(500).removeClass('open'); //Jquery ver delay not working
 		}

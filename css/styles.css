@@ -3118,7 +3118,8 @@ body {
         height: 47px;
         margin: 35px 36px;
         background: transparent url("../assets/images/boc-logo-x2.png") 0 0 no-repeat;
-        background-size: 248px 47px; }
+        background-size: 248px 47px;
+        text-indent: -10000px; }
       body .page-wrapper header.page-header .header-content .social {
         margin: 40px 36px; }
         body .page-wrapper header.page-header .header-content .social a {
@@ -3132,54 +3133,57 @@ body {
     height: 50px;
     position: relative;
     background-color: #fff; }
-    body .page-wrapper .main-navigation nav.navbar ul {
-      list-style: none; }
-      body .page-wrapper .main-navigation nav.navbar ul li {
-        display: inline-block; }
-        body .page-wrapper .main-navigation nav.navbar ul li a {
-          display: inline-block;
-          height: 50px;
-          padding: 0 36px;
-          font-size: 18px;
-          font-size: 1.8rem;
-          font-weight: 500;
-          line-height: 50px;
-          text-decoration: none;
-          color: #000; }
-          body .page-wrapper .main-navigation nav.navbar ul li a:hover {
-            color: #fff;
-            background-color: #00a3a6; }
-      body .page-wrapper .main-navigation nav.navbar ul li.dropdown.open div.dropdown-menu {
-        display: block;
-        position: absolute;
-        z-index: 100;
-        top: 50px;
-        left: 0;
-        width: 100%;
-        min-height: 100px;
-        padding: 27px 36px 36px 0;
-        background-color: #00a3a6; }
-        body .page-wrapper .main-navigation nav.navbar ul li.dropdown.open div.dropdown-menu > ul {
-          display: flex;
-          flex-direction: row;
-          justify-content: flex-start; }
-          body .page-wrapper .main-navigation nav.navbar ul li.dropdown.open div.dropdown-menu > ul li a {
+    body .page-wrapper .main-navigation nav.navbar {
+      margin: 0 auto; }
+      body .page-wrapper .main-navigation nav.navbar ul {
+        list-style: none;
+        text-align: center; }
+        body .page-wrapper .main-navigation nav.navbar ul li {
+          display: inline-block; }
+          body .page-wrapper .main-navigation nav.navbar ul li a {
+            display: inline-block;
+            height: 50px;
+            padding: 0 36px;
+            font-size: 18px;
+            font-size: 1.8rem;
+            font-weight: 500;
+            line-height: 50px;
+            text-decoration: none;
             color: #000; }
-            body .page-wrapper .main-navigation nav.navbar ul li.dropdown.open div.dropdown-menu > ul li a:hover {
-              color: #fff; }
-          body .page-wrapper .main-navigation nav.navbar ul li.dropdown.open div.dropdown-menu > ul li > ul {
+            body .page-wrapper .main-navigation nav.navbar ul li a:hover {
+              color: #fff;
+              background-color: #00a3a6; }
+        body .page-wrapper .main-navigation nav.navbar ul li.dropdown.open div.dropdown-menu {
+          display: block;
+          position: absolute;
+          z-index: 100;
+          top: 50px;
+          left: 0;
+          width: 100%;
+          min-height: 100px;
+          padding: 27px 36px 36px 0;
+          background-color: #00a3a6; }
+          body .page-wrapper .main-navigation nav.navbar ul li.dropdown.open div.dropdown-menu > ul {
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
             justify-content: flex-start; }
-            body .page-wrapper .main-navigation nav.navbar ul li.dropdown.open div.dropdown-menu > ul li > ul li a {
-              color: #fff; }
-              body .page-wrapper .main-navigation nav.navbar ul li.dropdown.open div.dropdown-menu > ul li > ul li a:hover {
-                color: #000; }
-      body .page-wrapper .main-navigation nav.navbar ul li.dropdown.open a {
-        color: #fff;
-        background-color: #00a3a6; }
-      body .page-wrapper .main-navigation nav.navbar ul li.dropdown div.dropdown-menu {
-        display: none; }
+            body .page-wrapper .main-navigation nav.navbar ul li.dropdown.open div.dropdown-menu > ul li a {
+              color: #000; }
+              body .page-wrapper .main-navigation nav.navbar ul li.dropdown.open div.dropdown-menu > ul li a:hover {
+                color: #fff; }
+            body .page-wrapper .main-navigation nav.navbar ul li.dropdown.open div.dropdown-menu > ul li > ul {
+              display: flex;
+              flex-direction: column;
+              justify-content: flex-start; }
+              body .page-wrapper .main-navigation nav.navbar ul li.dropdown.open div.dropdown-menu > ul li > ul li a {
+                color: #fff; }
+                body .page-wrapper .main-navigation nav.navbar ul li.dropdown.open div.dropdown-menu > ul li > ul li a:hover {
+                  color: #000; }
+        body .page-wrapper .main-navigation nav.navbar ul li.dropdown.open a {
+          color: #fff;
+          background-color: #00a3a6; }
+        body .page-wrapper .main-navigation nav.navbar ul li.dropdown div.dropdown-menu {
+          display: none; }
   body .page-wrapper.fixed-nav nav.main-navigation {
     position: fixed;
     top: 0;
@@ -3471,6 +3475,7 @@ body {
           grid-area: social; }
           body footer .footer-bottom .grid-wrapper .social a {
             display: inline-block;
+            margin-top: 20px;
             color: #fff;
             font-size: 29px;
             font-size: 2.9rem; }
@@ -3487,7 +3492,8 @@ body {
             justify-content: space-between;
             justify-content: flex-start;
             list-style: none;
-            padding: 0; }
+            padding: 0;
+            margin-bottom: 20px; }
             body footer .footer-bottom .grid-wrapper .copy ul li {
               height: 16px;
               position: relative; }
