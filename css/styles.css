@@ -3157,7 +3157,7 @@ body {
         left: 0;
         width: 100%;
         min-height: 100px;
-        padding: 27px 36px 36px;
+        padding: 27px 36px 36px 0;
         background-color: #00a3a6; }
         body .page-wrapper .main-navigation nav.navbar ul li.dropdown.open div.dropdown-menu > ul {
           display: flex;

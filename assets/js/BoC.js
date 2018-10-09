@@ -21,16 +21,26 @@ function getTimeRemaining(endtime){
 	};
 }
 
+var timeOutOpen, timeOutOut;
+
 function openMenu(delay, $object){
-	setTimeout(function(){
+	if(timeOutOut !== null){
+		clearTimeout(timeOutOut);
+	}
+	timeOutOpen = setTimeout(function(){
 		$object.addClass('open');
 	}, delay);
+	//$object.delay(delay).removeClass('open');
 }
 
 function closeMenu(delay, $object){
-	setTimeout(function(){
+	if(timeOutOpen !== null){
+		clearTimeout(timeOutOpen);
+	}
+	timeOutOut = setTimeout(function(){
 		$object.removeClass('open');
 	}, delay);
+	//$object.delay(delay).removeClass('open');
 }
 
 $(document).ready(function(){
@@ -86,18 +96,16 @@ $(document).ready(function(){
 	//$thisDropdown.hover(openMenu(250, e),closeMenu(250, e));
 	$thisDropdown.hover(
 		function(){
-			console.log('over');
-			openMenu(400, $(this));
-			//$(this).addClass('hover')
+			//console.log('over');
+			openMenu(400, $(this)); //Jquery ver delay not working
+			//$(this).stop(true).delay(500).addClass('open');
 		},
 		function(){
-			console.log('out');
+			//console.log('out');
 			closeMenu(400, $(this))
-			//$(this).removeClass('hover')
+			//$(this).stop(true).delay(500).removeClass('open'); //Jquery ver delay not working
 		}
 	);
-
-
 
 	// nav fixed on scroll
 
