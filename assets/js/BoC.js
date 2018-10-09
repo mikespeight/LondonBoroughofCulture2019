@@ -21,6 +21,17 @@ function getTimeRemaining(endtime){
 	};
 }
 
+function openMenu(delay, $object){
+	setTimeout(function(){
+		$object.addClass('open');
+	}, delay);
+}
+
+function closeMenu(delay, $object){
+	setTimeout(function(){
+		$object.removeClass('open');
+	}, delay);
+}
 
 $(document).ready(function(){
 
@@ -67,5 +78,36 @@ $(document).ready(function(){
 				}
 			}
 		});
+
+	// main menu hover delay
+
+	var $thisDropdown = $('.navbar > ul li.dropdown');
+
+	//$thisDropdown.hover(openMenu(250, e),closeMenu(250, e));
+	$thisDropdown.hover(
+		function(){
+			console.log('over');
+			openMenu(400, $(this));
+			//$(this).addClass('hover')
+		},
+		function(){
+			console.log('out');
+			closeMenu(400, $(this))
+			//$(this).removeClass('hover')
+		}
+	);
+
+
+
+	// nav fixed on scroll
+
+	$(document).scroll(function(){
+		if($(this).scrollTop() > 120) {
+			$(".page-wrapper").addClass('fixed-nav');
+		} else {
+			$(".page-wrapper").removeClass('fixed-nav');
+		}
+	});
+
 
 });

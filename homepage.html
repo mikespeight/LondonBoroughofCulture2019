@@ -29,8 +29,8 @@
 
     <script src="assets/js/modernizr/modernizr.js" type="text/javascript" language="JavaScript"></script>
     <script src="assets/components/jquery/dist/jquery.min.js" type="text/javascript" language="JavaScript"></script>
-    <script src="assets/components/bootstrap4/dist/js/bootstrap.min.js" type="text/javascript" language="JavaScript"></script>
-    <script src="assets/components/flexslider-scss/jquery.flexslider.js" type="text/javascript" language="JavaScript"></script>
+    <!--<script src="assets/components/bootstrap4/dist/js/bootstrap.min.js" type="text/javascript" language="JavaScript"></script>
+    <script src="assets/components/flexslider-scss/jquery.flexslider.js" type="text/javascript" language="JavaScript"></script>-->
     <script src="assets/js/BoC.js" type="text/javascript" language="JavaScript"></script>
 
 </head>
@@ -42,9 +42,13 @@
 
         <div class="header-content">
 
-            <a href="/" class="logo">
+            <!--<a href="/" class="logo">
 
-            </a>
+            </a>-->
+
+            <h1 href="/" class="logo">
+
+            </h1>
 
             <div class="social hidden-xs">
 
@@ -64,65 +68,108 @@
 
         </div>
 
-        <nav class="main-navigation">
+    </header>
+
+    <div class="main-navigation">
+
+        <nav class="navbar">
 
             <ul>
                 <li>
-                    <a href="">About</a>
+                    <a href="#">About</a>
+                </li>
+                <li class="dropdown">
+                    <a href="#">What‘s On</a>
+                    <div class="dropdown-menu">
+
+                        <ul>
+                            <li>
+                                <a href="">CLBWF Events</a>
+                                <ul>
+                                    <li><a href="">Event one</a></li>
+                                    <li><a href="">Event two</a></li>
+                                    <li><a href="">Event three</a></li>
+                                    <li><a href="">Event four</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="">Community Events</a>
+                                <ul>
+                                    <li><a href="">Event one</a></li>
+                                    <li><a href="">Event two</a></li>
+                                    <li><a href="">Event three</a></li>
+                                    <li><a href="">Event four</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="">All Events</a>
+                                <ul>
+                                    <li><a href="">Listings ?</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="">Add your event</a>
+                            </li>
+                            <li>
+                                <a href="">Culture map</a>
+                            </li>
+                        </ul>
+
+                    </div>
                 </li>
                 <li>
-                    <a href="">What‘s On</a>
-                    <ul class="dropdown-menu">
-                        <li>
-                            <a href="">CLBWF Events</a>
-                            <ul>
-                                <li><a href="">Event one</a></li>
-                                <li><a href="">Event two</a></li>
-                                <li><a href="">Event three</a></li>
-                                <li><a href="">Event four</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="">Community Events</a>
-                            <ul>
-                                <li><a href="">Event one</a></li>
-                                <li><a href="">Event two</a></li>
-                                <li><a href="">Event three</a></li>
-                                <li><a href="">Event four</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="">All Events</a>
-                            <ul>
-                                <li><a href="">Event one</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="">Add your event</a>
-                        </li>
-                        <li>
-                            <a href="">Culture map</a>
-                        </li>
-                    </ul>
+                    <a href="#">Venue</a>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Visitor Info</a>
+                    <div class="dropdown-menu">
+
+                        <ul>
+                            <li>
+                                <a href="">CLBWF Events</a>
+                                <ul>
+                                    <li><a href="">Event</a></li>
+                                    <li><a href="">Event</a></li>
+                                    <li><a href="">Event</a></li>
+                                    <li><a href="">Event</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="">Community Events</a>
+                                <ul>
+                                    <li><a href="">Event</a></li>
+                                    <li><a href="">Event</a></li>
+                                    <li><a href="">Event</a></li>
+                                    <li><a href="">Event</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="">All Events</a>
+                                <ul>
+                                    <li><a href="">Listings ?</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="">Add your event</a>
+                            </li>
+                            <li>
+                                <a href="">Culture map</a>
+                            </li>
+                        </ul>
+
+                    </div>
                 </li>
                 <li>
-                    <a href="">Venue</a>
+                    <a href="#">Get Involved</a>
                 </li>
                 <li>
-                    <a href="">Visitor Info</a>
-                </li>
-                <li>
-                    <a href="">Get Involved</a>
-                </li>
-                <li>
-                    <a href="">News</a>
+                    <a href="#">News</a>
                 </li>
             </ul>
 
         </nav>
 
-    </header>
-
+    </div>
 
     <div class="content-wrapper">
 
@@ -171,7 +218,23 @@
 
             <div class="fixed-width-content">
 
-                <div class="views-element-container block block-views block-views-blockevent-search-block-1" id="block-views-block-event-search-block-1">
+                <div class="register-content">
+
+                    <div class="size1of2">
+                        <div class="block-inner-content">
+                            <h2>Stay connected!</h2>
+                            <p>Sign up for WFCulture2019 email updates</p>
+                        </div>
+                    </div>
+                    <div class="size1of2">
+                        <div class="block-inner-content">
+                            <a class="btn link-btn sign-up primary external"><span>REGISTER FOR UPDATES</span></a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!--<div class="views-element-container block block-views block-views-blockevent-search-block-1" id="block-views-block-event-search-block-1">
 
                     <h2>Event search</h2>
 
@@ -202,7 +265,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div>-->
             </div>
 
         </section>
@@ -253,18 +316,22 @@
 
         <section class="register">
 
-            <div class="fixed-width-content register-content">
+            <div class="fixed-width-content">
 
-                <div class="size1of2">
-                    <div class="block-inner-content">
-                        <h2>Stay connected!</h2>
-                        <p>Sign up for WFCulture2019 email updates</p>
+                <div class="register-content">
+
+                    <div class="size1of2">
+                        <div class="block-inner-content">
+                            <h2>Stay connected!</h2>
+                            <p>Sign up for WFCulture2019 email updates</p>
+                        </div>
                     </div>
-                </div>
-                <div class="size1of2">
-                    <div class="block-inner-content">
-                        <a class="btn link-btn sign-up primary external"><span>REGISTER FOR UPDATES</span></a>
+                    <div class="size1of2">
+                        <div class="block-inner-content">
+                            <a class="btn link-btn sign-up primary external"><span>REGISTER FOR UPDATES</span></a>
+                        </div>
                     </div>
+
                 </div>
 
             </div>
@@ -415,4 +482,7 @@
 
 
 </body>
+
+
+
 </html>
