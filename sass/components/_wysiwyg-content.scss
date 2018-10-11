@@ -7,26 +7,45 @@ section {
     &.wysiwyg {
       display: block!important;
       font-family: $Archia-font;
-      font-weight: $light;
+      font-weight: $regular;
 
       a {
         display: inline;
+        color: $brandPrimary;
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+        }
       }
 
       &.inner {
-        margin: 30px 0;
+        padding: 65px 36px 0;
       }
 
       p {
-        @include font-size(20);
+        @include font-size(16);
         margin: 10px 0 28px;
         padding-right: 50px;
         line-height: 28px;
-        font-weight: $light;
+        font-weight: $regular;
 
         &:nth-child(1){
           //margin-top:60px;
         }
+      }
+
+      h2, h3 {
+        color: $brandPrimary;
+        font-weight: $semiBold;
+      }
+
+      h2 {
+        @include font-size(32);
+      }
+
+      h3 {
+        @include font-size(24);
       }
 
       li {

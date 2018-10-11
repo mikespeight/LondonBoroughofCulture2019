@@ -39,6 +39,9 @@ body {
   display: none;
 }
 
+.btn-wrapper {
+  margin: 0 0 50px 36px;
+}
 
 a,
 button {
@@ -48,8 +51,58 @@ button {
   &.btn {
     height: 44px;
     line-height: 44px;
-    //padding: 0 20px;
 
+    &.blob-btn {
+      display: inline-block;
+      position: relative;
+      height: 58px;
+      @include border-radius(29px);
+      padding: 0 100px 0 30px;
+      color: $white;
+      @include font-size(16);
+      font-weight: $semiBold;
+      line-height: 58px;
+      text-decoration: none;
+      overflow: hidden;
+
+      &:after {
+        content: '';
+        position: absolute;
+        display: block;
+        height:58px;
+        width: 87px;
+        top:0;
+        right:0;
+        background-color: transparent;
+        background-image: url("#{$pathToImages}/blob-btn-bg-sprite.png");
+        background-repeat: no-repeat;
+        opacity: 1;
+        transition: all, 0.33s ease-in-out;
+      }
+
+      &.green {
+        background-color: $brandPrimary;
+
+        &:after {
+          background-position: 100% -58px;
+        }
+      }
+
+      &.pink {
+
+        &:after {
+
+        }
+      }
+
+      &:hover {
+
+        &:after {
+          opacity:0;
+        }
+      }
+
+    }
 
     &.link-btn {
       height: 48px;
@@ -65,8 +118,6 @@ button {
       text-transform: uppercase;
       color: $white;
       transition: all 0.125s ease-in-out;
-      //padding:1px 0;
-
 
       &.external {
         position: relative;
@@ -96,7 +147,6 @@ button {
           span {
 
             &:after {
-              //background-position: -34px -3px;
               background-position: -3px -3px;
             }
           }

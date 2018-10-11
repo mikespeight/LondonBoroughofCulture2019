@@ -121,6 +121,10 @@ body {
                       padding: 27px 36px 36px 0;
                       background-color: $brandPrimary;
 
+                      ul {
+                        text-align: left;
+                      }
+
                       & > ul {
                         @include flex-container(row,flex-start);
 
@@ -192,7 +196,6 @@ body {
 
 
     .content-wrapper {
-      //margin-top: 120px;
       overflow: visible;
       height: auto;
 
@@ -208,7 +211,47 @@ body {
           overflow: hidden;
           position: relative;
 
-          .non-link-block,
+          .image-overlay {
+            @include fill-parent;
+            background-color: $black;
+            opacity: 0.3;
+          }
+
+          .non-link-block {
+            display: block;
+            width: 100%;
+            height: 100%;
+
+            img {
+              display: block;
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+              transition: all, 0.5s ease-in-out;
+            }
+
+            .block-inner-content {
+              position: absolute;
+              top: 0;
+              left: 0;
+              color: $white;
+              padding-left: 36px;
+              padding-top: 50px;
+
+              h2 {
+                @include font-size(30);
+                font-weight: $semiBold;
+              }
+
+              p {
+                @include font-size(18);
+                font-weight: $medium;
+                margin-bottom: 0;
+              }
+            }
+
+          }
+
           .bg-link-block,
           .image-link-block {
             display: block;
@@ -218,7 +261,6 @@ body {
             img {
               display: block;
               width: 100%;
-              //height: 100%;
               object-fit: cover;
               transition: all, 0.5s ease-in-out;
 
@@ -275,6 +317,70 @@ body {
                 opacity: 1;
               }
 
+            }
+          }
+
+          &.hero-block {
+            overflow: visible;
+
+            .block-inner-content {
+              padding-top: 175px;
+
+              h1 {
+                @include font-size(70);
+                font-weight: $semiBold;
+              }
+
+              P {
+                @include font-size(24);
+                font-weight: $medium;
+              }
+            }
+
+            .share-block {
+              display: inline-block;
+              position: absolute;
+              z-index: 2;
+              bottom:-30px;
+              right: 36px;
+              padding: 0 20px;
+              height: 60px;
+              @include border-radius(30px);
+              //border: 1px solid silver;
+              background-color: white;
+
+              & > span {
+                @include flex-container(row, flex-start);
+              }
+
+              .share {
+                @include  font-size(14);
+                font-weight: $semiBold;
+                text-transform: uppercase;
+                line-height: 60px;
+              }
+
+              a {
+                margin-left: 20px;
+
+                .fa {
+                  @include font-size(32);
+                  line-height: 60px;
+                }
+              }
+
+              .fa-twitter {
+                color: $twitterBlue;
+                @include font-size(35);
+              }
+
+              .fa-facebook-square {
+                color: $facebookBlue;
+              }
+
+              .fa-linkedin-square {
+                color: $linkedinBlue;
+              }
             }
           }
 
@@ -426,6 +532,19 @@ body {
               }
             }
 
+            &.feature-block {
+
+              .bg-link-block {
+                display: block;
+                min-height: 400px;
+              }
+
+              .block-inner-content {
+
+
+              }
+            }
+
             &.counter-block {
 
               .block-inner-content {
@@ -507,7 +626,7 @@ body {
 
 
   footer {
-    //margin-top: 120px;
+    margin-top: 60px;
 
     /*      .footer-top {
             height:120px;

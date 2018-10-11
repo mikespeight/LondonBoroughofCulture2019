@@ -29,6 +29,7 @@ $brandDarkPink: $brandQuaternary;
 .persian-green-bg { background-color: $brandPersianGreen}
 .dark-purple-bg {background-color: $brandDarkPurple}
 .dark-pink-bg {background-color: $brandDarkPink}
+.white-bg {background-color: $white}
 
 // primary, secondary, tertiary, quaternary, quinary, senary, septenary, octonary, nonary, and denary
 
@@ -41,7 +42,7 @@ $transBrandDkBlue: rgba(9,116,138,0.75);
 $transBrandVDkBlue: rgba(7,96,114,0.75);
 
 // text colours
-$txtColour: #0a4551;
+$txtColour: #000000;
 $text-color: $txtColour;
 
 //other colours
@@ -51,3 +52,8 @@ $notification-bg: #ff0000;
 $filterImageBg: #1bbbdb;
 $caseStudiesBg: #f1f1f1;
 $footerBg:  #a6a6a6;
+
+//social colours
+$twitterBlue: #1da1f2;
+$facebookBlue: #3b5998;
+$linkedinBlue: #0077b5;
