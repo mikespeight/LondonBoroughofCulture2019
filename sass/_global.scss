@@ -594,6 +594,73 @@ body {
         height:220px;
       }
 
+      .slider {
+       height: auto;
+        overflow: visible;
+        transition: all, 0.5s ease-in-out!important;
+
+        .flexslider {
+          height: inherit;
+
+          .slides {
+            height: inherit;
+
+            .slide {
+              height: inherit;
+
+              a {
+                color: $white;
+                height: inherit;
+
+                &.image-link-block {
+                  position: relative;
+                  display: block;
+                  width: 100%;
+                  height: auto;
+
+                  .image-overlay,
+                  .block-inner-content {
+                    @include fill-parent;
+                  }
+
+                  img {
+                    height: auto;
+                    width: 100%;
+                    object-fit: cover;
+                  }
+
+                  .image-overlay {
+                    background-color: $black;
+                    opacity: 0.2;
+                  }
+
+                  .block-inner-content {
+                    padding: 150px 200px 30px 200px;
+
+                    h2 {
+                      @include font-size(60);
+                      font-weight: $semiBold;
+                    }
+
+                    p {
+                      @include font-size(32);
+                      font-weight: $semiBold;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        &:hover {
+
+          img {
+            transform: scale(1.1);
+          }
+        }
+      }
+
       .event-search,  //TODO: remove when event search is finished
       .register {
         background-color: $white;

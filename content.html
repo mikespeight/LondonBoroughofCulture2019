@@ -29,8 +29,8 @@
 
     <script src="assets/js/modernizr/modernizr.js" type="text/javascript" language="JavaScript"></script>
     <script src="assets/components/jquery/dist/jquery.min.js" type="text/javascript" language="JavaScript"></script>
-    <!--<script src="assets/components/bootstrap4/dist/js/bootstrap.min.js" type="text/javascript" language="JavaScript"></script>
-    <script src="assets/components/flexslider-scss/jquery.flexslider.js" type="text/javascript" language="JavaScript"></script>-->
+    <!--<script src="assets/components/bootstrap4/dist/js/bootstrap.min.js" type="text/javascript" language="JavaScript"></script>-->
+    <script src="assets/components/flexslider-scss/jquery.flexslider.js" type="text/javascript" language="JavaScript"></script>
     <script src="assets/js/BoC.js" type="text/javascript" language="JavaScript"></script>
 
 </head>
@@ -251,6 +251,86 @@
         </section>
 
         <section class="slider">
+
+            <div class="flexslider">
+                <ul class="slides">
+                    <li class="slide1 slide block image-block">
+                        <a href="#" class="image-link-block">
+                            <img src="assets/images/slider-image-1.jpg" />
+                            <span class="image-overlay"></span>
+                            <div class="block-inner-content">
+                                <h2>It was the best feeling!</h2>
+                                <p>Read Sarah‘ story</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="slide2 slide block image-block">
+                        <a href="#" class="image-link-block">
+                            <img src="assets/images/slider-image-2.jpg" />
+                            <span class="image-overlay"></span>
+                            <div class="block-inner-content">
+                                <h2>It was the best feeling!</h2>
+                                <p>Read Sarah‘ story</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="slide3 slide block image-block">
+                        <a href="#" class="image-link-block">
+                            <img src="assets/images/slider-image-3.jpg" />
+                            <span class="image-overlay"></span>
+                            <div class="block-inner-content">
+                                <h2>It was the best feeling!</h2>
+                                <p>Read Sarah‘ story</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <script>
+				$('.slider .flexslider').flexslider(
+					{
+						animation: "fade",
+						pauseOnAction: true,
+						pauseOnHover: true,
+						useCSS: true,
+						touch: true,
+						slideshow: true
+					}
+				);
+            </script>
+
+        </section>
+
+        <section class="content">
+
+            <div class="fixed-width-content">
+
+                <div class="inner wysiwyg">
+
+                   <h3>VMore text</h3>
+
+                    <ol>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi beatae deserunt eligendi
+                            esse et ullam, voluptatibus? Assumenda beatae dolorem, dolorum eaque eligendi esse eum
+                            eveniet illo incidunt ipsa ipsum labore laboriosam minus numquam, odio qui quidem recusandae
+                            repellendus reprehenderit saepe sunt tempore vero. Ad adipisci eaque libero quaerat,
+                            quibusdam tempora?
+                        </li>
+                        <li>Amet aspernatur assumenda at delectus distinctio illum iste, labore laboriosam nemo nisi
+                            obcaecati odio qui quidem, quisquam ratione repudiandae sit tenetur vel vero voluptatum. Ad
+                            aliquam, aliquid consectetur consequuntur corporis cumque distinctio doloribus ea eligendi
+                            fugit illum ipsam laudantium mollitia nemo nostrum perferendis perspiciatis quidem repellat
+                            reprehenderit saepe, similique soluta.
+                        </li>
+                    </ol>
+
+                </div>
+
+                <div class="btn-wrapper">
+                    <a href="" class="btn blob-btn green">Sign up</a>
+                </div>
+            </div>
 
         </section>
 

@@ -87,6 +87,39 @@ section {
           margin-bottom: 0;
         }
       }
+
+      ol {
+        list-style: none;
+        padding-left:60px;
+        counter-reset: list-counter;
+
+        li {
+          position: relative;
+          @include font-size(16);
+          font-weight: $regular;
+          line-height: 28px;
+          margin: 10px 35px;
+          color: $black;
+
+          &:before {
+            content: counter(list-counter);
+            counter-increment: list-counter;
+            position: absolute;
+            top: 5px;
+            left:-60px;
+            display: inline-block;
+            height: 44px;
+            width: 44px;
+            @include border-radius(22px);
+            color: $white;
+            background-color: $brandPrimary;
+            @include font-size(20);
+            font-weight: $semiBold;
+            text-align: center;
+            line-height: 43px;
+          }
+        }
+      }
     }
   }
 }

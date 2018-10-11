@@ -81,6 +81,6 @@ h1{
 
 h2 {
   font-family: $Archia-font;
-  font-weight: $regular;
-  @include font-size(40);
+  font-weight: $semiBold;
+  @include font-size(60);
 }
