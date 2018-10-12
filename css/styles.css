@@ -2489,6 +2489,13 @@ h2 {
   font-weight: 600;
   font-size: 60px;
   font-size: 6rem; }
+  h2.heading {
+    text-align: center;
+    color: #00a3a6;
+    font-size: 26px;
+    font-size: 2.6rem;
+    font-weight: 600;
+    line-height: 100px; }
 
 /*************************************************
 
@@ -2509,7 +2516,8 @@ body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, 
   vertical-align: baseline; }
 
 article, aside, details, figcaption, figure, dialog, footer, header, hgroup, menu, nav, section {
-  display: block; }
+  display: block;
+  box-sizing: border-box; }
 
 body {
   line-height: 1.5;
@@ -2654,6 +2662,13 @@ button {
         a.btn.blob-btn.green:after,
         button.btn.blob-btn.green:after {
           background-position: 100% -58px; }
+      a.btn.blob-btn.pink,
+      button.btn.blob-btn.pink {
+        background-color: #fff;
+        color: #ca5098; }
+        a.btn.blob-btn.pink:after,
+        button.btn.blob-btn.pink:after {
+          background-position: 100% 0; }
       a.btn.blob-btn:hover:after,
       button.btn.blob-btn:hover:after {
         opacity: 0; }
@@ -3392,7 +3407,7 @@ section div.wysiwyg {
     section div.wysiwyg a:hover {
       text-decoration: underline; }
   section div.wysiwyg.inner {
-    padding: 65px 36px 0; }
+    padding: 65px 36px 36px; }
   section div.wysiwyg p {
     font-size: 16px;
     font-size: 1.6rem;
@@ -3437,7 +3452,7 @@ section div.wysiwyg {
       margin-bottom: 0; }
   section div.wysiwyg ol {
     list-style: none;
-    padding-left: 60px;
+    padding-left: 25px;
     counter-reset: list-counter; }
     section div.wysiwyg ol li {
       position: relative;
@@ -3860,15 +3875,13 @@ body {
             font-weight: 600;
             line-height: 1; }
         body .page-wrapper .content-wrapper .dynamic-row .block.bg-block.event-block .block-inner-content {
+          padding: 36px;
           padding-top: 260px !important; }
           body .page-wrapper .content-wrapper .dynamic-row .block.bg-block.event-block .block-inner-content h2 {
-            font-size: 30px;
-            font-size: 3rem;
+            font-size: 40px;
+            font-size: 4rem;
             font-weight: 600;
             line-height: 1; }
-        body .page-wrapper .content-wrapper .dynamic-row .block.bg-block.feature-block .bg-link-block {
-          display: block;
-          min-height: 400px; }
         body .page-wrapper .content-wrapper .dynamic-row .block.bg-block.counter-block .block-inner-content {
           width: 100%;
           padding: 0; }
@@ -3887,6 +3900,49 @@ body {
             text-transform: uppercase;
             text-align: center;
             font-weight: 400; }
+        body .page-wrapper .content-wrapper .dynamic-row .block.bg-block.feature-block {
+          min-height: 400px; }
+          body .page-wrapper .content-wrapper .dynamic-row .block.bg-block.feature-block .non-link-block {
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%; }
+            body .page-wrapper .content-wrapper .dynamic-row .block.bg-block.feature-block .non-link-block .block-inner-content {
+              box-sizing: border-box;
+              position: relative;
+              height: 100%;
+              padding: 36px;
+              padding-bottom: 130px; }
+              body .page-wrapper .content-wrapper .dynamic-row .block.bg-block.feature-block .non-link-block .block-inner-content h2 {
+                margin-bottom: 25px; }
+              body .page-wrapper .content-wrapper .dynamic-row .block.bg-block.feature-block .non-link-block .block-inner-content p {
+                font-size: 20px;
+                font-size: 2rem;
+                font-weight: 400;
+                line-height: 36px; }
+              body .page-wrapper .content-wrapper .dynamic-row .block.bg-block.feature-block .non-link-block .block-inner-content .learn-more {
+                position: absolute;
+                left: 36px;
+                bottom: 36px; }
+        body .page-wrapper .content-wrapper .dynamic-row .block.bg-block.faq-block .block-inner-content {
+          position: relative;
+          width: 100%;
+          height: 100%;
+          padding-top: 0; }
+          body .page-wrapper .content-wrapper .dynamic-row .block.bg-block.faq-block .block-inner-content h2 {
+            width: 100%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 60px;
+            font-size: 6rem;
+            font-weight: 700;
+            text-align: center; }
+        body .page-wrapper .content-wrapper .dynamic-row .block.media-block img {
+          width: 100%; }
         body .page-wrapper .content-wrapper .dynamic-row .block.headline-block .block-inner-content {
           width: 100%;
           padding-top: 140px; }
@@ -3902,7 +3958,13 @@ body {
     body .page-wrapper .content-wrapper .slider {
       height: auto;
       overflow: visible;
-      transition: all, 0.5s ease-in-out !important; }
+      transition: all, 0.5s ease-in-out !important;
+      /*&:hover {
+
+          img {
+            transform: scale(1.1);
+          }
+        }*/ }
       body .page-wrapper .content-wrapper .slider .flexslider {
         height: inherit; }
         body .page-wrapper .content-wrapper .slider .flexslider .slides {
@@ -3942,8 +4004,6 @@ body {
                     font-size: 32px;
                     font-size: 3.2rem;
                     font-weight: 600; }
-      body .page-wrapper .content-wrapper .slider:hover img {
-        transform: scale(1.1); }
     body .page-wrapper .content-wrapper .event-search,
     body .page-wrapper .content-wrapper .register {
       background-color: #fff;

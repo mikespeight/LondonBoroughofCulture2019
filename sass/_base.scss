@@ -90,9 +90,11 @@ button {
       }
 
       &.pink {
+        background-color: $white;
+        color: $brandDarkPink;
 
         &:after {
-
+          background-position: 100% 0;
         }
       }
 

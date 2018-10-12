@@ -20,7 +20,7 @@ section {
       }
 
       &.inner {
-        padding: 65px 36px 0;
+        padding: 65px 36px 36px;
       }
 
       p {
@@ -90,7 +90,7 @@ section {
 
       ol {
         list-style: none;
-        padding-left:60px;
+        padding-left:25px;
         counter-reset: list-counter;
 
         li {
