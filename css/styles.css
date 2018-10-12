@@ -3429,8 +3429,7 @@ section div.wysiwyg {
     font-size: 1.4rem;
     margin: 2px 0 0;
     padding-right: 33px;
-    line-height: 16px;
-    letter-spacing: 2px; }
+    line-height: 16px; }
   section div.wysiwyg div {
     display: flex;
     flex-direction: row;
@@ -3911,6 +3910,9 @@ body {
             font-weight: 400; }
         body .page-wrapper .content-wrapper .dynamic-row .block.bg-block.feature-block {
           min-height: 400px; }
+          body .page-wrapper .content-wrapper .dynamic-row .block.bg-block.feature-block .bg-link-block .block-inner-content h2 {
+            font-size: 40px;
+            font-size: 4rem; }
           body .page-wrapper .content-wrapper .dynamic-row .block.bg-block.feature-block .non-link-block {
             display: block;
             position: absolute;

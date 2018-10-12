@@ -582,6 +582,16 @@ body {
             &.feature-block {
               min-height: 400px;
 
+              .bg-link-block {
+
+                .block-inner-content {
+
+                  h2 {
+                    @include font-size(40);
+                  }
+                }
+              }
+
               .non-link-block {
                 @include fill-parent;
 
