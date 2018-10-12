@@ -437,6 +437,26 @@ body {
               }
             }
 
+            &.news-block {
+
+              .block-inner-content {
+                padding-top:260px;
+
+                h2 {
+                  @include font-size(40);
+                  font-weight: $semiBold;
+                  line-height: 1;
+                }
+              }
+
+              &.size1of2 {
+
+                .block-inner-content {
+                  width: 60%;
+                }
+              }
+            }
+
             &.social-block {
 
               .block-inner-content {

@@ -3826,6 +3826,15 @@ body {
             font-size: 3rem;
             font-weight: 600;
             line-height: 1; }
+        body .page-wrapper .content-wrapper .dynamic-row .block.image-block.news-block .block-inner-content {
+          padding-top: 260px; }
+          body .page-wrapper .content-wrapper .dynamic-row .block.image-block.news-block .block-inner-content h2 {
+            font-size: 40px;
+            font-size: 4rem;
+            font-weight: 600;
+            line-height: 1; }
+        body .page-wrapper .content-wrapper .dynamic-row .block.image-block.news-block.size1of2 .block-inner-content {
+          width: 60%; }
         body .page-wrapper .content-wrapper .dynamic-row .block.image-block.social-block .block-inner-content {
           padding: 287px 36px 36px; }
           body .page-wrapper .content-wrapper .dynamic-row .block.image-block.social-block .block-inner-content .instagram-icon {
