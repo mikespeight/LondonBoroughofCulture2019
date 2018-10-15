@@ -642,12 +642,23 @@ body {
             }
           }
 
-          &.media-block {
+          &.responsive-media-block {
+            position: relative;
+            overflow:hidden;
+            padding-bottom:27.7%;
+            height: 0;
+
+            iframe {
+              @include fill-parent
+             // min-height: 337.5px;
+            }
 
             img {
               width: 100%;
             }
           }
+
+
 
           &.headline-block {
 
