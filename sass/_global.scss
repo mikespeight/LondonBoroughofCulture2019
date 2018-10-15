@@ -748,6 +748,10 @@ body {
         }*/
       }
 
+      .event-section {
+        min-height: 200px; //TODO: remove when event section is finished
+      }
+
       .event-search,  //TODO: remove when event search is finished
       .register {
         background-color: $white;

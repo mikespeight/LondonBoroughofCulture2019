@@ -4040,6 +4040,8 @@ body {
                     font-size: 32px;
                     font-size: 3.2rem;
                     font-weight: 600; }
+    body .page-wrapper .content-wrapper .event-section {
+      min-height: 200px; }
     body .page-wrapper .content-wrapper .event-search,
     body .page-wrapper .content-wrapper .register {
       background-color: #fff;
