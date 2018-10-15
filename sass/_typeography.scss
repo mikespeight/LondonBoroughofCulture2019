@@ -79,17 +79,32 @@ h1{
   @include font-size(80);
 }
 
-h2 {
-  font-family: $Archia-font;
-  font-weight: $semiBold;
-  @include font-size(60);
+.heading-panel {
 
-  &.heading {
-    text-align: center;
-    color: $brandPrimary;
-    @include font-size(26);
+  h2 {
+    font-family: $Archia-font;
     font-weight: $semiBold;
-    line-height: 100px;
+    @include font-size(60);
+
+    &.heading {
+      text-align: center;
+      color: $brandPrimary;
+      @include font-size(26);
+      font-weight: $semiBold;
+      line-height: 100px;
+    }
+  }
+
+  &.persian-green-bg {
+
+    h2 {
+
+      &.heading {
+        color: $white;
+      }
+    }
   }
 }
+
+
 

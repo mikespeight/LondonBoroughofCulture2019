@@ -2484,18 +2484,21 @@ h1 {
   font-size: 80px;
   font-size: 8rem; }
 
-h2 {
+.heading-panel h2 {
   font-family: "Archia", sans-serif;
   font-weight: 600;
   font-size: 60px;
   font-size: 6rem; }
-  h2.heading {
+  .heading-panel h2.heading {
     text-align: center;
     color: #00a3a6;
     font-size: 26px;
     font-size: 2.6rem;
     font-weight: 600;
     line-height: 100px; }
+
+.heading-panel.persian-green-bg h2.heading {
+  color: #fff; }
 
 /*************************************************
 
@@ -2656,18 +2659,29 @@ button {
         background-repeat: no-repeat;
         opacity: 1;
         transition: all, 0.33s ease-in-out; }
-      a.btn.blob-btn.green,
-      button.btn.blob-btn.green {
+      a.btn.blob-btn.green, a.btn.blob-btn.green-green,
+      button.btn.blob-btn.green,
+      button.btn.blob-btn.green-green {
         background-color: #00a3a6; }
-        a.btn.blob-btn.green:after,
-        button.btn.blob-btn.green:after {
+        a.btn.blob-btn.green:after, a.btn.blob-btn.green-green:after,
+        button.btn.blob-btn.green:after,
+        button.btn.blob-btn.green-green:after {
           background-position: 100% -58px; }
-      a.btn.blob-btn.pink,
-      button.btn.blob-btn.pink {
+      a.btn.blob-btn .white-green,
+      button.btn.blob-btn .white-green {
+        background-color: #fff;
+        color: #00a3a6; }
+        a.btn.blob-btn .white-green:after,
+        button.btn.blob-btn .white-green:after {
+          background-position: 100% -58px; }
+      a.btn.blob-btn.pink, a.btn.blob-btn.white-pink,
+      button.btn.blob-btn.pink,
+      button.btn.blob-btn.white-pink {
         background-color: #fff;
         color: #ca5098; }
-        a.btn.blob-btn.pink:after,
-        button.btn.blob-btn.pink:after {
+        a.btn.blob-btn.pink:after, a.btn.blob-btn.white-pink:after,
+        button.btn.blob-btn.pink:after,
+        button.btn.blob-btn.white-pink:after {
           background-position: 100% 0; }
       a.btn.blob-btn:hover:after,
       button.btn.blob-btn:hover:after {
@@ -3819,7 +3833,7 @@ body {
             font-weight: 500;
             margin: 0; }
         body .page-wrapper .content-wrapper .dynamic-row .block.image-block.event-block .block-inner-content {
-          padding-top: 260px; }
+          padding-top: 36px; }
           body .page-wrapper .content-wrapper .dynamic-row .block.image-block.event-block .block-inner-content h2 {
             font-size: 30px;
             font-size: 3rem;
@@ -3883,11 +3897,10 @@ body {
             font-weight: 600;
             line-height: 1; }
         body .page-wrapper .content-wrapper .dynamic-row .block.bg-block.event-block .block-inner-content {
-          padding: 36px;
-          padding-top: 260px !important; }
+          padding: 36px; }
           body .page-wrapper .content-wrapper .dynamic-row .block.bg-block.event-block .block-inner-content h2 {
-            font-size: 40px;
-            font-size: 4rem;
+            font-size: 30px;
+            font-size: 3rem;
             font-weight: 600;
             line-height: 1; }
         body .page-wrapper .content-wrapper .dynamic-row .block.bg-block.counter-block .block-inner-content {
@@ -3969,8 +3982,8 @@ body {
         body .page-wrapper .content-wrapper .dynamic-row .block.headline-block .block-inner-content {
           width: 100%;
           padding-top: 140px; }
-          body .page-wrapper .content-wrapper .dynamic-row .block.headline-block .block-inner-content h2 {
-            width: 100%;
+          body .page-wrapper .content-wrapper .dynamic-row .block.headline-block .block-inner-content eve h2 {
+            width: 90%;
             font-size: 70px;
             font-size: 7rem;
             font-weight: 700;

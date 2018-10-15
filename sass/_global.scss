@@ -427,7 +427,7 @@ body {
             &.event-block {
 
               .block-inner-content {
-                padding-top:260px;
+                padding-top: 36px;
 
                 h2 {
                   @include font-size(30);
@@ -543,10 +543,9 @@ body {
 
               .block-inner-content {
                 padding:36px;
-                padding-top:260px!important;
 
                 h2 {
-                  @include font-size(40);
+                  @include font-size(30);
                   font-weight: $semiBold;
                   line-height: 1;
                 }
@@ -664,10 +663,10 @@ body {
 
             .block-inner-content {
               width: 100%;
-              padding-top:140px;
+              padding-top:140px;eve
 
               h2 {
-                width: 100%;
+                width: 90%;
                 @include font-size(70);
                 font-weight: $bold;
                 text-align: center;

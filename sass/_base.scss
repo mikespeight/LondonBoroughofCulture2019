@@ -81,7 +81,8 @@ button {
         transition: all, 0.33s ease-in-out;
       }
 
-      &.green {
+      &.green,
+      &.green-green {
         background-color: $brandPrimary;
 
         &:after {
@@ -89,7 +90,17 @@ button {
         }
       }
 
-      &.pink {
+      .white-green {
+        background-color: $white;
+        color: $brandPrimary;
+
+        &:after {
+          background-position: 100% -58px;
+        }
+      }
+
+      &.pink,
+      &.white-pink {
         background-color: $white;
         color: $brandDarkPink;
 
