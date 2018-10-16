@@ -3806,15 +3806,19 @@ body {
         body .page-wrapper .content-wrapper .dynamic-row .block.hero-block-left {
           position: relative; }
           body .page-wrapper .content-wrapper .dynamic-row .block.hero-block-left .block-inner-content {
-            padding: 36px; }
+            padding: 36px 36px; }
             body .page-wrapper .content-wrapper .dynamic-row .block.hero-block-left .block-inner-content h1 {
               font-size: 50px;
               font-size: 5rem;
-              font-weight: 600; }
+              font-weight: 600;
+              line-height: 60px;
+              margin-bottom: 24px; }
             body .page-wrapper .content-wrapper .dynamic-row .block.hero-block-left .block-inner-content P {
-              font-size: 24px;
-              font-size: 2.4rem;
+              font-size: 19px;
+              font-size: 1.9rem;
               font-weight: 500; }
+            body .page-wrapper .content-wrapper .dynamic-row .block.hero-block-left .block-inner-content .wysiwyg.inner {
+              padding: 0; }
           body .page-wrapper .content-wrapper .dynamic-row .block.hero-block-left .btn-wrapper {
             position: absolute;
             bottom: 36px;
@@ -4119,8 +4123,49 @@ body {
                     font-size: 32px;
                     font-size: 3.2rem;
                     font-weight: 600; }
-    body .page-wrapper .content-wrapper .event-section {
-      min-height: 200px; }
+    body .page-wrapper .content-wrapper .event-section .event-side-info-block {
+      position: relative; }
+      body .page-wrapper .content-wrapper .event-section .event-side-info-block .non-link-block .wysiwyg.inner p {
+        font-size: 19px;
+        font-size: 1.9rem;
+        font-weight: 500;
+        margin: 0; }
+      body .page-wrapper .content-wrapper .event-section .event-side-info-block .sponsor-panel {
+        position: absolute;
+        bottom: 0;
+        height: auto; }
+        body .page-wrapper .content-wrapper .event-section .event-side-info-block .sponsor-panel h4 {
+          color: #fff; }
+        body .page-wrapper .content-wrapper .event-section .event-side-info-block .sponsor-panel .air-bnb {
+          display: block;
+          width: 164px;
+          height: 52px;
+          background: transparent url("../assets/images/air-bnb-logo.png");
+          margin: 36px 36px 50px; }
+    body .page-wrapper .content-wrapper .event-section .event-main-info-block {
+      position: relative; }
+    body .page-wrapper .content-wrapper .event-section h4 {
+      font-size: 20px;
+      font-size: 2rem;
+      font-weight: 600;
+      color: #00a3a6;
+      margin: 36px 36px; }
+    body .page-wrapper .content-wrapper .event-section .tags {
+      padding: 0 36px 36px; }
+      body .page-wrapper .content-wrapper .event-section .tags .tag {
+        display: inline-block;
+        font-size: 16px;
+        font-size: 1.6rem;
+        line-height: 28px;
+        font-weight: 500;
+        color: #707070;
+        text-transform: uppercase;
+        padding: 0 28px;
+        border: 1px solid #8d8d8d;
+        border-radius: 28px;
+        -webkit-border-radius: 28px;
+        -moz-border-radius: 28px;
+        margin-right: 20px; }
     body .page-wrapper .content-wrapper .event-search,
     body .page-wrapper .content-wrapper .register {
       background-color: #fff;

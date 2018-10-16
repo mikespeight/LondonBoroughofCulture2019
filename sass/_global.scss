@@ -324,16 +324,25 @@ body {
             position: relative;
 
             .block-inner-content {
-              padding: 36px;
+              padding:36px 36px;
 
               h1 {
                 @include font-size(50);
                 font-weight: $semiBold;
+                line-height: 60px;
+                margin-bottom: 24px;
               }
 
               P {
-                @include font-size(24);
+                @include font-size(19);
                 font-weight: $medium;
+              }
+
+              .wysiwyg {
+
+                &.inner {
+                  padding: 0;
+                }
               }
             }
 
@@ -813,7 +822,75 @@ body {
       }
 
       .event-section {
-        min-height: 200px; //TODO: remove when event section is finished
+
+        .event-side-info-block {
+          position: relative;
+
+          .non-link-block {
+
+            .wysiwyg {
+
+              &.inner {
+
+                p {
+                  @include font-size(19);
+                  font-weight: $medium;
+                  margin: 0;
+                }
+              }
+            }
+          }
+
+          .sponsor-panel {
+            position: absolute;
+            bottom:0;
+            height: auto;
+
+            h4 {
+              color: $white;
+            }
+
+            .air-bnb {
+              display: block;
+              width:164px;
+              height: 52px;
+              background: transparent url("#{$pathToImages}/air-bnb-logo.png");
+              margin: 36px 36px 50px;
+            }
+          }
+        }
+
+        .event-main-info-block {
+          position: relative;
+
+          .event-main-info-block {
+
+          }
+        }
+
+        h4 {
+          @include font-size(20);
+          font-weight: $semiBold;
+          color: $brandPrimary;
+          margin: 36px 36px;
+        }
+
+        .tags {
+          padding: 0 36px 36px;
+
+          .tag {
+            display: inline-block;
+            @include font-size(16);
+            line-height: 28px;
+            font-weight: $medium;
+            color: $brandMidGrey;
+            text-transform: uppercase;
+            padding: 0 28px;
+            border: 1px solid $midGreyBorder;
+            @include border-radius(28px);
+            margin-right: 20px;
+          }
+        }
       }
 
       .event-search,  //TODO: remove when event search is finished
