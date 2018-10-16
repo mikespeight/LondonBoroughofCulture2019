@@ -320,6 +320,31 @@ body {
             }
           }
 
+          &.hero-block-left {
+            position: relative;
+
+            .block-inner-content {
+              padding: 36px;
+
+              h1 {
+                @include font-size(50);
+                font-weight: $semiBold;
+              }
+
+              P {
+                @include font-size(24);
+                font-weight: $medium;
+              }
+            }
+
+            .btn-wrapper {
+              position: absolute;
+              bottom: 36px;
+              left: 36px;
+              margin: 0;
+            }
+          }
+
           &.hero-block {
             overflow: visible;
 
@@ -580,6 +605,45 @@ body {
 
             &.feature-block {
               min-height: 400px;
+
+              &.whos-involved-block,
+              &.how-to-get-there-block {
+                position: relative;
+
+                h2 {
+                  @include font-size(42);
+                  margin:36px 0 -70px 36px;
+                }
+
+                .btn-wrapper {
+                  position: absolute;
+                  bottom: 36px;
+                  left: 36px;
+                  margin: 0;
+                }
+              }
+
+              &.how-to-get-there-block {
+
+                h2 {
+                  margin-bottom: -50px;
+                }
+
+                .inner {
+
+                  &.wysiwyg {
+
+                    p {
+                      @include font-size(20);
+                      margin:10px 0;
+
+                      strong  {
+                        font-weight: $semiBold;
+                      }
+                    }
+                  }
+                }
+              }
 
               .bg-link-block {
 

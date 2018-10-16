@@ -26,9 +26,9 @@ $brandDarkPink: $brandQuaternary;
 .dark-pink {color: $brandDarkPink}
 .white {color: $white}
 
-.persian-green-bg { background-color: $brandPersianGreen}
-.dark-purple-bg {background-color: $brandDarkPurple}
-.dark-pink-bg {background-color: $brandDarkPink}
+.persian-green-bg { background-color: $brandPersianGreen; color: $white;}
+.dark-purple-bg {background-color: $brandDarkPurple; color: $white;}
+.dark-pink-bg {background-color: $brandDarkPink; color: $white;}
 .white-bg {background-color: $white}
 
 // primary, secondary, tertiary, quaternary, quinary, senary, septenary, octonary, nonary, and denary

@@ -2,7 +2,8 @@ section {
 
 
 
-  div {
+  div,
+  span {
 
     &.wysiwyg {
       display: block!important;
@@ -33,6 +34,15 @@ section {
         &:nth-child(1){
           //margin-top:60px;
         }
+
+        a {
+          font-weight: $semiBold;
+          color: $white;
+        }
+
+        strong {
+          font-weight: $semiBold;
+        }
       }
 
       h2, h3 {
@@ -48,11 +58,20 @@ section {
         @include font-size(24);
       }
 
+      h6 {
+        @include font-size(19);
+        font-weight: $semiBold;
+      }
+
       li {
         @include font-size(14);
         margin:2px 0 0;
         padding-right: 33px;
         line-height: 16px;
+
+        strong {
+          font-weight: $semiBold;
+        }
       }
 
 
@@ -84,6 +103,10 @@ section {
         li {
           position: relative;
           margin-bottom: 0;
+
+          strong {
+            font-weight: $semiBold;
+          }
         }
       }
 
@@ -116,6 +139,10 @@ section {
             font-weight: $semiBold;
             text-align: center;
             line-height: 43px;
+          }
+
+          strong {
+            font-weight: $semiBold;
           }
         }
       }
