@@ -2676,7 +2676,8 @@ button {
         color: #00a3a6; }
         a.btn.blob-btn.white-green:after,
         button.btn.blob-btn.white-green:after {
-          background-position: 100% -58px; }
+          background-position: 100% -58px;
+          opacity: 0.5; }
       a.btn.blob-btn.pink, a.btn.blob-btn.white-pink,
       button.btn.blob-btn.pink,
       button.btn.blob-btn.white-pink {
@@ -3759,6 +3760,21 @@ body {
           display: block;
           width: 100%;
           height: 100%; }
+          body .page-wrapper .content-wrapper .dynamic-row .block .bg-link-block .video-wrapper,
+          body .page-wrapper .content-wrapper .dynamic-row .block .image-link-block .video-wrapper {
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden; }
+            body .page-wrapper .content-wrapper .dynamic-row .block .bg-link-block .video-wrapper video,
+            body .page-wrapper .content-wrapper .dynamic-row .block .image-link-block .video-wrapper video {
+              display: block;
+              width: 100%;
+              object-fit: cover;
+              transition: all, 0.5s ease-in-out; }
           body .page-wrapper .content-wrapper .dynamic-row .block .bg-link-block img,
           body .page-wrapper .content-wrapper .dynamic-row .block .image-link-block img {
             display: block;
@@ -4151,7 +4167,8 @@ body {
       color: #00a3a6;
       margin: 36px 36px; }
     body .page-wrapper .content-wrapper .event-section .tags {
-      padding: 0 36px 36px; }
+      padding: 0 36px 36px;
+      margin-bottom: -20px; }
       body .page-wrapper .content-wrapper .event-section .tags .tag {
         display: inline-block;
         font-size: 16px;
@@ -4160,12 +4177,18 @@ body {
         font-weight: 500;
         color: #707070;
         text-transform: uppercase;
+        text-decoration: none;
         padding: 0 28px;
         border: 1px solid #8d8d8d;
         border-radius: 28px;
         -webkit-border-radius: 28px;
         -moz-border-radius: 28px;
-        margin-right: 20px; }
+        margin: 0 20px 20px 0;
+        transition: all, 0.5s ease-in-out; }
+        body .page-wrapper .content-wrapper .event-section .tags .tag:hover {
+          color: #fff;
+          background: #ca5098;
+          border-color: #ca5098; }
     body .page-wrapper .content-wrapper .event-search,
     body .page-wrapper .content-wrapper .register {
       background-color: #fff;
@@ -4266,7 +4289,14 @@ body {
             width: 92px;
             height: 51px;
             background: transparent url("../assets/images/Waltham-Forest-logo-x2.png") 0 0 no-repeat;
-            background-size: 92px 51px; }
+            background-size: 92px 51px;
+            margin-right: 40px; }
+          body footer .footer-bottom .grid-wrapper .wf-logo .lottery {
+            display: inline-block;
+            width: 120px;
+            height: 51px;
+            background: transparent url("../assets/images/lottery-funded-logo.png") 0 0 no-repeat;
+            background-size: 120px 51px; }
         body footer .footer-bottom .grid-wrapper .wf-site {
           grid-area: wf-site; }
         body footer .footer-bottom .grid-wrapper .find-out-more {
