@@ -4081,10 +4081,10 @@ body {
         body .page-wrapper .content-wrapper .dynamic-row .block.headline-block .block-inner-content {
           width: 100%;
           padding-top: 140px; }
-          body .page-wrapper .content-wrapper .dynamic-row .block.headline-block .block-inner-content eve h2 {
+          body .page-wrapper .content-wrapper .dynamic-row .block.headline-block .block-inner-content h2 {
             width: 90%;
-            font-size: 70px;
-            font-size: 7rem;
+            font-size: 70px !important;
+            font-size: 7rem !important;
             font-weight: 700;
             text-align: center; }
     body .page-wrapper .content-wrapper .event-search {

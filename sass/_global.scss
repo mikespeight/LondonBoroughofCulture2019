@@ -747,11 +747,13 @@ body {
 
             .block-inner-content {
               width: 100%;
-              padding-top:140px;eve
+              padding-top:140px;
 
               h2 {
                 width: 90%;
-                @include font-size(70);
+                //@include font-size(70);
+                font-size:70px!important;
+                font-size: 7rem!important;
                 font-weight: $bold;
                 text-align: center;
               }
