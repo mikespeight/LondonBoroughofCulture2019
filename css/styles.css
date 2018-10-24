@@ -3929,7 +3929,7 @@ body {
         body .page-wrapper .content-wrapper .dynamic-row .block.image-block.news-block.size1of2 .block-inner-content {
           width: 60%; }
         body .page-wrapper .content-wrapper .dynamic-row .block.image-block.social-block .block-inner-content {
-          padding: 287px 36px 36px; }
+          padding: 90px 36px 36px; }
           body .page-wrapper .content-wrapper .dynamic-row .block.image-block.social-block .block-inner-content .instagram-icon {
             position: absolute;
             top: 36px;
@@ -4152,7 +4152,8 @@ body {
         height: auto; }
         body .page-wrapper .content-wrapper .event-section .event-side-info-block .sponsor-panel h4 {
           color: #fff; }
-        body .page-wrapper .content-wrapper .event-section .event-side-info-block .sponsor-panel .air-bnb {
+        body .page-wrapper .content-wrapper .event-section .event-side-info-block .sponsor-panel .air-bnb,
+        body .page-wrapper .content-wrapper .event-section .event-side-info-block .sponsor-panel img {
           display: block;
           width: 164px;
           height: 52px;
@@ -4169,7 +4170,7 @@ body {
     body .page-wrapper .content-wrapper .event-section .tags {
       padding: 0 36px 36px;
       margin-bottom: -20px; }
-      body .page-wrapper .content-wrapper .event-section .tags .tag {
+      body .page-wrapper .content-wrapper .event-section .tags a {
         display: inline-block;
         font-size: 16px;
         font-size: 1.6rem;
@@ -4185,7 +4186,7 @@ body {
         -moz-border-radius: 28px;
         margin: 0 20px 20px 0;
         transition: all, 0.5s ease-in-out; }
-        body .page-wrapper .content-wrapper .event-section .tags .tag:hover {
+        body .page-wrapper .content-wrapper .event-section .tags a:hover {
           color: #fff;
           background: #ca5098;
           border-color: #ca5098; }

@@ -505,7 +505,7 @@ body {
             &.social-block {
 
               .block-inner-content {
-                padding:287px 36px 36px;
+                padding:90px 36px 36px;
 
                 .instagram-icon {
                   position: absolute;
@@ -863,7 +863,8 @@ body {
               color: $white;
             }
 
-            .air-bnb {
+            .air-bnb,
+            img {
               display: block;
               width:164px;
               height: 52px;
@@ -892,7 +893,7 @@ body {
           padding: 0 36px 36px;
           margin-bottom: -20px;
 
-          .tag {
+          a {
             display: inline-block;
             @include font-size(16);
             line-height: 28px;
