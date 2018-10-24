@@ -3840,6 +3840,11 @@ body {
             bottom: 36px;
             left: 36px;
             margin: 0; }
+            body .page-wrapper .content-wrapper .dynamic-row .block.hero-block-left .btn-wrapper h4 {
+              font-size: 36px;
+              font-size: 3.6rem;
+              font-weight: 700;
+              color: #fff; }
         body .page-wrapper .content-wrapper .dynamic-row .block.hero-block {
           overflow: visible; }
           body .page-wrapper .content-wrapper .dynamic-row .block.hero-block .block-inner-content {

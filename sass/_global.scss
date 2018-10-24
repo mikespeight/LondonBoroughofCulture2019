@@ -362,6 +362,12 @@ body {
               bottom: 36px;
               left: 36px;
               margin: 0;
+
+              h4 {
+                @include font-size(36);
+                font-weight: $bold;
+                color: $white;
+              }
             }
           }
 
