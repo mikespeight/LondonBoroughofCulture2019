@@ -74,7 +74,7 @@ function hoverMenus(){
 
 $(document).ready(function(){
 
-	var deadline = '2019-01-01', //yyy-mm-dd
+	var deadline = '2019-01-11', //yyy-mm-dd
 		$count = $('#count');
 
 	$count.html(getTimeRemaining(deadline).days + 1);
