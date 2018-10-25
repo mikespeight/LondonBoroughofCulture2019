@@ -2500,7 +2500,7 @@ h1 {
     font-weight: 600;
     line-height: 100px; }
 
-.heading-panel.persian-green-bg h2.heading {
+.heading-panel.persian-green-bg h2.heading, .heading-panel.dark-pink-bg h2.heading, .heading-panel.dark-purple-bg h2.heading {
   color: #fff; }
 
 /*************************************************
