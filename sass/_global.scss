@@ -211,6 +211,12 @@ body {
           overflow: hidden;
           position: relative;
 
+          .aspect-box {
+            position: relative;
+            height: 0;
+            padding-top: 100%;
+          }
+
           .image-overlay {
             @include fill-parent;
             background-color: $black;
@@ -306,9 +312,14 @@ body {
           }
 
           .bg-link-block {
-            position: relative;
-            height: 0;
-            padding-top: 100%;
+            position: absolute;
+            display: block;
+            top: 0;
+            right:0;
+            bottom: 0;
+            left: 0;
+            /*height: 0;
+            padding-top: 100%;*/
 
             &:after {
               content: '';
@@ -632,7 +643,7 @@ body {
             }
 
             &.feature-block {
-              min-height: 400px;
+              //min-height: 400px;
 
               &.whos-involved-block,
               &.how-to-get-there-block {
