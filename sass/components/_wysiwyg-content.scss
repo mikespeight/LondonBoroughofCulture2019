@@ -1,9 +1,6 @@
 section {
 
-
-
-  div,
-  span {
+  div {
 
     &.wysiwyg {
       display: block!important;
@@ -37,7 +34,7 @@ section {
 
         a {
           font-weight: $semiBold;
-          color: $white;
+          //color: $white;
         }
 
         strong {
@@ -144,6 +141,22 @@ section {
           strong {
             font-weight: $semiBold;
           }
+        }
+      }
+    }
+  }
+
+  .persian-green-bg,
+  .dark-pink-bg,
+  .dark-purple-bg {
+
+    .wysiwyg {
+
+      p {
+
+        a {
+          color: $white;
+
         }
       }
     }

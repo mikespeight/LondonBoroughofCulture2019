@@ -377,7 +377,7 @@ body {
               margin: 0;
 
               h4 {
-                @include font-size(36);
+                @include font-size(28);
                 font-weight: $bold;
                 color: $white;
               }
@@ -663,6 +663,7 @@ body {
               }
 
               &.how-to-get-there-block {
+                min-height: 385px;
 
                 h2 {
                   margin-bottom: -50px;
@@ -682,6 +683,10 @@ body {
                     }
                   }
                 }
+              }
+
+              &.whos-involved-block {
+                min-height: 460px;
               }
 
               .bg-link-block {
@@ -759,8 +764,6 @@ body {
               width: 100%;
             }
           }
-
-
 
           &.headline-block {
 

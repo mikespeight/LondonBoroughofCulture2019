@@ -15,6 +15,7 @@ $mq-mobile-landscape	: 480px !default;
 $mq-tablet-portrait		: 768px !default;
 $mq-screen-md           : 992px !default;
 $mq-tablet-landscape	: 1024px !default;
+$mq-screen-std          : 1200px !default;
 $mq-desktop				: 1382px !default;
 $mq-iPhone-6-portrait   : 375px  !default;
 $mq-iPhone-6-landscape  : 667px  !default;
@@ -104,6 +105,13 @@ $ipad-pro-10-landscape-breakpoint: "(min-device-width : 1668px) and (max-device-
 // Everything 992 and below
 @mixin screen-md-and-below {
   @media only screen and (max-width : $mq-screen-md) {
+    @content;
+  }
+}
+
+// Everything 1200 and below
+@mixin screen-std-and-below {
+  @media only screen and (max-width: $mq-screen-std) {
     @content;
   }
 }
@@ -258,6 +266,10 @@ $ipad-pro-10-landscape-breakpoint: "(min-device-width : 1668px) and (max-device-
 
   //@import "media-queries/desktop-and-up";
 
+}
+
+@include screen-std-and-below {
+  @import "media-queries/std-screen-down";
 }
 
 @include retina2 {

@@ -1,0 +1,376 @@
+/******************************************************************************************
+*
+*
+*
+*   Styles for std screen down i.e. < 1200px
+*
+*
+*
+*******************************************************************************************/
+
+body {
+
+  .fixed-width-content {
+    width: 100vw;
+  }
+
+  .page-wrapper {
+
+    .main-navigation {
+
+      nav {
+
+        &.navbar {
+
+          ul {
+
+            li {
+
+              a {
+                //color: red!important;
+
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .content-wrapper {
+
+      .dynamic-row {
+
+        .block {
+
+          &.image-block {
+
+            &.size2of3 {
+
+              .block-inner-content {
+
+                h2 {
+                  font-size: 5.833vw;
+                  line-height: 6vw;
+                }
+
+                p {
+                  font-size: 2vw;
+                  margin-top: 1.666vw;
+                }
+              }
+
+              &.event-block {
+
+                .block-inner-content {
+
+                  h2 {
+                    font-size: 5.833vw;
+                  }
+
+                  p {
+                    font-size: 1.5vw;
+                  }
+                }
+              }
+            }
+
+            &.social-block {
+
+              .block-inner-content {
+                padding-top: 7.5vw;
+
+                .instagram-icon {
+
+                  &.fa {
+                    font-size: 2.5vw;
+                  }
+                }
+              }
+            }
+
+            &.news-block {
+
+              .block-inner-content {
+                padding-top: 21.666vw;
+
+                h2 {
+                  font-size: 3.333vw;
+                }
+              }
+            }
+
+            &.event-block {
+
+              .block-inner-content {
+
+                h2 {
+                  font-size: 2.5vw;
+                }
+
+                p {
+                  font-size: 1.5vw;
+                }
+              }
+            }
+          }
+
+          &.hero-block {
+
+            .block-inner-content {
+              padding-top: 14.583vw;
+
+              h1 {
+                font-size: 5.833vw;
+              }
+
+              p {
+                font-size: 2vw;
+              }
+            }
+          }
+
+          &.hero-block-left {
+
+            .block-inner-content {
+              padding: 3vw 36px;
+
+              h1 {
+                font-size: 4.166vw;
+                line-height: 5vw;
+              }
+
+              p {
+                font-size: 1.5833vw;
+                line-height: 2.333vw;
+                margin-top: 0.833vw;
+              }
+            }
+
+            .btn-wrapper {
+              bottom: 3vw;
+
+              h4 {
+                font-size: 2.333vw;
+              }
+            }
+          }
+
+          &.bg-block {
+
+            .block-inner-content {
+              padding-top: 21.666vw;
+
+              h2 {
+                font-size: 3.75vw;
+              }
+            }
+
+            &.event-block {
+
+              .block-inner-content {
+
+                h2 {
+                  font-size: 2.5vw;
+                }
+
+                p {
+                  font-size: 1.5vw;
+                }
+              }
+            }
+
+            &.counter-block {
+
+              .block-inner-content {
+
+                #count {
+                  margin-top: 6.25vw;
+                  font-size: 15vw;
+                  line-height: 16.666vw;
+                }
+
+                .to-go {
+                  font-size: 2.166vw;
+                }
+              }
+            }
+
+            &.feature-block {
+
+              .non-link-block {
+
+                .block-inner-content {
+
+                  h2 {
+                    margin-bottom: 2.083vw;
+                  }
+
+                  p {
+                    font-size: 1.666vw;
+                    line-height: 3vw;
+                  }
+                }
+              }
+
+              .bg-link-block {
+
+                .block-inner-content {
+                  padding-top: 21.666vw;
+
+                  h2 {
+                    font-size: 3.333vw;
+                  }
+                }
+              }
+
+              &.how-to-get-there-block {
+
+                h2 {
+                  font-size: 3.5vw;
+                  margin: 3vw 0 -70px 36px;
+                }
+
+                .wysiwyg {
+
+                  &.inner {
+                    padding: 5.416vw 36px 3vw;
+                  }
+
+                  p {
+                    font-size: 1.666vw;
+                    margin:0.833vw 0;
+                  }
+                }
+
+                .btn-wrapper {
+                  bottom:3vw;
+                }
+              }
+
+              &.whos-involved-block {
+
+                h2 {
+                  font-size: 3.5vw;
+                }
+
+                h6 {
+                  font-size: 1.583vw;
+                }
+
+                p {
+                  font-size: 1.333vw;
+                }
+              }
+            }
+
+            &.faq-block {
+
+              .block-inner-content {
+
+                h2 {
+                  font-size: 5vw;
+                }
+              }
+            }
+          }
+
+          &.headline-block {
+
+            .block-inner-content {
+              padding-top: 11.666vw!important;
+
+              h2 {
+                font-size: 5.833vw!important;
+              }
+            }
+          }
+
+          .image-link-block {
+
+            .block-inner-content {
+              padding-top: 4.166vw;
+
+              h2 {
+                font-size: 2.5vw;
+              }
+
+              p {
+                font-size: 1.5vw;
+              }
+            }
+          }
+
+        }
+      }
+
+      .slider {
+
+        .flexslider {
+
+          .slides {
+
+            .slide {
+
+              a {
+
+                &.image-link-block {
+
+                  .block-inner-content {
+                    padding: 12.5vw 16.666vw 2.5vw 16.666vw;
+
+                    h2 {
+                      font-size: 5vw;
+                    }
+
+                    p {
+                      font-size: 2.666vw;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .event-search {
+        height: 18.333vw;
+
+        .register-content {
+          padding: 5.833vw 20%;
+        }
+      }
+    }
+  }
+}
+
+//wysieyg styles
+
+section {
+
+  div {
+
+    &.wysiwyg {
+
+      h2 {
+        //font-size: 2.666vw;
+      }
+
+      h3 {
+        //font-size: 2vw;
+      }
+
+      p, li {
+        //font-size: 1.33vw;
+      }
+
+      ol, ul {
+
+        li {
+
+          //font-size: 1.33vw;
+        }
+      }
+    }
+  }
+}

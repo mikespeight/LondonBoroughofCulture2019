@@ -3414,100 +3414,76 @@ html[xmlns] .slides {
       border-style: solid;
       border-width: 1px; }
 
-section div.wysiwyg,
-section span.wysiwyg {
+section div.wysiwyg {
   display: block !important;
   font-family: "Archia", sans-serif;
   font-weight: 400; }
-  section div.wysiwyg a,
-  section span.wysiwyg a {
+  section div.wysiwyg a {
     display: inline;
     color: #00a3a6;
     text-decoration: none; }
-    section div.wysiwyg a:hover,
-    section span.wysiwyg a:hover {
+    section div.wysiwyg a:hover {
       text-decoration: underline; }
-  section div.wysiwyg.inner,
-  section span.wysiwyg.inner {
+  section div.wysiwyg.inner {
     padding: 65px 36px 36px; }
-  section div.wysiwyg p,
-  section span.wysiwyg p {
+  section div.wysiwyg p {
     font-size: 16px;
     font-size: 1.6rem;
     margin: 10px 0 28px;
     padding-right: 50px;
     line-height: 28px;
     font-weight: 400; }
-    section div.wysiwyg p a,
-    section span.wysiwyg p a {
-      font-weight: 600;
-      color: #fff; }
-    section div.wysiwyg p strong,
-    section span.wysiwyg p strong {
+    section div.wysiwyg p a {
       font-weight: 600; }
-  section div.wysiwyg h2, section div.wysiwyg h3,
-  section span.wysiwyg h2,
-  section span.wysiwyg h3 {
+    section div.wysiwyg p strong {
+      font-weight: 600; }
+  section div.wysiwyg h2, section div.wysiwyg h3 {
     color: #00a3a6;
     font-weight: 600; }
-  section div.wysiwyg h2,
-  section span.wysiwyg h2 {
+  section div.wysiwyg h2 {
     font-size: 32px;
     font-size: 3.2rem; }
-  section div.wysiwyg h3,
-  section span.wysiwyg h3 {
+  section div.wysiwyg h3 {
     font-size: 24px;
     font-size: 2.4rem; }
-  section div.wysiwyg h6,
-  section span.wysiwyg h6 {
+  section div.wysiwyg h6 {
     font-size: 19px;
     font-size: 1.9rem;
     font-weight: 600; }
-  section div.wysiwyg li,
-  section span.wysiwyg li {
+  section div.wysiwyg li {
     font-size: 14px;
     font-size: 1.4rem;
     margin: 2px 0 0;
     padding-right: 33px;
     line-height: 16px; }
-    section div.wysiwyg li strong,
-    section span.wysiwyg li strong {
+    section div.wysiwyg li strong {
       font-weight: 600; }
-  section div.wysiwyg div,
-  section span.wysiwyg div {
+  section div.wysiwyg div {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding-left: 17px; }
-    section div.wysiwyg div ul,
-    section span.wysiwyg div ul {
+    section div.wysiwyg div ul {
       list-style: none;
       padding: 0;
       width: 50%; }
-      section div.wysiwyg div ul:first-child,
-      section span.wysiwyg div ul:first-child {
+      section div.wysiwyg div ul:first-child {
         margin-right: 20px; }
-  section div.wysiwyg ul,
-  section span.wysiwyg ul {
+  section div.wysiwyg ul {
     padding-left: 10px;
     margin-bottom: 13px; }
-    section div.wysiwyg ul:nth-child(1),
-    section span.wysiwyg ul:nth-child(1) {
+    section div.wysiwyg ul:nth-child(1) {
       margin-top: 13px; }
-    section div.wysiwyg ul li,
-    section span.wysiwyg ul li {
+    section div.wysiwyg ul li {
       position: relative;
       margin-bottom: 0; }
-      section div.wysiwyg ul li strong,
-      section span.wysiwyg ul li strong {
+      section div.wysiwyg ul li strong {
         font-weight: 600; }
-  section div.wysiwyg ol,
-  section span.wysiwyg ol {
+  section div.wysiwyg ol {
     list-style: none;
     padding-left: 25px;
     counter-reset: list-counter; }
-    section div.wysiwyg ol li,
-    section span.wysiwyg ol li {
+    section div.wysiwyg ol li {
       position: relative;
       font-size: 16px;
       font-size: 1.6rem;
@@ -3515,8 +3491,7 @@ section span.wysiwyg {
       line-height: 28px;
       margin: 10px 35px;
       color: #000; }
-      section div.wysiwyg ol li:before,
-      section span.wysiwyg ol li:before {
+      section div.wysiwyg ol li:before {
         content: counter(list-counter);
         counter-increment: list-counter;
         position: absolute;
@@ -3535,9 +3510,13 @@ section span.wysiwyg {
         font-weight: 600;
         text-align: center;
         line-height: 43px; }
-      section div.wysiwyg ol li strong,
-      section span.wysiwyg ol li strong {
+      section div.wysiwyg ol li strong {
         font-weight: 600; }
+
+section .persian-green-bg .wysiwyg p a,
+section .dark-pink-bg .wysiwyg p a,
+section .dark-purple-bg .wysiwyg p a {
+  color: #fff; }
 
 @media (max-width: 480px) {
   section div.wysiwyg div {
@@ -3852,8 +3831,8 @@ body {
             left: 36px;
             margin: 0; }
             body .page-wrapper .content-wrapper .dynamic-row .block.hero-block-left .btn-wrapper h4 {
-              font-size: 36px;
-              font-size: 3.6rem;
+              font-size: 28px;
+              font-size: 2.8rem;
               font-weight: 700;
               color: #fff; }
         body .page-wrapper .content-wrapper .dynamic-row .block.hero-block {
@@ -4028,14 +4007,18 @@ body {
             bottom: 36px;
             left: 36px;
             margin: 0; }
-        body .page-wrapper .content-wrapper .dynamic-row .block.bg-block.feature-block.how-to-get-there-block h2 {
-          margin-bottom: -50px; }
-        body .page-wrapper .content-wrapper .dynamic-row .block.bg-block.feature-block.how-to-get-there-block .inner.wysiwyg p {
-          font-size: 20px;
-          font-size: 2rem;
-          margin: 10px 0; }
-          body .page-wrapper .content-wrapper .dynamic-row .block.bg-block.feature-block.how-to-get-there-block .inner.wysiwyg p strong {
-            font-weight: 600; }
+        body .page-wrapper .content-wrapper .dynamic-row .block.bg-block.feature-block.how-to-get-there-block {
+          min-height: 385px; }
+          body .page-wrapper .content-wrapper .dynamic-row .block.bg-block.feature-block.how-to-get-there-block h2 {
+            margin-bottom: -50px; }
+          body .page-wrapper .content-wrapper .dynamic-row .block.bg-block.feature-block.how-to-get-there-block .inner.wysiwyg p {
+            font-size: 20px;
+            font-size: 2rem;
+            margin: 10px 0; }
+            body .page-wrapper .content-wrapper .dynamic-row .block.bg-block.feature-block.how-to-get-there-block .inner.wysiwyg p strong {
+              font-weight: 600; }
+        body .page-wrapper .content-wrapper .dynamic-row .block.bg-block.feature-block.whos-involved-block {
+          min-height: 460px; }
         body .page-wrapper .content-wrapper .dynamic-row .block.bg-block.feature-block .bg-link-block .block-inner-content h2 {
           font-size: 40px;
           font-size: 4rem; }
@@ -4405,6 +4388,121 @@ body {
 *
 *
 *******************************************************************************************/ }
+
+@media only screen and (max-width: 1200px) {
+  /******************************************************************************************
+*
+*
+*
+*   Styles for std screen down i.e. < 1200px
+*
+*
+*
+*******************************************************************************************/
+  body .fixed-width-content {
+    width: 100vw; }
+  body .page-wrapper .content-wrapper .dynamic-row .block.image-block.size2of3 .block-inner-content h2 {
+    font-size: 5.833vw;
+    line-height: 6vw; }
+  body .page-wrapper .content-wrapper .dynamic-row .block.image-block.size2of3 .block-inner-content p {
+    font-size: 2vw;
+    margin-top: 1.666vw; }
+  body .page-wrapper .content-wrapper .dynamic-row .block.image-block.size2of3.event-block .block-inner-content h2 {
+    font-size: 5.833vw; }
+  body .page-wrapper .content-wrapper .dynamic-row .block.image-block.size2of3.event-block .block-inner-content p {
+    font-size: 1.5vw; }
+  body .page-wrapper .content-wrapper .dynamic-row .block.image-block.social-block .block-inner-content {
+    padding-top: 7.5vw; }
+    body .page-wrapper .content-wrapper .dynamic-row .block.image-block.social-block .block-inner-content .instagram-icon.fa {
+      font-size: 2.5vw; }
+  body .page-wrapper .content-wrapper .dynamic-row .block.image-block.news-block .block-inner-content {
+    padding-top: 21.666vw; }
+    body .page-wrapper .content-wrapper .dynamic-row .block.image-block.news-block .block-inner-content h2 {
+      font-size: 3.333vw; }
+  body .page-wrapper .content-wrapper .dynamic-row .block.image-block.event-block .block-inner-content h2 {
+    font-size: 2.5vw; }
+  body .page-wrapper .content-wrapper .dynamic-row .block.image-block.event-block .block-inner-content p {
+    font-size: 1.5vw; }
+  body .page-wrapper .content-wrapper .dynamic-row .block.hero-block .block-inner-content {
+    padding-top: 14.583vw; }
+    body .page-wrapper .content-wrapper .dynamic-row .block.hero-block .block-inner-content h1 {
+      font-size: 5.833vw; }
+    body .page-wrapper .content-wrapper .dynamic-row .block.hero-block .block-inner-content p {
+      font-size: 2vw; }
+  body .page-wrapper .content-wrapper .dynamic-row .block.hero-block-left .block-inner-content {
+    padding: 3vw 36px; }
+    body .page-wrapper .content-wrapper .dynamic-row .block.hero-block-left .block-inner-content h1 {
+      font-size: 4.166vw;
+      line-height: 5vw; }
+    body .page-wrapper .content-wrapper .dynamic-row .block.hero-block-left .block-inner-content p {
+      font-size: 1.5833vw;
+      line-height: 2.333vw;
+      margin-top: 0.833vw; }
+  body .page-wrapper .content-wrapper .dynamic-row .block.hero-block-left .btn-wrapper {
+    bottom: 3vw; }
+    body .page-wrapper .content-wrapper .dynamic-row .block.hero-block-left .btn-wrapper h4 {
+      font-size: 2.333vw; }
+  body .page-wrapper .content-wrapper .dynamic-row .block.bg-block .block-inner-content {
+    padding-top: 21.666vw; }
+    body .page-wrapper .content-wrapper .dynamic-row .block.bg-block .block-inner-content h2 {
+      font-size: 3.75vw; }
+  body .page-wrapper .content-wrapper .dynamic-row .block.bg-block.event-block .block-inner-content h2 {
+    font-size: 2.5vw; }
+  body .page-wrapper .content-wrapper .dynamic-row .block.bg-block.event-block .block-inner-content p {
+    font-size: 1.5vw; }
+  body .page-wrapper .content-wrapper .dynamic-row .block.bg-block.counter-block .block-inner-content #count {
+    margin-top: 6.25vw;
+    font-size: 15vw;
+    line-height: 16.666vw; }
+  body .page-wrapper .content-wrapper .dynamic-row .block.bg-block.counter-block .block-inner-content .to-go {
+    font-size: 2.166vw; }
+  body .page-wrapper .content-wrapper .dynamic-row .block.bg-block.feature-block .non-link-block .block-inner-content h2 {
+    margin-bottom: 2.083vw; }
+  body .page-wrapper .content-wrapper .dynamic-row .block.bg-block.feature-block .non-link-block .block-inner-content p {
+    font-size: 1.666vw;
+    line-height: 3vw; }
+  body .page-wrapper .content-wrapper .dynamic-row .block.bg-block.feature-block .bg-link-block .block-inner-content {
+    padding-top: 21.666vw; }
+    body .page-wrapper .content-wrapper .dynamic-row .block.bg-block.feature-block .bg-link-block .block-inner-content h2 {
+      font-size: 3.333vw; }
+  body .page-wrapper .content-wrapper .dynamic-row .block.bg-block.feature-block.how-to-get-there-block h2 {
+    font-size: 3.5vw;
+    margin: 3vw 0 -70px 36px; }
+  body .page-wrapper .content-wrapper .dynamic-row .block.bg-block.feature-block.how-to-get-there-block .wysiwyg.inner {
+    padding: 5.416vw 36px 3vw; }
+  body .page-wrapper .content-wrapper .dynamic-row .block.bg-block.feature-block.how-to-get-there-block .wysiwyg p {
+    font-size: 1.666vw;
+    margin: 0.833vw 0; }
+  body .page-wrapper .content-wrapper .dynamic-row .block.bg-block.feature-block.how-to-get-there-block .btn-wrapper {
+    bottom: 3vw; }
+  body .page-wrapper .content-wrapper .dynamic-row .block.bg-block.feature-block.whos-involved-block h2 {
+    font-size: 3.5vw; }
+  body .page-wrapper .content-wrapper .dynamic-row .block.bg-block.feature-block.whos-involved-block h6 {
+    font-size: 1.583vw; }
+  body .page-wrapper .content-wrapper .dynamic-row .block.bg-block.feature-block.whos-involved-block p {
+    font-size: 1.333vw; }
+  body .page-wrapper .content-wrapper .dynamic-row .block.bg-block.faq-block .block-inner-content h2 {
+    font-size: 5vw; }
+  body .page-wrapper .content-wrapper .dynamic-row .block.headline-block .block-inner-content {
+    padding-top: 11.666vw !important; }
+    body .page-wrapper .content-wrapper .dynamic-row .block.headline-block .block-inner-content h2 {
+      font-size: 5.833vw !important; }
+  body .page-wrapper .content-wrapper .dynamic-row .block .image-link-block .block-inner-content {
+    padding-top: 4.166vw; }
+    body .page-wrapper .content-wrapper .dynamic-row .block .image-link-block .block-inner-content h2 {
+      font-size: 2.5vw; }
+    body .page-wrapper .content-wrapper .dynamic-row .block .image-link-block .block-inner-content p {
+      font-size: 1.5vw; }
+  body .page-wrapper .content-wrapper .slider .flexslider .slides .slide a.image-link-block .block-inner-content {
+    padding: 12.5vw 16.666vw 2.5vw 16.666vw; }
+    body .page-wrapper .content-wrapper .slider .flexslider .slides .slide a.image-link-block .block-inner-content h2 {
+      font-size: 5vw; }
+    body .page-wrapper .content-wrapper .slider .flexslider .slides .slide a.image-link-block .block-inner-content p {
+      font-size: 2.666vw; }
+  body .page-wrapper .content-wrapper .event-search {
+    height: 18.333vw; }
+    body .page-wrapper .content-wrapper .event-search .register-content {
+      padding: 5.833vw 20%; } }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 834px) and (orientation: portrait), only screen and (min-device-pixel-ratio: 2) and (min-width: 834px) and (orientation: portrait) {
   /******************************************************************************************
