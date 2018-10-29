@@ -4721,6 +4721,17 @@ body {
         padding-top: 40vw !important; }
         body .page-wrapper .content-wrapper .dynamic-row .block.headline-block .block-inner-content h2 {
           font-size: 16vw !important; }
+      body .page-wrapper .content-wrapper .dynamic-row .block.hero-block-left {
+        height: 375px; }
+        body .page-wrapper .content-wrapper .dynamic-row .block.hero-block-left .block-inner-content h1 {
+          font-size: 12.8vw;
+          line-height: 12vw;
+          margin-bottom: 10px; }
+        body .page-wrapper .content-wrapper .dynamic-row .block.hero-block-left .block-inner-content p {
+          font-size: 4.8vw;
+          line-height: 4.8vw; }
+        body .page-wrapper .content-wrapper .dynamic-row .block.hero-block-left .btn-wrapper h4 {
+          font-size: 6.666vw; }
       body .page-wrapper .content-wrapper .dynamic-row .block .image-link-block .block-inner-content h2 {
         font-size: 8vw; }
       body .page-wrapper .content-wrapper .dynamic-row .block .image-link-block .block-inner-content p {
