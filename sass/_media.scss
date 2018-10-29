@@ -275,12 +275,12 @@ $ipad-pro-10-landscape-breakpoint: "(min-device-width : 1668px) and (max-device-
 
 }
 
-@include tablet-portrait-below {
-  @import "media-queries/below-tablet-portrait";
-}
-
 @include screen-std-and-below {
   @import "media-queries/std-screen-down";
+}
+
+@include tablet-portrait-below {
+  @import "media-queries/below-tablet-portrait";
 }
 
 @include retina2 {

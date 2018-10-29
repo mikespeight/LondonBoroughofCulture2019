@@ -4510,23 +4510,6 @@ body {
     body .page-wrapper .main-navigation.open {
       display: block; } }
 
-@media only screen and (max-width: 767px) {
-  /******************************************************************************************
-*
-*
-*
-*   Styles for devices below tablet portrait i.e. <= 767px
-*
-*
-*
-*******************************************************************************************/
-  body .page-wrapper .content-wrapper .dynamic-row {
-    flex-direction: column; }
-    body .page-wrapper .content-wrapper .dynamic-row .block {
-      width: 100%;
-      height: auto;
-      overflow: hidden; } }
-
 @media only screen and (max-width: 1200px) {
   /******************************************************************************************
 *
@@ -4641,6 +4624,39 @@ body {
     height: 18.333vw; }
     body .page-wrapper .content-wrapper .event-search .register-content {
       padding: 5.833vw 20%; } }
+
+@media only screen and (max-width: 767px) {
+  /******************************************************************************************
+*
+*
+*
+*   Styles for devices below tablet portrait i.e. <= 767px
+*
+*
+*
+*******************************************************************************************/
+  body .page-wrapper .content-wrapper .event-search,
+  body .page-wrapper .content-wrapper .register {
+    height: auto !important; }
+    body .page-wrapper .content-wrapper .event-search .register-content,
+    body .page-wrapper .content-wrapper .register .register-content {
+      flex-direction: column;
+      padding: 36px; }
+      body .page-wrapper .content-wrapper .event-search .register-content > div,
+      body .page-wrapper .content-wrapper .register .register-content > div {
+        min-height: 100px;
+        width: 100%; }
+  body .page-wrapper .content-wrapper .dynamic-row {
+    flex-direction: column; }
+    body .page-wrapper .content-wrapper .dynamic-row .block {
+      width: 100%;
+      height: auto;
+      overflow: hidden; }
+      body .page-wrapper .content-wrapper .dynamic-row .block.image-block.size2of3 .block-inner-content h2 {
+        font-size: 12.8vw;
+        line-height: 12.8vw; }
+      body .page-wrapper .content-wrapper .dynamic-row .block.image-block.size2of3 .block-inner-content p {
+        font-size: 4.8vw; } }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 834px) and (orientation: portrait), only screen and (min-device-pixel-ratio: 2) and (min-width: 834px) and (orientation: portrait) {
   /******************************************************************************************

@@ -14,6 +14,21 @@ body {
 
     .content-wrapper {
 
+      .event-search,
+      .register {
+        height: auto!important;
+
+        .register-content {
+          flex-direction: column;
+          padding: 36px;
+
+          & > div {
+            min-height: 100px;
+            width: 100%;
+          }
+        }
+      }
+
       .dynamic-row {
         flex-direction: column;
 
@@ -21,7 +36,24 @@ body {
           width: 100%;
           height: auto;
           overflow: hidden;
-          //min-height: 400px;
+
+          &.image-block {
+
+            &.size2of3 {
+
+              .block-inner-content {
+
+                h2 {
+                  font-size: 12.8vw;
+                  line-height: 12.8vw;
+                }
+
+                p {
+                  font-size: 4.8vw;
+                }
+              }
+            }
+          }
 
         }
       }
