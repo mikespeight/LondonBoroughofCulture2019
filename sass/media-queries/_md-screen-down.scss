@@ -8,3 +8,38 @@
 *
 *******************************************************************************************/
 
+@import "../components/mobile-menu";
+
+body {
+
+
+
+  .page-wrapper {
+
+    header {
+
+      &.page-header {
+
+        .header-content {
+
+          .social {
+            display: none;
+          }
+
+          .hamburger {
+            display: block;
+          }
+        }
+      }
+    }
+
+    .main-navigation {
+      display: none;
+
+      &.open {
+        display: block;
+      }
+    }
+  }
+}
+

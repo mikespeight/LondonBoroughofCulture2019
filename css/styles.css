@@ -3433,6 +3433,8 @@ section div.wysiwyg {
     padding-right: 50px;
     line-height: 28px;
     font-weight: 400; }
+    section div.wysiwyg p em {
+      font-style: italic; }
     section div.wysiwyg p a {
       font-weight: 600; }
     section div.wysiwyg p strong {
@@ -3479,6 +3481,26 @@ section div.wysiwyg {
       margin-bottom: 0; }
       section div.wysiwyg ul li strong {
         font-weight: 600; }
+  section div.wysiwyg ul {
+    list-style: none;
+    padding-left: 25px;
+    margin: 30px 0; }
+    section div.wysiwyg ul li {
+      position: relative;
+      margin-bottom: 6px; }
+      section div.wysiwyg ul li:before {
+        content: '';
+        position: absolute;
+        top: 5px;
+        left: -25px;
+        display: block;
+        width: 8px;
+        height: 8px;
+        border-radius: 4px;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        background-color: #00a3a6;
+        background-size: 8px 8px; }
   section div.wysiwyg ol {
     list-style: none;
     padding-left: 25px;
@@ -3489,6 +3511,7 @@ section div.wysiwyg {
       font-size: 1.6rem;
       font-weight: 400;
       line-height: 28px;
+      min-height: 50px;
       margin: 10px 35px;
       color: #000; }
       section div.wysiwyg ol li:before {
@@ -3597,7 +3620,7 @@ body {
     width: 100%; }
   body .page-wrapper header.page-header {
     position: relative;
-    z-index: 100;
+    z-index: 2;
     top: 0;
     height: 120px;
     width: 100%; }
@@ -3615,6 +3638,44 @@ body {
         background: transparent url("../assets/images/boc-logo-x2.png") 0 0 no-repeat;
         background-size: 248px 47px;
         text-indent: -10000px; }
+      body .page-wrapper header.page-header .header-content .hamburger {
+        position: absolute;
+        top: 36px;
+        right: 36px;
+        display: none;
+        width: 32px;
+        height: 22px;
+        cursor: pointer; }
+        body .page-wrapper header.page-header .header-content .hamburger span {
+          display: block;
+          width: 100%;
+          height: 4px;
+          background-color: #fff;
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%); }
+          body .page-wrapper header.page-header .header-content .hamburger span:before {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 4px;
+            position: absolute;
+            bottom: -7px;
+            background-color: #fff;
+            transition: all, 0.3s ease-in-out; }
+          body .page-wrapper header.page-header .header-content .hamburger span:after {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 4px;
+            position: absolute;
+            top: -7px;
+            background-color: #fff;
+            transition: all, 0.3s ease-in-out; }
+        body .page-wrapper header.page-header .header-content .hamburger:hover span:before {
+          bottom: -10px; }
+        body .page-wrapper header.page-header .header-content .hamburger:hover span:after {
+          top: -10px; }
       body .page-wrapper header.page-header .header-content .social {
         margin: 40px 36px; }
         body .page-wrapper header.page-header .header-content .social a {
@@ -3692,7 +3753,8 @@ body {
     body .page-wrapper .content-wrapper .dynamic-row {
       display: flex;
       flex-direction: row;
-      justify-content: flex-start; }
+      justify-content: flex-start;
+      flex-wrap: wrap; }
       body .page-wrapper .content-wrapper .dynamic-row + .dynamic-row {
         margin-top: -1px; }
       body .page-wrapper .content-wrapper .dynamic-row .block {
@@ -4152,9 +4214,9 @@ body {
         body .page-wrapper .content-wrapper .event-section .event-side-info-block .sponsor-panel .air-bnb,
         body .page-wrapper .content-wrapper .event-section .event-side-info-block .sponsor-panel img {
           display: block;
-          width: 164px;
-          height: 52px;
-          background: transparent url("../assets/images/air-bnb-logo.png");
+          /*width:164px;
+              height: 52px;
+              background: transparent url("../assets/images/air-bnb-logo.png");*/
           margin: 36px 36px 50px; }
     body .page-wrapper .content-wrapper .event-section .event-main-info-block {
       position: relative; }
@@ -4387,7 +4449,83 @@ body {
 *
 *
 *
-*******************************************************************************************/ }
+*******************************************************************************************/
+  /******************************************************************************************
+*
+*
+*
+*   Styles for Mobile menu
+*
+*
+*
+*******************************************************************************************/
+  body .page-wrapper #main-nav {
+    position: absolute;
+    left: 0;
+    top: 100px;
+    min-height: 400px;
+    height: auto;
+    overflow: hidden;
+    width: 100%;
+    z-index: 3;
+    background-color: #000; }
+    body .page-wrapper #main-nav .navbar ul li {
+      display: block;
+      margin-bottom: 15px; }
+      body .page-wrapper #main-nav .navbar ul li a {
+        color: #fff;
+        font-size: 24px;
+        font-size: 2.4rem;
+        font-weight: 600; }
+      body .page-wrapper #main-nav .navbar ul li.dropdown {
+        height: auto; }
+        body .page-wrapper #main-nav .navbar ul li.dropdown.open a {
+          background-color: #000; }
+        body .page-wrapper #main-nav .navbar ul li.dropdown.open div.dropdown-menu {
+          background-color: #000; }
+        body .page-wrapper #main-nav .navbar ul li.dropdown div.dropdown-menu {
+          display: block;
+          position: static !important;
+          padding: 0; }
+          body .page-wrapper #main-nav .navbar ul li.dropdown div.dropdown-menu ul {
+            flex-direction: column;
+            text-align: center;
+            margin-top: 10px; }
+            body .page-wrapper #main-nav .navbar ul li.dropdown div.dropdown-menu ul li {
+              margin-bottom: 0; }
+              body .page-wrapper #main-nav .navbar ul li.dropdown div.dropdown-menu ul li a {
+                font-size: 18px;
+                font-size: 1.8rem;
+                font-weight: 500;
+                height: 40px;
+                line-height: 40px; }
+              body .page-wrapper #main-nav .navbar ul li.dropdown div.dropdown-menu ul li ul {
+                display: none; }
+  body .page-wrapper header.page-header .header-content .social {
+    display: none; }
+  body .page-wrapper header.page-header .header-content .hamburger {
+    display: block; }
+  body .page-wrapper .main-navigation {
+    display: none; }
+    body .page-wrapper .main-navigation.open {
+      display: block; } }
+
+@media only screen and (max-width: 767px) {
+  /******************************************************************************************
+*
+*
+*
+*   Styles for devices below tablet portrait i.e. <= 767px
+*
+*
+*
+*******************************************************************************************/
+  body .page-wrapper .content-wrapper .dynamic-row {
+    flex-direction: column; }
+    body .page-wrapper .content-wrapper .dynamic-row .block {
+      width: 100%;
+      height: auto;
+      overflow: hidden; } }
 
 @media only screen and (max-width: 1200px) {
   /******************************************************************************************

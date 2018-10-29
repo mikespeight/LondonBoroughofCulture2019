@@ -1,0 +1,30 @@
+/******************************************************************************************
+*
+*
+*
+*   Styles for devices below tablet portrait i.e. <= 767px
+*
+*
+*
+*******************************************************************************************/
+
+body {
+
+  .page-wrapper {
+
+    .content-wrapper {
+
+      .dynamic-row {
+        flex-direction: column;
+
+        .block {
+          width: 100%;
+          height: auto;
+          overflow: hidden;
+          //min-height: 400px;
+
+        }
+      }
+    }
+  }
+}

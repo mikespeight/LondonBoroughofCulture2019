@@ -50,6 +50,10 @@
                 Waltham Forest - London borough of culture 2019
             </h1>
 
+            <div id="menu-trigger" class="hamburger">
+                <span></span>
+            </div>
+
             <div class="social hidden-xs">
 
                 <a href="">
@@ -74,7 +78,7 @@
 
     </header>
 
-    <div class="main-navigation">
+    <div id="main-nav" class="main-navigation">
 
         <nav class="navbar">
 
@@ -181,7 +185,13 @@
 
             <div class="size2of3 block image-block">
                 <a href="#" class="image-link-block">
-                    <img src="assets/images/row-1-img-2of3-left.jpg" alt="">
+
+                    <picture>
+                        <source media="(min-width: 1200px)" srcset="assets/images/row-1-img-2of3-left.jpg, assets/images/row-1-img-2of3-left-x2.jpg 2x,"> <!-- normal and x2 retina image -->
+                        <source media="(max-width: 480px)" srcset="assets/images/row-1-img-2of3-left-mob.jpg"> <!--  mobile image -->
+                        <img src="assets/images/row-1-img-2of3-left.jpg" alt=""> <!-- fallback image -->
+                    </picture>
+
                     <!--<div class="video-wrapper">
                         <video id="footage_608" class="video-js" autoplay="autoplay" loop="loop">
                             <source src="https://images.all-free-download.com/footage_preview/mp4/rain_thunderstorm_lightning_clouds_608.mp4" type="video/mp4; codecs=&quot;avc1.42E01E, mp4a.40.2&quot;">

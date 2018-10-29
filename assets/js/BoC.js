@@ -130,5 +130,13 @@ $(document).ready(function(){
 		}
 	});
 
+	// toggle menu
+	var $mainNav = $('#main-nav');
+
+	$("body").on('click', '#menu-trigger', function() {
+
+		$mainNav.toggleClass('open');
+	});
+
 
 });

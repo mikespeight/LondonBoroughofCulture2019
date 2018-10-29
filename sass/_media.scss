@@ -116,6 +116,13 @@ $ipad-pro-10-landscape-breakpoint: "(min-device-width : 1668px) and (max-device-
   }
 }
 
+// Everything below tablet portrait i.e. <768
+@mixin tablet-portrait-below {
+  @media only screen and (max-width : $mq-tablet-portrait - 1) {
+    @content;
+  }
+}
+
 // Everything below and including the portrait width of the tablet
 @mixin tablet-portrait-and-below {
   @media only screen and (max-width : $mq-tablet-portrait) {
@@ -266,6 +273,10 @@ $ipad-pro-10-landscape-breakpoint: "(min-device-width : 1668px) and (max-device-
 
   //@import "media-queries/desktop-and-up";
 
+}
+
+@include tablet-portrait-below {
+  @import "media-queries/below-tablet-portrait";
 }
 
 @include screen-std-and-below {

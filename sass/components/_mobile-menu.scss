@@ -1,0 +1,93 @@
+/******************************************************************************************
+*
+*
+*
+*   Styles for Mobile menu
+*
+*
+*
+*******************************************************************************************/
+
+body {
+
+  .page-wrapper {
+
+    #main-nav {
+      position: absolute;
+      left: 0;
+      top: 100px;
+      min-height: 400px;
+      height: auto;
+      overflow: hidden;
+      width: 100%;
+      z-index: 3;
+      background-color: $black;
+
+      .navbar {
+
+        ul {
+
+          li {
+            display: block;
+            margin-bottom: 15px;
+
+            a {
+              color: $white;
+              @include font-size(24);
+              font-weight: $semiBold;
+            }
+
+            &.dropdown {
+              height: auto;
+
+              &.open {
+
+                a {
+                  background-color: $black;
+                }
+
+                div {
+
+                  &.dropdown-menu {
+                    background-color: $black;
+
+                  }
+                }
+              }
+
+              div {
+
+                &.dropdown-menu {
+                  display: block;
+                  position: static!important;
+                  padding: 0;
+
+                  ul {
+                    flex-direction: column;
+                    text-align: center;
+                    margin-top: 10px;
+
+                    li {
+                      margin-bottom: 0;
+
+                      a {
+                        @include font-size(18);
+                        font-weight: $medium;
+                        height: 40px;
+                        line-height: 40px;
+                      }
+
+                      ul {
+                        display: none;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
