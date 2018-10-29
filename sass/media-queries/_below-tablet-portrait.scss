@@ -52,8 +52,121 @@ body {
                   font-size: 4.8vw;
                 }
               }
+
+              &.event-block {
+
+                .block-inner-content {
+
+                  h2 {
+                    font-size: 10.666vw;
+                  }
+
+                  p {
+                    font-size: 4.8vw;
+                  }
+                }
+              }
+            }
+
+            &.event-block {
+
+              .block-inner-content {
+
+                h2 {
+                  font-size: 10.666vw;
+                }
+
+                p {
+                  font-size: 4.8vw;
+                }
+              }
+            }
+
+            &.social-block {
+
+              .block-inner-content {
+                padding-top: 25vw;
+
+                h2 {
+                  font-size: 10.666vw;
+                }
+
+                .instagram-icon {
+
+                  &.fa {
+                    font-size: 10.666vw;
+                  }
+                }
+              }
             }
           }
+
+          &.bg-block {
+
+            .block-inner-content {
+              padding-top: 40vw;
+
+              h2 {
+                font-size: 10.666vw;
+              }
+            }
+
+            &.event-block {
+
+              .block-inner-content {
+
+                h2 {
+                  font-size: 10.666vw;
+                }
+
+                p {
+                  font-size: 4.8vw;
+                }
+              }
+            }
+
+            &.counter-block {
+
+              .block-inner-content {
+
+                #count {
+                  font-size: 48vw;
+                  line-height: 48vw;
+                  margin-top: 10vw;
+                }
+
+                .to-go {
+                  font-size: 6.933vw;
+                }
+              }
+            }
+          }
+
+          &.headline-block {
+
+            .block-inner-content {
+              padding-top: 40vw!important;
+
+              h2 {
+                font-size: 16vw!important;
+              }
+            }
+          }
+
+          .image-link-block {
+
+            .block-inner-content {
+
+              h2 {
+                font-size: 8vw;
+              }
+
+              p {
+                font-size: 4.8vw;
+              }
+            }
+          }
+
 
         }
       }

@@ -4656,6 +4656,42 @@ body {
         font-size: 12.8vw;
         line-height: 12.8vw; }
       body .page-wrapper .content-wrapper .dynamic-row .block.image-block.size2of3 .block-inner-content p {
+        font-size: 4.8vw; }
+      body .page-wrapper .content-wrapper .dynamic-row .block.image-block.size2of3.event-block .block-inner-content h2 {
+        font-size: 10.666vw; }
+      body .page-wrapper .content-wrapper .dynamic-row .block.image-block.size2of3.event-block .block-inner-content p {
+        font-size: 4.8vw; }
+      body .page-wrapper .content-wrapper .dynamic-row .block.image-block.event-block .block-inner-content h2 {
+        font-size: 10.666vw; }
+      body .page-wrapper .content-wrapper .dynamic-row .block.image-block.event-block .block-inner-content p {
+        font-size: 4.8vw; }
+      body .page-wrapper .content-wrapper .dynamic-row .block.image-block.social-block .block-inner-content {
+        padding-top: 25vw; }
+        body .page-wrapper .content-wrapper .dynamic-row .block.image-block.social-block .block-inner-content h2 {
+          font-size: 10.666vw; }
+        body .page-wrapper .content-wrapper .dynamic-row .block.image-block.social-block .block-inner-content .instagram-icon.fa {
+          font-size: 10.666vw; }
+      body .page-wrapper .content-wrapper .dynamic-row .block.bg-block .block-inner-content {
+        padding-top: 40vw; }
+        body .page-wrapper .content-wrapper .dynamic-row .block.bg-block .block-inner-content h2 {
+          font-size: 10.666vw; }
+      body .page-wrapper .content-wrapper .dynamic-row .block.bg-block.event-block .block-inner-content h2 {
+        font-size: 10.666vw; }
+      body .page-wrapper .content-wrapper .dynamic-row .block.bg-block.event-block .block-inner-content p {
+        font-size: 4.8vw; }
+      body .page-wrapper .content-wrapper .dynamic-row .block.bg-block.counter-block .block-inner-content #count {
+        font-size: 48vw;
+        line-height: 48vw;
+        margin-top: 10vw; }
+      body .page-wrapper .content-wrapper .dynamic-row .block.bg-block.counter-block .block-inner-content .to-go {
+        font-size: 6.933vw; }
+      body .page-wrapper .content-wrapper .dynamic-row .block.headline-block .block-inner-content {
+        padding-top: 40vw !important; }
+        body .page-wrapper .content-wrapper .dynamic-row .block.headline-block .block-inner-content h2 {
+          font-size: 16vw !important; }
+      body .page-wrapper .content-wrapper .dynamic-row .block .image-link-block .block-inner-content h2 {
+        font-size: 8vw; }
+      body .page-wrapper .content-wrapper .dynamic-row .block .image-link-block .block-inner-content p {
         font-size: 4.8vw; } }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 834px) and (orientation: portrait), only screen and (min-device-pixel-ratio: 2) and (min-width: 834px) and (orientation: portrait) {
