@@ -276,7 +276,7 @@ body {
           .image-overlay {
             @include fill-parent;
             background-color: $black;
-            opacity: 0.3;
+            opacity: 0.2;
           }
 
           .non-link-block {
@@ -675,6 +675,7 @@ body {
             &.counter-block {
 
               .block-inner-content {
+                box-sizing: border-box;
                 width:100%;
                 padding: 0;
 
@@ -688,11 +689,12 @@ body {
                 }
 
                 .to-go {
-                  width: 100%;
+                  width: 95%;
                   @include font-size(26);
                   text-transform: uppercase;
                   text-align: center;
                   font-weight: $regular;
+                  margin: 0;
                 }
 
               }
@@ -1077,10 +1079,11 @@ body {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(4, 57px);
-        grid-template-areas: "boc-logo . . wf-logo"
+        grid-template-areas: "boc-logo logos logos wf-logo"
         ". . . wf-site "
         ". . . find-out-more"
         "social . . copy";
+
         color: $white;
 
         a {
@@ -1105,6 +1108,13 @@ body {
             background: transparent url("#{$pathToImages}/boc-logo-x2.png") 0 0 no-repeat;
             background-size: 248px 47px;
           }
+        }
+
+        .logos {
+          grid-area: logos;
+          background: transparent url("#{$pathToImages}/joint-logos.png") 0 0 no-repeat;
+          background-size: 557px 75px;
+          min-height: 75px;
         }
 
         .wf-logo {
