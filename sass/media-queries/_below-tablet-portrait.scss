@@ -194,6 +194,42 @@ body {
                   font-size: 4.266vw;
                 }
               }
+
+              .bg-link-block {
+
+                .block-inner-content {
+
+                  h2 {
+                    font-size: 10.666vw;
+                  }
+                }
+              }
+
+              .non-link-block {
+
+                .block-inner-content {
+
+                  h2 {
+                    margin-bottom: 7vw;
+                  }
+
+                  p {
+                    font-size: 4.8vw;
+                    line-height: 7vw;
+
+                  }
+                }
+              }
+            }
+
+            &.faq-block {
+
+              .block-inner-content {
+
+                h2 {
+                  font-size: 16vw;
+                }
+              }
             }
           }
 
@@ -204,6 +240,20 @@ body {
 
               h2 {
                 font-size: 16vw!important;
+              }
+            }
+          }
+
+          &.hero-block {
+
+            .block-inner-content {
+
+              h1 {
+                font-size: 12.8vw;
+              }
+
+              p {
+                font-size: 4.8vw;
               }
             }
           }
@@ -234,6 +284,10 @@ body {
             }
           }
 
+          &.responsive-media-block {
+            height:40vw;
+          }
+
           .image-link-block {
 
             .block-inner-content {
@@ -256,6 +310,35 @@ body {
 
             .non-link-block {
               min-height: 400px;
+            }
+          }
+        }
+      }
+
+      .slider {
+
+        .flexslider {
+
+          .slides {
+
+            .slide {
+
+              a {
+
+                &.image-link-block {
+
+                  .block-inner-content {
+
+                    h2 {
+                      font-size: 12.8vw;
+                    }
+
+                    p {
+                      font-size: 4.8vw;
+                    }
+                  }
+                }
+              }
             }
           }
         }

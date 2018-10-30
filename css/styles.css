@@ -4693,10 +4693,23 @@ body {
           font-size: 5.066vw; }
         body .page-wrapper .content-wrapper .dynamic-row .block.bg-block.feature-block.whos-involved-block p {
           font-size: 4.266vw; }
+      body .page-wrapper .content-wrapper .dynamic-row .block.bg-block.feature-block .bg-link-block .block-inner-content h2 {
+        font-size: 10.666vw; }
+      body .page-wrapper .content-wrapper .dynamic-row .block.bg-block.feature-block .non-link-block .block-inner-content h2 {
+        margin-bottom: 7vw; }
+      body .page-wrapper .content-wrapper .dynamic-row .block.bg-block.feature-block .non-link-block .block-inner-content p {
+        font-size: 4.8vw;
+        line-height: 7vw; }
+      body .page-wrapper .content-wrapper .dynamic-row .block.bg-block.faq-block .block-inner-content h2 {
+        font-size: 16vw; }
       body .page-wrapper .content-wrapper .dynamic-row .block.headline-block .block-inner-content {
         padding-top: 40vw !important; }
         body .page-wrapper .content-wrapper .dynamic-row .block.headline-block .block-inner-content h2 {
           font-size: 16vw !important; }
+      body .page-wrapper .content-wrapper .dynamic-row .block.hero-block .block-inner-content h1 {
+        font-size: 12.8vw; }
+      body .page-wrapper .content-wrapper .dynamic-row .block.hero-block .block-inner-content p {
+        font-size: 4.8vw; }
       body .page-wrapper .content-wrapper .dynamic-row .block.hero-block-left {
         height: 375px; }
         body .page-wrapper .content-wrapper .dynamic-row .block.hero-block-left .block-inner-content h1 {
@@ -4708,6 +4721,8 @@ body {
           line-height: 4.8vw; }
         body .page-wrapper .content-wrapper .dynamic-row .block.hero-block-left .btn-wrapper h4 {
           font-size: 6.666vw; }
+      body .page-wrapper .content-wrapper .dynamic-row .block.responsive-media-block {
+        height: 40vw; }
       body .page-wrapper .content-wrapper .dynamic-row .block .image-link-block .block-inner-content h2 {
         font-size: 8vw; }
       body .page-wrapper .content-wrapper .dynamic-row .block .image-link-block .block-inner-content p {
@@ -4716,6 +4731,10 @@ body {
       height: auto; }
       body .page-wrapper .content-wrapper .dynamic-row.event-section .event-side-info-block .non-link-block {
         min-height: 400px; }
+  body .page-wrapper .content-wrapper .slider .flexslider .slides .slide a.image-link-block .block-inner-content h2 {
+    font-size: 12.8vw; }
+  body .page-wrapper .content-wrapper .slider .flexslider .slides .slide a.image-link-block .block-inner-content p {
+    font-size: 4.8vw; }
   body .page-wrapper footer .footer-bottom {
     height: 650px; }
     body .page-wrapper footer .footer-bottom .grid-wrapper {
