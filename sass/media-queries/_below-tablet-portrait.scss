@@ -328,6 +328,7 @@ body {
                 &.image-link-block {
 
                   .block-inner-content {
+                    width:80%;
 
                     h2 {
                       font-size: 12.8vw;
@@ -339,6 +340,13 @@ body {
                   }
                 }
               }
+            }
+          }
+
+          .flex-direction-nav {
+
+            a {
+              top: 76%;
             }
           }
         }

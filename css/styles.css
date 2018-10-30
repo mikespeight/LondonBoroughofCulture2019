@@ -4731,10 +4731,14 @@ body {
       height: auto; }
       body .page-wrapper .content-wrapper .dynamic-row.event-section .event-side-info-block .non-link-block {
         min-height: 400px; }
-  body .page-wrapper .content-wrapper .slider .flexslider .slides .slide a.image-link-block .block-inner-content h2 {
-    font-size: 12.8vw; }
-  body .page-wrapper .content-wrapper .slider .flexslider .slides .slide a.image-link-block .block-inner-content p {
-    font-size: 4.8vw; }
+  body .page-wrapper .content-wrapper .slider .flexslider .slides .slide a.image-link-block .block-inner-content {
+    width: 80%; }
+    body .page-wrapper .content-wrapper .slider .flexslider .slides .slide a.image-link-block .block-inner-content h2 {
+      font-size: 12.8vw; }
+    body .page-wrapper .content-wrapper .slider .flexslider .slides .slide a.image-link-block .block-inner-content p {
+      font-size: 4.8vw; }
+  body .page-wrapper .content-wrapper .slider .flexslider .flex-direction-nav a {
+    top: 76%; }
   body .page-wrapper footer .footer-bottom {
     height: 650px; }
     body .page-wrapper footer .footer-bottom .grid-wrapper {
