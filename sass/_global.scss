@@ -1030,44 +1030,6 @@ body {
   footer {
     margin-top: 60px;
 
-    /*      .footer-top {
-            height:120px;
-            background-color: $brandTertiary;
-
-            .flex-wrapper {
-              @include flex-container();
-              padding: 25px 294px;
-              justify-content: space-around;
-
-              i {
-                display: inline-block;
-
-                &.mayor{
-                  width:240px;
-                  height:65px;
-                  background: transparent url("#{$pathToImages}/mayor-of-london-x2.png") 0 0 no-repeat;
-                  background-size: 240px 65px;;
-                }
-
-                &.city {
-                  width:48px;
-                  height:65px;
-                  background: transparent url("#{$pathToImages}/city-of-london-x2.png") 0 0 no-repeat;
-                  background-size: 48px 65px;;
-                }
-
-                &.airbnb {
-                  position: relative;
-                  top:6px;
-                  width:48px;
-                  height:55px;
-                  background: transparent url("#{$pathToImages}/airbnb-logo-x2-.png") 0 0 no-repeat;
-                  background-size: 48px 55px;;
-                }
-              }
-            }
-          }*/
-
     .footer-bottom {
       height:320px;
       background-color: $black;
@@ -1079,8 +1041,8 @@ body {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(4, 57px);
-        grid-template-areas: "boc-logo logos logos wf-logo"
-        ". . . wf-site "
+        grid-template-areas: "boc-logo mayor mayor wf-logo"
+        ". city-of-london air-bnb wf-site "
         ". . . find-out-more"
         "social . . copy";
 
@@ -1110,11 +1072,10 @@ body {
           }
         }
 
-        .logos {
-          grid-area: logos;
-          background: transparent url("#{$pathToImages}/joint-logos.png") 0 0 no-repeat;
-          background-size: 557px 75px;
-          min-height: 75px;
+        .mayor {
+          grid-area: mayor;
+          background: transparent url("#{$pathToImages}/mayor-of-london-logo.png") 50% 0 no-repeat;
+          background-size: 279px 22px;
         }
 
         .wf-logo {
@@ -1136,6 +1097,20 @@ body {
             background: transparent url("#{$pathToImages}/lottery-funded-logo.png") 0 0 no-repeat;
             background-size: 120px 51px;
           }
+        }
+
+        .city-of-london {
+          grid-area: city-of-london;
+          background: transparent url("#{$pathToImages}/city-of-london-logo.png") 75% 0 no-repeat;
+          background-size: 56px 75px;
+          min-height: 75px;
+        }
+
+        .air-bnb {
+          grid-area: air-bnb;
+          background: transparent url("#{$pathToImages}/air-bnb-logo-wht.png") 25% 8px no-repeat;
+          background-size: 56px 64px;
+          min-height: 75px;
         }
 
         .wf-site {

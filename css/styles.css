@@ -4276,44 +4276,7 @@ body {
         body .page-wrapper .content-wrapper .register .register-content a {
           margin: 10px 0; }
   body footer {
-    margin-top: 60px;
-    /*      .footer-top {
-            height:120px;
-            background-color: $brandTertiary;
-
-            .flex-wrapper {
-              @include flex-container();
-              padding: 25px 294px;
-              justify-content: space-around;
-
-              i {
-                display: inline-block;
-
-                &.mayor{
-                  width:240px;
-                  height:65px;
-                  background: transparent url("../assets/images/mayor-of-london-x2.png") 0 0 no-repeat;
-                  background-size: 240px 65px;;
-                }
-
-                &.city {
-                  width:48px;
-                  height:65px;
-                  background: transparent url("../assets/images/city-of-london-x2.png") 0 0 no-repeat;
-                  background-size: 48px 65px;;
-                }
-
-                &.airbnb {
-                  position: relative;
-                  top:6px;
-                  width:48px;
-                  height:55px;
-                  background: transparent url("../assets/images/airbnb-logo-x2-.png") 0 0 no-repeat;
-                  background-size: 48px 55px;;
-                }
-              }
-            }
-          }*/ }
+    margin-top: 60px; }
     body footer .footer-bottom {
       height: 320px;
       background-color: #000;
@@ -4324,7 +4287,7 @@ body {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(4, 57px);
-        grid-template-areas: "boc-logo logos logos wf-logo" ". . . wf-site " ". . . find-out-more" "social . . copy";
+        grid-template-areas: "boc-logo mayor mayor wf-logo" ". city-of-london air-bnb wf-site " ". . . find-out-more" "social . . copy";
         color: #fff; }
         body footer .footer-bottom .grid-wrapper a {
           font-size: 16px;
@@ -4344,11 +4307,10 @@ body {
             height: 47px;
             background: transparent url("../assets/images/boc-logo-x2.png") 0 0 no-repeat;
             background-size: 248px 47px; }
-        body footer .footer-bottom .grid-wrapper .logos {
-          grid-area: logos;
-          background: transparent url("../assets/images/joint-logos.png") 0 0 no-repeat;
-          background-size: 557px 75px;
-          min-height: 75px; }
+        body footer .footer-bottom .grid-wrapper .mayor {
+          grid-area: mayor;
+          background: transparent url("../assets/images/mayor-of-london-logo.png") 50% 0 no-repeat;
+          background-size: 279px 22px; }
         body footer .footer-bottom .grid-wrapper .wf-logo {
           grid-area: wf-logo; }
           body footer .footer-bottom .grid-wrapper .wf-logo .wf-logo {
@@ -4364,6 +4326,16 @@ body {
             height: 51px;
             background: transparent url("../assets/images/lottery-funded-logo.png") 0 0 no-repeat;
             background-size: 120px 51px; }
+        body footer .footer-bottom .grid-wrapper .city-of-london {
+          grid-area: city-of-london;
+          background: transparent url("../assets/images/city-of-london-logo.png") 75% 0 no-repeat;
+          background-size: 56px 75px;
+          min-height: 75px; }
+        body footer .footer-bottom .grid-wrapper .air-bnb {
+          grid-area: air-bnb;
+          background: transparent url("../assets/images/air-bnb-logo-wht.png") 25% 8px no-repeat;
+          background-size: 56px 64px;
+          min-height: 75px; }
         body footer .footer-bottom .grid-wrapper .wf-site {
           grid-area: wf-site; }
         body footer .footer-bottom .grid-wrapper .find-out-more {
@@ -4630,7 +4602,11 @@ body {
   body .page-wrapper .content-wrapper .event-search {
     height: 18.333vw; }
     body .page-wrapper .content-wrapper .event-search .register-content {
-      padding: 5.833vw 20%; } }
+      padding: 5.833vw 20%; }
+  body .page-wrapper footer .footer-bottom .grid-wrapper {
+    grid-template-rows: repeat(4, 70px); }
+    body .page-wrapper footer .footer-bottom .grid-wrapper .mayor {
+      background-size: 23.25vw 1.833vw; } }
 
 @media only screen and (max-width: 767px) {
   /******************************************************************************************
@@ -4739,7 +4715,35 @@ body {
     body .page-wrapper .content-wrapper .dynamic-row.event-section .event-side-info-block {
       height: auto; }
       body .page-wrapper .content-wrapper .dynamic-row.event-section .event-side-info-block .non-link-block {
-        min-height: 400px; } }
+        min-height: 400px; }
+  body .page-wrapper footer .footer-bottom {
+    height: 650px; }
+    body .page-wrapper footer .footer-bottom .grid-wrapper {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 70px 35px 105px 70px 70px 50px 70px 70px;
+      grid-template-areas: "boc-logo boc-logo" "mayor mayor" "city-of-london air-bnb" "wf-logo wf-logo" "wf-site wf-site" "find-out-more find-out-more" "social social" "copy copy"; }
+      body .page-wrapper footer .footer-bottom .grid-wrapper .boc-logo {
+        text-align: center; }
+      body .page-wrapper footer .footer-bottom .grid-wrapper .mayor {
+        background-size: 74.4vw 5.866vw;
+        height: 35px; }
+      body .page-wrapper footer .footer-bottom .grid-wrapper .city-of-london {
+        grid-area: city-of-london;
+        background-position: 50% 0;
+        background-size: 56px 75px; }
+      body .page-wrapper footer .footer-bottom .grid-wrapper .air-bnb {
+        grid-area: air-bnb;
+        background-position: 50% 8px;
+        background-size: 56px 64px; }
+      body .page-wrapper footer .footer-bottom .grid-wrapper .wf-logo .wf-logo {
+        margin: 0 20px; }
+      body .page-wrapper footer .footer-bottom .grid-wrapper .copy ul {
+        justify-content: center !important; }
+      body .page-wrapper footer .footer-bottom .grid-wrapper .wf-site,
+      body .page-wrapper footer .footer-bottom .grid-wrapper .find-out-more,
+      body .page-wrapper footer .footer-bottom .grid-wrapper .social,
+      body .page-wrapper footer .footer-bottom .grid-wrapper .copy {
+        text-align: center; } }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 834px) and (orientation: portrait), only screen and (min-device-pixel-ratio: 2) and (min-width: 834px) and (orientation: portrait) {
   /******************************************************************************************

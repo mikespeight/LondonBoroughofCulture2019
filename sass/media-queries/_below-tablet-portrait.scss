@@ -257,7 +257,68 @@ body {
             .non-link-block {
               min-height: 400px;
             }
+          }
+        }
+      }
+    }
 
+    footer {
+
+      .footer-bottom {
+        height: 650px;
+
+        .grid-wrapper {
+          grid-template-columns: 1fr 1fr;
+          grid-template-rows: 70px 35px 105px 70px 70px 50px 70px 70px;
+          grid-template-areas: "boc-logo boc-logo"
+          "mayor mayor"
+          "city-of-london air-bnb"
+          "wf-logo wf-logo"
+          "wf-site wf-site"
+          "find-out-more find-out-more"
+          "social social"
+          "copy copy";
+
+          .boc-logo {
+            text-align: center;
+          }
+
+          .mayor {
+            background-size: 74.4vw 5.866vw;
+            height: 35px;
+          }
+
+          .city-of-london {
+            grid-area: city-of-london;
+            background-position:  50% 0;
+            background-size: 56px 75px;
+          }
+
+          .air-bnb {
+            grid-area: air-bnb;
+            background-position: 50% 8px;
+            background-size: 56px 64px;
+          }
+
+          .wf-logo {
+
+            .wf-logo {
+              margin: 0 20px;
+            }
+          }
+
+          .copy {
+
+            ul {
+              justify-content: center!important;
+            }
+          }
+
+          .wf-site,
+          .find-out-more,
+          .social,
+          .copy {
+            text-align: center;
           }
         }
       }

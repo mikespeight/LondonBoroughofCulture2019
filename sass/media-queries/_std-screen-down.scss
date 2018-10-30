@@ -341,6 +341,20 @@ body {
         }
       }
     }
+
+    footer {
+
+      .footer-bottom {
+
+        .grid-wrapper {
+          grid-template-rows: repeat(4, 70px);
+
+          .mayor {
+            background-size: 23.25vw 1.833vw;
+          }
+        }
+      }
+    }
   }
 }
 
