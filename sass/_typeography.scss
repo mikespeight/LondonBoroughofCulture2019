@@ -83,6 +83,7 @@ h1{
 
 .heading-panel {
 
+  h1,
   h2 {
     font-family: $Archia-font;
     font-weight: $semiBold;
@@ -97,10 +98,18 @@ h1{
     }
   }
 
+  h1 {
+
+    &.heading {
+      @include font-size(32);
+    }
+  }
+
   &.persian-green-bg,
   &.dark-pink-bg,
   &.dark-purple-bg {
 
+    h1,
     h2 {
 
       &.heading {
