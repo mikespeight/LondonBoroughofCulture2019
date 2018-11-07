@@ -841,17 +841,11 @@
 			var thisLat = locations[i].lat,
                 thisLong = locations[i].lng,
                 pinPos = new google.maps.LatLng(thisLat, thisLong),
-                thisPin = window[locations[i].pin],
-                thisHeading = locations[i].info.title,
-                thisLeader = locations[i].info.leader,
-                thisBodyText = locations[i].info.body,
-                thisLink = locations[i].info.link,
-                thisLinkText = locations[i].info.linkText;
+                thisPin = window[locations[i].pin];
 
 			var data = locations[i].info;
 
 			var infoWindow = new google.maps.InfoWindow();
-
 
 			var contentString =  '<div class="info-window-wrapper">'+
 				'<div class="info-window-content">'+
@@ -876,14 +870,8 @@
 					infoWindow.open(map, marker);
 				});
 			})(marker, contentString);
-
-			/*marker.addListener('click', function() {
-				infowindow.open(map, marker);
-			});*/
         }
 	}
-
-
 
 </script>
 
