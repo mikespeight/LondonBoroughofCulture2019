@@ -783,7 +783,7 @@
                     'leader':'Hoe st walthamstow',
                     'body':'Hoe st walthamstow, Amet aspernatur assumenda at delectus distinctio illum iste, labore laboriosam',
                     'link':'http://wfculture19.co.uk',
-                    'linkText':'view venue'
+                    'linkText':'View Venue'
                 }
 			},
 			{'lat':51.590602,
@@ -792,10 +792,10 @@
 				'pin': 'green',
 				'info':{
 					'title':'Council offices',
-					'leader':'Council offices at the Magistrates, ',
-					'body':'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
+					'leader':'',
+					'body':'Council offices at the Magistrates, Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
 					'link':'http://wfculture19.co.uk',
-					'linkText':'view venue'
+					'linkText':'View Venue'
 				}
 			},
 			{'lat':51.591187,
@@ -807,7 +807,7 @@
 					'leader':'opened by Prime Minister Clement Attlee in 1950, ',
 					'body':',is the only public museum devoted to English Arts and Crafts designer and early socialist William Morris.',
 					'link':'http://wfculture19.co.uk',
-					'linkText':'view venue'
+					'linkText':'View Venue'
 				}
 			},
 			{'lat':51.582541,
@@ -816,10 +816,10 @@
 				'pin': 'lightGreen',
 				'info':{
 					'title':'Walthamstow Village ',
-					'leader':'is the oldest part of present-day Walthamstow, ',
-					'body':' north east London. Designated a Conservation Area by the London Borough of Waltham Forest in 1967',
+					'leader':'is the oldest part of present-day Walthamstow, north east London.',
+					'body':' Designated a Conservation Area by the London Borough of Waltham Forest in 1967',
 					'link':'http://wfculture19.co.uk',
-					'linkText':'view venue'
+					'linkText':'View Venue'
 				}
 			}
 		];
@@ -845,17 +845,16 @@
 
 			var data = locations[i].info;
 
-			var infoWindow = new google.maps.InfoWindow();
+			var infoWindow = new google.maps.InfoWindow({maxWidth:350});
 
 			var contentString =  '<div class="info-window-wrapper">'+
 				'<div class="info-window-content">'+
 				'</div>'+
 				'<h4 class="firstHeading">' + data.title + '</h4>'+
 				'<div id="bodyContent">'+
-				'<p><strong>' + data.leader + '</strong> ' + data.body + '</p>'+
-				'<p><a href="' + data.link + '">'+
-				 data.linkText + '</a></p>'+
-				'<p>&nbsp;</p>'+
+				'<p><strong>' + data.leader + '</strong> ' + data.body + ' </p>'+
+				'<p><a href="' + data.link + '"> '+
+				 data.linkText + ' </a></p>'+
 				'</div>'+
 				'</div>';
 
