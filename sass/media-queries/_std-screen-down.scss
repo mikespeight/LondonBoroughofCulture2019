@@ -340,6 +340,48 @@ body {
           padding: 5.833vw 20%;
         }
       }
+
+      .form-block {
+
+        .heading-panel {
+
+          h2 {
+            font-size: 2.166vw;
+            line-height: 8.333vw;
+          }
+        }
+
+        .search-form {
+          margin-top: 0;
+          width: 21.666vw;
+
+          .form-item {
+
+            input {
+              height: 2.5vw;
+              font-size: 1.666vw;
+            }
+          }
+
+          .form-actions {
+            margin-bottom: 2.5vw;
+
+            input {
+              //height: 2.5vw;
+              //font-size: 1.666vw;
+            }
+          }
+        }
+
+        .btn-wrapper {
+          width: 21.666vw;
+
+          a {
+            //height: 2.5vw;
+            //font-size: 1.666vw!important;
+          }
+        }
+      }
     }
 
     footer {

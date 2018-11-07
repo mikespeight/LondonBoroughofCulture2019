@@ -40,6 +40,58 @@ body {
         display: block;
       }
     }
+
+    .content-wrapper {
+
+      .dynamic-row {
+
+        &.multi-grid {
+          flex-direction: column;
+
+          & > div {
+            width: 100%;
+          }
+
+          .form-block {
+
+            .search-form {
+              width: auto;
+              flex-direction: row;
+              justify-content: space-around;
+              flex-wrap: wrap;
+              align-items: center;
+
+              .form-item {
+                max-width: 18%;
+              }
+
+              .form-actions {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+
+                input {
+                  margin: 0 auto;
+                  width:216px;
+                }
+              }
+            }
+
+            .btn-wrapper {
+              margin-bottom: 30px;
+              width:216px;
+            }
+          }
+        }
+      }
+
+      .map-section {
+
+        .legend {
+          padding: 20px 100px;
+        }
+      }
+    }
   }
 }
 

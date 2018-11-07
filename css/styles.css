@@ -4382,7 +4382,7 @@ body {
       body .page-wrapper .content-wrapper .form-block .search-form .form-item,
       body .page-wrapper .content-wrapper .form-block .search-form .form-actions {
         width: 100%;
-        margin-bottom: 40px; }
+        margin-bottom: 30px; }
         body .page-wrapper .content-wrapper .form-block .search-form .form-item input,
         body .page-wrapper .content-wrapper .form-block .search-form .form-item select,
         body .page-wrapper .content-wrapper .form-block .search-form .form-actions input,
@@ -4672,7 +4672,31 @@ body {
   body .page-wrapper .main-navigation {
     display: none; }
     body .page-wrapper .main-navigation.open {
-      display: block; } }
+      display: block; }
+  body .page-wrapper .content-wrapper .dynamic-row.multi-grid {
+    flex-direction: column; }
+    body .page-wrapper .content-wrapper .dynamic-row.multi-grid > div {
+      width: 100%; }
+    body .page-wrapper .content-wrapper .dynamic-row.multi-grid .form-block .search-form {
+      width: auto;
+      flex-direction: row;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      align-items: center; }
+      body .page-wrapper .content-wrapper .dynamic-row.multi-grid .form-block .search-form .form-item {
+        max-width: 18%; }
+      body .page-wrapper .content-wrapper .dynamic-row.multi-grid .form-block .search-form .form-actions {
+        display: flex;
+        flex-direction: row;
+        justify-content: center; }
+        body .page-wrapper .content-wrapper .dynamic-row.multi-grid .form-block .search-form .form-actions input {
+          margin: 0 auto;
+          width: 216px; }
+    body .page-wrapper .content-wrapper .dynamic-row.multi-grid .form-block .btn-wrapper {
+      margin-bottom: 30px;
+      width: 216px; }
+  body .page-wrapper .content-wrapper .map-section .legend {
+    padding: 20px 100px; } }
 
 @media only screen and (max-width: 1200px) {
   /******************************************************************************************
@@ -4788,6 +4812,19 @@ body {
     height: 18.333vw; }
     body .page-wrapper .content-wrapper .event-search .register-content {
       padding: 5.833vw 20%; }
+  body .page-wrapper .content-wrapper .form-block .heading-panel h2 {
+    font-size: 2.166vw;
+    line-height: 8.333vw; }
+  body .page-wrapper .content-wrapper .form-block .search-form {
+    margin-top: 0;
+    width: 21.666vw; }
+    body .page-wrapper .content-wrapper .form-block .search-form .form-item input {
+      height: 2.5vw;
+      font-size: 1.666vw; }
+    body .page-wrapper .content-wrapper .form-block .search-form .form-actions {
+      margin-bottom: 2.5vw; }
+  body .page-wrapper .content-wrapper .form-block .btn-wrapper {
+    width: 21.666vw; }
   body .page-wrapper footer .footer-bottom .grid-wrapper {
     grid-template-rows: repeat(4, 70px); }
     body .page-wrapper footer .footer-bottom .grid-wrapper .mayor {
@@ -4824,6 +4861,8 @@ body {
         width: 100%; }
   body .page-wrapper .content-wrapper .dynamic-row {
     flex-direction: column; }
+    body .page-wrapper .content-wrapper .dynamic-row.multi-grid .dynamic-row .inner-col {
+      width: 100% !important; }
     body .page-wrapper .content-wrapper .dynamic-row .block {
       width: 100%;
       height: auto;
@@ -4943,6 +4982,20 @@ body {
       font-size: 4.8vw; }
   body .page-wrapper .content-wrapper .slider .flexslider .flex-direction-nav a {
     top: 76%; }
+  body .page-wrapper .content-wrapper .dynamic-row.multi-grid .form-block .search-form {
+    flex-direction: column !important;
+    width: 260px; }
+    body .page-wrapper .content-wrapper .dynamic-row.multi-grid .form-block .search-form .form-item {
+      width: 100%;
+      max-width: 100%; }
+  body .page-wrapper .content-wrapper .dynamic-row.multi-grid .form-block .btn-wrapper {
+    margin-bottom: 50px; }
+  body .page-wrapper .content-wrapper .map-section .legend {
+    padding: 20px 20px 10px;
+    flex-wrap: wrap;
+    justify-content: space-around; }
+    body .page-wrapper .content-wrapper .map-section .legend > div {
+      margin-bottom: 10px; }
   body .page-wrapper footer .footer-bottom {
     height: 650px; }
     body .page-wrapper footer .footer-bottom .grid-wrapper {
