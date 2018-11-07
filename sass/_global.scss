@@ -267,6 +267,28 @@ body {
           overflow: hidden;
           position: relative;
 
+          &.query-block {
+
+            .aspect-box {
+              padding-top: 50%;
+            }
+
+            .bg-link-block {
+
+              .block-inner-content {
+                padding-left: 0;
+                padding-top:50%;
+                width: 100%;
+
+                h2 {
+                  @include centerV;
+                  width: 100%;
+                  text-align: center;
+                }
+              }
+            }
+          }
+
           .aspect-box {
             position: relative;
             height: 0;
@@ -843,6 +865,10 @@ body {
         }
       }
 
+      .dynamic-col {
+        @include flex-container(column, flex-start);
+      }
+
       .event-search {
         background-color: $white;
         height:220px;
@@ -921,6 +947,9 @@ body {
           position: relative;
 
           .non-link-block {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
 
             .wysiwyg {
 
@@ -933,24 +962,21 @@ body {
                 }
               }
             }
-          }
 
-          .sponsor-panel {
-            position: absolute;
-            bottom:0;
-            height: auto;
+            .sponsor-panel {
+              height: auto;
+              width: 100%;
 
-            h4 {
-              color: $white;
-            }
+              h4 {
+                color: $white;
+              }
 
-            .air-bnb,
-            img {
-              display: block;
-              /*width:164px;
-              height: 52px;
-              background: transparent url("#{$pathToImages}/air-bnb-logo.png");*/
-              margin: 36px 36px 50px;
+              .air-bnb,
+              img {
+                display: inline-block;
+                width: auto;
+                margin: 36px 36px 50px;
+              }
             }
           }
         }
@@ -1021,6 +1047,126 @@ body {
           a {
             margin: 10px 0;
           }
+        }
+      }
+
+      .form-block {
+
+        .search-form {
+          @include flex-container(column, space-between);
+          width:260px;
+          margin: 30px auto 0;
+
+          .form-item,
+          .form-actions {
+            width: 100%;
+            margin-bottom: 40px;
+
+            input,
+            select {
+              border: none;
+              border-bottom: 2px solid $black;
+              background-color: transparent;
+              height: 30px;
+              width: 100%;
+              line-height: 30px;
+              @include font-size(14);
+              font-weight: $semiBold;
+              text-transform: uppercase;
+
+              option {
+                @include font-size(14);
+                font-weight: $regular;
+                margin-bottom: 10px;
+                display: block;
+                white-space: pre;
+                min-height: 1.4em;
+                padding: 0 2px 1px;
+              }
+            }
+
+            input {
+
+              &::placeholder {
+                color: black;
+                @include font-size(14);
+                font-weight: $semiBold;
+              }
+
+              &[type=submit] {
+                border: none;
+                @include border-radius(25px);
+                height: 50px;
+                padding: 0 25px;
+                line-height: 50px;
+                background-color: $brandPrimary;
+                color: $white;
+                cursor: pointer;
+                text-align: left;
+              }
+            }
+          }
+        }
+
+        .btn-wrapper {
+          margin:0 auto;
+          width: 260px;
+
+          a {
+            box-sizing: border-box;
+            margin: 0;
+            width: 100%;
+            padding: 0 25px;
+            font-size: 14px!important;
+            font-size: 1.4rem!important;
+            text-align: left;
+          }
+        }
+      }
+
+      .map-section {
+
+        .legend {
+          @include flex-container(row, space-between);
+          padding: 20px 170px;
+
+          .key {
+            height: 40px;
+
+            span {
+              padding-left: 40px;
+              @include font-size(18);
+              font-weight: $medium;
+              line-height: 40px;
+            }
+
+            &.key1 {
+              background: transparent url("#{$pathToImages}/map-pin-green.png") 0 0 no-repeat;
+            }
+
+            &.key2 {
+              background: transparent url("#{$pathToImages}/map-pin-pink.png") 0 0 no-repeat;
+            }
+
+            &.key3 {
+              background: transparent url("#{$pathToImages}/map-pin-purple.png") 0 0 no-repeat;
+            }
+
+            &.key4 {
+              background: transparent url("#{$pathToImages}/map-pin-light-green.png") 0 0 no-repeat;
+            }
+          }
+        }
+      }
+    }
+
+    .map-section {
+
+      .map-wrapper {
+
+        #map {
+
+
         }
       }
     }

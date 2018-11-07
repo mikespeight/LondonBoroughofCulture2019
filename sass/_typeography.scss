@@ -80,6 +80,18 @@ h1{
 }
 
 
+.form-block {
+
+  .heading-panel {
+
+    h2 {
+
+      &.heading {
+        color: $black;
+      }
+    }
+  }
+}
 
 .heading-panel {
 

@@ -1,0 +1,53 @@
+/******************************************************************************************
+*
+*
+*
+*   Styles for Google maps, info windows etc
+*   Example of styling infowindows here:
+*   https://codeshare.co.uk/blog/how-to-style-the-google-maps-popup-infowindow/
+*
+*
+*
+*******************************************************************************************/
+
+.map-section {
+
+  .map-wrapper {
+
+    #map {
+
+      button {
+
+        &.gm-ui-hover-effect {
+          color: $brandPrimary!important;
+        }
+      }
+
+       /*style the box*/
+       .gm-style .gm-style-iw {
+         box-sizing: border-box;
+         font-family: $Archia-font;
+       }
+
+       /*style the p tag*/
+       .gm-style .gm-style-iw p{
+
+         strong {
+           color: $brandPrimary;
+           font-weight: $semiBold;
+         }
+
+         a {
+           color: $brandPrimary;
+           font-weight: $semiBold;
+           text-decoration: none;
+         }
+       }
+
+      .gm-style .gm-style-iw h4 {
+        @include font-size(18);
+        color: $brandPrimary;
+      }
+    }
+  }
+}

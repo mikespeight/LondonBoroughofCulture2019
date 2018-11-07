@@ -44,6 +44,9 @@
   background-color: #00a3a6;
   color: #fff; }
 
+.light-persian-green-bg {
+  background-color: #bee7e8; }
+
 .dark-purple-bg {
   background-color: #312783;
   color: #fff; }
@@ -2487,6 +2490,9 @@ h1 {
   font-size: 80px;
   font-size: 8rem; }
 
+.form-block .heading-panel h2.heading {
+  color: #000; }
+
 .heading-panel h1,
 .heading-panel h2 {
   font-family: "Archia", sans-serif;
@@ -3336,6 +3342,27 @@ html[xmlns] .slides {
 .inner-panel {
   padding: 0 1.071rem;
 }*/
+/******************************************************************************************
+*
+*
+*
+*   Styles for responsive classes
+*
+*
+*
+*******************************************************************************************/
+.mobile-only {
+  display: none; }
+
+.desktop-only {
+  display: block; }
+
+@media only screen and (max-width: 767px) {
+  .mobile-only {
+    display: block; }
+  .desktop-only {
+    display: none; } }
+
 .subpage.path-user .login-form {
   width: 1200px;
   margin: 0 auto; }
@@ -3624,6 +3651,37 @@ div#sliding-popup {
           border-color: #026d6f;
           color: #fff; }
 
+/******************************************************************************************
+*
+*
+*
+*   Styles for Google maps, info windows etc
+*   Example of styling infowindows here:
+*   https://codeshare.co.uk/blog/how-to-style-the-google-maps-popup-infowindow/
+*
+*
+*
+*******************************************************************************************/
+.map-section .map-wrapper #map {
+  /*style the box*/
+  /*style the p tag*/ }
+  .map-section .map-wrapper #map button.gm-ui-hover-effect {
+    color: #00a3a6 !important; }
+  .map-section .map-wrapper #map .gm-style .gm-style-iw {
+    box-sizing: border-box;
+    font-family: "Archia", sans-serif; }
+  .map-section .map-wrapper #map .gm-style .gm-style-iw p strong {
+    color: #00a3a6;
+    font-weight: 600; }
+  .map-section .map-wrapper #map .gm-style .gm-style-iw p a {
+    color: #00a3a6;
+    font-weight: 600;
+    text-decoration: none; }
+  .map-section .map-wrapper #map .gm-style .gm-style-iw h4 {
+    font-size: 18px;
+    font-size: 1.8rem;
+    color: #00a3a6; }
+
 /****************************************
 *
 * Global stylesheet
@@ -3784,6 +3842,18 @@ body {
         height: auto;
         overflow: hidden;
         position: relative; }
+        body .page-wrapper .content-wrapper .dynamic-row .block.query-block .aspect-box {
+          padding-top: 50%; }
+        body .page-wrapper .content-wrapper .dynamic-row .block.query-block .bg-link-block .block-inner-content {
+          padding-left: 0;
+          padding-top: 50%;
+          width: 100%; }
+          body .page-wrapper .content-wrapper .dynamic-row .block.query-block .bg-link-block .block-inner-content h2 {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 100%;
+            text-align: center; }
         body .page-wrapper .content-wrapper .dynamic-row .block .aspect-box {
           position: relative;
           height: 0;
@@ -4171,6 +4241,10 @@ body {
             font-size: 7rem !important;
             font-weight: 700;
             text-align: center; }
+    body .page-wrapper .content-wrapper .dynamic-col {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start; }
     body .page-wrapper .content-wrapper .event-search {
       background-color: #fff;
       height: 220px; }
@@ -4225,24 +4299,25 @@ body {
                     font-weight: 600; }
     body .page-wrapper .content-wrapper .event-section .event-side-info-block {
       position: relative; }
-      body .page-wrapper .content-wrapper .event-section .event-side-info-block .non-link-block .wysiwyg.inner p {
-        font-size: 19px;
-        font-size: 1.9rem;
-        font-weight: 500;
-        margin: 0; }
-      body .page-wrapper .content-wrapper .event-section .event-side-info-block .sponsor-panel {
-        position: absolute;
-        bottom: 0;
-        height: auto; }
-        body .page-wrapper .content-wrapper .event-section .event-side-info-block .sponsor-panel h4 {
-          color: #fff; }
-        body .page-wrapper .content-wrapper .event-section .event-side-info-block .sponsor-panel .air-bnb,
-        body .page-wrapper .content-wrapper .event-section .event-side-info-block .sponsor-panel img {
-          display: block;
-          /*width:164px;
-              height: 52px;
-              background: transparent url("../assets/images/air-bnb-logo.png");*/
-          margin: 36px 36px 50px; }
+      body .page-wrapper .content-wrapper .event-section .event-side-info-block .non-link-block {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; }
+        body .page-wrapper .content-wrapper .event-section .event-side-info-block .non-link-block .wysiwyg.inner p {
+          font-size: 19px;
+          font-size: 1.9rem;
+          font-weight: 500;
+          margin: 0; }
+        body .page-wrapper .content-wrapper .event-section .event-side-info-block .non-link-block .sponsor-panel {
+          height: auto;
+          width: 100%; }
+          body .page-wrapper .content-wrapper .event-section .event-side-info-block .non-link-block .sponsor-panel h4 {
+            color: #fff; }
+          body .page-wrapper .content-wrapper .event-section .event-side-info-block .non-link-block .sponsor-panel .air-bnb,
+          body .page-wrapper .content-wrapper .event-section .event-side-info-block .non-link-block .sponsor-panel img {
+            display: inline-block;
+            width: auto;
+            margin: 36px 36px 50px; }
     body .page-wrapper .content-wrapper .event-section .event-main-info-block {
       position: relative; }
     body .page-wrapper .content-wrapper .event-section h4 {
@@ -4298,6 +4373,93 @@ body {
         body .page-wrapper .content-wrapper .event-search .register-content a,
         body .page-wrapper .content-wrapper .register .register-content a {
           margin: 10px 0; }
+    body .page-wrapper .content-wrapper .form-block .search-form {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 260px;
+      margin: 30px auto 0; }
+      body .page-wrapper .content-wrapper .form-block .search-form .form-item,
+      body .page-wrapper .content-wrapper .form-block .search-form .form-actions {
+        width: 100%;
+        margin-bottom: 40px; }
+        body .page-wrapper .content-wrapper .form-block .search-form .form-item input,
+        body .page-wrapper .content-wrapper .form-block .search-form .form-item select,
+        body .page-wrapper .content-wrapper .form-block .search-form .form-actions input,
+        body .page-wrapper .content-wrapper .form-block .search-form .form-actions select {
+          border: none;
+          border-bottom: 2px solid #000;
+          background-color: transparent;
+          height: 30px;
+          width: 100%;
+          line-height: 30px;
+          font-size: 14px;
+          font-size: 1.4rem;
+          font-weight: 600;
+          text-transform: uppercase; }
+          body .page-wrapper .content-wrapper .form-block .search-form .form-item input option,
+          body .page-wrapper .content-wrapper .form-block .search-form .form-item select option,
+          body .page-wrapper .content-wrapper .form-block .search-form .form-actions input option,
+          body .page-wrapper .content-wrapper .form-block .search-form .form-actions select option {
+            font-size: 14px;
+            font-size: 1.4rem;
+            font-weight: 400;
+            margin-bottom: 10px;
+            display: block;
+            white-space: pre;
+            min-height: 1.4em;
+            padding: 0 2px 1px; }
+        body .page-wrapper .content-wrapper .form-block .search-form .form-item input::placeholder,
+        body .page-wrapper .content-wrapper .form-block .search-form .form-actions input::placeholder {
+          color: black;
+          font-size: 14px;
+          font-size: 1.4rem;
+          font-weight: 600; }
+        body .page-wrapper .content-wrapper .form-block .search-form .form-item input[type=submit],
+        body .page-wrapper .content-wrapper .form-block .search-form .form-actions input[type=submit] {
+          border: none;
+          border-radius: 25px;
+          -webkit-border-radius: 25px;
+          -moz-border-radius: 25px;
+          height: 50px;
+          padding: 0 25px;
+          line-height: 50px;
+          background-color: #00a3a6;
+          color: #fff;
+          cursor: pointer;
+          text-align: left; }
+    body .page-wrapper .content-wrapper .form-block .btn-wrapper {
+      margin: 0 auto;
+      width: 260px; }
+      body .page-wrapper .content-wrapper .form-block .btn-wrapper a {
+        box-sizing: border-box;
+        margin: 0;
+        width: 100%;
+        padding: 0 25px;
+        font-size: 14px !important;
+        font-size: 1.4rem !important;
+        text-align: left; }
+    body .page-wrapper .content-wrapper .map-section .legend {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 20px 170px; }
+      body .page-wrapper .content-wrapper .map-section .legend .key {
+        height: 40px; }
+        body .page-wrapper .content-wrapper .map-section .legend .key span {
+          padding-left: 40px;
+          font-size: 18px;
+          font-size: 1.8rem;
+          font-weight: 500;
+          line-height: 40px; }
+        body .page-wrapper .content-wrapper .map-section .legend .key.key1 {
+          background: transparent url("../assets/images/map-pin-green.png") 0 0 no-repeat; }
+        body .page-wrapper .content-wrapper .map-section .legend .key.key2 {
+          background: transparent url("../assets/images/map-pin-pink.png") 0 0 no-repeat; }
+        body .page-wrapper .content-wrapper .map-section .legend .key.key3 {
+          background: transparent url("../assets/images/map-pin-purple.png") 0 0 no-repeat; }
+        body .page-wrapper .content-wrapper .map-section .legend .key.key4 {
+          background: transparent url("../assets/images/map-pin-light-green.png") 0 0 no-repeat; }
   body footer {
     margin-top: 60px; }
     body footer .footer-bottom {
@@ -4643,6 +4805,12 @@ body {
 *******************************************************************************************/
   body .page-wrapper .content-wrapper .event-hero-section .dynamic-row {
     flex-direction: column-reverse; }
+  body .page-wrapper .content-wrapper .hero-slider-section .slide .dynamic-row .hero-block .non-link-block .block-inner-content {
+    padding: 36px 54px; }
+    body .page-wrapper .content-wrapper .hero-slider-section .slide .dynamic-row .hero-block .non-link-block .block-inner-content h2 {
+      font-size: 10.666vw; }
+    body .page-wrapper .content-wrapper .hero-slider-section .slide .dynamic-row .hero-block .non-link-block .block-inner-content div {
+      padding: 0; }
   body .page-wrapper .content-wrapper .event-search,
   body .page-wrapper .content-wrapper .register {
     height: auto !important; }

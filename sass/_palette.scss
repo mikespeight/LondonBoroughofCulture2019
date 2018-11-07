@@ -12,10 +12,12 @@ $brandPrimary: #00a3a6;
 $brandSecondary: #026d6f;
 $brandTertiary: #312783;
 $brandQuaternary: #ca5098;
+$brandPrimaryLight: #bee7e8;
 $brandGrey: #e5e5e5;
 $brandMidGrey: #707070;
 
 $brandPersianGreen:  $brandPrimary;
+$brandPersianGreenLight: $brandPrimaryLight;
 $brandMosqueGreen: $brandSecondary;
 $brandDarkPurple: $brandTertiary;
 $brandDarkPink: $brandQuaternary;
@@ -27,6 +29,7 @@ $brandDarkPink: $brandQuaternary;
 .white {color: $white}
 
 .persian-green-bg { background-color: $brandPersianGreen; color: $white;}
+.light-persian-green-bg {background-color: $brandPersianGreenLight}
 .dark-purple-bg {background-color: $brandDarkPurple; color: $white;}
 .dark-pink-bg {background-color: $brandDarkPink; color: $white;}
 .white-bg {background-color: $white}

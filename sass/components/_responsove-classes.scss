@@ -1,0 +1,29 @@
+/******************************************************************************************
+*
+*
+*
+*   Styles for responsive classes
+*
+*
+*
+*******************************************************************************************/
+
+//desktop styles
+.mobile-only {
+  display: none;
+}
+
+.desktop-only {
+  display: block;
+}
+
+// Mobile styles below 768
+@media only screen and (max-width : 767px) {
+  .mobile-only {
+    display: block;
+  }
+
+  .desktop-only {
+    display: none;
+  }
+}
