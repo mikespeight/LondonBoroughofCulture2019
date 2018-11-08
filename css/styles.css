@@ -3516,7 +3516,10 @@ section div.wysiwyg {
     section div.wysiwyg p em {
       font-style: italic; }
     section div.wysiwyg p a {
-      font-weight: 600; }
+      font-weight: 600;
+      text-decoration: underline; }
+      section div.wysiwyg p a:hover {
+        text-decoration: none; }
     section div.wysiwyg p strong {
       font-weight: 600; }
   section div.wysiwyg h2, section div.wysiwyg h3 {
