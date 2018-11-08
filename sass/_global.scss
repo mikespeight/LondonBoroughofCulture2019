@@ -1097,12 +1097,21 @@ body {
                 border: none;
                 @include border-radius(25px);
                 height: 50px;
-                padding: 0 25px;
+                padding: 0 63px 0 25px;
                 line-height: 50px;
-                background-color: $brandPrimary;
                 color: $white;
                 cursor: pointer;
-                text-align: left;
+                background: $brandPrimary url("#{$pathToImages}/list-icon.png") 67% 50% no-repeat;
+                background-size: 25px 17px;
+
+
+                &:hover {
+                  border: 2px solid $brandPrimary;
+                  background-color: $white;
+                  color: $brandPrimary;
+                  background-image: url("#{$pathToImages}/list-icon-over.png");
+                  background-size: 25px 17px;
+                }
               }
             }
           }
@@ -1119,7 +1128,37 @@ body {
             padding: 0 25px;
             font-size: 14px!important;
             font-size: 1.4rem!important;
-            text-align: left;
+            cursor: pointer;
+            position: relative;
+
+            span {
+
+              &:after {
+                position: absolute;
+                top:0;
+                right:0;
+                content: '';
+                display: block;
+                width:20px;
+                height:20px;
+                overflow: hidden;
+                background: transparent url("#{$pathToImages}/magnifier-icon.png");
+                background-position: 0 0;
+                background-repeat: no-repeat;
+                background-size: 20px 20px;
+              }
+            }
+
+            &:hover {
+
+              span {
+
+                &:after {
+                  background: transparent url("#{$pathToImages}/magnifier-icon-over.png");
+                  background-size: 20px 20px;
+                }
+              }
+            }
           }
         }
       }

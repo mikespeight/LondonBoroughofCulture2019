@@ -168,6 +168,40 @@ button {
         }
       }
 
+      &.list {
+        position: relative;
+
+        span {
+          position: relative;
+          padding-right: 35px;
+
+          &:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            right:0;
+            display: inline-block;
+            width:25px;
+            height: 22px;
+            background-color: transparent;
+            background-image: url("#{$pathToImages}/link-icons-sprite.png");
+            background-position: -3px -65px;
+            background-size: 135px 113px;
+            background-repeat: no-repeat;
+          }
+        }
+
+        &.primary {
+
+          span {
+
+            &:after {
+              background-position: 0 -65px;
+            }
+          }
+        }
+      }
+
       &.download {
         position: relative;
         padding-right: 90px;
@@ -254,11 +288,20 @@ button {
 
         &.external {
 
-
           span {
 
             &:after {
               background-position: -34px -3px;
+            }
+          }
+        }
+
+        &.list {
+
+          span {
+
+            &:after {
+              background-position: -27px -65px;
             }
           }
         }
@@ -272,7 +315,17 @@ button {
             span {
 
               &:after {
-                background-position: -34px -3px;
+                background-position: -3px -3px;
+              }
+            }
+          }
+
+          &.list {
+
+            span {
+
+              &:after {
+                background-position: -27px -65px;
               }
             }
           }

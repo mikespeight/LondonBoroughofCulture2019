@@ -2747,6 +2747,30 @@ button {
         a.btn.link-btn.external.primary span:after,
         button.btn.link-btn.external.primary span:after {
           background-position: -3px -3px; }
+      a.btn.link-btn.list,
+      button.btn.link-btn.list {
+        position: relative; }
+        a.btn.link-btn.list span,
+        button.btn.link-btn.list span {
+          position: relative;
+          padding-right: 35px; }
+          a.btn.link-btn.list span:after,
+          button.btn.link-btn.list span:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            display: inline-block;
+            width: 25px;
+            height: 22px;
+            background-color: transparent;
+            background-image: url("../assets/images/link-icons-sprite.png");
+            background-position: -3px -65px;
+            background-size: 135px 113px;
+            background-repeat: no-repeat; }
+        a.btn.link-btn.list.primary span:after,
+        button.btn.link-btn.list.primary span:after {
+          background-position: 0 -65px; }
       a.btn.link-btn.download,
       button.btn.link-btn.download {
         position: relative;
@@ -2797,13 +2821,19 @@ button {
     a:hover.btn.link-btn.external span:after,
     button:hover.btn.link-btn.external span:after {
       background-position: -34px -3px; }
+    a:hover.btn.link-btn.list span:after,
+    button:hover.btn.link-btn.list span:after {
+      background-position: -27px -65px; }
     a:hover.btn.link-btn.primary,
     button:hover.btn.link-btn.primary {
       color: #00a3a6;
       background-color: #fff; }
       a:hover.btn.link-btn.primary.external span:after,
       button:hover.btn.link-btn.primary.external span:after {
-        background-position: -34px -3px; }
+        background-position: -3px -3px; }
+      a:hover.btn.link-btn.primary.list span:after,
+      button:hover.btn.link-btn.primary.list span:after {
+        background-position: -27px -65px; }
     a:hover.btn.link-btn.cta-btn,
     button:hover.btn.link-btn.cta-btn {
       border-color: #026d6f;
@@ -4422,12 +4452,19 @@ body {
           -webkit-border-radius: 25px;
           -moz-border-radius: 25px;
           height: 50px;
-          padding: 0 25px;
+          padding: 0 63px 0 25px;
           line-height: 50px;
-          background-color: #00a3a6;
           color: #fff;
           cursor: pointer;
-          text-align: left; }
+          background: #00a3a6 url("../assets/images/list-icon.png") 67% 50% no-repeat;
+          background-size: 25px 17px; }
+          body .page-wrapper .content-wrapper .form-block .search-form .form-item input[type=submit]:hover,
+          body .page-wrapper .content-wrapper .form-block .search-form .form-actions input[type=submit]:hover {
+            border: 2px solid #00a3a6;
+            background-color: #fff;
+            color: #00a3a6;
+            background-image: url("../assets/images/list-icon-over.png");
+            background-size: 25px 17px; }
     body .page-wrapper .content-wrapper .form-block .btn-wrapper {
       margin: 0 auto;
       width: 260px; }
@@ -4438,7 +4475,24 @@ body {
         padding: 0 25px;
         font-size: 14px !important;
         font-size: 1.4rem !important;
-        text-align: left; }
+        cursor: pointer;
+        position: relative; }
+        body .page-wrapper .content-wrapper .form-block .btn-wrapper a span:after {
+          position: absolute;
+          top: 0;
+          right: 0;
+          content: '';
+          display: block;
+          width: 20px;
+          height: 20px;
+          overflow: hidden;
+          background: transparent url("../assets/images/magnifier-icon.png");
+          background-position: 0 0;
+          background-repeat: no-repeat;
+          background-size: 20px 20px; }
+        body .page-wrapper .content-wrapper .form-block .btn-wrapper a:hover span:after {
+          background: transparent url("../assets/images/magnifier-icon-over.png");
+          background-size: 20px 20px; }
     body .page-wrapper .content-wrapper .map-section .legend {
       display: flex;
       flex-direction: row;
