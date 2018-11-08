@@ -4982,6 +4982,10 @@ body {
       font-size: 4.8vw; }
   body .page-wrapper .content-wrapper .slider .flexslider .flex-direction-nav a {
     top: 76%; }
+  body .page-wrapper .content-wrapper .dynamic-row.multi-grid .form-block .heading-panel h2 {
+    font-size: 26px;
+    font-size: 2.6rem;
+    line-height: 70px; }
   body .page-wrapper .content-wrapper .dynamic-row.multi-grid .form-block .search-form {
     flex-direction: column !important;
     width: 260px; }

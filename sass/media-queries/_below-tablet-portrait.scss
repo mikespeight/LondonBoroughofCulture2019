@@ -422,6 +422,14 @@ body {
 
           .form-block {
 
+            .heading-panel {
+
+              h2 {
+                @include font-size(26);
+                line-height:70px;
+              }
+            }
+
             .search-form {
               flex-direction: column!important;
               width: 260px;
