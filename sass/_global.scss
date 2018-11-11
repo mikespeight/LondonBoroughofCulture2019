@@ -1023,7 +1023,147 @@ body {
         }
       }
 
-      .event-search,  //TODO: remove when event search is finished
+      .event-search {
+        background-color: $white;
+        height:220px;
+
+        .register-content {
+          @include flex-container(column, flex-start);
+          margin:10px 0;
+          color: $brandPrimary;
+
+          .heading-panel {
+
+            h2 {
+              line-height: 60px;
+            }
+          }
+
+          .search-form {
+            @include flex-container(row, space-between);
+            width:100%;
+            margin: 10px auto 0;
+            flex-wrap: wrap;
+
+            .form-item,
+            .form-actions {
+              margin-bottom: 20px;
+              box-sizing: border-box;
+              width:20%;
+              padding: 0 15px;
+
+              input,
+              select {
+                border: none;
+                border-bottom: 2px solid $black;
+                background-color: transparent;
+                height: 30px;
+                width: 100%;
+                line-height: 30px;
+                @include font-size(14);
+                font-weight: $semiBold;
+                text-transform: uppercase;
+
+                option {
+                  @include font-size(14);
+                  font-weight: $regular;
+                  margin-bottom: 10px;
+                  display: block;
+                  white-space: pre;
+                  min-height: 1.4em;
+                  padding: 0 2px 1px;
+                }
+              }
+
+              input {
+
+                &::placeholder {
+                  color: black;
+                  @include font-size(14);
+                  font-weight: $semiBold;
+                }
+
+                &[type=submit] {
+                  border: none;
+                  @include border-radius(25px);
+                  height: 50px;
+                  padding: 0 63px 0 25px;
+                  line-height: 50px;
+                  color: $white;
+                  cursor: pointer;
+                  background: $brandPrimary url("#{$pathToImages}/magnifier-icon.png") 50% 50% no-repeat;
+                  background-size: 20px 20px;
+
+
+                  &:hover {
+                    border: 2px solid $brandPrimary;
+                    background-color: $white;
+                    color: $brandPrimary;
+                    background-image: url("#{$pathToImages}/magnifier-icon-over.png");
+                    background-size: 20px 20px;
+                  }
+                }
+              }
+            }
+
+            .form-actions {
+              width: 81px;
+
+              input {
+
+                &[type=submit] {
+                  padding: 0;
+                }
+              }
+            }
+          }
+          .btn-wrapper {
+            margin:0 auto;
+            width: 260px;
+
+            a {
+              box-sizing: border-box;
+              margin: 0;
+              width: 100%;
+              padding: 0 25px;
+              font-size: 14px!important;
+              font-size: 1.4rem!important;
+              cursor: pointer;
+              position: relative;
+
+              span {
+
+                &:after {
+                  position: absolute;
+                  top:0;
+                  right:0;
+                  content: '';
+                  display: block;
+                  width:20px;
+                  height:20px;
+                  overflow: hidden;
+                  background: transparent url("#{$pathToImages}/list-icon.png");
+                  background-position: 0 0;
+                  background-repeat: no-repeat;
+                  background-size: 25px 17px;
+                }
+              }
+
+              &:hover {
+
+                span {
+
+                  &:after {
+                    background: transparent url("#{$pathToImages}/list-icon-over.png");
+                    background-size: 25px 17px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
       .register {
         background-color: $white;
         height:220px;
@@ -1033,20 +1173,7 @@ body {
           padding:70px 200px;
           color: $brandPrimary;
 
-          h2 {
-            @include font-size(26);
-            font-weight: $regular;
-          }
 
-          p {
-            @include font-size(16);
-            font-weight: $regular;
-
-          }
-
-          a {
-            margin: 10px 0;
-          }
         }
       }
 
@@ -1101,16 +1228,16 @@ body {
                 line-height: 50px;
                 color: $white;
                 cursor: pointer;
-                background: $brandPrimary url("#{$pathToImages}/list-icon.png") 67% 50% no-repeat;
-                background-size: 25px 17px;
+                background: $brandPrimary url("#{$pathToImages}/magnifier-icon.png") 67% 50% no-repeat;
+                background-size: 20px 20px;
 
 
                 &:hover {
                   border: 2px solid $brandPrimary;
                   background-color: $white;
                   color: $brandPrimary;
-                  background-image: url("#{$pathToImages}/list-icon-over.png");
-                  background-size: 25px 17px;
+                  background-image: url("#{$pathToImages}/magnifier-icon-over.png");
+                  background-size: 20px 20px;
                 }
               }
             }
@@ -1142,10 +1269,10 @@ body {
                 width:20px;
                 height:20px;
                 overflow: hidden;
-                background: transparent url("#{$pathToImages}/magnifier-icon.png");
+                background: transparent url("#{$pathToImages}/list-icon.png");
                 background-position: 0 0;
                 background-repeat: no-repeat;
-                background-size: 20px 20px;
+                background-size: 25px 17px;
               }
             }
 
@@ -1154,8 +1281,8 @@ body {
               span {
 
                 &:after {
-                  background: transparent url("#{$pathToImages}/magnifier-icon-over.png");
-                  background-size: 20px 20px;
+                  background: transparent url("#{$pathToImages}/list-icon-over.png");
+                  background-size: 25px 17px;
                 }
               }
             }

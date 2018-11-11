@@ -4382,30 +4382,123 @@ body {
           color: #fff;
           background: #ca5098;
           border-color: #ca5098; }
-    body .page-wrapper .content-wrapper .event-search,
+    body .page-wrapper .content-wrapper .event-search {
+      background-color: #fff;
+      height: 220px; }
+      body .page-wrapper .content-wrapper .event-search .register-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin: 10px 0;
+        color: #00a3a6; }
+        body .page-wrapper .content-wrapper .event-search .register-content .heading-panel h2 {
+          line-height: 60px; }
+        body .page-wrapper .content-wrapper .event-search .register-content .search-form {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          width: 100%;
+          margin: 10px auto 0;
+          flex-wrap: wrap; }
+          body .page-wrapper .content-wrapper .event-search .register-content .search-form .form-item,
+          body .page-wrapper .content-wrapper .event-search .register-content .search-form .form-actions {
+            margin-bottom: 20px;
+            box-sizing: border-box;
+            width: 20%;
+            padding: 0 15px; }
+            body .page-wrapper .content-wrapper .event-search .register-content .search-form .form-item input,
+            body .page-wrapper .content-wrapper .event-search .register-content .search-form .form-item select,
+            body .page-wrapper .content-wrapper .event-search .register-content .search-form .form-actions input,
+            body .page-wrapper .content-wrapper .event-search .register-content .search-form .form-actions select {
+              border: none;
+              border-bottom: 2px solid #000;
+              background-color: transparent;
+              height: 30px;
+              width: 100%;
+              line-height: 30px;
+              font-size: 14px;
+              font-size: 1.4rem;
+              font-weight: 600;
+              text-transform: uppercase; }
+              body .page-wrapper .content-wrapper .event-search .register-content .search-form .form-item input option,
+              body .page-wrapper .content-wrapper .event-search .register-content .search-form .form-item select option,
+              body .page-wrapper .content-wrapper .event-search .register-content .search-form .form-actions input option,
+              body .page-wrapper .content-wrapper .event-search .register-content .search-form .form-actions select option {
+                font-size: 14px;
+                font-size: 1.4rem;
+                font-weight: 400;
+                margin-bottom: 10px;
+                display: block;
+                white-space: pre;
+                min-height: 1.4em;
+                padding: 0 2px 1px; }
+            body .page-wrapper .content-wrapper .event-search .register-content .search-form .form-item input::placeholder,
+            body .page-wrapper .content-wrapper .event-search .register-content .search-form .form-actions input::placeholder {
+              color: black;
+              font-size: 14px;
+              font-size: 1.4rem;
+              font-weight: 600; }
+            body .page-wrapper .content-wrapper .event-search .register-content .search-form .form-item input[type=submit],
+            body .page-wrapper .content-wrapper .event-search .register-content .search-form .form-actions input[type=submit] {
+              border: none;
+              border-radius: 25px;
+              -webkit-border-radius: 25px;
+              -moz-border-radius: 25px;
+              height: 50px;
+              padding: 0 63px 0 25px;
+              line-height: 50px;
+              color: #fff;
+              cursor: pointer;
+              background: #00a3a6 url("../assets/images/magnifier-icon.png") 50% 50% no-repeat;
+              background-size: 20px 20px; }
+              body .page-wrapper .content-wrapper .event-search .register-content .search-form .form-item input[type=submit]:hover,
+              body .page-wrapper .content-wrapper .event-search .register-content .search-form .form-actions input[type=submit]:hover {
+                border: 2px solid #00a3a6;
+                background-color: #fff;
+                color: #00a3a6;
+                background-image: url("../assets/images/magnifier-icon-over.png");
+                background-size: 20px 20px; }
+          body .page-wrapper .content-wrapper .event-search .register-content .search-form .form-actions {
+            width: 81px; }
+            body .page-wrapper .content-wrapper .event-search .register-content .search-form .form-actions input[type=submit] {
+              padding: 0; }
+        body .page-wrapper .content-wrapper .event-search .register-content .btn-wrapper {
+          margin: 0 auto;
+          width: 260px; }
+          body .page-wrapper .content-wrapper .event-search .register-content .btn-wrapper a {
+            box-sizing: border-box;
+            margin: 0;
+            width: 100%;
+            padding: 0 25px;
+            font-size: 14px !important;
+            font-size: 1.4rem !important;
+            cursor: pointer;
+            position: relative; }
+            body .page-wrapper .content-wrapper .event-search .register-content .btn-wrapper a span:after {
+              position: absolute;
+              top: 0;
+              right: 0;
+              content: '';
+              display: block;
+              width: 20px;
+              height: 20px;
+              overflow: hidden;
+              background: transparent url("../assets/images/list-icon.png");
+              background-position: 0 0;
+              background-repeat: no-repeat;
+              background-size: 25px 17px; }
+            body .page-wrapper .content-wrapper .event-search .register-content .btn-wrapper a:hover span:after {
+              background: transparent url("../assets/images/list-icon-over.png");
+              background-size: 25px 17px; }
     body .page-wrapper .content-wrapper .register {
       background-color: #fff;
       height: 220px; }
-      body .page-wrapper .content-wrapper .event-search .register-content,
       body .page-wrapper .content-wrapper .register .register-content {
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
         padding: 70px 200px;
         color: #00a3a6; }
-        body .page-wrapper .content-wrapper .event-search .register-content h2,
-        body .page-wrapper .content-wrapper .register .register-content h2 {
-          font-size: 26px;
-          font-size: 2.6rem;
-          font-weight: 400; }
-        body .page-wrapper .content-wrapper .event-search .register-content p,
-        body .page-wrapper .content-wrapper .register .register-content p {
-          font-size: 16px;
-          font-size: 1.6rem;
-          font-weight: 400; }
-        body .page-wrapper .content-wrapper .event-search .register-content a,
-        body .page-wrapper .content-wrapper .register .register-content a {
-          margin: 10px 0; }
     body .page-wrapper .content-wrapper .form-block .search-form {
       display: flex;
       flex-direction: column;
@@ -4459,15 +4552,15 @@ body {
           line-height: 50px;
           color: #fff;
           cursor: pointer;
-          background: #00a3a6 url("../assets/images/list-icon.png") 67% 50% no-repeat;
-          background-size: 25px 17px; }
+          background: #00a3a6 url("../assets/images/magnifier-icon.png") 67% 50% no-repeat;
+          background-size: 20px 20px; }
           body .page-wrapper .content-wrapper .form-block .search-form .form-item input[type=submit]:hover,
           body .page-wrapper .content-wrapper .form-block .search-form .form-actions input[type=submit]:hover {
             border: 2px solid #00a3a6;
             background-color: #fff;
             color: #00a3a6;
-            background-image: url("../assets/images/list-icon-over.png");
-            background-size: 25px 17px; }
+            background-image: url("../assets/images/magnifier-icon-over.png");
+            background-size: 20px 20px; }
     body .page-wrapper .content-wrapper .form-block .btn-wrapper {
       margin: 0 auto;
       width: 260px; }
@@ -4489,13 +4582,13 @@ body {
           width: 20px;
           height: 20px;
           overflow: hidden;
-          background: transparent url("../assets/images/magnifier-icon.png");
+          background: transparent url("../assets/images/list-icon.png");
           background-position: 0 0;
           background-repeat: no-repeat;
-          background-size: 20px 20px; }
+          background-size: 25px 17px; }
         body .page-wrapper .content-wrapper .form-block .btn-wrapper a:hover span:after {
-          background: transparent url("../assets/images/magnifier-icon-over.png");
-          background-size: 20px 20px; }
+          background: transparent url("../assets/images/list-icon-over.png");
+          background-size: 25px 17px; }
     body .page-wrapper .content-wrapper .map-section .legend {
       display: flex;
       flex-direction: row;
