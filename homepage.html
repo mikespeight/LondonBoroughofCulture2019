@@ -249,7 +249,8 @@
                         <h2 class="heading">Search Events</h2>
                     </div>
 
-                    <form action="" class="search-form">
+                    <!-- Standard form -->
+                    <!--<form action="" class="search-form">
 
                         <div class="form-item">
                             <select name="" id="what">
@@ -277,6 +278,60 @@
                         <div class="form-actions">
                             <input type="submit" value="" class="btn link-btn sign-up primary external">
                         </div>
+                    </form>-->
+
+                    <!-- Drupal form with fuux components -->
+                    <form action="/home" method="get" class="search-form faux-form" id="views-exposed-form-event-search-block-1" accept-charset="UTF-8">
+
+                        <div class="js-form-item form-item js-form-type-select form-item-event-type js-form-item-event-type">
+                            <label for="edit-event-type">Category</label>
+                            <select class="custom-select form-select" data-drupal-selector="edit-event-type" id="edit-event-type" name="event_type">
+                                <option value="All">Category</option>
+                                <option value="21">Adult</option>
+                                <option value="201">Architecture</option>
+                                <option value="106">Art</option>
+                            </select>
+                            <div class="select-selected">Category</div>
+                            <div class="select-items select-hide">
+                                <div>Category</div>
+                                <div>Adult</div>
+                                <div>Architecture</div>
+                                <div>Art</div>
+                            </div>
+                        </div>
+
+                        <div class="js-form-item form-item js-form-type-select form-item-event-venue js-form-item-event-venue">
+                            <label for="edit-event-venue">Venue</label>
+                            <select class="custom-select form-select" data-drupal-selector="edit-event-venue" id="edit-event-venue" name="event_venue">
+                                <option value=""></option>
+                                <option value="All">Venue</option>
+                                <option value="281">Across London</option>
+                                <option value="226">BBC Documentary</option>
+                            </select>
+                            <div class="select-selected">Venue</div>
+                            <div class="select-items select-hide">
+                                <div></div>
+                                <div>Venue</div>
+                                <div>Across London</div>
+                                <div>BBC Documentary</div>
+                                <div>Borough wide</div>
+                            </div>
+                        </div>
+
+                        <div class="js-form-item form-item js-form-type-textfield form-item-event-date js-form-item-event-date">
+                            <label for="edit-event-date">From</label>
+                            <input class="bef-datepicker form-text hasDatepicker" data-drupal-selector="edit-event-date" type="text" id="edit-event-date" name="event_date" value="" placeholder="FROM" size="30" maxlength="128">
+                        </div>
+
+                        <div class="js-form-item form-item js-form-type-textfield form-item-field-event-dates-value-1 js-form-item-field-event-dates-value-1">
+                            <label for="edit-field-event-dates-value-1">To</label>
+                            <input class="bef-datepicker form-text hasDatepicker" data-drupal-selector="edit-field-event-dates-value-1" type="text" id="edit-field-event-dates-value-1" name="field_event_dates_value_1" value="" placeholder="TO" size="30" maxlength="128">
+                        </div>
+
+                        <div data-drupal-selector="edit-actions" class="form-actions js-form-wrapper form-wrapper" id="edit-actions">
+                            <input data-drupal-selector="edit-submit-event-search" type="submit" id="edit-submit-event-search" value="" class="button js-form-submit form-submit">
+                        </div>
+
                     </form>
 
                     <div class="btn-wrapper">

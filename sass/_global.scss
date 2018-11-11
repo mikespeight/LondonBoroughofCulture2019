@@ -1045,6 +1045,17 @@ body {
             margin: 10px auto 0;
             flex-wrap: wrap;
 
+            // Styles for std components in form with fals components
+            &.faux-form {
+
+              .form-item {
+
+                label {
+                  display: none;
+                }
+              }
+            }
+
             .form-item,
             .form-actions {
               margin-bottom: 20px;
