@@ -4541,7 +4541,7 @@ body {
               font-weight: 600; }
             body .page-wrapper .content-wrapper .event-search .register-content .search-form .form-item input[type=submit],
             body .page-wrapper .content-wrapper .event-search .register-content .search-form .form-actions input[type=submit] {
-              border: none;
+              border: 2px solid #00a3a6;
               border-radius: 25px;
               -webkit-border-radius: 25px;
               -moz-border-radius: 25px;
@@ -4581,8 +4581,8 @@ body {
               right: 0;
               content: '';
               display: block;
-              width: 20px;
-              height: 20px;
+              width: 25px;
+              height: 17px;
               overflow: hidden;
               background: transparent url("../assets/images/list-icon.png");
               background-position: 0 0;
@@ -4590,7 +4590,8 @@ body {
               background-size: 25px 17px; }
             body .page-wrapper .content-wrapper .event-search .register-content .btn-wrapper a:hover span:after {
               background: transparent url("../assets/images/list-icon-over.png");
-              background-size: 25px 17px; }
+              background-size: 25px 17px;
+              background-repeat: no-repeat; }
     body .page-wrapper .content-wrapper .register {
       background-color: #fff;
       height: 220px; }
