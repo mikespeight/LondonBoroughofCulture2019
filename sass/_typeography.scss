@@ -107,6 +107,18 @@ h1{
       @include font-size(26);
       font-weight: $semiBold;
       line-height: 100px;
+
+      &.pink-heading {
+        color: $brandQuaternary;
+      }
+
+      &.purple-heading {
+        color: $brandTertiary;
+      }
+
+      &.white-heading {
+        color: $white;
+      }
     }
   }
 
@@ -126,6 +138,7 @@ h1{
 
       &.heading {
         color: $white;
+        text-align: center;
       }
     }
   }

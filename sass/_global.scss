@@ -127,6 +127,7 @@ body {
       height: 50px;
       position: relative;
       background-color: $white;
+      border-bottom: 1px solid $black;
 
       nav {
 
@@ -1337,6 +1338,74 @@ body {
 
             &.key4 {
               background: transparent url("#{$pathToImages}/map-pin-light-green.png") 0 0 no-repeat;
+            }
+          }
+        }
+      }
+
+      .venue-section {
+
+        .side-info-block {
+
+          .wysiwyg {
+
+            p {
+              @include font-size(18);
+              margin-bottom: 0;
+            }
+          }
+        }
+      }
+
+      .facilities {
+        height: auto;
+        overflow: hidden;
+
+        .heading-panel {
+
+          h2 {
+            color: $white;
+          }
+        }
+
+        .facilities-grid {
+          margin: 0 auto 30px;
+          padding: 0 0 0 200px;
+          @include flex-container(row, flex-start);
+          flex-wrap: wrap;
+
+          .facility {
+            width: 33.333%;
+            min-width: 275px;
+
+            .facility-icon {
+              display: inline-block;
+              width: 40px;
+              height: 40px;
+              margin-right: 20px;
+              background: transparent url("#{$pathToImages}/facilities-icons-sprite.png") -4px -5px no-repeat;
+            }
+
+            &.parking { .facility-icon {background-position: -2px -5px} }
+            &.bar { .facility-icon {background-position: -40px -5px} }
+            &.projector { .facility-icon {background-position: -80px -5px} }
+            &.wheelchair { .facility-icon {background-position: -2px -58px} }
+            &.licenced { .facility-icon {background-position: -40px -58px} }
+            &.chairs { .facility-icon {background-position: -80px -58px} }
+            &.toilets { .facility-icon {background-position: -2px -115px} }
+            &.pa-system { .facility-icon {background-position: -40px -115px} }
+            &.tables { .facility-icon {background-position: -80px -115px} }
+            &.something { .facility-icon {background-position: -2px -173px} }
+            &.tv { .facility-icon {background-position: -40px -173px} }
+            &.wifi { .facility-icon {background-position: -80px -173px} }
+            &.kitchen { .facility-icon {background-position: -2px -228px} }
+            &.nothing { .facility-icon {background-position: -40px -228px} }
+
+
+            .facility-name {
+              @include font-size(18);
+              font-weight: $medium;
+              vertical-align: top;
             }
           }
         }

@@ -2507,6 +2507,15 @@ h1 {
     font-size: 2.6rem;
     font-weight: 600;
     line-height: 100px; }
+    .heading-panel h1.heading.pink-heading,
+    .heading-panel h2.heading.pink-heading {
+      color: #ca5098; }
+    .heading-panel h1.heading.purple-heading,
+    .heading-panel h2.heading.purple-heading {
+      color: #312783; }
+    .heading-panel h1.heading.white-heading,
+    .heading-panel h2.heading.white-heading {
+      color: #fff; }
 
 .heading-panel h1.heading {
   font-size: 32px;
@@ -2516,7 +2525,8 @@ h1 {
 .heading-panel.persian-green-bg h2.heading, .heading-panel.dark-pink-bg h1.heading,
 .heading-panel.dark-pink-bg h2.heading, .heading-panel.dark-purple-bg h1.heading,
 .heading-panel.dark-purple-bg h2.heading {
-  color: #fff; }
+  color: #fff;
+  text-align: center; }
 
 /*************************************************
 
@@ -2637,6 +2647,10 @@ body {
 
 .btn-wrapper {
   margin: 0 0 50px 36px; }
+  .btn-wrapper.align-center {
+    text-align: center;
+    overflow: hidden;
+    margin: 30px 0; }
 
 a,
 button {
@@ -3619,6 +3633,11 @@ section div.wysiwyg {
       section div.wysiwyg ol li strong {
         font-weight: 600; }
 
+section .persian-green-bg .wysiwyg h2,
+section .dark-pink-bg .wysiwyg h2,
+section .dark-purple-bg .wysiwyg h2 {
+  color: #fff; }
+
 section .persian-green-bg .wysiwyg p a,
 section .dark-pink-bg .wysiwyg p a,
 section .dark-purple-bg .wysiwyg p a {
@@ -3901,7 +3920,8 @@ body {
   body .page-wrapper .main-navigation {
     height: 50px;
     position: relative;
-    background-color: #fff; }
+    background-color: #fff;
+    border-bottom: 1px solid #000; }
     body .page-wrapper .main-navigation nav.navbar {
       margin: 0 auto; }
       body .page-wrapper .main-navigation nav.navbar ul {
@@ -4712,6 +4732,64 @@ body {
           background: transparent url("../assets/images/map-pin-purple.png") 0 0 no-repeat; }
         body .page-wrapper .content-wrapper .map-section .legend .key.key4 {
           background: transparent url("../assets/images/map-pin-light-green.png") 0 0 no-repeat; }
+    body .page-wrapper .content-wrapper .venue-section .side-info-block .wysiwyg p {
+      font-size: 18px;
+      font-size: 1.8rem;
+      margin-bottom: 0; }
+    body .page-wrapper .content-wrapper .facilities {
+      height: auto;
+      overflow: hidden; }
+      body .page-wrapper .content-wrapper .facilities .heading-panel h2 {
+        color: #fff; }
+      body .page-wrapper .content-wrapper .facilities .facilities-grid {
+        margin: 0 auto 30px;
+        padding: 0 0 0 200px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        flex-wrap: wrap; }
+        body .page-wrapper .content-wrapper .facilities .facilities-grid .facility {
+          width: 33.333%;
+          min-width: 275px; }
+          body .page-wrapper .content-wrapper .facilities .facilities-grid .facility .facility-icon {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            margin-right: 20px;
+            background: transparent url("../assets/images/facilities-icons-sprite.png") -4px -5px no-repeat; }
+          body .page-wrapper .content-wrapper .facilities .facilities-grid .facility.parking .facility-icon {
+            background-position: -2px -5px; }
+          body .page-wrapper .content-wrapper .facilities .facilities-grid .facility.bar .facility-icon {
+            background-position: -40px -5px; }
+          body .page-wrapper .content-wrapper .facilities .facilities-grid .facility.projector .facility-icon {
+            background-position: -80px -5px; }
+          body .page-wrapper .content-wrapper .facilities .facilities-grid .facility.wheelchair .facility-icon {
+            background-position: -2px -58px; }
+          body .page-wrapper .content-wrapper .facilities .facilities-grid .facility.licenced .facility-icon {
+            background-position: -40px -58px; }
+          body .page-wrapper .content-wrapper .facilities .facilities-grid .facility.chairs .facility-icon {
+            background-position: -80px -58px; }
+          body .page-wrapper .content-wrapper .facilities .facilities-grid .facility.toilets .facility-icon {
+            background-position: -2px -115px; }
+          body .page-wrapper .content-wrapper .facilities .facilities-grid .facility.pa-system .facility-icon {
+            background-position: -40px -115px; }
+          body .page-wrapper .content-wrapper .facilities .facilities-grid .facility.tables .facility-icon {
+            background-position: -80px -115px; }
+          body .page-wrapper .content-wrapper .facilities .facilities-grid .facility.something .facility-icon {
+            background-position: -2px -173px; }
+          body .page-wrapper .content-wrapper .facilities .facilities-grid .facility.tv .facility-icon {
+            background-position: -40px -173px; }
+          body .page-wrapper .content-wrapper .facilities .facilities-grid .facility.wifi .facility-icon {
+            background-position: -80px -173px; }
+          body .page-wrapper .content-wrapper .facilities .facilities-grid .facility.kitchen .facility-icon {
+            background-position: -2px -228px; }
+          body .page-wrapper .content-wrapper .facilities .facilities-grid .facility.nothing .facility-icon {
+            background-position: -40px -228px; }
+          body .page-wrapper .content-wrapper .facilities .facilities-grid .facility .facility-name {
+            font-size: 18px;
+            font-size: 1.8rem;
+            font-weight: 500;
+            vertical-align: top; }
   body footer {
     margin-top: 60px; }
     body footer .footer-bottom {
