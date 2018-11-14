@@ -1354,6 +1354,20 @@ body {
               margin-bottom: 0;
             }
           }
+
+          .social-panel {
+            margin: -10px 0 20px 36px;
+
+            a {
+              display: inline-block;
+              margin-right: 16px;
+              color: $white;
+
+              .fa {
+                @include font-size(34);
+              }
+            }
+          }
         }
       }
 
@@ -1384,6 +1398,7 @@ body {
               height: 40px;
               margin-right: 20px;
               background: transparent url("#{$pathToImages}/facilities-icons-sprite.png") -4px -5px no-repeat;
+              background-size: 120px 270px;
             }
 
             &.parking { .facility-icon {background-position: -2px -5px} }
@@ -1406,6 +1421,208 @@ body {
               @include font-size(18);
               font-weight: $medium;
               vertical-align: top;
+            }
+          }
+        }
+      }
+
+      .spaces-section {
+
+        .space-block {
+          display: flex!important;
+          flex-direction: column;
+          justify-content: space-between;
+
+          h2 {
+            margin: 36px 0 -50px 36px;
+            @include font-size(42);
+          }
+
+          .inner {
+
+            &.wysiwyg {
+
+              p {
+                @include font-size(20);
+                margin: 10px 0;
+              }
+            }
+          }
+
+          .capacity {
+            margin: 0 36px 50px;
+
+            h3 {
+              @include font-size(18);
+              font-weight: $medium;
+              margin-bottom: 15px;
+            }
+
+            .inner {
+              @include flex-container(row, space-between);
+
+              & > div {
+                @include flex-container(row, flex-start);
+
+                div {
+                  display: inline-block;
+                  width:50%;
+                  height: 100%;
+
+                  span {
+                    @include font-size(15);
+                    font-size: $medium;
+                  }
+
+                  &.space-total {
+
+                    span {
+                      @include font-size(38);
+                      font-weight: $regular;
+                      position: relative;
+                      top:-7px;
+
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+
+
+
+
+
+
+      }
+
+      .enquiry-form {
+        overflow: hidden;
+        height: auto;
+
+        .heading-panel {
+
+          h2 {
+            color: $white;
+          }
+        }
+
+        .enquiry-form {
+          margin: 30px 150px 0;
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          grid-template-rows: repeat(4, 80px);
+          grid-template-areas: "name date"
+          "email info"
+          "phone info"
+          "submit-btn submit-btn";
+
+          & > div {
+
+            &:nth-child(1) {
+              grid-area: name;
+            }
+
+            &:nth-child(2) {
+              grid-area: email;
+            }
+
+            &:nth-child(3) {
+              grid-area: phone;
+            }
+
+            &:nth-child(4) {
+              grid-area: date;
+            }
+
+            &:nth-child(5) {
+              grid-area: info;
+            }
+
+            &:nth-child(6) {
+              grid-area: submit-btn;
+              justify-items: center;
+            }
+          }
+
+
+
+
+          .form-item {
+            //width: 50%;
+            padding:0 15px;
+            margin-bottom: 32px;
+
+            input {
+              height: 50px;
+              width: 100%;
+              box-sizing: border-box;
+              padding: 0 0 0 25px;
+
+              &::placeholder {
+                @include font-size(14);
+                font-weight: $semiBold;
+                color: $brandTertiary;
+              }
+            }
+
+            textarea {
+              width:100%;
+              height: 130px;
+              padding: 16px 0 0 25px;
+              box-sizing: border-box;
+              @include font-size(14);
+              font-weight: $semiBold;
+              color: $brandTertiary!important;
+
+              &::placeholder {
+                @include font-size(14);
+                font-weight: $semiBold;
+                color: $brandTertiary;
+              }
+            }
+          }
+
+          .form-actions {
+            width: 100%;
+
+            input {
+
+              &[type=submit] {
+                margin-left: 50%;
+                transform: translateX(-50%);
+                border: none;
+                @include border-radius(25px);
+                height: 50px;
+                width:170px;
+                //padding: 0 63px 0 25px;
+                line-height: 50px;
+                text-align: center;
+                color: $white;
+                cursor: pointer;
+                background-color: $brandPrimary;
+
+
+                &:hover {
+                  border: 2px solid $brandPrimary;
+                  background-color: $white;
+                  color: $brandPrimary;
+                }
+              }
+            }
+          }
+        }
+
+        .privacy-policy {
+          margin: 0 0 30px;
+
+          .privacy-policy {
+            color: $white;
+            text-align: center;
+
+            &:hover {
+              color: $brandPrimary;
             }
           }
         }
