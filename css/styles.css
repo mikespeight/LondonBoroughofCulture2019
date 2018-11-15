@@ -5137,6 +5137,12 @@ body {
   body .page-wrapper .content-wrapper .heading-panel h2 {
     line-height: 36px;
     padding: 15px 0; }
+  body .page-wrapper .content-wrapper .dynamic-row.how-to-get-there-section {
+    flex-direction: column; }
+    body .page-wrapper .content-wrapper .dynamic-row.how-to-get-there-section > div {
+      width: 100%; }
+    body .page-wrapper .content-wrapper .dynamic-row.how-to-get-there-section h2 {
+      margin-bottom: -30px !important; }
   body .page-wrapper .content-wrapper .dynamic-row.multi-grid {
     flex-direction: column; }
     body .page-wrapper .content-wrapper .dynamic-row.multi-grid > div {
