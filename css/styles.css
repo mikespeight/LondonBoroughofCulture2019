@@ -4907,7 +4907,8 @@ body {
             text-align: center;
             color: #fff;
             cursor: pointer;
-            background-color: #00a3a6; }
+            background-color: #00a3a6;
+            transition: all 0.125s ease-in-out; }
             body .page-wrapper .content-wrapper .enquiry-form .enquiry-form .form-actions input[type=submit]:hover {
               border: 2px solid #00a3a6;
               background-color: #fff;
@@ -5132,6 +5133,9 @@ body {
     display: none; }
     body .page-wrapper .main-navigation.open {
       display: block; }
+  body .page-wrapper .content-wrapper .heading-panel h2 {
+    line-height: 36px;
+    padding: 15px 0; }
   body .page-wrapper .content-wrapper .dynamic-row.multi-grid {
     flex-direction: column; }
     body .page-wrapper .content-wrapper .dynamic-row.multi-grid > div {
@@ -5155,7 +5159,23 @@ body {
       margin-bottom: 30px;
       width: 216px; }
   body .page-wrapper .content-wrapper .map-section .legend {
-    padding: 20px 100px; } }
+    padding: 20px 100px; }
+  body .page-wrapper .content-wrapper .facilities .facilities-grid {
+    margin: 0 0 30px;
+    padding: 0 0 0 70px;
+    justify-content: center; }
+  body .page-wrapper .content-wrapper .spaces-section .bg-block {
+    height: auto;
+    min-height: 650px; }
+  body .page-wrapper .content-wrapper .spaces-section .space-block .inner.wysiwyg p {
+    padding: 0; }
+  body .page-wrapper .content-wrapper .spaces-section .space-block .capacity .inner {
+    flex-direction: column; }
+  body .page-wrapper .content-wrapper .enquiry-form .enquiry-form {
+    margin: 30px 20px 0;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(7, 80px);
+    grid-template-areas: "name " "email" "phone" "date" "info" "info" "submit-btn "; } }
 
 @media only screen and (max-width: 1200px) {
   /******************************************************************************************

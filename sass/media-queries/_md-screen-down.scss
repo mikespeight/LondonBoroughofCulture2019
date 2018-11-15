@@ -43,6 +43,14 @@ body {
 
     .content-wrapper {
 
+      .heading-panel {
+
+        h2 {
+          line-height: 36px;
+          padding:  15px 0;
+        }
+      }
+
       .dynamic-row {
 
         &.multi-grid {
@@ -89,6 +97,59 @@ body {
 
         .legend {
           padding: 20px 100px;
+        }
+      }
+
+      .facilities {
+
+        .facilities-grid {
+          margin: 0 0 30px;
+          padding:0 0 0 70px;
+          justify-content: center;
+        }
+      }
+
+      .spaces-section {
+
+        .bg-block {
+          height: auto;
+          min-height: 650px;
+        }
+
+        .space-block {
+
+          .inner {
+
+            &.wysiwyg {
+
+              p {
+                padding:0;
+              }
+            }
+          }
+
+          .capacity {
+
+            .inner {
+              flex-direction: column;
+            }
+          }
+        }
+      }
+
+      .enquiry-form {
+
+        .enquiry-form {
+          margin: 30px 20px 0;
+          grid-template-columns: 100%;
+          grid-template-rows: repeat(7, 80px);
+          grid-template-areas: "name "
+          "email"
+          "phone"
+          "date"
+          "info"
+          "info"
+          "submit-btn ";
         }
       }
     }
