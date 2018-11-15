@@ -4568,6 +4568,7 @@ body {
               height: 50px;
               padding: 0 63px 0 25px;
               line-height: 50px;
+              text-indent: -10000px;
               color: #fff;
               cursor: pointer;
               background: #00a3a6 url("../assets/images/magnifier-icon.png") 50% 50% no-repeat;

@@ -1101,6 +1101,7 @@ body {
                   height: 50px;
                   padding: 0 63px 0 25px;
                   line-height: 50px;
+                  text-indent: -10000px;
                   color: $white;
                   cursor: pointer;
                   background: $brandPrimary url("#{$pathToImages}/magnifier-icon.png") 50% 50% no-repeat;
@@ -1125,15 +1126,10 @@ body {
 
                 &[type=submit] {
                   padding: 0;
-
-                  &:hover {
-
-                  }
                 }
               }
             }
           }
-
           .btn-wrapper {
             margin:0 auto;
             width: 260px;
