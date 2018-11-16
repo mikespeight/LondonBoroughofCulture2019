@@ -1485,12 +1485,6 @@ body {
             }
           }
         }
-
-
-
-
-
-
       }
 
       .enquiry-form {
@@ -1621,6 +1615,239 @@ body {
             &:hover {
               color: $brandPrimary;
             }
+          }
+        }
+      }
+
+      .search-results {
+
+        .search-results-header {
+          background-color: $brandPrimary;
+          color: $white;
+          text-align: center;
+          padding:30px 0;
+
+          h1 {
+            @include font-size(32);
+            font-weight: $semiBold;
+          }
+
+          h2 {
+            @include font-size(32);
+            font-weight: $regular;
+          }
+        }
+
+        &  + .event-search {
+          height: auto;
+          //border-top:1px solid $black;
+        }
+
+        .search-results-wrpper {
+
+          & > div {
+
+            &.result {
+              overflow: hidden;
+              background-color: $caseStudiesBg;
+
+              &:nth-child(even) {
+                background-color: $brandGrey;
+              }
+
+              .inner {
+                margin: 0 auto;
+                padding: 0 30px;
+                width: 1200px;
+                @include flex-container(row, space-between);
+
+                .result-item {
+
+                  .result-heading {
+                    margin:15px 0 0;
+
+                    h2 {
+                      @include font-size(36);
+                      font-weight: $semiBold;
+                      color: $brandPrimary;
+
+                      span {
+                        @include font-size(18);
+                        font-weight: $regular;
+                        color: $black;
+                      }
+                    }
+                  }
+
+                  .result-sample {
+                    margin: 0 0 10px;
+
+                    p {
+                      @include font-size(18);
+                      font-weight: $regular;
+                      color: $black;
+                    }
+                  }
+
+                  .related-categories {
+                    @include flex-container(row, flex-start);
+                    flex-wrap: wrap;
+
+                    h4 {
+                      color: $brandPrimary;
+                      margin-right: 20px;
+                    }
+
+                    .tags {
+                      display: flex;
+                      flex-direction: row;
+                      justify-content: flex-start;
+                      flex-wrap: wrap;
+
+                      a {
+                        display: inline-block;
+                        @include font-size(11);
+                        line-height: 26px;
+                        font-weight: $medium;
+                        color: $brandMidGrey;
+                        text-transform: uppercase;
+                        text-decoration: none;
+                        padding: 0 13px;
+                        border: 1px solid $midGreyBorder;
+                        @include border-radius(13px);
+                        margin: 0 10px 10px 0;
+                        transition: all, 0.5s ease-in-out;
+
+                        &:hover {
+                          color: $white;
+                          background: $brandDarkPink;
+                          border-color: $brandDarkPink;
+                        }
+                      }
+                    }
+                  }
+                }
+
+                .result-action {
+                  display: flex;
+                  flex-direction: row;
+                  //justify-content: center;
+                  align-items: center;
+
+                  a {
+                    margin-right: auto;
+                  }
+                }
+              }
+
+
+            }
+          }
+        }
+
+        .search-results-footer {
+          margin: 0;
+          padding: 36px;
+          background-color: $caseStudiesBg;
+          @include flex-container(row,flex-end);
+
+          .paging-control {
+            height: 60px;
+            @include border-radius(30px);
+            overflow: hidden;
+            margin-right: 15px;
+
+            a {
+              text-indent: -10000px;
+              background-color: $brandGrey;
+              vertical-align: top;
+              position: relative;
+
+              &:after {
+                position: absolute;
+                content: '';
+                display: block;
+                width: 20px;
+                height:13px;
+                overflow: hidden;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                background-image: url("#{$pathToImages}/paging-arrows-sprite.png");
+                background-size: 40px 26px;
+                background-repeat: no-repeat;
+                background-position: 0 0;
+              }
+
+              &.page-nav {
+                display: inline-block;
+                height: 60px;
+                width: 45px;
+              }
+
+              &.prev-page {
+
+                &:after {
+                  background-position: 0 0;
+                }
+
+
+                &.disabled {
+                  cursor: default;
+
+                  &:after {
+                    background-position: -20px 0;
+                  }
+                }
+              }
+
+              &.next-page {
+
+                &:after {
+                  background-position: 0 -13px;
+                }
+
+                &.disabled {
+                  cursor: default;
+
+                  &:after {
+                    background-position: -20px -13px;
+                  }
+                }
+              }
+            }
+
+            span {
+
+              &.this-page {
+                margin: 0;
+                display: inline-block;
+                height: 60px;
+                width: 55px;
+                @include font-size(16);
+                font-weight: $semiBold;
+                line-height: 60px;
+                text-align: center;
+              }
+            }
+          }
+
+          span {
+            @include font-size(16);
+            font-weight: $semiBold;
+            line-height: 60px;
+
+            &:not(:last-child) {
+              margin-right: 15px;
+            }
+          }
+        }
+
+        & + .event-search {
+          margin-bottom: -60px;
+
+          .register-content {
+            padding: 20px 36px;
           }
         }
       }

@@ -2536,7 +2536,11 @@ h1 {
 html {
   margin: 0;
   padding: 0;
-  border: 0; }
+  border: 0;
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
 
 body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, code, del, dfn, em, img, q, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, dialog, figure, footer, header, hgroup, nav, section {
   margin: 0;
@@ -2620,7 +2624,6 @@ body {
 *****************************************/
 html {
   font-size: 10px;
-  box-sizing: border-box;
   width: 100%;
   margin: 0;
   padding: 0; }
@@ -4921,6 +4924,161 @@ body {
           text-align: center; }
           body .page-wrapper .content-wrapper .enquiry-form .privacy-policy .privacy-policy:hover {
             color: #00a3a6; }
+    body .page-wrapper .content-wrapper .search-results .search-results-header {
+      background-color: #00a3a6;
+      color: #fff;
+      text-align: center;
+      padding: 30px 0; }
+      body .page-wrapper .content-wrapper .search-results .search-results-header h1 {
+        font-size: 32px;
+        font-size: 3.2rem;
+        font-weight: 600; }
+      body .page-wrapper .content-wrapper .search-results .search-results-header h2 {
+        font-size: 32px;
+        font-size: 3.2rem;
+        font-weight: 400; }
+    body .page-wrapper .content-wrapper .search-results + .event-search {
+      height: auto; }
+    body .page-wrapper .content-wrapper .search-results .search-results-wrpper > div.result {
+      overflow: hidden;
+      background-color: #f1f1f1; }
+      body .page-wrapper .content-wrapper .search-results .search-results-wrpper > div.result:nth-child(even) {
+        background-color: #e5e5e5; }
+      body .page-wrapper .content-wrapper .search-results .search-results-wrpper > div.result .inner {
+        margin: 0 auto;
+        padding: 0 30px;
+        width: 1200px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between; }
+        body .page-wrapper .content-wrapper .search-results .search-results-wrpper > div.result .inner .result-item .result-heading {
+          margin: 15px 0 0; }
+          body .page-wrapper .content-wrapper .search-results .search-results-wrpper > div.result .inner .result-item .result-heading h2 {
+            font-size: 36px;
+            font-size: 3.6rem;
+            font-weight: 600;
+            color: #00a3a6; }
+            body .page-wrapper .content-wrapper .search-results .search-results-wrpper > div.result .inner .result-item .result-heading h2 span {
+              font-size: 18px;
+              font-size: 1.8rem;
+              font-weight: 400;
+              color: #000; }
+        body .page-wrapper .content-wrapper .search-results .search-results-wrpper > div.result .inner .result-item .result-sample {
+          margin: 0 0 10px; }
+          body .page-wrapper .content-wrapper .search-results .search-results-wrpper > div.result .inner .result-item .result-sample p {
+            font-size: 18px;
+            font-size: 1.8rem;
+            font-weight: 400;
+            color: #000; }
+        body .page-wrapper .content-wrapper .search-results .search-results-wrpper > div.result .inner .result-item .related-categories {
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-start;
+          flex-wrap: wrap; }
+          body .page-wrapper .content-wrapper .search-results .search-results-wrpper > div.result .inner .result-item .related-categories h4 {
+            color: #00a3a6;
+            margin-right: 20px; }
+          body .page-wrapper .content-wrapper .search-results .search-results-wrpper > div.result .inner .result-item .related-categories .tags {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            flex-wrap: wrap; }
+            body .page-wrapper .content-wrapper .search-results .search-results-wrpper > div.result .inner .result-item .related-categories .tags a {
+              display: inline-block;
+              font-size: 11px;
+              font-size: 1.1rem;
+              line-height: 26px;
+              font-weight: 500;
+              color: #707070;
+              text-transform: uppercase;
+              text-decoration: none;
+              padding: 0 13px;
+              border: 1px solid #8d8d8d;
+              border-radius: 13px;
+              -webkit-border-radius: 13px;
+              -moz-border-radius: 13px;
+              margin: 0 10px 10px 0;
+              transition: all, 0.5s ease-in-out; }
+              body .page-wrapper .content-wrapper .search-results .search-results-wrpper > div.result .inner .result-item .related-categories .tags a:hover {
+                color: #fff;
+                background: #ca5098;
+                border-color: #ca5098; }
+        body .page-wrapper .content-wrapper .search-results .search-results-wrpper > div.result .inner .result-action {
+          display: flex;
+          flex-direction: row;
+          align-items: center; }
+          body .page-wrapper .content-wrapper .search-results .search-results-wrpper > div.result .inner .result-action a {
+            margin-right: auto; }
+    body .page-wrapper .content-wrapper .search-results .search-results-footer {
+      margin: 0;
+      padding: 36px;
+      background-color: #f1f1f1;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end; }
+      body .page-wrapper .content-wrapper .search-results .search-results-footer .paging-control {
+        height: 60px;
+        border-radius: 30px;
+        -webkit-border-radius: 30px;
+        -moz-border-radius: 30px;
+        overflow: hidden;
+        margin-right: 15px; }
+        body .page-wrapper .content-wrapper .search-results .search-results-footer .paging-control a {
+          text-indent: -10000px;
+          background-color: #e5e5e5;
+          vertical-align: top;
+          position: relative; }
+          body .page-wrapper .content-wrapper .search-results .search-results-footer .paging-control a:after {
+            position: absolute;
+            content: '';
+            display: block;
+            width: 20px;
+            height: 13px;
+            overflow: hidden;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-image: url("../assets/images/paging-arrows-sprite.png");
+            background-size: 40px 26px;
+            background-repeat: no-repeat;
+            background-position: 0 0; }
+          body .page-wrapper .content-wrapper .search-results .search-results-footer .paging-control a.page-nav {
+            display: inline-block;
+            height: 60px;
+            width: 45px; }
+          body .page-wrapper .content-wrapper .search-results .search-results-footer .paging-control a.prev-page:after {
+            background-position: 0 0; }
+          body .page-wrapper .content-wrapper .search-results .search-results-footer .paging-control a.prev-page.disabled {
+            cursor: default; }
+            body .page-wrapper .content-wrapper .search-results .search-results-footer .paging-control a.prev-page.disabled:after {
+              background-position: -20px 0; }
+          body .page-wrapper .content-wrapper .search-results .search-results-footer .paging-control a.next-page:after {
+            background-position: 0 -13px; }
+          body .page-wrapper .content-wrapper .search-results .search-results-footer .paging-control a.next-page.disabled {
+            cursor: default; }
+            body .page-wrapper .content-wrapper .search-results .search-results-footer .paging-control a.next-page.disabled:after {
+              background-position: -20px -13px; }
+        body .page-wrapper .content-wrapper .search-results .search-results-footer .paging-control span.this-page {
+          margin: 0;
+          display: inline-block;
+          height: 60px;
+          width: 55px;
+          font-size: 16px;
+          font-size: 1.6rem;
+          font-weight: 600;
+          line-height: 60px;
+          text-align: center; }
+      body .page-wrapper .content-wrapper .search-results .search-results-footer span {
+        font-size: 16px;
+        font-size: 1.6rem;
+        font-weight: 600;
+        line-height: 60px; }
+        body .page-wrapper .content-wrapper .search-results .search-results-footer span:not(:last-child) {
+          margin-right: 15px; }
+    body .page-wrapper .content-wrapper .search-results + .event-search {
+      margin-bottom: -60px; }
+      body .page-wrapper .content-wrapper .search-results + .event-search .register-content {
+        padding: 20px 36px; }
   body footer {
     margin-top: 60px; }
     body footer .footer-bottom {
