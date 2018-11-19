@@ -8,29 +8,4 @@
 *
 *******************************************************************************************/
 
-body {
 
-  .page-wrapper {
-
-    .content-wrapper {
-
-      .search-results {
-
-        & + .event-search {
-
-          .register-content {
-
-            .search-form {
-              flex-direction: column;
-
-              .form-item,
-              .form-actions {
-                width:100%;
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-}

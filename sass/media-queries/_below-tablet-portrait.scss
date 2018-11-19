@@ -14,6 +14,29 @@ body {
 
     .content-wrapper {
 
+      .hero {
+
+        .dynamic-row {
+
+          .block {
+
+            &.hero-block {
+
+              .block-inner-content {
+                width: 100%;
+                padding-left: 0;
+
+                h1,
+                p {
+                  text-align: center;
+                  padding: 0 20px;
+                }
+              }
+            }
+          }
+        }
+      }
+
       .event-hero-section {
 
         .dynamic-row {
@@ -65,6 +88,18 @@ body {
 
       .dynamic-row {
         flex-direction: column;
+
+        &.how-to-get-there-section {
+          flex-direction: column;
+
+          & > div {
+            width: 100%;
+          }
+
+          h2 {
+            margin-bottom: 0!important;
+          }
+        }
 
         &.multi-grid {
 
@@ -218,7 +253,7 @@ body {
                 }
 
                 h2 {
-                  margin: 15px 36px 0;
+                  margin: 15px 36px 20px;
                   font-size: 10.666vw;
                   line-height: 10vw;
                 }
@@ -457,6 +492,24 @@ body {
 
           & > div {
             margin-bottom: 10px;
+          }
+        }
+      }
+
+      .search-results {
+
+        & + .event-search {
+
+          .register-content {
+
+            .search-form {
+              flex-direction: column;
+
+              .form-item,
+              .form-actions {
+                width:100%;
+              }
+            }
           }
         }
       }
