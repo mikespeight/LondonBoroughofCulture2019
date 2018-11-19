@@ -169,6 +169,14 @@ body {
 
       .search-results {
 
+        .search-results-header {
+          padding: 0 30px 20px;
+
+          .fixed-width-content {
+            width: 100%;
+          }
+        }
+
         .search-results-wrpper {
 
           & > div {
