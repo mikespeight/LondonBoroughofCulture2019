@@ -4914,6 +4914,7 @@ body {
             color: #fff;
             cursor: pointer;
             background-color: #00a3a6;
+            text-transform: uppercase;
             transition: all 0.125s ease-in-out; }
             body .page-wrapper .content-wrapper .enquiry-form .enquiry-form .form-actions input[type=submit]:hover {
               border: 2px solid #00a3a6;
