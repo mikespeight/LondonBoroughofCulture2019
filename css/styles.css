@@ -5340,7 +5340,28 @@ body {
     margin: 30px 20px 0;
     grid-template-columns: 100%;
     grid-template-rows: repeat(7, 80px);
-    grid-template-areas: "name " "email" "phone" "date" "info" "info" "submit-btn "; } }
+    grid-template-areas: "name " "email" "phone" "date" "info" "info" "submit-btn "; }
+  body .page-wrapper .content-wrapper .search-results .search-results-wrpper > div.result .inner {
+    flex-direction: column;
+    padding-bottom: 30px;
+    width: 100%; }
+    body .page-wrapper .content-wrapper .search-results .search-results-wrpper > div.result .inner .result-item {
+      width: 100%;
+      padding-right: 0; }
+      body .page-wrapper .content-wrapper .search-results .search-results-wrpper > div.result .inner .result-item .related-categories {
+        flex-direction: column; }
+        body .page-wrapper .content-wrapper .search-results .search-results-wrpper > div.result .inner .result-item .related-categories h4 {
+          margin-bottom: 10px; }
+    body .page-wrapper .content-wrapper .search-results .search-results-wrpper > div.result .inner .result-action {
+      width: 100%;
+      margin-top: 20px; }
+  body .page-wrapper .content-wrapper .search-results .search-results-footer {
+    justify-content: center; }
+  body .page-wrapper .content-wrapper .search-results + .event-search .register-content .search-form {
+    flex-direction: column; }
+    body .page-wrapper .content-wrapper .search-results + .event-search .register-content .search-form .form-item,
+    body .page-wrapper .content-wrapper .search-results + .event-search .register-content .search-form .form-actions {
+      width: 100%; } }
 
 @media only screen and (max-width: 1200px) {
   /******************************************************************************************

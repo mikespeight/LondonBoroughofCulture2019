@@ -166,6 +166,68 @@ body {
           "submit-btn ";
         }
       }
+
+      .search-results {
+
+        .search-results-wrpper {
+
+          & > div {
+
+            &.result {
+
+              .inner {
+                flex-direction: column;
+                padding-bottom: 30px;
+                width: 100%;
+
+                .result-item {
+                  width: 100%;
+                  padding-right: 0;
+
+                  .related-categories {
+                    flex-direction: column;
+
+                    h4 {
+                      margin-bottom: 10px;
+                    }
+
+                    .tags {
+                    }
+                  }
+                }
+
+                .result-action {
+                  width: 100%;
+                  margin-top: 20px;
+                }
+              }
+            }
+          }
+        }
+
+        .search-results-footer {
+          justify-content: center;
+
+          .paging-control {
+
+          }
+        }
+
+        & + .event-search {
+
+          .register-content {
+
+            .search-form {
+              flex-direction: column;
+
+              .form-item,
+              .form-actions {
+                width:100%;
+              }
+            }
+          }
+        }
+      }
     }
   }
 }
