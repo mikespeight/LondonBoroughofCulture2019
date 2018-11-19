@@ -4867,8 +4867,8 @@ body {
         body .page-wrapper .content-wrapper .enquiry-form .enquiry-form > div:nth-child(5) {
           grid-area: info; }
         body .page-wrapper .content-wrapper .enquiry-form .enquiry-form > div:nth-child(6) {
-          grid-area: submit-btn;
-          justify-items: center; }
+          /*grid-area: submit-btn;
+              justify-items: center;*/ }
         body .page-wrapper .content-wrapper .enquiry-form .enquiry-form .form-item {
           padding: 0 15px;
           margin-bottom: 32px; }
@@ -4897,6 +4897,8 @@ body {
               font-weight: 600;
               color: #312783; }
         body .page-wrapper .content-wrapper .enquiry-form .enquiry-form .form-actions {
+          grid-area: submit-btn;
+          justify-items: center;
           width: 100%; }
           body .page-wrapper .content-wrapper .enquiry-form .enquiry-form .form-actions input[type=submit] {
             margin-left: 50%;
