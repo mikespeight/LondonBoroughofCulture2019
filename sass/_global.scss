@@ -8,6 +8,15 @@ body {
   margin:0;
   padding:0;
 
+  /*&:before {
+    content: '1200 and above';
+    position: fixed;
+    z-index: 10000;
+    top:0;
+    left:0;
+    background-color: rgba(255, 255, 255, 0.75);
+  }*/
+
   .fixed-width-content {
     box-sizing: border-box!important;
     margin: 0 auto;
@@ -15,6 +24,10 @@ body {
   }
 
   .page-wrapper {
+
+    .search-overlay {
+      display: none;
+    }
 
     &.fixed-nav {
 
@@ -48,6 +61,79 @@ body {
             background: transparent url("#{$pathToImages}/boc-logo-x2.png") 0 0 no-repeat;
             background-size: 248px 47px;
             text-indent: -10000px;
+          }
+
+          .search-trigger {
+            margin:44px 0 0;
+            display: none;
+
+            button {
+              border: none;
+              color: $white;
+              background: transparent url("#{$pathToImages}/magnifier-icon.png") 5px 5px no-repeat;
+              background-size: 20px 20px;
+              display: block;
+              width: 30px;
+              height:30px;
+              text-indent: -10000px;
+              cursor: pointer;
+            }
+          }
+
+          .page-search-wrapper {
+            margin:0 30px;
+            width: 50%;
+            display: flex;
+
+            .page-search {
+              margin:44px 0 0;
+              margin-left: auto;
+              display: inline-block;
+
+              .page-search-form {
+                @include flex-container(row, flex-start);
+                border-bottom: 1px solid $white;
+
+                .form-item {
+
+                  label {
+                    display: none;
+                  }
+
+                  input {
+                    display: inline-block;
+                    border:none;
+                    background: transparent;
+                    color: white;
+                    height: 30px;
+                    min-width: 180px;
+                    @include font-size(18);
+                    font-weight: $medium;
+
+                    &::placeholder {
+                      color: $white;
+
+                    }
+                  }
+                }
+
+                .form-actions {
+
+                  input[type=submit] {
+                    border: none;
+                    color: $white;
+                    background: transparent url("#{$pathToImages}/magnifier-icon.png") 5px 5px no-repeat;
+                    background-size: 20px 20px;
+                    display: block;
+                    width: 30px;
+                    height:30px;
+                    text-indent: -10000px;
+                    cursor: pointer;
+
+                  }
+                }
+              }
+            }
           }
 
           .hamburger {
@@ -972,7 +1058,15 @@ body {
                 color: $white;
               }
 
-              .air-bnb,
+              a {
+
+                img {
+                  display: inline-block;
+                  width: auto;
+                  margin: 36px 36px 50px;
+                }
+              }
+
               img {
                 display: inline-block;
                 width: auto;
@@ -1143,6 +1237,7 @@ body {
               font-size: 1.4rem!important;
               cursor: pointer;
               position: relative;
+              text-decoration: none;
 
               span {
 
@@ -1187,7 +1282,35 @@ body {
           padding:70px 200px;
           color: $brandPrimary;
 
+          .block-inner-content {
 
+            h2 {
+              @include font-size(36);
+              font-weight: $regular;
+            }
+
+            p {
+              @include font-size(16);
+              font-weight: $regular;
+            }
+
+            a {
+              text-decoration: none;
+
+              &.btn {
+
+                &.link-btn {
+                  width: 300px;
+                  padding: 0 25px;
+
+                  span {
+                    position: relative;
+                    padding-right: 35px;
+                  }
+                }
+              }
+            }
+          }
         }
       }
 
@@ -1202,6 +1325,10 @@ body {
           .form-actions {
             width: 100%;
             margin-bottom: 30px;
+
+            label {
+              display: none;
+            }
 
             input,
             select {
@@ -1455,7 +1582,8 @@ body {
             }
 
             .inner {
-              @include flex-container(row, space-between);
+              @include flex-container(row, flex-start);
+
 
               & > div {
                 @include flex-container(row, flex-start);
@@ -1477,7 +1605,6 @@ body {
                       font-weight: $regular;
                       position: relative;
                       top:-7px;
-
                     }
                   }
                 }
@@ -1673,11 +1800,18 @@ body {
                       @include font-size(36);
                       font-weight: $semiBold;
                       color: $brandPrimary;
+                      overflow: hidden;
+                    }
 
-                      span {
-                        @include font-size(18);
-                        font-weight: $regular;
-                        color: $black;
+                    p {
+                      @include font-size(18);
+                      font-weight: $regular;
+                      color: $black;
+
+                      &.where {
+                        padding-bottom: 7px;
+                        margin-bottom: 7px;
+                        border-bottom: 1px solid $brandPrimary
                       }
                     }
                   }
@@ -1734,16 +1868,14 @@ body {
                 .result-action {
                   display: flex;
                   flex-direction: row;
-                  //justify-content: center;
+                  justify-content: space-around;
                   align-items: center;
 
                   a {
-                    margin-right: auto;
+                    //margin-right: auto;
                   }
                 }
               }
-
-
             }
           }
         }

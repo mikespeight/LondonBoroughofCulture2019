@@ -10,7 +10,41 @@
 
 body {
 
+  /*&:before {
+    content: '767 and below';
+    position: fixed;
+    z-index: 10000;
+    top:0;
+    left:0;
+    background-color: rgba(255, 255, 255, 0.75);
+  }*/
+
   .page-wrapper {
+
+    header {
+
+      &.page-header {
+
+        .header-content {
+
+          .logo {
+            width: 78px;
+            height: 47px;
+            //margin: 35px 36px;
+            background: transparent url("#{$pathToImages}/boc-w-logo-x2.png") 0 0 no-repeat;
+            background-size: 78px 47px;
+          }
+
+          /*.search-trigger {
+            position: absolute;
+            top: 35px;
+            @include centerH;
+            margin: 0;
+          }*/
+        }
+      }
+    }
+
 
     .content-wrapper {
 

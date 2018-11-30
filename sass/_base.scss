@@ -152,12 +152,12 @@ button {
             top: 0;
             right:0;
             display: inline-block;
-            width:25px;
-            height: 22px;
+            width:23px;
+            height: 23px;
             background-color: transparent;
             background-image: url("#{$pathToImages}/link-icons-sprite.png");
-            background-position: -3px -3px;
-            background-size: 155px 62px;
+            background-position: -3px -2px;
+            background-size: 135px 112.5px;
             background-repeat: no-repeat;
           }
         }
@@ -296,7 +296,7 @@ button {
           span {
 
             &:after {
-              background-position: -34px -3px;
+              background-position: -27px -3px;
             }
           }
         }
@@ -320,7 +320,7 @@ button {
             span {
 
               &:after {
-                background-position: -3px -3px;
+                background-position: -29px -2px;
               }
             }
           }

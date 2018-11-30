@@ -81,7 +81,7 @@
   border-bottom: 2px solid black;
   cursor: pointer;
   user-select: none;
-  background: white; }
+  background: transparent; }
 
 .select-items div {
   border-bottom: 1px solid transparent; }
@@ -92,7 +92,10 @@
   top: 100%;
   left: 0;
   right: 0;
-  z-index: 99; }
+  z-index: 99;
+  max-height: 380px;
+  overflow: auto;
+}
 
 .select-hide {
   display: none; }
@@ -100,8 +103,8 @@
 .select-items div:hover, .same-as-selected {
   background-color: rgba(0, 0, 0, 0.1); }
 
-.select-items div:nth-of-type(1) {
+/*.select-items div:nth-of-type(1) {
   display: none;
-  visibility: hidden; }
+  visibility: hidden; }*/
 
 

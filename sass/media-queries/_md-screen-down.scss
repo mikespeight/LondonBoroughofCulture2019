@@ -12,13 +12,86 @@
 
 body {
 
+  /*&:before {
+    content: '992 to 768'!important;
+    position: fixed;
+    z-index: 10000;
+    top:0;
+    left:0;
+    background-color: rgba(255, 255, 255, 0.75);
+  }*/
+
   .page-wrapper {
+
+    &.search-open {
+
+      /*&:after {
+        content: '';
+        position: absolute;
+        z-index: 1;
+        display: block;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.25);
+      }*/
+
+      .search-overlay {
+        @include fill-parent;
+        z-index: 3;
+        background-color: rgba(0, 0, 0, 0.25);
+      }
+
+      header {
+        position: relative;
+        z-index: 4;
+
+        &.page-header {
+
+          .header-content {
+
+            .search-trigger {
+              display: none;
+            }
+
+            .page-search-wrapper {
+              position: absolute;
+              z-index: 100;
+              display: flex;
+              width: 100%;
+              height:170px;
+              margin:0;background-color: rgba(0, 0, 0, 0.75);
+
+
+              .page-search {
+                @include centerH;
+                margin:0;
+                top:120px;
+                height:50px;
+              }
+            }
+          }
+        }
+      }
+    }
 
     header {
 
       &.page-header {
 
         .header-content {
+
+          .search-trigger {
+            display: block;
+            margin:35px 85px 0 0;
+
+            &.off {
+              display: none;
+            }
+          }
+
+          .page-search-wrapper {
+            display: none;
+          }
 
           .social {
             display: none;
@@ -59,7 +132,7 @@ body {
           }
 
           h2 {
-           margin-bottom: -30px!important;
+            margin-bottom: -30px!important;
           }
         }
 
@@ -110,7 +183,27 @@ body {
         }
       }
 
+      .event-search {
 
+        .register-content {
+
+          .search-form {
+            flex-direction: column;
+            justify-content: center;
+
+            & > div {
+              align-self: center;
+            }
+
+            .form-item {
+              width: 50%;
+              align-self: center;
+            }
+
+
+          }
+        }
+      }
 
       .facilities {
 

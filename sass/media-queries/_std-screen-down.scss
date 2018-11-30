@@ -10,11 +10,42 @@
 
 body {
 
+  /*&:before {
+    content: '1200 to 992';
+    position: fixed;
+    z-index: 10000;
+    top:0;
+    left:0;
+    background-color: rgba(255, 255, 255, 0.75);
+  }*/
+
   .fixed-width-content {
     width: 100vw;
   }
 
   .page-wrapper {
+
+    header {
+
+      &.page-header {
+
+        .header-content {
+
+          .logo {
+            margin: 35px 3vw;
+          }
+
+          .page-search-wrapper {
+            width:40%;
+            margin: 0 2.5vw;
+          }
+
+          .social {
+            margin: 40px 3vw;
+          }
+        }
+      }
+    }
 
     .main-navigation {
 
@@ -334,10 +365,21 @@ body {
       }
 
       .event-search {
-        height: 18.333vw;
+        min-height: 220px;
+        height: auto;
 
         .register-content {
-          padding: 5.833vw 20%;
+          //padding: 5.833vw 20%;
+          padding: 0 10%;
+        }
+      }
+
+      .register {
+        min-height: 220px;
+        height: auto;
+
+        .register-content {
+          padding: 70px 10%;
         }
       }
 
