@@ -4710,6 +4710,10 @@ body {
             box-sizing: border-box;
             width: 20%;
             padding: 0 15px; }
+            body .page-wrapper .content-wrapper .event-search .register-content .search-form .form-item.form-item-event-date-from, body .page-wrapper .content-wrapper .event-search .register-content .search-form .form-item.form-item-event-date-to,
+            body .page-wrapper .content-wrapper .event-search .register-content .search-form .form-actions.form-item-event-date-from,
+            body .page-wrapper .content-wrapper .event-search .register-content .search-form .form-actions.form-item-event-date-to {
+              display: none; }
             body .page-wrapper .content-wrapper .event-search .register-content .search-form .form-item input,
             body .page-wrapper .content-wrapper .event-search .register-content .search-form .form-item select,
             body .page-wrapper .content-wrapper .event-search .register-content .search-form .form-actions input,

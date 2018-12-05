@@ -1218,6 +1218,11 @@ body {
               width:20%;
               padding: 0 15px;
 
+              &.form-item-event-date-from,
+              &.form-item-event-date-to {
+                display:none;
+              }
+
               input,
               select {
                 border: none;
