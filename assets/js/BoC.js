@@ -131,12 +131,41 @@ $(document).ready(function(){
 	});
 
 	// toggle menu
-	var $mainNav = $('#main-nav');
+	var $body = $("body"),
+      $wrapper = $('.page-wrapper'),
+      $mainNav = $('#main-nav'),
+      $searchForm = $('.page-search-form'),
+      $searchTrigger = $('#search-trigger'),
+      $searchBox = $('#search-box');
 
-	$("body").on('click', '#menu-trigger', function() {
+	// Toggle mobile menu and hide search icon when open
+  $body.on('click', '#menu-trigger', function() {
+    $searchTrigger.toggleClass('off');
+    $mainNav.toggleClass('open');
+  });
 
-		$mainNav.toggleClass('open');
+	// insert image info to all images with data-info that's not empty
+	var $infoImages = $('[data-info]:not([data-info=""])'); // element has data attribute, data attribute is not empty
+
+	//console.log($infoImages);
+
+	$infoImages.each(function (){
+
+		var infoContent = $(this).data('info'),
+			$dataInfo = $(this).find('.data-info'),
+			dataInfoWidth = $dataInfo.width(),
+			$container = $(this).closest('.block'),
+			HTMLstr = '<div class="image-info">';
+
+			HTMLstr += '<i class="fa fa-camera" aria-hidden="true"></i>';
+			HTMLstr += '<p class="data-info">';
+			HTMLstr += infoContent;
+			HTMLstr += '</p>';
+			HTMLstr += '</div>';
+
+			$container.append(HTMLstr);
+
+			//console.log(HTMLstr);
 	});
-
 
 });

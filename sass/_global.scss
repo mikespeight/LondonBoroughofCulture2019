@@ -21,6 +21,49 @@ body {
     box-sizing: border-box!important;
     margin: 0 auto;
     width: 1200px;
+
+    &.heading-panel {
+      padding: 20px 14%;
+    }
+  }
+
+  .image-info {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    width: 37px;
+    height: 37px;
+    background-color: $brandDarkPurple;
+    padding: 5px;
+    cursor: pointer;
+
+    i {
+      @include font-size(24);
+      color: $white;
+    }
+
+    .data-info {
+      position: absolute;
+      top: 0;
+      right: 37px;
+      width: 0;
+      height: 37px;
+      color: $white;
+      background-color: $brandDarkPurple;
+      line-height: 37px;
+      text-align: center;
+      opacity: 0;
+      transition: all, 0.5s ease-in-out;
+    }
+
+    &:hover {
+
+      .data-info {
+        width: max-content;
+        padding:0 20px;
+        opacity: 0.85;
+      }
+    }
   }
 
   .page-wrapper {
@@ -879,12 +922,29 @@ body {
 
                   h2 {
                     margin-bottom: 25px;
+
+                    &.light {
+                      @include font-size(40);
+                      font-weight: $semiBold;
+                    }
                   }
 
                   p {
                     @include font-size(20);
                     font-weight: $regular;
                     line-height: 36px;
+
+                    &.sml-body {
+                      @include font-size(16);
+                      font-weight: $regular;
+                      line-height: 28px;
+                    }
+
+                    &.leader {
+                      @include font-size(24);
+                      font-weight: $regular;
+                      line-height: 32px;
+                    }
                   }
 
                   .learn-more {
@@ -1282,6 +1342,70 @@ body {
           padding:70px 200px;
           color: $brandPrimary;
 
+          &.persian-green-bg {
+
+            .block-inner-content {
+
+              h2 {
+                color: $white;
+              }
+
+              p {
+                color: $white;
+              }
+
+              a {
+
+                &.btn {
+
+                  &.link-btn {
+
+                    &.external {
+
+                      &.primary {
+                        color: $brandPrimary;
+                        background-color: $white;
+                        border-color: $white;
+                      }
+
+                      span {
+
+                        &:after {
+                          background-position: -29px -2px;
+                        }
+                      }
+                    }
+                  }
+                }
+
+                &:hover {
+
+                  &.btn {
+
+                    &.link-btn {
+
+                      &.external {
+
+                        &.primary {
+                          color: $white;
+                          background-color: $brandSecondary;
+                          border-color: $brandSecondary;
+                        }
+
+                        span {
+
+                          &:after {
+                            background-position: -3px -3px;
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+
           .block-inner-content {
 
             h2 {
@@ -1618,6 +1742,44 @@ body {
         overflow: hidden;
         height: auto;
 
+        &.light-persian-green-bg {
+
+          .heading-panel {
+
+            h2 {
+              color: $brandPrimary;
+            }
+          }
+
+          .enquiry-form {
+
+            .form-item{
+
+              input,
+              textarea {
+                color: $brandPrimary;
+                border: none;
+
+                &::placeholder {
+                  color: $brandPrimary;
+                }
+              }
+            }
+          }
+
+          .privacy-policy {
+
+            a {
+              color: $brandPrimary;
+              text-decoration: none;
+
+              &:hover {
+                text-decoration: underline;
+              }
+            }
+          }
+        }
+
         .heading-panel {
 
           h2 {
@@ -1662,9 +1824,6 @@ body {
               justify-items: center;*/
             }
           }
-
-
-
 
           .form-item {
             //width: 50%;
@@ -1886,7 +2045,7 @@ body {
           background-color: $caseStudiesBg;
           @include flex-container(row,flex-end);
 
-          .paging-control {
+          /*.paging-control {
             height: 60px;
             @include border-radius(30px);
             overflow: hidden;
@@ -1965,12 +2124,12 @@ body {
                 text-align: center;
               }
             }
-          }
+          }*/
 
           span {
             @include font-size(16);
             font-weight: $semiBold;
-            line-height: 60px;
+            //line-height: 60px;
 
             &:not(:last-child) {
               margin-right: 15px;

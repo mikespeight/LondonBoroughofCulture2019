@@ -96,10 +96,19 @@ h1{
 .heading-panel {
 
   h1,
-  h2 {
+  h2,
+  h3 {
     font-family: $Archia-font;
     font-weight: $semiBold;
     @include font-size(60);
+
+    &.sml-heading {
+      text-align: center;
+      color: $brandPrimary;
+      @include font-size(26);
+      font-weight: $semiBold;
+      line-height: 34px;
+    }
 
     &.heading {
       text-align: center;
@@ -140,6 +149,13 @@ h1{
         color: $white;
         text-align: center;
       }
+    }
+  }
+
+  &.light-persian-green-bg {
+
+    h2 {
+      color: $brandPrimary;
     }
   }
 }

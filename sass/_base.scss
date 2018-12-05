@@ -31,11 +31,19 @@ body {
   & > section {
     overflow: hidden;
   }
-
 }
 
 #UserAgent {
   display: none;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px, 1px, 1px, 1px);
+  overflow: hidden;
+  height: 1px;
+  width: 1px;
+  word-wrap: normal;
 }
 
 .btn-wrapper {
@@ -102,6 +110,16 @@ button {
         &:after {
           background-position: 100% -58px;
           opacity:0.5;
+        }
+      }
+
+      &.white-purple {
+        background-color: $white;
+        color: $brandDarkPurple;
+
+        &:after {
+          background-position: 100% -174px;
+          opacity:0.4;
         }
       }
 
@@ -237,6 +255,8 @@ button {
 
         }
       }
+
+
 
       &.tertiary {
         color: $white;
