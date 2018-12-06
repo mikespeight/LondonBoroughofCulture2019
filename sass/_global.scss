@@ -1345,24 +1345,44 @@ body {
         background-color: $white;
         height:220px;
 
-        .register-content {
-          @include flex-container(row, flex-start);
-          padding:70px 200px;
-          color: $brandPrimary;
+        &.persian-green-bg {
+          background-color: $brandPrimary;
 
-          &.persian-green-bg {
+          .block-inner-content {
 
-            .block-inner-content {
+            h2 {
+              color: $white;
+            }
 
-              h2 {
-                color: $white;
+            p {
+              color: $white;
+            }
+
+            a {
+
+              &.btn {
+
+                &.link-btn {
+
+                  &.external {
+
+                    &.primary {
+                      color: $brandPrimary;
+                      background-color: $white;
+                      border-color: $white;
+                    }
+
+                    span {
+
+                      &:after {
+                        background-position: -29px -2px;
+                      }
+                    }
+                  }
+                }
               }
 
-              p {
-                color: $white;
-              }
-
-              a {
+              &:hover {
 
                 &.btn {
 
@@ -1371,40 +1391,15 @@ body {
                     &.external {
 
                       &.primary {
-                        color: $brandPrimary;
-                        background-color: $white;
-                        border-color: $white;
+                        color: $white;
+                        background-color: $brandSecondary;
+                        border-color: $brandSecondary;
                       }
 
                       span {
 
                         &:after {
-                          background-position: -29px -2px;
-                        }
-                      }
-                    }
-                  }
-                }
-
-                &:hover {
-
-                  &.btn {
-
-                    &.link-btn {
-
-                      &.external {
-
-                        &.primary {
-                          color: $white;
-                          background-color: $brandSecondary;
-                          border-color: $brandSecondary;
-                        }
-
-                        span {
-
-                          &:after {
-                            background-position: -3px -3px;
-                          }
+                          background-position: -3px -3px;
                         }
                       }
                     }
@@ -1413,6 +1408,12 @@ body {
               }
             }
           }
+        }
+
+        .register-content {
+          @include flex-container(row, flex-start);
+          padding:70px 200px;
+          color: $brandPrimary;
 
           .block-inner-content {
 

@@ -4806,28 +4806,30 @@ body {
     body .page-wrapper .content-wrapper .register {
       background-color: #fff;
       height: 220px; }
+      body .page-wrapper .content-wrapper .register.persian-green-bg {
+        background-color: #00a3a6; }
+        body .page-wrapper .content-wrapper .register.persian-green-bg .block-inner-content h2 {
+          color: #fff; }
+        body .page-wrapper .content-wrapper .register.persian-green-bg .block-inner-content p {
+          color: #fff; }
+        body .page-wrapper .content-wrapper .register.persian-green-bg .block-inner-content a.btn.link-btn.external.primary {
+          color: #00a3a6;
+          background-color: #fff;
+          border-color: #fff; }
+        body .page-wrapper .content-wrapper .register.persian-green-bg .block-inner-content a.btn.link-btn.external span:after {
+          background-position: -29px -2px; }
+        body .page-wrapper .content-wrapper .register.persian-green-bg .block-inner-content a:hover.btn.link-btn.external.primary {
+          color: #fff;
+          background-color: #026d6f;
+          border-color: #026d6f; }
+        body .page-wrapper .content-wrapper .register.persian-green-bg .block-inner-content a:hover.btn.link-btn.external span:after {
+          background-position: -3px -3px; }
       body .page-wrapper .content-wrapper .register .register-content {
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
         padding: 70px 200px;
         color: #00a3a6; }
-        body .page-wrapper .content-wrapper .register .register-content.persian-green-bg .block-inner-content h2 {
-          color: #fff; }
-        body .page-wrapper .content-wrapper .register .register-content.persian-green-bg .block-inner-content p {
-          color: #fff; }
-        body .page-wrapper .content-wrapper .register .register-content.persian-green-bg .block-inner-content a.btn.link-btn.external.primary {
-          color: #00a3a6;
-          background-color: #fff;
-          border-color: #fff; }
-        body .page-wrapper .content-wrapper .register .register-content.persian-green-bg .block-inner-content a.btn.link-btn.external span:after {
-          background-position: -29px -2px; }
-        body .page-wrapper .content-wrapper .register .register-content.persian-green-bg .block-inner-content a:hover.btn.link-btn.external.primary {
-          color: #fff;
-          background-color: #026d6f;
-          border-color: #026d6f; }
-        body .page-wrapper .content-wrapper .register .register-content.persian-green-bg .block-inner-content a:hover.btn.link-btn.external span:after {
-          background-position: -3px -3px; }
         body .page-wrapper .content-wrapper .register .register-content .block-inner-content h2 {
           font-size: 36px;
           font-size: 3.6rem;
