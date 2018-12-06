@@ -231,14 +231,31 @@ body {
               .non-link-block {
 
                 .block-inner-content {
+                  padding: 3vw;
+                  padding-bottom: 10.833vw;
 
                   h2 {
                     margin-bottom: 2.083vw;
+
+                    &.light {
+                      font-size: 3.333vw;
+                      margin-bottom: 1.5vw;
+                    }
                   }
 
                   p {
                     font-size: 1.666vw;
                     line-height: 3vw;
+
+                    &.sml-body {
+                      font-size:1.333vw;
+                      line-height: 2.333vw;
+                    }
+
+                    &.leader {
+                      font-size: 2vw;
+                      line-height: 2.666vw;
+                    }
                   }
                 }
               }

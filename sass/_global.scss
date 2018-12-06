@@ -318,6 +318,8 @@ body {
 
                           a {
                             color: $black;
+                            line-height: 22px;
+
 
                             &:hover {
                               color: $white;
@@ -926,6 +928,7 @@ body {
                     &.light {
                       @include font-size(40);
                       font-weight: $semiBold;
+                      margin-bottom: 18px;
                     }
                   }
 

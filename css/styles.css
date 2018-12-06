@@ -4125,7 +4125,8 @@ body {
             flex-direction: row;
             justify-content: flex-start; }
             body .page-wrapper .main-navigation nav.navbar ul li.dropdown.open div.dropdown-menu > ul li a {
-              color: #000; }
+              color: #000;
+              line-height: 22px; }
               body .page-wrapper .main-navigation nav.navbar ul li.dropdown.open div.dropdown-menu > ul li a:hover {
                 color: #fff; }
             body .page-wrapper .main-navigation nav.navbar ul li.dropdown.open div.dropdown-menu > ul li > ul {
@@ -4515,7 +4516,8 @@ body {
               body .page-wrapper .content-wrapper .dynamic-row .block.bg-block.feature-block .non-link-block .block-inner-content h2.light {
                 font-size: 40px;
                 font-size: 4rem;
-                font-weight: 600; }
+                font-weight: 600;
+                margin-bottom: 18px; }
             body .page-wrapper .content-wrapper .dynamic-row .block.bg-block.feature-block .non-link-block .block-inner-content p {
               font-size: 20px;
               font-size: 2rem;
@@ -5646,6 +5648,24 @@ body {
       body .page-wrapper .content-wrapper .dynamic-row.multi-grid .form-block .btn-wrapper {
         margin-bottom: 30px;
         width: 216px; }
+    body .page-wrapper .content-wrapper .dynamic-row .block.bg-block.feature-block .non-link-block div.block-inner-content {
+      padding: 36px;
+      padding-bottom: 130px; }
+      body .page-wrapper .content-wrapper .dynamic-row .block.bg-block.feature-block .non-link-block div.block-inner-content h2.light {
+        font-size: 40px;
+        font-size: 4rem;
+        font-weight: 600;
+        margin-bottom: 18px; }
+      body .page-wrapper .content-wrapper .dynamic-row .block.bg-block.feature-block .non-link-block div.block-inner-content p.sml-body {
+        font-size: 16px;
+        font-size: 1.6rem;
+        font-weight: 400;
+        line-height: 28px; }
+      body .page-wrapper .content-wrapper .dynamic-row .block.bg-block.feature-block .non-link-block div.block-inner-content p.leader {
+        font-size: 24px;
+        font-size: 2.4rem;
+        font-weight: 400;
+        line-height: 32px; }
     body .page-wrapper .content-wrapper .map-section .legend {
       padding: 20px 100px; }
     body .page-wrapper .content-wrapper .event-search .register-content .search-form {
@@ -5662,7 +5682,7 @@ body {
       justify-content: center; }
     body .page-wrapper .content-wrapper .spaces-section .bg-block {
       height: auto;
-      min-height: 650px; }
+      min-height: 400px; }
     body .page-wrapper .content-wrapper .spaces-section .space-block .inner.wysiwyg p {
       padding: 0; }
     body .page-wrapper .content-wrapper .spaces-section .space-block .capacity .inner {
@@ -5776,11 +5796,23 @@ body {
       line-height: 16.666vw; }
     body .page-wrapper .content-wrapper .dynamic-row .block.bg-block.counter-block .block-inner-content .to-go {
       font-size: 2.166vw; }
-    body .page-wrapper .content-wrapper .dynamic-row .block.bg-block.feature-block .non-link-block .block-inner-content h2 {
-      margin-bottom: 2.083vw; }
-    body .page-wrapper .content-wrapper .dynamic-row .block.bg-block.feature-block .non-link-block .block-inner-content p {
-      font-size: 1.666vw;
-      line-height: 3vw; }
+    body .page-wrapper .content-wrapper .dynamic-row .block.bg-block.feature-block .non-link-block .block-inner-content {
+      padding: 3vw;
+      padding-bottom: 10.833vw; }
+      body .page-wrapper .content-wrapper .dynamic-row .block.bg-block.feature-block .non-link-block .block-inner-content h2 {
+        margin-bottom: 2.083vw; }
+        body .page-wrapper .content-wrapper .dynamic-row .block.bg-block.feature-block .non-link-block .block-inner-content h2.light {
+          font-size: 3.333vw;
+          margin-bottom: 1.5vw; }
+      body .page-wrapper .content-wrapper .dynamic-row .block.bg-block.feature-block .non-link-block .block-inner-content p {
+        font-size: 1.666vw;
+        line-height: 3vw; }
+        body .page-wrapper .content-wrapper .dynamic-row .block.bg-block.feature-block .non-link-block .block-inner-content p.sml-body {
+          font-size: 1.333vw;
+          line-height: 2.333vw; }
+        body .page-wrapper .content-wrapper .dynamic-row .block.bg-block.feature-block .non-link-block .block-inner-content p.leader {
+          font-size: 2vw;
+          line-height: 2.666vw; }
     body .page-wrapper .content-wrapper .dynamic-row .block.bg-block.feature-block .bg-link-block .block-inner-content {
       padding-top: 21.666vw; }
       body .page-wrapper .content-wrapper .dynamic-row .block.bg-block.feature-block .bg-link-block .block-inner-content h2 {
