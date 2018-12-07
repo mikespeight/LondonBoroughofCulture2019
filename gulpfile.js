@@ -4,8 +4,10 @@
 
 // Gulp plugins
 var gulp = require('gulp'),
+	concat = require('gulp-concat'),
 	sass = require('gulp-sass'),
 	sourcemaps = require('gulp-sourcemaps'),
+	plumber = require('gulp-plumber'),
 	watch = require('gulp-watch'),
 	prefix = require('gulp-autoprefixer');
 
@@ -17,6 +19,7 @@ var config = {
 	imgPath:  './assets/images',
 	fontPath: './assets/fonts'
 };
+
 
 // tasks
 gulp.task('sass', function(){
@@ -32,15 +35,14 @@ gulp.task('sass:watch', function () {
 });
 
 gulp.task('prefix', function(){
-    return gulp.src('css/styles.css')
-        .pipe(prefix({
-            browsers: ['last 2 versions']
-        }))
-        .pipe(gulp.dest('css'));
+	return gulp.src('css/styles.css')
+		.pipe(prefix({
+			browsers: ['last 2 versions']
+		}))
+		.pipe(gulp.dest('css'));
 });
 
-
-// Default task
+// Default tasks
 gulp.task( 'default', [ 'sass', 'sass:watch' ] );
 
 // For additional tasks please run gulp taskName at the command prompt i.e. gulp prefix

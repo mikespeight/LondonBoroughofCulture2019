@@ -1829,13 +1829,17 @@ body {
             }
 
             &:nth-child(6) {
-              /*grid-area: submit-btn;
-              justify-items: center;*/
             }
           }
 
+          .form-item-event-type-2,
+          .form-item-event-type-3,
+          .form-item-event-venue-2,
+          .form-item-event-venue-3{
+            display:none;
+          }
+
           .form-item {
-            //width: 50%;
             padding:0 15px;
             margin-bottom: 32px;
 
@@ -1845,10 +1849,7 @@ body {
               box-sizing: border-box;
               padding: 0 0 0 25px;
 
-              &::placeholder,
-              &::-webkit-input-placeholder,
-              &:-ms-input-placeholder,
-              &:-moz-placeholder  {
+              &::placeholder  {
                 font-family: "Archia", sans-serif;
                 @include font-size(14);
                 font-weight: $semiBold;
@@ -1865,10 +1866,7 @@ body {
               font-weight: $semiBold;
               color: $brandTertiary!important;
 
-              &::placeholder,
-              &::-webkit-input-placeholder,
-              &:-ms-input-placeholder,
-              &:-moz-placeholder {
+              &::placeholder {
                 font-family: "Archia", sans-serif;
                 @include font-size(14);
                 font-weight: $semiBold;
