@@ -5115,7 +5115,8 @@ body {
             width: 100%;
             box-sizing: border-box;
             padding: 0 0 0 25px; }
-            body .page-wrapper .content-wrapper .enquiry-form .enquiry-form .form-item input::placeholder {
+            body .page-wrapper .content-wrapper .enquiry-form .enquiry-form .form-item input::placeholder, body .page-wrapper .content-wrapper .enquiry-form .enquiry-form .form-item input::-webkit-input-placeholder, body .page-wrapper .content-wrapper .enquiry-form .enquiry-form .form-item input:-ms-input-placeholder, body .page-wrapper .content-wrapper .enquiry-form .enquiry-form .form-item input:-moz-placeholder {
+              font-family: "Archia", sans-serif;
               font-size: 14px;
               font-size: 1.4rem;
               font-weight: 600;
@@ -5129,7 +5130,8 @@ body {
             font-size: 1.4rem;
             font-weight: 600;
             color: #312783 !important; }
-            body .page-wrapper .content-wrapper .enquiry-form .enquiry-form .form-item textarea::placeholder {
+            body .page-wrapper .content-wrapper .enquiry-form .enquiry-form .form-item textarea::placeholder, body .page-wrapper .content-wrapper .enquiry-form .enquiry-form .form-item textarea::-webkit-input-placeholder, body .page-wrapper .content-wrapper .enquiry-form .enquiry-form .form-item textarea:-ms-input-placeholder, body .page-wrapper .content-wrapper .enquiry-form .enquiry-form .form-item textarea:-moz-placeholder {
+              font-family: "Archia", sans-serif;
               font-size: 14px;
               font-size: 1.4rem;
               font-weight: 600;

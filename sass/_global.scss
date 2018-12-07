@@ -1845,7 +1845,11 @@ body {
               box-sizing: border-box;
               padding: 0 0 0 25px;
 
-              &::placeholder {
+              &::placeholder,
+              &::-webkit-input-placeholder,
+              &:-ms-input-placeholder,
+              &:-moz-placeholder  {
+                font-family: "Archia", sans-serif;
                 @include font-size(14);
                 font-weight: $semiBold;
                 color: $brandTertiary;
@@ -1861,7 +1865,11 @@ body {
               font-weight: $semiBold;
               color: $brandTertiary!important;
 
-              &::placeholder {
+              &::placeholder,
+              &::-webkit-input-placeholder,
+              &:-ms-input-placeholder,
+              &:-moz-placeholder {
+                font-family: "Archia", sans-serif;
                 @include font-size(14);
                 font-weight: $semiBold;
                 color: $brandTertiary;
