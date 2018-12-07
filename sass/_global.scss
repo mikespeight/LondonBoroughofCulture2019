@@ -1214,6 +1214,13 @@ body {
               }
             }
 
+            .form-item-event-type-2,
+            .form-item-event-type-3,
+            .form-item-event-venue-2,
+            .form-item-event-venue-3{
+              display:none;
+            }
+
             .form-item,
             .form-actions {
               margin-bottom: 20px;
@@ -1830,13 +1837,6 @@ body {
 
             &:nth-child(6) {
             }
-          }
-
-          .form-item-event-type-2,
-          .form-item-event-type-3,
-          .form-item-event-venue-2,
-          .form-item-event-venue-3{
-            display:none;
           }
 
           .form-item {
