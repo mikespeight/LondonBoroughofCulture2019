@@ -3544,6 +3544,120 @@ html[xmlns] .slides {
       border-style: solid;
       border-width: 1px; }
 
+/******************************************************************************************
+*
+*
+*
+*   Styles for non node pages
+*
+*
+*
+*******************************************************************************************/
+body .page-wrapper .content-wrapper .non-node-content {
+  max-width: 1200px;
+  margin: 50px auto; }
+  body .page-wrapper .content-wrapper .non-node-content h1 {
+    font-family: "Archia", sans-serif;
+    font-weight: 200;
+    font-size: 80px;
+    font-size: 8rem;
+    color: #00a3a6;
+    text-align: center; }
+  body .page-wrapper .content-wrapper .non-node-content form {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    min-height: 500px;
+    padding: 50px; }
+    body .page-wrapper .content-wrapper .non-node-content form > div {
+      margin-bottom: 20px; }
+    body .page-wrapper .content-wrapper .non-node-content form .form-item,
+    body .page-wrapper .content-wrapper .non-node-content form .form-actions {
+      width: 80%;
+      margin-bottom: 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; }
+      body .page-wrapper .content-wrapper .non-node-content form .form-item label,
+      body .page-wrapper .content-wrapper .non-node-content form .form-actions label {
+        color: #312783 !important; }
+      body .page-wrapper .content-wrapper .non-node-content form .form-item input[type=text],
+      body .page-wrapper .content-wrapper .non-node-content form .form-item input[type=email],
+      body .page-wrapper .content-wrapper .non-node-content form .form-item input[type=number],
+      body .page-wrapper .content-wrapper .non-node-content form .form-item input[type=password],
+      body .page-wrapper .content-wrapper .non-node-content form .form-actions input[type=text],
+      body .page-wrapper .content-wrapper .non-node-content form .form-actions input[type=email],
+      body .page-wrapper .content-wrapper .non-node-content form .form-actions input[type=number],
+      body .page-wrapper .content-wrapper .non-node-content form .form-actions input[type=password] {
+        width: 60%;
+        height: 54px;
+        padding: 0 20px;
+        background-color: transparent;
+        color: #000000;
+        outline: none;
+        font-size: 20px;
+        font-size: 2rem;
+        line-height: 54px;
+        border-radius: 6px;
+        -webkit-border-radius: 6px;
+        -moz-border-radius: 6px;
+        border: 2px solid #026d6f; }
+      body .page-wrapper .content-wrapper .non-node-content form .form-item input[type=file],
+      body .page-wrapper .content-wrapper .non-node-content form .form-actions input[type=file] {
+        background-color: transparent;
+        color: #000000;
+        outline: none;
+        font-size: 20px;
+        font-size: 2rem; }
+      body .page-wrapper .content-wrapper .non-node-content form .form-item textarea,
+      body .page-wrapper .content-wrapper .non-node-content form .form-actions textarea {
+        width: 60%;
+        height: 200px;
+        padding: 0 20px;
+        background-color: transparent;
+        color: #000000;
+        outline: none;
+        font-size: 20px;
+        font-size: 2rem;
+        line-height: 54px;
+        border-radius: 6px;
+        -webkit-border-radius: 6px;
+        -moz-border-radius: 6px;
+        border: 2px solid #026d6f; }
+      body .page-wrapper .content-wrapper .non-node-content form .form-item .description,
+      body .page-wrapper .content-wrapper .non-node-content form .form-actions .description {
+        width: 100%;
+        margin: 10px 0 20px;
+        font-size: 16px;
+        font-size: 1.6rem;
+        font-weight: 300;
+        color: #312783; }
+      body .page-wrapper .content-wrapper .non-node-content form .form-item input[type=submit],
+      body .page-wrapper .content-wrapper .non-node-content form .form-actions input[type=submit] {
+        width: 33%;
+        padding: 0 30px;
+        border-color: #00a3a6;
+        background-color: #00a3a6;
+        font-size: 20px;
+        font-size: 2rem;
+        line-height: 54px;
+        border-radius: 6px;
+        -webkit-border-radius: 6px;
+        -moz-border-radius: 6px;
+        font-weight: 400;
+        color: #fff;
+        transition: all 0.5s ease-in-out; }
+        body .page-wrapper .content-wrapper .non-node-content form .form-item input[type=submit]:hover,
+        body .page-wrapper .content-wrapper .non-node-content form .form-actions input[type=submit]:hover {
+          background-color: #026d6f;
+          border-color: #026d6f;
+          border: 2px solid #026d6f; }
+      body .page-wrapper .content-wrapper .non-node-content form .form-item label,
+      body .page-wrapper .content-wrapper .non-node-content form .form-actions label {
+        font-size: 20px;
+        font-size: 2rem;
+        color: #000000; }
+
 section div.wysiwyg {
   display: block !important;
   font-family: "Archia", sans-serif;
@@ -5111,7 +5225,7 @@ body {
           grid-area: info; }
         body .page-wrapper .content-wrapper .enquiry-form .enquiry-form .form-item {
           padding: 0 15px;
-          margin-bottom: 33px; }
+          margin-bottom: 32px; }
           body .page-wrapper .content-wrapper .enquiry-form .enquiry-form .form-item input {
             height: 50px;
             width: 100%;

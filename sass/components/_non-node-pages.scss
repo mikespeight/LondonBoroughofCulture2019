@@ -1,0 +1,139 @@
+/******************************************************************************************
+*
+*
+*
+*   Styles for non node pages
+*
+*
+*
+*******************************************************************************************/
+
+body {
+
+  .page-wrapper {
+
+    .content-wrapper {
+
+      .non-node-content {
+        max-width: 1200px;
+        margin: 50px auto;
+
+        h1{
+          font-family: $Archia-font;
+          font-weight: $thin;
+          @include font-size(80);
+          color: $brandPrimary;
+          text-align: center;
+        }
+
+        form {
+
+          //&.user-login-form,
+          //&.user-register-form,
+          //&.node-venue-form {
+            @include flex-container(column, flex-start);
+            //align-items: center;
+            min-height: 500px;
+            padding: 50px;
+
+            & > div {
+              margin-bottom: 20px;
+            }
+
+            .form-item,
+            .form-actions {
+              width:80%;
+              margin-bottom: 30px;
+              @include flex-container(column, space-between);
+
+              label {
+                color: $brandTertiary!important;
+              }
+
+              input[type=text],
+              input[type=email],
+              input[type=number],
+              input[type=password] {
+                width:60%;
+                height: 54px;
+                padding:0 20px;
+                background-color: transparent;
+                color: $text-color;
+                outline: none;
+                @include font-size(20);
+                line-height: 54px;
+                @include border-radius(6px);
+                border:2px solid $adminSecondary;
+              }
+
+              input[type=file] {
+                //width:60%;
+                //height: 54px;
+                background-color: transparent;
+                color: $text-color;
+                outline: none;
+                @include font-size(20);
+                //line-height: 54px;
+              }
+
+              textarea {
+                width:60%;
+                height:200px;
+                padding:0 20px;
+                background-color: transparent;
+                color: $text-color;
+                outline: none;
+                @include font-size(20);
+                line-height: 54px;
+                @include border-radius(6px);
+                border:2px solid $adminSecondary;
+              }
+
+              .description {
+                width: 100%;
+                margin: 10px 0 20px;
+                @include font-size(16);
+                font-weight: $light;
+                color: $brandTertiary;
+              }
+
+              input[type=submit] {
+                width: 33%;
+                padding: 0 30px;
+                border-color: $adminPrimary;
+                background-color: $adminPrimary;
+                @include font-size(20);
+                line-height: 54px;
+                @include border-radius(6px);
+                font-weight: $regular;
+                color: $white;
+                transition: all 0.5s ease-in-out;
+
+                &:hover {
+                  background-color: $adminSecondary;
+                  border-color: $adminSecondary;
+                  border:2px solid $adminSecondary;
+                }
+              }
+
+              label {
+                @include font-size(20);
+                color: $text-color;
+              }
+            }
+
+            // Overides
+
+            .vertical-tabs {
+              //margin-left: 0;
+
+              .vertical-tabs__menu {
+                //display: none;
+              }
+            }
+          //}
+        }
+      }
+    }
+  }
+}
