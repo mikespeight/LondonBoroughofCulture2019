@@ -1121,12 +1121,16 @@ body {
                 color: $white;
               }
 
-              a {
+              a,
+              span {
+                display: block;
+
 
                 img {
                   display: inline-block;
                   width: auto;
                   margin: 36px 36px 50px;
+                  object-fit: contain;
                 }
               }
 

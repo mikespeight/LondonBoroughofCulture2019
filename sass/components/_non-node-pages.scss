@@ -37,13 +37,13 @@ body {
             padding: 50px;
 
             & > div {
-              margin-bottom: 20px;
+             // margin-bottom: 20px;
             }
 
             .form-item,
             .form-actions {
-              width:80%;
-              margin-bottom: 30px;
+              width:100%;
+              margin-bottom: 10px;
               @include flex-container(column, space-between);
 
               label {
@@ -67,13 +67,10 @@ body {
               }
 
               input[type=file] {
-                //width:60%;
-                //height: 54px;
                 background-color: transparent;
                 color: $text-color;
                 outline: none;
                 @include font-size(20);
-                //line-height: 54px;
               }
 
               textarea {
@@ -91,14 +88,16 @@ body {
 
               .description {
                 width: 100%;
-                margin: 10px 0 20px;
-                @include font-size(16);
-                font-weight: $light;
+                margin: 10px 0 5px;
+                @include font-size(14);
+                font-style: italic;
+                font-weight: $semiBold;
                 color: $brandTertiary;
               }
 
               input[type=submit] {
                 width: 33%;
+                margin-right: 30px;
                 padding: 0 30px;
                 border-color: $adminPrimary;
                 background-color: $adminPrimary;
@@ -116,13 +115,42 @@ body {
                 }
               }
 
-              label {
+              label,
+              .label {
                 @include font-size(20);
                 color: $text-color;
+                font-weight: $regular;
               }
+
+            }
+          .form-actions {
+            @include flex-container(row, flex-start );
+          }
+
+          fieldset {
+            margin-bottom: 0;
+
+            legend {
+              color: $brandPrimary;
+              @include font-size(24);
+              font-weight: $semiBold;
             }
 
+          }
+
+          h4 {
+
+            .label{
+              color: $text-color;
+            }
+          }
             // Overides
+
+            .filter-wrapper,
+            .tabledrag-toggle-weight-wrapper,
+            .field-multiple-drag {
+              display: none;
+            }
 
             .vertical-tabs {
               //margin-left: 0;

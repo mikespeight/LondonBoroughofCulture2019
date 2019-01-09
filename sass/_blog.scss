@@ -1,0 +1,116 @@
+/****************************************
+*
+* Blog stylesheet
+*
+* Property declaration order
+*
+* position
+* display
+* box model
+* color
+* text
+* other
+*
+*****************************************/
+
+body {
+
+  .page-wrapper {
+
+    .content-wrapper {
+
+      .blog-heading {
+        height: 200px;
+        padding:36px;
+        color: $brandPrimary;
+        position: relative;
+
+        h1 {
+          @include font-size(55);
+          font-weight: $semiBold;
+        }
+
+        p {
+          @include font-size(18);
+          font-weight: $semiBold;
+        }
+
+        .share-block {
+          display: inline-block;
+          position: absolute;
+          z-index: 3;
+          bottom:-30px;
+          left: 36px;
+          padding: 0 20px;
+          height: 60px;
+          @include border-radius(30px);
+          background-color: white;
+
+          & > span {
+            @include flex-container(row, flex-start);
+          }
+
+          .share {
+            @include  font-size(14);
+            font-weight: $semiBold;
+            text-transform: uppercase;
+            line-height: 60px;
+            color: $black;
+          }
+
+          a {
+            margin-left: 20px;
+
+            .fa {
+              @include font-size(32);
+              line-height: 60px;
+            }
+          }
+
+          .fa-twitter {
+            color: $twitterBlue;
+            @include font-size(35);
+          }
+
+          .fa-facebook-square {
+            color: $facebookBlue;
+          }
+
+          .fa-linkedin-square {
+            color: $linkedinBlue;
+          }
+        }
+      }
+
+      .blog-content {
+
+        .slider {
+
+          .flexslider {
+
+            .slides {
+
+              img {
+                margin: 0;
+              }
+            }
+
+            .flex-control-nav {
+            }
+          }
+        }
+
+        @include flex-container(row, flex-start);
+
+        article {
+          width: 66.666%;
+          margin-right: 20px;
+        }
+
+        aside {
+          width: 33.333%;
+        }
+      }
+    }
+  }
+}

@@ -3569,12 +3569,10 @@ body .page-wrapper .content-wrapper .non-node-content {
     justify-content: flex-start;
     min-height: 500px;
     padding: 50px; }
-    body .page-wrapper .content-wrapper .non-node-content form > div {
-      margin-bottom: 20px; }
     body .page-wrapper .content-wrapper .non-node-content form .form-item,
     body .page-wrapper .content-wrapper .non-node-content form .form-actions {
-      width: 80%;
-      margin-bottom: 30px;
+      width: 100%;
+      margin-bottom: 10px;
       display: flex;
       flex-direction: column;
       justify-content: space-between; }
@@ -3627,14 +3625,16 @@ body .page-wrapper .content-wrapper .non-node-content {
       body .page-wrapper .content-wrapper .non-node-content form .form-item .description,
       body .page-wrapper .content-wrapper .non-node-content form .form-actions .description {
         width: 100%;
-        margin: 10px 0 20px;
-        font-size: 16px;
-        font-size: 1.6rem;
-        font-weight: 300;
+        margin: 10px 0 5px;
+        font-size: 14px;
+        font-size: 1.4rem;
+        font-style: italic;
+        font-weight: 600;
         color: #312783; }
       body .page-wrapper .content-wrapper .non-node-content form .form-item input[type=submit],
       body .page-wrapper .content-wrapper .non-node-content form .form-actions input[type=submit] {
         width: 33%;
+        margin-right: 30px;
         padding: 0 30px;
         border-color: #00a3a6;
         background-color: #00a3a6;
@@ -3653,10 +3653,41 @@ body .page-wrapper .content-wrapper .non-node-content {
           border-color: #026d6f;
           border: 2px solid #026d6f; }
       body .page-wrapper .content-wrapper .non-node-content form .form-item label,
-      body .page-wrapper .content-wrapper .non-node-content form .form-actions label {
+      body .page-wrapper .content-wrapper .non-node-content form .form-item .label,
+      body .page-wrapper .content-wrapper .non-node-content form .form-actions label,
+      body .page-wrapper .content-wrapper .non-node-content form .form-actions .label {
         font-size: 20px;
         font-size: 2rem;
-        color: #000000; }
+        color: #000000;
+        font-weight: 400; }
+    body .page-wrapper .content-wrapper .non-node-content form .form-actions {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start; }
+    body .page-wrapper .content-wrapper .non-node-content form fieldset {
+      margin-bottom: 0; }
+      body .page-wrapper .content-wrapper .non-node-content form fieldset legend {
+        color: #00a3a6;
+        font-size: 24px;
+        font-size: 2.4rem;
+        font-weight: 600; }
+    body .page-wrapper .content-wrapper .non-node-content form h4 .label {
+      color: #000000; }
+    body .page-wrapper .content-wrapper .non-node-content form .filter-wrapper,
+    body .page-wrapper .content-wrapper .non-node-content form .tabledrag-toggle-weight-wrapper,
+    body .page-wrapper .content-wrapper .non-node-content form .field-multiple-drag {
+      display: none; }
+
+.blog-content section div.wysiwyg ul li {
+  font-size: 16px;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 28px; }
+  .blog-content section div.wysiwyg ul li:before {
+    top: 10px; }
+
+.blog-content section div img {
+  margin: 20px 0; }
 
 section div.wysiwyg {
   display: block !important;
@@ -3686,8 +3717,13 @@ section div.wysiwyg {
         text-decoration: none; }
     section div.wysiwyg p strong {
       font-weight: 600; }
+      section div.wysiwyg p strong:nth-child(1) {
+        font-size: 19px;
+        font-size: 1.9rem; }
   section div.wysiwyg h2, section div.wysiwyg h3 {
     color: #00a3a6;
+    font-weight: 600; }
+  section div.wysiwyg h4 {
     font-weight: 600; }
   section div.wysiwyg h2 {
     font-size: 32px;
@@ -3695,6 +3731,13 @@ section div.wysiwyg {
   section div.wysiwyg h3 {
     font-size: 24px;
     font-size: 2.4rem; }
+  section div.wysiwyg h4 {
+    font-size: 20px;
+    font-size: 2rem; }
+  section div.wysiwyg h5 {
+    font-size: 18px;
+    font-size: 1.8rem;
+    font-weight: 700; }
   section div.wysiwyg h6 {
     font-size: 19px;
     font-size: 1.9rem;
@@ -4761,10 +4804,15 @@ body {
           width: 100%; }
           body .page-wrapper .content-wrapper .event-section .event-side-info-block .non-link-block .sponsor-panel h4 {
             color: #fff; }
-          body .page-wrapper .content-wrapper .event-section .event-side-info-block .non-link-block .sponsor-panel a img {
-            display: inline-block;
-            width: auto;
-            margin: 36px 36px 50px; }
+          body .page-wrapper .content-wrapper .event-section .event-side-info-block .non-link-block .sponsor-panel a,
+          body .page-wrapper .content-wrapper .event-section .event-side-info-block .non-link-block .sponsor-panel span {
+            display: block; }
+            body .page-wrapper .content-wrapper .event-section .event-side-info-block .non-link-block .sponsor-panel a img,
+            body .page-wrapper .content-wrapper .event-section .event-side-info-block .non-link-block .sponsor-panel span img {
+              display: inline-block;
+              width: auto;
+              margin: 36px 36px 50px;
+              object-fit: contain; }
           body .page-wrapper .content-wrapper .event-section .event-side-info-block .non-link-block .sponsor-panel img {
             display: inline-block;
             width: auto;
@@ -5577,6 +5625,83 @@ body {
                 padding-left: 0; }
               body footer .footer-bottom .grid-wrapper .copy ul li:last-child a {
                 padding-right: 0; }
+
+/****************************************
+*
+* Blog stylesheet
+*
+* Property declaration order
+*
+* position
+* display
+* box model
+* color
+* text
+* other
+*
+*****************************************/
+body .page-wrapper .content-wrapper .blog-heading {
+  height: 200px;
+  padding: 36px;
+  color: #00a3a6;
+  position: relative; }
+  body .page-wrapper .content-wrapper .blog-heading h1 {
+    font-size: 55px;
+    font-size: 5.5rem;
+    font-weight: 600; }
+  body .page-wrapper .content-wrapper .blog-heading p {
+    font-size: 18px;
+    font-size: 1.8rem;
+    font-weight: 600; }
+  body .page-wrapper .content-wrapper .blog-heading .share-block {
+    display: inline-block;
+    position: absolute;
+    z-index: 3;
+    bottom: -30px;
+    left: 36px;
+    padding: 0 20px;
+    height: 60px;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    background-color: white; }
+    body .page-wrapper .content-wrapper .blog-heading .share-block > span {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start; }
+    body .page-wrapper .content-wrapper .blog-heading .share-block .share {
+      font-size: 14px;
+      font-size: 1.4rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      line-height: 60px;
+      color: #000; }
+    body .page-wrapper .content-wrapper .blog-heading .share-block a {
+      margin-left: 20px; }
+      body .page-wrapper .content-wrapper .blog-heading .share-block a .fa {
+        font-size: 32px;
+        font-size: 3.2rem;
+        line-height: 60px; }
+    body .page-wrapper .content-wrapper .blog-heading .share-block .fa-twitter {
+      color: #1da1f2;
+      font-size: 35px;
+      font-size: 3.5rem; }
+    body .page-wrapper .content-wrapper .blog-heading .share-block .fa-facebook-square {
+      color: #3b5998; }
+    body .page-wrapper .content-wrapper .blog-heading .share-block .fa-linkedin-square {
+      color: #0077b5; }
+
+body .page-wrapper .content-wrapper .blog-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start; }
+  body .page-wrapper .content-wrapper .blog-content .slider .flexslider .slides img {
+    margin: 0; }
+  body .page-wrapper .content-wrapper .blog-content article {
+    width: 66.666%;
+    margin-right: 20px; }
+  body .page-wrapper .content-wrapper .blog-content aside {
+    width: 33.333%; }
 
 /* Media queries */
 /* Init media queries */

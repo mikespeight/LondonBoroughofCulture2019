@@ -1,3 +1,32 @@
+.blog-content {
+
+  section {
+
+    div {
+
+      &.wysiwyg {
+
+        ul {
+
+          li {
+            @include font-size(16);
+            font-weight: $regular;
+            line-height: 28px;
+
+            &:before {
+              top: 10px;
+            }
+          }
+        }
+      }
+
+      img {
+        margin: 20px 0;
+      }
+    }
+  }
+}
+
 section {
 
   div {
@@ -47,11 +76,21 @@ section {
 
         strong {
           font-weight: $semiBold;
+
+          &:nth-child(1) {
+            @include font-size(19);
+          }
         }
+
+
       }
 
       h2, h3 {
         color: $brandPrimary;
+        font-weight: $semiBold;
+      }
+
+      h4 {
         font-weight: $semiBold;
       }
 
@@ -61,6 +100,15 @@ section {
 
       h3 {
         @include font-size(24);
+      }
+
+      h4 {
+        @include font-size(20);
+      }
+
+      h5 {
+        @include font-size(18);
+        font-weight: $bold;
       }
 
       h6 {
@@ -104,7 +152,7 @@ section {
         &:nth-child(1) {
           margin-top: 13px;
         }
-        
+
         li {
           position: relative;
           margin-bottom: 0;
