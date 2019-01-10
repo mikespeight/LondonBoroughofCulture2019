@@ -5692,6 +5692,7 @@ body .page-wrapper .content-wrapper .blog-heading {
       color: #0077b5; }
 
 body .page-wrapper .content-wrapper .blog-content {
+  margin-bottom: -60px;
   display: flex;
   flex-direction: row;
   justify-content: flex-start; }
@@ -5700,8 +5701,58 @@ body .page-wrapper .content-wrapper .blog-content {
   body .page-wrapper .content-wrapper .blog-content article {
     width: 66.666%;
     margin-right: 20px; }
+    body .page-wrapper .content-wrapper .blog-content article.blog-article .content .button-block {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding-right: 36px; }
   body .page-wrapper .content-wrapper .blog-content aside {
-    width: 33.333%; }
+    width: 33.333%;
+    background-color: #bee7e8; }
+    body .page-wrapper .content-wrapper .blog-content aside .related-news {
+      padding: 0 36px; }
+      body .page-wrapper .content-wrapper .blog-content aside .related-news .related-news-item {
+        padding: 36px 0;
+        border-bottom: 1px solid #00a3a6; }
+        body .page-wrapper .content-wrapper .blog-content aside .related-news .related-news-item a {
+          font-size: 19px;
+          font-size: 1.9rem;
+          font-weight: 600;
+          color: #000;
+          text-decoration: none; }
+          body .page-wrapper .content-wrapper .blog-content aside .related-news .related-news-item a:hover {
+            color: #00a3a6; }
+    body .page-wrapper .content-wrapper .blog-content aside .related-tags {
+      position: relative;
+      padding: 72px 36px 36px; }
+      body .page-wrapper .content-wrapper .blog-content aside .related-tags h3 {
+        position: absolute;
+        left: 36px;
+        top: 20px;
+        font-size: 19px;
+        font-size: 1.9rem;
+        font-weight: 600;
+        color: #00a3a6; }
+      body .page-wrapper .content-wrapper .blog-content aside .related-tags a.tag {
+        height: 50px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        background-color: #fff;
+        font-size: 18px;
+        font-size: 1.8rem;
+        font-weight: 600;
+        line-height: 50px;
+        padding: 0 25px;
+        border-radius: 25px;
+        -webkit-border-radius: 25px;
+        -moz-border-radius: 25px;
+        text-decoration: none;
+        color: #00a3a6;
+        transition: all, 0.5s ease-in-out; }
+        body .page-wrapper .content-wrapper .blog-content aside .related-tags a.tag:hover {
+          color: #fff;
+          background: #ca5098;
+          border-color: #ca5098; }
 
 /* Media queries */
 /* Init media queries */

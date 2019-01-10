@@ -83,6 +83,7 @@ body {
       }
 
       .blog-content {
+        margin-bottom: -60px;
 
         .slider {
 
@@ -105,10 +106,80 @@ body {
         article {
           width: 66.666%;
           margin-right: 20px;
+
+          &.blog-article {
+
+            .content {
+
+              .button-block {
+                @include flex-container(row, space-between);
+                padding-right: 36px;
+              }
+            }
+          }
         }
 
         aside {
           width: 33.333%;
+          background-color: $brandPrimaryLight;
+
+          .related-news {
+            padding: 0 36px;
+
+            .related-news-item {
+              padding: 36px 0;
+              border-bottom: 1px solid $brandPrimary;
+
+              a {
+                @include font-size(19);
+                font-weight: $semiBold;
+                color: $black;
+                text-decoration: none;
+
+                &:hover {
+                  color: $brandPrimary;
+                }
+              }
+            }
+          }
+
+          .related-tags {
+            position: relative;
+            padding: 72px 36px 36px;
+
+            h3 {
+              position: absolute;
+              left: 36px;
+              top: 20px;
+              @include font-size(19);
+              font-weight: $semiBold;
+              color: $brandPrimary;
+            }
+
+            a {
+
+              &.tag {
+                height: 50px;
+                margin-right: 10px;
+                margin-bottom: 10px;
+                background-color: $white;
+                @include font-size(18);
+                font-weight: $semiBold;
+                line-height: 50px;
+                padding:0 25px;
+                @include border-radius(25px);
+                text-decoration: none;
+                color: $brandPrimary;
+                transition: all, 0.5s ease-in-out;
+
+                &:hover {
+                  color: $white;
+                  background: $brandQuaternary;
+                  border-color: $brandQuaternary;
+                }
+              }
+            }
+          }
         }
       }
     }
