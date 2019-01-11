@@ -547,6 +547,74 @@ body {
           }
         }
       }
+
+      .blog-heading {
+        height:auto;
+
+        h1 {
+          @include font-size(40);
+        }
+      }
+
+      .blog-content {
+        flex-direction: column;
+
+        article {
+          width: 100%;
+          margin-right: 0;
+
+          &.blog-article {
+
+            .content {
+
+              .wysiwyg {
+
+                ol {
+                  padding-left: 0;
+
+                  li {
+                    padding-top:60px;
+                    margin: 20px 0 0;
+
+                    &:before {
+                      left: 0;
+                    }
+                  }
+                }
+              }
+
+              .special-image-block {
+                margin:0;
+                width: 100%;
+
+                img {
+                  width: 100%;
+                }
+              }
+
+              .video-container {
+                margin:0 0 30px 0;
+              }
+
+              .button-block {
+                height: auto;
+                flex-direction: column;
+
+                .btn {
+
+                  &:not(:last-child) {
+                    margin-bottom: 25px;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        aside {
+          width: 100%;
+        }
+      }
     }
 
     footer {
