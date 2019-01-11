@@ -111,6 +111,15 @@ body {
 
             .content {
 
+              .special-image-block {
+                margin: 0 36px;
+                width: 100%;
+
+                img {
+                  width: calc(100% - 36px);
+                }
+              }
+
               .video-container {
                 position: relative;
                 padding-bottom: 56.25%;

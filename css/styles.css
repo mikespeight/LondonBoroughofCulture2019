@@ -5701,6 +5701,11 @@ body .page-wrapper .content-wrapper .blog-content {
   body .page-wrapper .content-wrapper .blog-content article {
     width: 66.666%;
     margin-right: 20px; }
+    body .page-wrapper .content-wrapper .blog-content article.blog-article .content .special-image-block {
+      margin: 0 36px;
+      width: 100%; }
+      body .page-wrapper .content-wrapper .blog-content article.blog-article .content .special-image-block img {
+        width: calc(100% - 36px); }
     body .page-wrapper .content-wrapper .blog-content article.blog-article .content .video-container {
       position: relative;
       padding-bottom: 56.25%;
