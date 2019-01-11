@@ -441,6 +441,14 @@ body {
           }
         }
       }
+
+      .blog-heading {
+        height:auto;
+
+        h1 {
+          @include font-size(40);
+        }
+      }
     }
 
     footer {
