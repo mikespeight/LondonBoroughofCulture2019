@@ -6193,6 +6193,11 @@ body .page-wrapper .content-wrapper .blog-content {
         margin-bottom: 2.5vw; }
     body .page-wrapper .content-wrapper .form-block .btn-wrapper {
       width: 21.666vw; }
+    body .page-wrapper .content-wrapper .blog-heading {
+      height: auto; }
+      body .page-wrapper .content-wrapper .blog-heading h1 {
+        font-size: 40px;
+        font-size: 4rem; }
     body .page-wrapper footer .footer-bottom .grid-wrapper {
       grid-template-rows: repeat(4, 70px); }
       body .page-wrapper footer .footer-bottom .grid-wrapper .mayor {
