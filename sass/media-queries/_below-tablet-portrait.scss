@@ -35,6 +35,13 @@ body {
             background-size: 78px 47px;
           }
 
+          #search-wrapper {
+
+            &.on {
+              left:25%;
+            }
+          }
+
           /*.search-trigger {
             position: absolute;
             top: 35px;

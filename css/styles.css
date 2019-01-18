@@ -3686,8 +3686,16 @@ body .page-wrapper .content-wrapper .non-node-content {
   .blog-content section div.wysiwyg ul li:before {
     top: 10px; }
 
+.blog-content section div.wysiwyg p img {
+  margin-top: 0;
+  margin-bottom: 10px; }
+
 .blog-content section div img {
   margin: 20px 0; }
+  .blog-content section div img.align-left {
+    margin-right: 20px !important; }
+  .blog-content section div img.align-right {
+    margin-left: 20px !important; }
 
 section div.wysiwyg {
   display: block !important;
@@ -4145,6 +4153,8 @@ body {
         background: transparent url("../assets/images/boc-logo-x2.png") 0 0 no-repeat;
         background-size: 248px 47px;
         text-indent: -10000px; }
+        body .page-wrapper header.page-header .header-content .logo.off {
+          display: none; }
       body .page-wrapper header.page-header .header-content .search-trigger {
         margin: 44px 0 0;
         display: none; }
@@ -4158,6 +4168,12 @@ body {
           height: 30px;
           text-indent: -10000px;
           cursor: pointer; }
+      body .page-wrapper header.page-header .header-content #search-wrapper.on {
+        display: inline-block;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: -9px; }
       body .page-wrapper header.page-header .header-content .page-search-wrapper {
         margin: 0 30px;
         width: 50%;
@@ -6234,6 +6250,8 @@ body .page-wrapper .content-wrapper .blog-content {
         height: 47px;
         background: transparent url("../assets/images/boc-w-logo-x2.png") 0 0 no-repeat;
         background-size: 78px 47px; }
+      body .page-wrapper header.page-header .header-content #search-wrapper.on {
+        left: 25%; }
     body .page-wrapper .content-wrapper .hero .dynamic-row .block.hero-block .block-inner-content {
       width: 100%;
       padding-left: 0; }

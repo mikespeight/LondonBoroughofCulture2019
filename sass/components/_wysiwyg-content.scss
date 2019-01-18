@@ -18,10 +18,26 @@
             }
           }
         }
+
+        p {
+
+          img {
+            margin-top: 0;
+            margin-bottom:10px;
+          }
+        }
       }
 
       img {
         margin: 20px 0;
+
+        &.align-left {
+          margin-right: 20px!important;
+        }
+
+        &.align-right {
+          margin-left: 20px!important;
+        }
       }
     }
   }

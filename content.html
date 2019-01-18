@@ -42,9 +42,28 @@
 
         <div class="header-content">
 
-            <a href="/" class="logo">
+            <a id="logo" href="/" class="logo">
                 Waltham Forest - London borough of culture 2019
             </a>
+
+            <div id="search-trigger" class="search-trigger">
+                <button id="search-btn" class="mag-glass"></button>
+            </div>
+
+            <div id="search-wrapper" class="page-search-wrapper">
+                <div id="search" class="page-search">
+                    <form class="page-search-form" action="/search/node">
+                        <div class="form-item">
+                            <label for="search-box">Search
+                            </label>
+                            <input id="search-box" class="search-box" placeholder="Search" name="keys" type="text">
+                        </div>
+                        <div class="form-actions">
+                            <input type="submit">
+                        </div>
+                    </form>
+                </div>
+            </div>
 
             <div id="menu-trigger" class="hamburger">
                 <span></span>
@@ -62,10 +81,6 @@
 
                 <a href="">
                     <i class="fa fa-instagram"></i>
-                </a>
-
-                <a href="">
-                    <i class="fa fa-youtube-play"></i>
                 </a>
 
             </div>

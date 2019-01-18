@@ -132,17 +132,35 @@ $(document).ready(function(){
 
 	// toggle menu
 	var $body = $("body"),
-      $wrapper = $('.page-wrapper'),
-      $mainNav = $('#main-nav'),
-      $searchForm = $('.page-search-form'),
-      $searchTrigger = $('#search-trigger'),
-      $searchBox = $('#search-box');
+		$logo = $('#logo'),
+		$mainNav = $('#main-nav'),
+		$searchTrigger = $('#search-trigger'),
+		$searchWrapper = $('#search-wrapper');
 
 	// Toggle mobile menu and hide search icon when open
-  $body.on('click', '#menu-trigger', function() {
-    $searchTrigger.toggleClass('off');
-    $mainNav.toggleClass('open');
-  });
+	$body.on('click', '#menu-trigger', function () {
+
+		$searchTrigger.toggleClass('off');
+		$mainNav.toggleClass('open');
+
+		if($mainNav.hasClass('open')) {
+			console.log('true');
+			$searchWrapper.removeClass('on');
+			$searchTrigger.addClass('off');
+			$logo.toggleClass('off');
+		}
+
+	});
+
+	// Toggle search box
+	$body.on('click', '#search-trigger', function () {
+		$searchTrigger.toggleClass('off');
+		$searchWrapper.toggleClass('on');
+
+		if($searchTrigger.hasClass('off')) {
+			$logo.addClass('off');
+		}
+	});
 
 	// insert image info to all images with data-info that's not empty
 	var $infoImages = $('[data-info]:not([data-info=""])'); // element has data attribute, data attribute is not empty

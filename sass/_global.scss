@@ -104,6 +104,10 @@ body {
             background: transparent url("#{$pathToImages}/boc-logo-x2.png") 0 0 no-repeat;
             background-size: 248px 47px;
             text-indent: -10000px;
+
+            &.off {
+              display: none;
+            }
           }
 
           .search-trigger {
@@ -120,6 +124,16 @@ body {
               height:30px;
               text-indent: -10000px;
               cursor: pointer;
+            }
+          }
+
+          #search-wrapper {
+
+            &.on {
+              display: inline-block;
+              //position: absolute;
+              @include centerH;
+              top: -9px;
             }
           }
 
