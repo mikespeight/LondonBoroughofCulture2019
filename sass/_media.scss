@@ -111,7 +111,7 @@ $ipad-pro-10-landscape-breakpoint: "(min-device-width : 1668px) and (max-device-
 
 // Everything 1200 and below
 @mixin screen-std-and-below {
-  @media only screen and (max-width: $mq-screen-std) {
+  @media only screen and (max-width: $mq-screen-std ) {
     @content;
   }
 }
