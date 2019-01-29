@@ -2618,10 +2618,6 @@ body.user-logged-in.toolbar-tray-open #toolbar-administration #toolbar-bar {
 body.user-logged-in.toolbar-tray-open header {
   margin-top: 79px; }
 
-.messages__wrapper {
-  position: absolute;
-  z-index: 1; }
-
 /**
  * @file
  * Styles for system messages.
@@ -2662,7 +2658,7 @@ body.user-logged-in.toolbar-tray-open header {
   background-color: #f3faef;
   border-color: #c9e1bd #c9e1bd #c9e1bd transparent;
   /* LTR */
-  background-image: url(../../../../misc/icons/73b355/check.svg);
+  background-image: url(../../../../core/misc/icons/73b355/check.svg);
   box-shadow: -8px 0 0 #77b259;
   /* LTR */ }
 
@@ -2674,7 +2670,7 @@ body.user-logged-in.toolbar-tray-open header {
 /* See .color-warning in Seven's colors.css */
 .messages--warning {
   background-color: #fdf8ed;
-  background-image: url(../../../../misc/icons/e29700/warning.svg);
+  background-image: url(../../../../core/misc/icons/e29700/warning.svg);
   border-color: #f4daa6 #f4daa6 #f4daa6 transparent;
   /* LTR */
   color: #734c00;
@@ -2689,7 +2685,7 @@ body.user-logged-in.toolbar-tray-open header {
 .messages--error {
   background-color: #fcf4f2;
   color: #a51b00;
-  background-image: url(../../../../misc/icons/e32700/error.svg);
+  background-image: url(../../../../core/misc/icons/e32700/error.svg);
   border-color: #f9c9bf #f9c9bf #f9c9bf transparent;
   /* LTR */
   box-shadow: -8px 0 0 #e62600;
@@ -3623,12 +3619,12 @@ html[xmlns] .slides {
 *******************************************************************************************/
 body .page-wrapper .content-wrapper .non-node-content {
   max-width: 1200px;
-  margin: 50px auto; }
+  margin: 0 auto; }
   body .page-wrapper .content-wrapper .non-node-content h1 {
     font-family: "Archia", sans-serif;
     font-weight: 200;
-    font-size: 80px;
-    font-size: 8rem;
+    font-size: 40px;
+    font-size: 4rem;
     color: #00a3a6;
     text-align: center; }
   body .page-wrapper .content-wrapper .non-node-content form {

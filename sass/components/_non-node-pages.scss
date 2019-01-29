@@ -16,12 +16,12 @@ body {
 
       .non-node-content {
         max-width: 1200px;
-        margin: 50px auto;
+        margin: 0 auto;
 
         h1{
           font-family: $Archia-font;
           font-weight: $thin;
-          @include font-size(80);
+          @include font-size(40);
           color: $brandPrimary;
           text-align: center;
         }
