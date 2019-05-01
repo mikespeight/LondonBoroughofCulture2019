@@ -59,6 +59,8 @@ body {
     &:hover {
 
       .data-info {
+        width: -moz-max-content;
+        width: -webkit-max-content;
         width: max-content;
         padding:0 20px;
         opacity: 0.85;
