@@ -5602,113 +5602,205 @@ body {
       body .page-wrapper .content-wrapper .search-results + .event-search .register-content {
         padding: 20px 36px; }
   body footer {
-    margin-top: 60px; }
-    body footer .footer-bottom {
-      height: 320px;
-      background-color: #000;
-      overflow: hidden; }
-      body footer .footer-bottom .grid-wrapper {
-        margin-top: 55px;
-        padding: 0 36px;
+    margin-top: 60px;
+    height: 33.333vw;
+    background-color: #000;
+    overflow: hidden; }
+    body footer .footer-content {
+      width: 100vw;
+      padding: 50px 3vw 100px; }
+      body footer .footer-content .footer-grid {
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(4, 57px);
-        grid-template-areas: "boc-logo mayor mayor wf-logo" ". city-of-london air-bnb wf-site " ". . . find-out-more" "social . . copy";
-        color: #fff; }
-        body footer .footer-bottom .grid-wrapper a {
-          font-size: 16px;
-          font-size: 1.6rem;
-          font-weight: 400;
+        height: 250px;
+        grid-template-columns: 35.416vw 23.166vw 35.416vw;
+        grid-template-rows: 1.666vw 4.583vw 2.916vw 4.583vw 7.083vw;
+        grid-template-areas: ". head-1 head-2" "wf-logo headline-partners-top funding-partners" ". . head-3" "social headline-partners-bottom mol-partners " "nav-copy foot-text contact"; }
+        body footer .footer-content .footer-grid > div {
           color: #fff; }
-        body footer .footer-bottom .grid-wrapper p {
-          font-size: 16px;
-          font-size: 1.6rem;
-          font-weight: 400;
-          margin-bottom: 0; }
-        body footer .footer-bottom .grid-wrapper .boc-logo {
-          grid-area: boc-logo; }
-          body footer .footer-bottom .grid-wrapper .boc-logo .logo {
-            display: inline-block;
-            width: 248px;
-            height: 47px;
-            background: transparent url("../assets/images/boc-logo-x2.png") 0 0 no-repeat;
-            background-size: 248px 47px; }
-        body footer .footer-bottom .grid-wrapper .mayor {
-          grid-area: mayor;
-          background: transparent url("../assets/images/mayor-of-london-logo.png") 50% 0 no-repeat;
-          background-size: 279px 22px; }
-        body footer .footer-bottom .grid-wrapper .wf-logo {
-          grid-area: wf-logo; }
-          body footer .footer-bottom .grid-wrapper .wf-logo .wf-logo {
-            display: inline-block;
-            width: 92px;
-            height: 51px;
-            background: transparent url("../assets/images/Waltham-Forest-logo-x2.png") 0 0 no-repeat;
-            background-size: 92px 51px;
-            margin-right: 40px; }
-          body footer .footer-bottom .grid-wrapper .wf-logo .lottery {
-            display: inline-block;
-            width: 120px;
-            height: 51px;
-            background: transparent url("../assets/images/lottery-funded-logo.png") 0 0 no-repeat;
-            background-size: 120px 51px; }
-        body footer .footer-bottom .grid-wrapper .city-of-london {
-          grid-area: city-of-london;
-          background: transparent url("../assets/images/city-of-london-logo.png") 75% 0 no-repeat;
-          background-size: 56px 75px;
-          min-height: 75px; }
-        body footer .footer-bottom .grid-wrapper .air-bnb {
-          grid-area: air-bnb;
-          background: transparent url("../assets/images/air-bnb-logo-wht.png") 25% 8px no-repeat;
-          background-size: 56px 64px;
-          min-height: 75px; }
-        body footer .footer-bottom .grid-wrapper .wf-site {
-          grid-area: wf-site; }
-        body footer .footer-bottom .grid-wrapper .find-out-more {
-          grid-area: find-out-more; }
-        body footer .footer-bottom .grid-wrapper .social {
-          grid-area: social; }
-          body footer .footer-bottom .grid-wrapper .social a {
-            display: inline-block;
-            margin-top: 20px;
+          body footer .footer-content .footer-grid > div span, body footer .footer-content .footer-grid > div a {
             color: #fff;
-            font-size: 29px;
-            font-size: 2.9rem; }
-            body footer .footer-bottom .grid-wrapper .social a:not(:last-child) {
-              margin-right: 19px; }
-        body footer .footer-bottom .grid-wrapper .copy {
-          grid-area: copy;
-          font-size: 16px;
-          font-size: 1.6rem;
-          font-weight: 400; }
-          body footer .footer-bottom .grid-wrapper .copy ul {
+            display: block; }
+          body footer .footer-content .footer-grid > div p {
+            line-height: 22px; }
+          body footer .footer-content .footer-grid > div h4 {
+            margin-top: 6px;
+            font-size: 11px;
+            font-size: 1.1rem;
+            font-weight: 400;
+            color: #fff; }
+        body footer .footer-content .footer-grid .head-1 {
+          grid-area: head-1; }
+          body footer .footer-content .footer-grid .head-1 h4 {
+            width: 18.75vw;
+            border-bottom: 1px solid #b0b0b0;
+            color: #b0b0b0; }
+        body footer .footer-content .footer-grid .head-2 {
+          grid-area: head-2; }
+          body footer .footer-content .footer-grid .head-2 h4 {
+            border-bottom: 1px solid #b0b0b0;
+            color: #b0b0b0; }
+        body footer .footer-content .footer-grid .wf-logo {
+          grid-area: wf-logo; }
+          body footer .footer-content .footer-grid .wf-logo span, body footer .footer-content .footer-grid .wf-logo a {
+            width: 21.25vw;
+            height: 4vw;
+            background: url("../assets/images/boc-logo-x2.png");
+            background-size: 21.25vw 4vw; }
+        body footer .footer-content .footer-grid .headline-partners-top {
+          padding-top: 10px;
+          width: 18.75vw;
+          grid-area: headline-partners-top;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center; }
+          body footer .footer-content .footer-grid .headline-partners-top a.headline-1 {
+            width: 3.166vw;
+            margin-left: 2.833vw;
+            height: 4vw;
+            background: url("../assets/images/logo-the-mall-x2.png") 50% 50% no-repeat;
+            background-size: 3.166vw 4vw; }
+          body footer .footer-content .footer-grid .headline-partners-top a.headline-2 {
+            margin-right: 1.25vw;
+            width: 3.583vw;
+            height: 2.666vw;
+            background: url("../assets/images/logo-uber-eats-x2.png");
+            background-size: 3.583vw 2.666vw; }
+        body footer .footer-content .footer-grid .funding-partners {
+          padding-top: 10px;
+          grid-area: funding-partners;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between; }
+          body footer .footer-content .footer-grid .funding-partners a.funding-1 {
+            width: 13.083vw;
+            height: 2.916vw;
+            background: url("../assets/images/logo-arts-council-x2.png");
+            background-size: 13.083vw 2.916vw; }
+          body footer .footer-content .footer-grid .funding-partners a.funding-2 {
+            width: 7.583vw;
+            height: 2.916vw;
+            background: url("../assets/images/logo-heritage-fund-x2.png");
+            background-size: 7.583vw 2.916vw; }
+          body footer .footer-content .footer-grid .funding-partners a.funding-3 {
+            width: 9.5vw;
+            height: 2.333vw;
+            background: url("../assets/images/logo-phf-x2.png");
+            background-size: 9.5vw 2.333vw; }
+        body footer .footer-content .footer-grid .head-3 {
+          grid-area: head-3;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between; }
+          body footer .footer-content .footer-grid .head-3 h4 {
+            border-bottom: 1px solid #b0b0b0;
+            color: #b0b0b0;
+            height: 17px; }
+            body footer .footer-content .footer-grid .head-3 h4:nth-child(1) {
+              width: 23.333vw; }
+            body footer .footer-content .footer-grid .head-3 h4:last-child {
+              width: 10vw; }
+        body footer .footer-content .footer-grid .social {
+          grid-area: social;
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-start; }
+          body footer .footer-content .footer-grid .social a {
+            display: block;
+            font-size: 38px;
+            font-size: 3.8rem;
+            color: #fff; }
+            body footer .footer-content .footer-grid .social a:not(:last-child) {
+              margin-right: 35px; }
+        body footer .footer-content .footer-grid .headline-partners-bottom {
+          padding-top: 10px;
+          width: 18.75vw;
+          grid-area: headline-partners-bottom;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between; }
+          body footer .footer-content .footer-grid .headline-partners-bottom a.headline-3 {
+            width: 9vw;
+            height: 2.833vw;
+            background: url("../assets/images/logo-blackhorse-mills-x2.png");
+            background-size: 9vw 2.833vw; }
+          body footer .footer-content .footer-grid .headline-partners-bottom a.headline-4 {
+            width: 5.833vw;
+            height: 2.75vw;
+            background: url("../assets/images/logo-taylor-wimpy.png");
+            background-size: 5.833vw 2.75vw; }
+        body footer .footer-content .footer-grid .mol-partners {
+          padding-top: 10px;
+          grid-area: mol-partners;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between; }
+          body footer .footer-content .footer-grid .mol-partners div {
             display: flex;
             flex-direction: row;
             justify-content: space-between;
-            justify-content: flex-start;
-            list-style: none;
-            padding: 0;
-            margin-bottom: 20px; }
-            body footer .footer-bottom .grid-wrapper .copy ul li {
-              height: 16px;
-              position: relative; }
-              body footer .footer-bottom .grid-wrapper .copy ul li:not(:last-child):after {
-                content: '';
-                position: absolute;
-                right: 0;
-                top: 10px;
-                display: block;
-                background-color: #fff;
-                width: 1px;
-                height: 16px; }
-              body footer .footer-bottom .grid-wrapper .copy ul li a {
-                padding: 10px;
-                line-height: 16px;
-                color: #fff; }
-              body footer .footer-bottom .grid-wrapper .copy ul li:nth-child(1) a {
-                padding-left: 0; }
-              body footer .footer-bottom .grid-wrapper .copy ul li:last-child a {
-                padding-right: 0; }
+            align-items: center; }
+            body footer .footer-content .footer-grid .mol-partners div:nth-child(1) {
+              width: 23.333vw; }
+            body footer .footer-content .footer-grid .mol-partners div:last-child {
+              justify-content: flex-end;
+              width: 10vw; }
+          body footer .footer-content .footer-grid .mol-partners a.mol-1 {
+            width: 13.083vw;
+            height: 1.041vw;
+            background: url("../assets/images/logo-mol-x2.png");
+            background-size: 13.083vw 1.041vw; }
+          body footer .footer-content .footer-grid .mol-partners a.mol-2 {
+            width: 2.666vw;
+            height: 3.541vw;
+            background: url("../assets/images/logo-col-x2.png");
+            background-size: 2.666vw 3.541vw; }
+          body footer .footer-content .footer-grid .mol-partners a.mol-3 {
+            width: 2.666vw;
+            height: 2.625vw;
+            background: url("../assets/images/logo-airbnb-x2.png");
+            background-size: 2.666vw 2.625vw; }
+          body footer .footer-content .footer-grid .mol-partners a.winner {
+            width: 6.083vw;
+            height: 3.375vw;
+            background: url("../assets/images/logo-wf-x2.png");
+            background-size: 6.083vw 3.375vw; }
+        body footer .footer-content .footer-grid .nav-copy {
+          grid-area: nav-copy;
+          padding-top: 45px;
+          color: #b0b0b0; }
+          body footer .footer-content .footer-grid .nav-copy ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start; }
+            body footer .footer-content .footer-grid .nav-copy ul li {
+              height: 22px; }
+              body footer .footer-content .footer-grid .nav-copy ul li:nth-child(1) a {
+                margin-left: 0; }
+              body footer .footer-content .footer-grid .nav-copy ul li:last-child a {
+                margin-right: 0; }
+              body footer .footer-content .footer-grid .nav-copy ul li:not(:last-child) {
+                border-right: 1px solid #b0b0b0; }
+              body footer .footer-content .footer-grid .nav-copy ul li a {
+                margin: 0 10px;
+                color: #b0b0b0;
+                text-decoration: none;
+                line-height: 29px; }
+                body footer .footer-content .footer-grid .nav-copy ul li a:hover {
+                  text-decoration: underline; }
+        body footer .footer-content .footer-grid .foot-text {
+          padding-top: 45px;
+          grid-area: foot-text;
+          color: #b0b0b0; }
+        body footer .footer-content .footer-grid .contact {
+          padding-top: 45px;
+          grid-area: contact;
+          color: #b0b0b0; }
+          body footer .footer-content .footer-grid .contact a {
+            color: #b0b0b0;
+            text-decoration: none; }
+            body footer .footer-content .footer-grid .contact a:hover {
+              text-decoration: underline; }
 
 /****************************************
 *
