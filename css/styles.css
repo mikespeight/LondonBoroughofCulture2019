@@ -6656,105 +6656,113 @@ body .page-wrapper .content-wrapper .blog-content {
 *
 *
 *******************************************************************************************/
-  body:before {
-    content: "Mobile only" !important;
-    position: fixed;
-    z-index: 10000;
-    top: 0;
-    left: 0;
-    background-color: rgba(255, 255, 255, 0.75); }
-  body .page-wrapper footer {
-    height: auto; }
-    body .page-wrapper footer .footer-content {
-      padding: 40px 3vw 47px; }
-      body .page-wrapper footer .footer-content .footer-grid {
-        height: auto;
-        width: 78.666vw;
-        margin: 0 auto;
-        grid-template-columns: 100%;
-        grid-template-rows: 12.533vw 22.9vw 18.7vw 18.4vw 16.266vw 12vw 12vw 10.266vw 9.866vw 22.133vw 13.866vw 18.4vw;
-        grid-template-areas: "wf-logo" "social" "head-1" "headline-partners-top" "headline-partners-bottom" "head-2" "funding-partners" "head-3" "mol-partners" "foot-text" "contact" "nav-copy"; }
-        body .page-wrapper footer .footer-content .footer-grid > div {
-          border-bottom: 1px solid gold; }
-        body .page-wrapper footer .footer-content .footer-grid .wf-logo span, body .page-wrapper footer .footer-content .footer-grid .wf-logo a {
-          width: 64.733vw;
-          height: 12.333vw;
-          background-size: 64.733vw 12.333vw; }
-        body .page-wrapper footer .footer-content .footer-grid .social {
-          padding-top: 27px; }
-          body .page-wrapper footer .footer-content .footer-grid .social a {
-            font-size: 50px;
-            font-size: 5rem; }
-        body .page-wrapper footer .footer-content .footer-grid .head-1 {
-          padding-top: 48px; }
-          body .page-wrapper footer .footer-content .footer-grid .head-1 h4 {
-            width: 100%; }
-        body .page-wrapper footer .footer-content .footer-grid .headline-partners-top {
-          padding-top: 18px;
-          width: 100%;
-          justify-content: space-around; }
-          body .page-wrapper footer .footer-content .footer-grid .headline-partners-top a.headline-1 {
-            width: 12vw;
-            height: 13.6vw;
-            background-size: 12vw 13.6vw; }
-          body .page-wrapper footer .footer-content .footer-grid .headline-partners-top a.headline-2 {
-            width: 11.466vw;
-            height: 9.333vw;
-            background-size: 11.466vw 9.333vw; }
-        body .page-wrapper footer .footer-content .footer-grid .headline-partners-bottom {
-          padding-top: 21px;
-          width: 100%;
-          justify-content: space-around; }
-          body .page-wrapper footer .footer-content .footer-grid .headline-partners-bottom a.headline-3 {
-            width: 29.6vw;
-            height: 10.133vw;
-            background-size: 29.6vw 10.133vw; }
-          body .page-wrapper footer .footer-content .footer-grid .headline-partners-bottom a.headline-4 {
-            width: 19.2vw;
-            height: 9.333vw;
-            background-size: 19.2vw 9.333vw; }
-        body .page-wrapper footer .footer-content .footer-grid .head-2 {
-          padding-top: 21px; }
-        body .page-wrapper footer .footer-content .footer-grid .funding-partners {
-          padding-top: 10px; }
-          body .page-wrapper footer .footer-content .footer-grid .funding-partners a.funding-1 {
-            width: 29.333vw;
-            height: 6.4vw;
-            background-size: 29.333vw 6.4vw; }
-          body .page-wrapper footer .footer-content .footer-grid .funding-partners a.funding-2 {
-            width: 17.067vw;
-            height: 6.667vw;
-            background-size: 17.067vw 6.667vw; }
-          body .page-wrapper footer .footer-content .footer-grid .funding-partners a.funding-3 {
-            width: 21.067vw;
-            height: 5.333vw;
-            background-size: 21.067vw 5.333vw; }
-        body .page-wrapper footer .footer-content .footer-grid .head-3 h4 {
-          height: 32px; }
-          body .page-wrapper footer .footer-content .footer-grid .head-3 h4:nth-child(1) {
-            width: 40vw; }
-        body .page-wrapper footer .footer-content .footer-grid .mol-partners {
-          padding-top: 10px; }
-          body .page-wrapper footer .footer-content .footer-grid .mol-partners div:nth-child(1) {
-            width: 53.333vw; }
-          body .page-wrapper footer .footer-content .footer-grid .mol-partners div:last-child {
-            width: 10vw; }
-          body .page-wrapper footer .footer-content .footer-grid .mol-partners a.mol-1 {
-            width: 13.083vw;
-            height: 1.041vw;
-            background-size: 13.083vw 1.041vw; }
-          body .page-wrapper footer .footer-content .footer-grid .mol-partners a.mol-2 {
-            width: 2.666vw;
-            height: 3.541vw;
-            background-size: 2.666vw 3.541vw; }
-          body .page-wrapper footer .footer-content .footer-grid .mol-partners a.mol-3 {
-            width: 2.666vw;
-            height: 2.625vw;
-            background-size: 2.666vw 2.625vw; }
-          body .page-wrapper footer .footer-content .footer-grid .mol-partners a.winner {
-            width: 6.083vw;
-            height: 3.375vw;
-            background-size: 6.083vw 3.375vw; } }
+  body {
+    /*&:before {
+  content: 'Mobile only'!important;
+  position: fixed;
+  z-index: 10000;
+  top:0;
+  left:0;
+  background-color: rgba(255, 255, 255, 0.75);
+}*/ }
+    body .page-wrapper footer {
+      height: auto; }
+      body .page-wrapper footer .footer-content {
+        padding: 40px 3vw 47px; }
+        body .page-wrapper footer .footer-content .footer-grid {
+          height: auto;
+          width: 78.666vw;
+          margin: 0 auto;
+          grid-template-columns: 100%;
+          grid-template-rows: 12.533vw 22.9vw 18.7vw 18.4vw 16.266vw 12vw 12vw 10.266vw 9.866vw 22.133vw 13.866vw 18.4vw;
+          grid-template-areas: "wf-logo" "social" "head-1" "headline-partners-top" "headline-partners-bottom" "head-2" "funding-partners" "head-3" "mol-partners" "foot-text" "contact" "nav-copy"; }
+          body .page-wrapper footer .footer-content .footer-grid .wf-logo span, body .page-wrapper footer .footer-content .footer-grid .wf-logo a {
+            width: 64.733vw;
+            height: 12.333vw;
+            background-size: 64.733vw 12.333vw; }
+          body .page-wrapper footer .footer-content .footer-grid .social {
+            padding-top: 27px; }
+            body .page-wrapper footer .footer-content .footer-grid .social a {
+              font-size: 50px;
+              font-size: 5rem; }
+          body .page-wrapper footer .footer-content .footer-grid .head-1 {
+            padding-top: 48px; }
+            body .page-wrapper footer .footer-content .footer-grid .head-1 h4 {
+              width: 100%; }
+          body .page-wrapper footer .footer-content .footer-grid .headline-partners-top {
+            padding-top: 18px;
+            width: 100%;
+            justify-content: space-around; }
+            body .page-wrapper footer .footer-content .footer-grid .headline-partners-top a.headline-1 {
+              width: 12vw;
+              height: 13.6vw;
+              background-size: 12vw 13.6vw; }
+            body .page-wrapper footer .footer-content .footer-grid .headline-partners-top a.headline-2 {
+              width: 11.466vw;
+              height: 9.333vw;
+              background-size: 11.466vw 9.333vw; }
+          body .page-wrapper footer .footer-content .footer-grid .headline-partners-bottom {
+            padding-top: 21px;
+            width: 100%;
+            justify-content: space-around; }
+            body .page-wrapper footer .footer-content .footer-grid .headline-partners-bottom a.headline-3 {
+              width: 29.6vw;
+              height: 10.133vw;
+              background-size: 29.6vw 10.133vw; }
+            body .page-wrapper footer .footer-content .footer-grid .headline-partners-bottom a.headline-4 {
+              width: 19.2vw;
+              height: 9.333vw;
+              background-size: 19.2vw 9.333vw; }
+          body .page-wrapper footer .footer-content .footer-grid .head-2 {
+            padding-top: 21px; }
+          body .page-wrapper footer .footer-content .footer-grid .funding-partners {
+            padding-top: 10px; }
+            body .page-wrapper footer .footer-content .footer-grid .funding-partners a.funding-1 {
+              width: 29.333vw;
+              height: 6.4vw;
+              background-size: 29.333vw 6.4vw; }
+            body .page-wrapper footer .footer-content .footer-grid .funding-partners a.funding-2 {
+              width: 17.067vw;
+              height: 6.667vw;
+              background-size: 17.067vw 6.667vw; }
+            body .page-wrapper footer .footer-content .footer-grid .funding-partners a.funding-3 {
+              width: 21.067vw;
+              height: 5.333vw;
+              background-size: 21.067vw 5.333vw; }
+          body .page-wrapper footer .footer-content .footer-grid .head-3 h4 {
+            height: 32px; }
+            body .page-wrapper footer .footer-content .footer-grid .head-3 h4:nth-child(1) {
+              width: 40vw; }
+            body .page-wrapper footer .footer-content .footer-grid .head-3 h4:last-child {
+              width: 13.6vw; }
+          body .page-wrapper footer .footer-content .footer-grid .mol-partners {
+            padding-top: 10px; }
+            body .page-wrapper footer .footer-content .footer-grid .mol-partners div:nth-child(1) {
+              width: 53.333vw; }
+            body .page-wrapper footer .footer-content .footer-grid .mol-partners div:last-child {
+              width: 13.6vw; }
+            body .page-wrapper footer .footer-content .footer-grid .mol-partners a.mol-1 {
+              width: 29.067vw;
+              height: 2.4vw;
+              background-size: 29.067vw 2.4vw; }
+            body .page-wrapper footer .footer-content .footer-grid .mol-partners a.mol-2 {
+              width: 5.867vw;
+              height: 8vw;
+              background-size: 5.867vw 8vw; }
+            body .page-wrapper footer .footer-content .footer-grid .mol-partners a.mol-3 {
+              width: 5.867vw;
+              height: 6.933vw;
+              background-size: 5.867vw 6.933vw; }
+            body .page-wrapper footer .footer-content .footer-grid .mol-partners a.winner {
+              width: 13.6vw;
+              height: 7.467vw;
+              background-size: 13.6vw 7.467vw; }
+          body .page-wrapper footer .footer-content .footer-grid .foot-text {
+            padding-top: 42px; }
+          body .page-wrapper footer .footer-content .footer-grid .contact {
+            padding-top: 9px; }
+          body .page-wrapper footer .footer-content .footer-grid .nav-copy {
+            padding-top: 6px; } }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 834px) and (orientation: portrait), only screen and (min-device-pixel-ratio: 2) and (min-width: 834px) and (orientation: portrait) {
   /******************************************************************************************

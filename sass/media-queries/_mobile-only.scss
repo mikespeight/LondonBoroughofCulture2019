@@ -10,19 +10,19 @@
 
 body {
 
-  &:before {
+  /*&:before {
   content: 'Mobile only'!important;
   position: fixed;
   z-index: 10000;
   top:0;
   left:0;
   background-color: rgba(255, 255, 255, 0.75);
-}
-
+}*/
   .page-wrapper {
 
     footer {
       height:auto;
+
 
       .footer-content {
         padding: 40px 3vw 47px;
@@ -49,7 +49,7 @@ body {
                   "nav-copy";
 
           & > div {
-            border-bottom: 1px solid gold;
+            //border-bottom: 1px solid gold;
           }
 
           .wf-logo {
@@ -157,6 +157,10 @@ body {
               &:nth-child(1) {
                 width:40vw;
               }
+
+              &:last-child {
+                width: 13.6vw;
+              }
             }
           }
 
@@ -170,36 +174,48 @@ body {
               }
 
               &:last-child {
-                width:10vw;
+                width:13.6vw;
               }
             }
 
             a {
 
               &.mol-1 {
-                width: 13.083vw;
-                height:1.041vw;
-                background-size: 13.083vw 1.041vw;
+                width: 29.067vw;
+                height:2.4vw;
+                background-size: 29.067vw 2.4vw;
               }
 
               &.mol-2 {
-                width: 2.666vw;
-                height:3.541vw;
-                background-size: 2.666vw 3.541vw;
+                width: 5.867vw;
+                height:8vw;
+                background-size: 5.867vw 8vw;
               }
 
               &.mol-3 {
-                width: 2.666vw;
-                height:2.625vw;
-                background-size: 2.666vw 2.625vw;
+                width: 5.867vw;
+                height:6.933vw;
+                background-size: 5.867vw 6.933vw;
               }
 
               &.winner {
-                width: 6.083vw;
-                height:3.375vw;
-                background-size: 6.083vw 3.375vw;
+                width: 13.6vw;
+                height:7.467vw;
+                background-size: 13.6vw 7.467vw;
               }
             }
+          }
+
+          .foot-text {
+            padding-top: 42px;
+          }
+
+          .contact {
+            padding-top: 9px;
+          }
+
+          .nav-copy {
+            padding-top: 6px;
           }
 
         }
