@@ -357,6 +357,34 @@ body {
         }
       }
     }
+
+    footer {
+      height:76.690vw;
+
+      .footer-content {
+        padding: 40px 3vw 48px;
+
+        .footer-grid {
+          height: auto;
+          grid-template-columns: 100%;
+          grid-template-rows: 4.742vw 16.145vw 13.319vw 13.824vw 12.209vw 8.980vw 7.870vw
+          6.054vw 7.366vw 16.649vw 10.393vw 13.925vw;
+          grid-template-areas:
+          "wf-logo"
+          "social"
+          "head-1"
+          "headline-partners-top"
+          "headline-partners-bottom"
+          "head-2"
+          "funding-partners"
+          "head-3"
+          "mol-partners"
+          "foot-text"
+          "contact"
+          "nav-copy";
+        }
+      }
+    }
   }
 }
 

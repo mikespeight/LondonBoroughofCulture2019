@@ -251,15 +251,24 @@ $ipad-pro-10-landscape-breakpoint: "(min-device-width : 1668px) and (max-device-
 }
 
 // Both portrait and landscape
-@include mobile-only {
-
-  @import "media-queries/mobile-only";
-
-}
 
 @include ipad-pro-portrait {
 
  @import "media-queries/iPad-pro-portrait";
+
+}
+
+
+
+@include desktop-and-up {
+
+  //@import "media-queries/desktop-and-up";
+
+}
+
+@include screen-std-and-below {
+
+  @import "media-queries/std-screen-down";
 
 }
 
@@ -269,18 +278,16 @@ $ipad-pro-10-landscape-breakpoint: "(min-device-width : 1668px) and (max-device-
 
 }
 
-@include desktop-and-up {
-
-  //@import "media-queries/desktop-and-up";
-
-}
-
-@include screen-std-and-below {
-  @import "media-queries/std-screen-down";
-}
-
 @include tablet-portrait-below {
+
   @import "media-queries/below-tablet-portrait";
+
+}
+
+@include mobile-only {
+
+  @import "media-queries/mobile-only";
+
 }
 
 @include retina2 {
