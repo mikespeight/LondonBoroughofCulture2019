@@ -2192,308 +2192,307 @@ body {
         }
       }
     }
-  }
 
+    footer {
+      margin-top: 60px;
+      height:400px;
+      background-color: $black;
+      overflow: hidden;
 
+      .footer-content {
+        max-width: 1200px;
+        width: 100vw;
+        margin:0 auto;
+        padding: 50px 36px 100px;
 
-  footer {
-    margin-top: 60px;
-    height:33.333vw;
-    background-color: $black;
-    overflow: hidden;
+        .footer-grid {
+          display: grid;
+          height: 250px;
+          grid-template-columns: 425px 278px 425px;
+          grid-template-rows: 20px 56px 35px 55px 85px;
+          grid-template-areas: ". head-1 head-2"
+          "wf-logo headline-partners-top funding-partners"
+          ". . head-3"
+          "social headline-partners-bottom mol-partners "
+          "nav-copy foot-text contact";
 
-    .footer-content {
-      width: 100vw;
-      padding: 50px 3vw 100px;
-
-      .footer-grid {
-        display: grid;
-        height: 250px;
-        grid-template-columns: 35.416vw 23.166vw 35.416vw;
-        grid-template-rows: 1.666vw 4.583vw 2.916vw 4.583vw 7.083vw;
-        grid-template-areas: ". head-1 head-2"
-        "wf-logo headline-partners-top funding-partners"
-        ". . head-3"
-        "social headline-partners-bottom mol-partners "
-        "nav-copy foot-text contact";
-
-        & > div {
-          color: $white;
-
-          span, a {
-            color: $white;
-            display: block;
-          }
-
-          p {
-            line-height: 22px;
-          }
-
-          h4 {
-            margin-top: 6px;
-            @include font-size(11);
-            font-weight: $regular;
-            color: $white;
-          }
-        }
-
-        .head-1 {
-          grid-area: head-1;
-
-          h4 {
-            width:18.75vw;
-            border-bottom: 1px solid $ltGreyBorder;
-            color:$ltGreyBorder;
-          }
-        }
-
-        .head-2 {
-          grid-area: head-2;
-
-          h4 {
-            border-bottom: 1px solid $ltGreyBorder;
-            color:$ltGreyBorder;
-          }
-        }
-
-        .wf-logo {
-          grid-area: wf-logo;
-
-          span, a {
-            width: 21.25vw;
-            height: 4vw;
-            background: url("#{$pathToImages}/boc-logo-x2.png");
-            background-size: 21.25vw 4vw;
-          }
-        }
-
-        .headline-partners-top {
-          padding-top: 10px;
-          width:18.75vw;
-          grid-area: headline-partners-top;
-          @include flex-container(row, space-between);
-          align-items: center;
-
-          a {
-
-            &.headline-1 {
-              width: 3.166vw;
-              margin-left: 2.833vw;
-              height:4vw;
-              background: url("#{$pathToImages}/logo-the-mall-x2.png") 50% 50% no-repeat;
-              background-size: 3.166vw 4vw;
-            }
-
-            &.headline-2 {
-              margin-right: 1.25vw;
-              width: 3.583vw;
-              height:2.666vw;
-              background: url("#{$pathToImages}/logo-uber-eats-x2.png");
-              background-size: 3.583vw 2.666vw;
-            }
-          }
-        }
-
-        .funding-partners {
-          padding-top: 10px;
-          grid-area: funding-partners;
-          @include flex-container(row, space-between);
-
-          a {
-
-            &.funding-1 {
-              width: 13.083vw;
-              height:2.916vw;
-              background: url("#{$pathToImages}/logo-arts-council-x2.png");
-              background-size: 13.083vw 2.916vw;
-             }
-
-            &.funding-2 {
-              width: 7.583vw;
-              height:2.916vw;
-              background: url("#{$pathToImages}/logo-heritage-fund-x2.png");
-              background-size: 7.583vw 2.916vw;
-            }
-
-            &.funding-3 {
-              width: 9.5vw;
-              height:2.333vw;
-              background: url("#{$pathToImages}/logo-phf-x2.png");
-              background-size: 9.5vw 2.333vw;
-            }
-          }
-        }
-
-        .head-3 {
-          grid-area: head-3;
-          @include flex-container(row, space-between);
-
-          h4 {
-            border-bottom: 1px solid $ltGreyBorder;
-            color:$ltGreyBorder;
-            height:17px;
-
-            &:nth-child(1) {
-              width:23.333vw;
-            }
-
-            &:last-child {
-              width:10vw;
-            }
-          }
-        }
-
-        .social {
-          grid-area: social;
-          @include flex-container(row, flex-start);
-
-          a {
-            display: block;
-            @include font-size(38);
+          & > div {
             color: $white;
 
-            &:not(:last-child) {
-              margin-right: 35px;
+            span, a {
+              color: $white;
+              display: block;
+            }
+
+            p {
+              line-height: 22px;
+            }
+
+            h4 {
+              margin-top: 6px;
+              @include font-size(11);
+              font-weight: $regular;
+              color: $white;
             }
           }
-        }
 
-        .headline-partners-bottom {
-          padding-top: 10px;
-          width:18.75vw;
-          grid-area: headline-partners-bottom;
-          @include flex-container(row, space-between);
+          .head-1 {
+            grid-area: head-1;
 
-          a {
-
-            &.headline-3 {
-              width: 9vw;
-              height:2.833vw;
-              background: url("#{$pathToImages}/logo-blackhorse-mills-x2.png");
-              background-size: 9vw 2.833vw;
-            }
-
-            &.headline-4 {
-              width: 5.833vw;
-              height:2.75vw;
-              background: url("#{$pathToImages}/logo-taylor-wimpy.png");
-              background-size: 5.833vw 2.75vw;
+            h4 {
+              width:225px;
+              border-bottom: 1px solid $ltGreyBorder;
+              color:$ltGreyBorder;
             }
           }
-        }
 
-        .mol-partners {
-          padding-top: 10px;
-          //width:18.75vw;
-          grid-area: mol-partners;
-          @include flex-container(row, space-between);
+          .head-2 {
+            grid-area: head-2;
 
-          div {
+            h4 {
+              border-bottom: 1px solid $ltGreyBorder;
+              color:$ltGreyBorder;
+            }
+          }
+
+          .wf-logo {
+            grid-area: wf-logo;
+
+            span, a {
+              width: 255px;
+              height: 48px;
+              background: url("#{$pathToImages}/boc-logo-x2.png");
+              background-size: 255px 48px;
+            }
+          }
+
+          .headline-partners-top {
+            padding-top: 10px;
+            width:225px;
+            grid-area: headline-partners-top;
             @include flex-container(row, space-between);
             align-items: center;
 
-            &:nth-child(1) {
-              width:23.333vw;
-            }
+            a {
 
-            &:last-child {
-              justify-content: flex-end;
-              width:10vw;
+              &.headline-1 {
+                width: 38px;
+                margin-left: 34px;
+                height:48px;
+                background: url("#{$pathToImages}/logo-the-mall-x2.png") 50% 50% no-repeat;
+                background-size: 38px 48px;
+              }
+
+              &.headline-2 {
+                margin-right: 15px;
+                width: 43px;
+                height:33px;
+                background: url("#{$pathToImages}/logo-uber-eats-x2.png");
+                background-size: 43px 33px;
+              }
+            }
+          }
+
+          .funding-partners {
+            padding-top: 10px;
+            grid-area: funding-partners;
+            @include flex-container(row, space-between);
+
+            a {
+
+              &.funding-1 {
+                width: 157px;
+                height:35px;
+                background: url("#{$pathToImages}/logo-arts-council-x2.png");
+                background-size: 157px 35px;
+              }
+
+              &.funding-2 {
+                width: 91px;
+                height:35px;
+                background: url("#{$pathToImages}/logo-heritage-fund-x2.png");
+                background-size: 91px 35px;
+              }
+
+              &.funding-3 {
+                width: 114px;
+                height:28px;
+                background: url("#{$pathToImages}/logo-phf-x2.png");
+                background-size: 114px 28px;
+              }
             }
           }
 
-          a {
+          .head-3 {
+            grid-area: head-3;
+            @include flex-container(row, space-between);
 
-            &.mol-1 {
-              width: 13.083vw;
-              height:1.041vw;
-              background: url("#{$pathToImages}/logo-mol-x2.png");
-              background-size: 13.083vw 1.041vw;
-            }
-
-            &.mol-2 {
-              width: 2.666vw;
-              height:3.541vw;
-              background: url("#{$pathToImages}/logo-col-x2.png");
-              background-size: 2.666vw 3.541vw;
-            }
-
-            &.mol-3 {
-              width: 2.666vw;
-              height:2.625vw;
-              background: url("#{$pathToImages}/logo-airbnb-x2.png");
-              background-size: 2.666vw 2.625vw;
-            }
-
-            &.winner {
-              width: 6.083vw;
-              height:3.375vw;
-              background: url("#{$pathToImages}/logo-wf-x2.png");
-              background-size: 6.083vw 3.375vw;
-            }
-          }
-        }
-
-        .nav-copy {
-          grid-area: nav-copy;
-          padding-top: 45px;
-          color: $ltGreyBorder;
-
-          ul {
-            @include flex-container(row, flex-start);
-
-            li {
-              height: 22px;
+            h4 {
+              border-bottom: 1px solid $ltGreyBorder;
+              color:$ltGreyBorder;
+              height:17px;
 
               &:nth-child(1) {
-
-                a {
-                  margin-left: 0;
-                }
+                width: 278px;
               }
 
               &:last-child {
-
-                a {
-                  margin-right: 0;
-                }
+                width:120px;
               }
+            }
+          }
+
+          .social {
+            grid-area: social;
+            @include flex-container(row, flex-start);
+
+            a {
+              display: block;
+              @include font-size(38);
+              color: $white;
 
               &:not(:last-child) {
-                border-right: 1px solid $ltGreyBorder;
+                margin-right: 35px;
+              }
+            }
+          }
+
+          .headline-partners-bottom {
+            padding-top: 10px;
+            width:225px;
+            grid-area: headline-partners-bottom;
+            @include flex-container(row, space-between);
+
+            a {
+
+              &.headline-3 {
+                width: 108px;
+                height:34px;
+                background: url("#{$pathToImages}/logo-blackhorse-mills-x2.png");
+                background-size: 108px 34px;
               }
 
-              a {
-                margin: 0 10px;
-                color: $ltGreyBorder;
-                text-decoration: none;
-                line-height: 29px;
+              &.headline-4 {
+                width: 70px;
+                height:33px;
+                background: url("#{$pathToImages}/logo-taylor-wimpy.png");
+                background-size: 70px 33px;
+              }
+            }
+          }
 
-                &:hover {
-                  text-decoration: underline;
+          .mol-partners {
+            padding-top: 10px;
+            grid-area: mol-partners;
+            @include flex-container(row, space-between);
+
+            div {
+              @include flex-container(row, space-between);
+              align-items: center;
+
+              &:nth-child(1) {
+                width:280px;
+              }
+
+              &:last-child {
+                justify-content: flex-end;
+                width:120px;
+              }
+            }
+
+            a {
+
+              &.mol-1 {
+                width: 157px;
+                height:12.5px;
+                background: url("#{$pathToImages}/logo-mol-x2.png");
+                background-size: 157px 12.5px;
+              }
+
+              &.mol-2 {
+                width: 32px;
+                height:43px;
+                background: url("#{$pathToImages}/logo-col-x2.png");
+                background-size: 32px 43px;
+              }
+
+              &.mol-3 {
+                width: 32px;
+                height:32px;
+                background: url("#{$pathToImages}/logo-airbnb-x2.png");
+                background-size: 32px 32px;
+              }
+
+              &.winner {
+                width: 73px;
+                height:41px;
+                background: url("#{$pathToImages}/logo-wf-x2.png");
+                background-size: 73px 41px;
+              }
+            }
+          }
+
+          .nav-copy {
+            grid-area: nav-copy;
+            padding-top: 45px;
+            color: $ltGreyBorder;
+
+            ul {
+              @include flex-container(row, flex-start);
+
+              li {
+                height: 22px;
+
+                &:nth-child(1) {
+
+                  a {
+                    margin-left: 0;
+                  }
+                }
+
+                &:last-child {
+
+                  a {
+                    margin-right: 0;
+                  }
+                }
+
+                &:not(:last-child) {
+                  border-right: 1px solid $ltGreyBorder;
+                }
+
+                a {
+                  margin: 0 10px;
+                  color: $ltGreyBorder;
+                  text-decoration: none;
+                  line-height: 29px;
+
+                  &:hover {
+                    text-decoration: underline;
+                  }
                 }
               }
             }
           }
-        }
 
-        .foot-text {
-          padding-top: 45px;
-          grid-area: foot-text;
-          color:$ltGreyBorder;
-        }
+          .foot-text {
+            padding-top: 45px;
+            grid-area: foot-text;
+            color:$ltGreyBorder;
+          }
 
-        .contact {
-          padding-top: 45px;
-          grid-area: contact;
-          color:$ltGreyBorder;
+          .contact {
+            padding-top: 45px;
+            grid-area: contact;
+            color:$ltGreyBorder;
 
-          a {
-            color: $ltGreyBorder;
-            text-decoration: none;
+            a {
+              color: $ltGreyBorder;
+              text-decoration: none;
 
-            &:hover {
-              text-decoration: underline;
+              &:hover {
+                text-decoration: underline;
+              }
             }
           }
         }
