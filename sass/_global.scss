@@ -2434,7 +2434,7 @@ body {
 
           .nav-copy {
             grid-area: nav-copy;
-            padding-top: 45px;
+            padding: 45px 20px 0 0;
             color: $ltGreyBorder;
 
             ul {
@@ -2476,9 +2476,18 @@ body {
           }
 
           .foot-text {
-            padding-top: 45px;
+            padding: 45px 20px 0 0;
             grid-area: foot-text;
             color:$ltGreyBorder;
+
+            a {
+              color: $ltGreyBorder;
+              text-decoration: none;
+
+              &:hover {
+                text-decoration: underline;
+              }
+            }
           }
 
           .contact {

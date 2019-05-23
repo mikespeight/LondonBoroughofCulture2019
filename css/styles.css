@@ -5769,7 +5769,7 @@ body {
             background-size: 73px 41px; }
         body .page-wrapper footer .footer-content .footer-grid .nav-copy {
           grid-area: nav-copy;
-          padding-top: 45px;
+          padding: 45px 20px 0 0;
           color: #b0b0b0; }
           body .page-wrapper footer .footer-content .footer-grid .nav-copy ul {
             display: flex;
@@ -5791,9 +5791,14 @@ body {
                 body .page-wrapper footer .footer-content .footer-grid .nav-copy ul li a:hover {
                   text-decoration: underline; }
         body .page-wrapper footer .footer-content .footer-grid .foot-text {
-          padding-top: 45px;
+          padding: 45px 20px 0 0;
           grid-area: foot-text;
           color: #b0b0b0; }
+          body .page-wrapper footer .footer-content .footer-grid .foot-text a {
+            color: #b0b0b0;
+            text-decoration: none; }
+            body .page-wrapper footer .footer-content .footer-grid .foot-text a:hover {
+              text-decoration: underline; }
         body .page-wrapper footer .footer-content .footer-grid .contact {
           padding-top: 45px;
           grid-area: contact;
@@ -6462,10 +6467,12 @@ body .page-wrapper .content-wrapper .blog-content {
             width: 9.5vw;
             height: 2.333vw;
             background-size: 9.5vw 2.333vw; }
-          body .page-wrapper footer .footer-content .footer-grid .head-3 h4:nth-child(1) {
-            width: 23.333vw; }
-          body .page-wrapper footer .footer-content .footer-grid .head-3 h4:last-child {
-            width: 10vw; }
+          body .page-wrapper footer .footer-content .footer-grid .head-3 h4 {
+            height: 32px; }
+            body .page-wrapper footer .footer-content .footer-grid .head-3 h4:nth-child(1) {
+              width: 23.333vw; }
+            body .page-wrapper footer .footer-content .footer-grid .head-3 h4:last-child {
+              width: 10vw; }
           body .page-wrapper footer .footer-content .footer-grid .headline-partners-bottom {
             width: 18.75vw; }
             body .page-wrapper footer .footer-content .footer-grid .headline-partners-bottom a.headline-3 {
@@ -6476,10 +6483,13 @@ body .page-wrapper .content-wrapper .blog-content {
               width: 5.833vw;
               height: 2.75vw;
               background-size: 5.833vw 2.75vw; }
-          body .page-wrapper footer .footer-content .footer-grid .mol-partners div:nth-child(1) {
-            width: 23.333vw; }
-          body .page-wrapper footer .footer-content .footer-grid .mol-partners div:last-child {
-            width: 10vw; }
+          body .page-wrapper footer .footer-content .footer-grid .mol-partners div {
+            position: relative;
+            top: 10px; }
+            body .page-wrapper footer .footer-content .footer-grid .mol-partners div:nth-child(1) {
+              width: 23.333vw; }
+            body .page-wrapper footer .footer-content .footer-grid .mol-partners div:last-child {
+              width: 10vw; }
           body .page-wrapper footer .footer-content .footer-grid .mol-partners a.mol-1 {
             width: 13.083vw;
             height: 1.041vw;

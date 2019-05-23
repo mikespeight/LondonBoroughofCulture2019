@@ -436,6 +436,7 @@ body {
            .head-3 {
 
              h4 {
+              height: 32px;
 
                &:nth-child(1) {
                  width:23.333vw;
@@ -473,6 +474,8 @@ body {
            .mol-partners {
 
              div {
+              position: relative;
+              top: 10px;
 
                &:nth-child(1) {
                  width:23.333vw;
