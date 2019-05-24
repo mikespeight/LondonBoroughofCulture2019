@@ -2480,6 +2480,13 @@ body {
             grid-area: foot-text;
             color:$ltGreyBorder;
 
+            p {
+
+              a {
+                display: inline;
+              }
+            }
+
             a {
               color: $ltGreyBorder;
               text-decoration: none;

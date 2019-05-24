@@ -57,6 +57,7 @@ body {
               width: 64.733vw;
               height:12.333vw;
               background-size: 64.733vw 12.333vw;
+              margin: 0 auto;
             }
           }
 
@@ -208,14 +209,21 @@ body {
 
           .foot-text {
             padding-top: 42px;
+            text-align: center;
           }
 
           .contact {
             padding-top: 9px;
+            text-align: center;
           }
 
           .nav-copy {
             padding-top: 6px;
+            text-align: center;
+
+            ul {
+              justify-content: center;
+            }
           }
 
         }
